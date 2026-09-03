@@ -1,11 +1,14 @@
 # STATUS — 50 – APP-A – Neuronaler Minimalbenchmark
 
 Current Gate: `Neural Historical Reachability 0.1`
-Status: READY / AWAIT GO
-Latest canonical result: `research/app_a/neural_minimal_benchmark_0_1.md`
+Status: COMPLETE / PASS — RESULT FROZEN
+Latest canonical result: `research/app_a/neural_historical_reachability_0_1.md`
 Latest frozen result decision: `PASS — RESULT FROZEN / NO NOVELTY PROMOTION`
 Dependencies: Neural Minimal Benchmark 0.1 COMPLETE / FROZEN
-Next instruction: Execute only `research/master/prompts/app_a_neural_historical_reachability_0_1.md` after user enters `GO`.
+Historical test-addition commit: `ad9cc18a0519ffcfc4e6bc2e919e82f40bf54208`
+Historical implementation commit: `e342ef5c5cefae30df45e23bc667f149e818238c`
+Canonical result-freeze commit: `0e345fbb7b5a8ccc3c3f8bd4c958132c1b130d7c`
+Next instruction: `RETURN TO MASTER`
 STOP boundary: Do not change the frozen historical protocol; do not open nonlinear, learned-representation, LoRA, power-grid, state-preparation, or manuscript work without new MASTER authorisation.
 
 ## Frozen prior result
@@ -28,19 +31,52 @@ Frozen observations:
 - Local frozen test run: `4 passed`.
 - No retuning.
 
-## Active frozen specification
+## Frozen historical result
 
 ### Neural Historical Reachability 0.1
 
-Canonical prompt:
-`research/master/prompts/app_a_neural_historical_reachability_0_1.md`.
+Decision: **PASS — RESULT FROZEN / NO NOVELTY PROMOTION**
 
-The gate freezes one common initialization `U_0=0`, main readout `v=e1`, temporary auxiliary readout `a=e2`, symmetric historical targets `e1/e2`, one `U`-only gradient step at `eta_hist=1`, followed by exact reproduction of the already-frozen C/D evaluation.
+Frozen preparation protocol:
 
-No alternative history construction may be tried in this gate.
+- Common hidden initialization: `U_0=[[0,0],[0,0]]`.
+- Fixed main readout: `v=e1`.
+- Fixed temporary auxiliary readout: `a=e2`.
+- History A target: `c_A=e1`.
+- History B target: `c_B=e2`.
+- Exactly one full-batch gradient step on `U` only.
+- Historical learning rate: `eta_hist=1`.
+- No retuning or alternative history was tried.
+
+Frozen observations:
+
+- History A reaches exactly `U_A=[[0,0],[1,0]]`.
+- History B reaches exactly `U_B=[[0,0],[0,1]]`.
+- Both histories start from the same `U_0` and `v`.
+- Main function is `w=(0,0)` before and after preparation for both histories.
+- Historical analytical/autograd maximum observed difference: `0.0` in float64.
+- Historical loss is `0.5` before and `0.0` after the step for both histories.
+- The already-frozen C/D evaluation is reproduced exactly within `1e-12`:
+  - A/C: `w^+=(0.2,0)`, loss `0.32`.
+  - B/C: `w^+=(0.1,0)`, loss `0.405`.
+  - A/D: `w^+=(0,0.1)`, loss `0.405`.
+  - B/D: `w^+=(0,0.2)`, loss `0.32`.
+- Local combined frozen test run: `8 passed`.
+
+## CI status
+
+For historical implementation commit `e342ef5c5cefae30df45e23bc667f149e818238c`, GitHub reports no commit status checks and no workflow runs. Repository CI is therefore not configured / not applicable for this execution commit.
 
 ## Claim ceiling
 
-The benchmark remains a feasibility scaffold. Even if the historical gate passes, it may establish only reachability under the explicitly frozen auxiliary-gradient history. It may not establish ordinary single-head SGD reachability, generic neural plasticity coordinates, nonlinear generalisation, novelty, or causal synergetics.
+Allowed interpretation only:
 
-STOP — AWAIT GO
+> The exact function-equivalent state pair used in the frozen linear benchmark can be generated from a common hidden initialization by two symmetric one-step auxiliary gradient histories while the main readout and current main function remain unchanged; the resulting states retain the previously frozen opposite one-step adaptation preferences.
+
+This does not establish ordinary single-head SGD reachability, generic SGD reachability, nonlinear or real-data generalisation, novelty, uniqueness/necessity of auxiliary preparation, or causal synergetics.
+
+## Open issues
+
+Ordinary single-head reachability, nonlinear extension, learned representations, LoRA/adapters, real-data scaling, robustness/genericity of the historical construction, state preparation, and any manuscript work remain blocked pending new MASTER authorisation.
+
+STOP — RETURN TO MASTER
