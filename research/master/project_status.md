@@ -1,10 +1,10 @@
 # Project Status — causal_synergetics
 
-Version: 0.2
+Version: 0.3
 Date: 2026-09-03
-Overall status: FIRST SCIENTIFIC AUDIT FROZEN / CORE READY
+Overall status: CORE BOUNDARY FROZEN / NEURAL MINIMAL BENCHMARK READY
 Governance status: FROZEN v0.1
-Latest rollback point: `RP-002 — Prior-Art & Definitions Audit Freeze 0.1`
+Latest rollback point: `RP-003 — CORE Synergetic Sufficiency Boundary Freeze 0.1`
 
 ## Central research question
 
@@ -12,59 +12,71 @@ Which macroscopic description of a complex system is sufficient not only for its
 
 The programme treats causal synergetics as a proposed research field to be tested, not as an already established theory.
 
-## Current scientific state
-
-The first scientific result is complete and frozen:
-
-`research/literature/prior_art_definitions_audit_0_1.md`
-
-Decision: `PASS — CLAIM-RESTRICTED`.
-Programme action: `RESTRICT / REINTERPRET`.
-
-The audit substantially demotes the generic novelty claims around controlled/intervention-conditioned state description. The programme may not present intervention-relative response kernels, controlled behavioral equivalence, low-dimensional intervention-sufficient representations, or controlled closure/lumpability as generic new ideas.
-
-The surviving candidate boundary is much narrower: test whether a **pre-existing synergetic order-parameter/slaving reduction** has a theorem-level relation to **intervention-relative response sufficiency and controlled closure** that is not merely a restatement of predictive-state, bisimulation/lumpability, causal-abstraction, or standard singular-perturbation theory.
-
-This surviving boundary is a hypothesis target, not an established novelty result.
-
-## Branch-independent results
-
-- Governance 0.1.
-- Git single-source-of-truth rule.
-- Lazy branch/chat creation.
-- MASTER Baseline Freeze 0.1.
-- Prior-art claim restriction: generic constructs 1–4 are established-prior-art territory and cannot carry field-level novelty.
-- CORE must explicitly classify central results against named prior-art frameworks and accept `SUBSUMED` / `FAIL` outcomes.
-
-## Branch-dependent results
+## Frozen scientific results
 
 ### 80 – LIT
 
-Status: COMPLETE / FROZEN.
 Gate: `Prior-Art & Definitions Audit 0.1`.
-Result: `PASS — CLAIM-RESTRICTED`.
-Canonical file: `research/literature/prior_art_definitions_audit_0_1.md`.
-Deliverable commit: `e21f3086657b9eb89f5b9ffa5ffdbdc4ba8b5b0d`.
+Status: COMPLETE / FROZEN.
+Decision: `PASS — CLAIM-RESTRICTED`.
+Programme action: `RESTRICT / REINTERPRET`.
+
+Generic novelty claims for intervention-conditioned state descriptors, controlled behavioral equivalence, intervention-sufficient low-dimensional representations, and controlled closure/lumpability remain demoted as prior-art territory.
+
+### 10 – CORE
+
+Gate: `CORE Synergetic Sufficiency Boundary 0.1`.
+Status: COMPLETE / FROZEN.
+Decision: `PASS — CLAIM-RESTRICTED / NO NOVELTY PROMOTION`.
+Canonical result: `research/core/synergetic_sufficiency_boundary_0_1.md`.
+Canonical commit: `0ebd50e5c8c072cf59ae86502a25b97e78c4722f`.
+
+Frozen conclusions:
+
+1. For the full frozen retained trajectory `q(·)`, exact fibre response homogeneity is equivalent to controlled projectability / exact controlled closure; this is prior-art structure and is marked `SUBSUMED`.
+2. Classical unforced synergetic slaving alone does not imply intervention-relative response sufficiency.
+3. The scalar slow/fast system `q̇=ur`, `ṙ=-λr+u` is a proved minimal witness: passive slaving is exact, yet interventions expose hidden fast-state dependence.
+4. Exact finite-horizon response bounds are available for the witness, and a general comparison/ISS-style proposition maps fast relaxation, slaving defect, intervention leakage, and tangential sensitivity to finite-horizon response error.
+5. The bridge is a quantitative compatibility diagnostic, not an established new generic theory or publication-level novelty claim.
+
+## Claim ceiling
+
+The project may currently claim only the explicit restricted boundary and quantitative compatibility result frozen in CORE.
+
+It may not claim novelty for controlled state equivalence, intervention-sufficient representation, lumpability/closure, the phrase `causal order parameter`, or forced-fast-mode phenomena in general.
+
+A publication-level novelty claim for the bridge proposition remains unresolved and would require a separate theorem-to-theorem prior-art audit.
 
 ## Active branch
 
-`10 – CORE – Haupttheorie / mathematischer Kern`
+`50 – APP-A – Neuronaler Minimalbenchmark`
 
 Status: READY / CHAT UNOPENED.
-Current gate: `CORE Synergetic Sufficiency Boundary 0.1`.
-Prompt: `research/master/prompts/core_synergetic_sufficiency_boundary_0_1.md`.
+Current gate: `Neural Minimal Benchmark 0.1`.
+Prompt: `research/master/prompts/app_a_neural_minimal_benchmark_0_1.md`.
 
-CORE is authorised to test only the frozen mathematical boundary:
+This is a pre-frozen feasibility benchmark, not a novelty test.
 
-1. whether classical slaving assumptions imply response homogeneity along order-parameter fibres for frozen `(U,T,Gamma)`;
-2. a minimal counterexample where passive/unforced reduction is correct but interventions reveal fibre heterogeneity through nominally slaved modes;
-3. if feasible, a quantitative response-error bound tied to fast-mode/slaving error and intervention coupling;
-4. controlled closure analysed separately from response sufficiency.
+Frozen specification:
 
-## Waiting branches
+- factorised linear network `f_{U,v}(x)=v^T Ux`, `d=h=2`;
+- exact states A/B with identical current effective function `w=0` and matched simple norms;
+- two symmetric linear-regression tasks `c_C=e1`, `c_D=e2`;
+- one simultaneous full-batch GD step;
+- learning rate `eta=0.1`;
+- one-step horizon;
+- primary response `w^+`, secondary post-step task loss;
+- exact analytical predictions and float64 numerical tolerances fixed before execution;
+- no retuning if the benchmark fails.
 
+## Waiting / blocked branches
+
+- `10 – CORE`: COMPLETE / FROZEN / WAIT.
 - `20/30/40 – THEORY-*`: UNOPENED.
-- `50/60/70 – APP-*`: UNOPENED and blocked pending CORE return + new MASTER authorisation.
+- `60/70 – APP-*`: UNOPENED.
+- historical reachability: BLOCKED pending APP-A return + new MASTER gate.
+- nonlinear neural scaling / learned coordinates: BLOCKED.
+- power-grid / ODE discovery: BLOCKED.
 - `80 – LIT`: COMPLETE / FROZEN / WAIT.
 - `90 – MANUSCRIPT`: UNOPENED.
 
@@ -72,21 +84,23 @@ CORE is authorised to test only the frozen mathematical boundary:
 
 OK.
 
-The prior-art result is frozen as `RP-002`. CORE may not weaken or reinterpret that audit to create novelty. No effect-bearing application model, parameter set, objective, intervention geometry, horizon, or success criterion has yet been selected or tuned.
+The next benchmark's model, exact states, intervention family, learning rate, horizon, responses, expected values, numerical tolerances, and PASS/FAIL criteria were frozen before execution.
+
+No alternative benchmark or parameter scan is authorised.
 
 ## Branching check
 
 OK.
 
-Exactly one new scientific branch is authorised: CORE. Applications remain unopened. No parallel application work is justified yet because the theorem-level synergetic boundary may still fail or be fully subsumed.
+Exactly one application branch is now authorised. Parallel nonlinear, historical, power-grid, or manuscript work would be premature.
 
 ## Rollback
 
 Latest stable savepoint:
 
-`RP-002 — Prior-Art & Definitions Audit Freeze 0.1`.
+`RP-003 — CORE Synergetic Sufficiency Boundary Freeze 0.1`.
 
-If CORE returns `FAIL` or `SUBSUMED`, MASTER returns to RP-002 and reassesses the programme without reopening the literature audit or retroactively widening claims.
+If APP-A returns `FAIL`, the project returns here. The failed frozen benchmark is retained; it is not repaired by changing the state pair, tasks, learning rate, model, or endpoint.
 
 ## Manuscript
 
@@ -96,22 +110,22 @@ No manuscript claim freeze is justified.
 
 ## Active blocker
 
-Operational only: the authorised CORE chat has not yet been created/executed.
+Operational only: the authorised `50 – APP-A – Neuronaler Minimalbenchmark` chat has not yet executed its frozen task.
 
 ## Next global step
 
 Create the chat:
 
-`10 – CORE – Haupttheorie / mathematischer Kern`
+`50 – APP-A – Neuronaler Minimalbenchmark`
 
 Paste the authorised start text from:
 
-`research/master/prompts/core_synergetic_sufficiency_boundary_0_1.md`
+`research/master/prompts/app_a_neural_minimal_benchmark_0_1.md`
 
 Then enter:
 
 `GO`
 
-After CORE reaches its prescribed `STOP — RETURN TO MASTER`, return to `00 – MASTER` and enter:
+After APP-A reaches `STOP — RETURN TO MASTER`, return to `00 – MASTER` and enter:
 
 `Status?`
