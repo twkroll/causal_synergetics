@@ -5,7 +5,7 @@ Status: COMPLETE / PASS — RESULT FROZEN
 Latest canonical file: `research/app_a/neural_minimal_benchmark_0_1.md`
 Dependencies: `CORE Synergetic Sufficiency Boundary 0.1` COMPLETE / PASS — CLAIM-RESTRICTED
 Canonical implementation/test commit: `649a187125c4ad410e0b16b77accbfacfb577371`
-Canonical result-freeze commit: pending metadata registration after commit creation
+Canonical result-freeze commit: `f5f02c871093129ef012780dbfcbcf55ef4de6f3`
 Next instruction: `RETURN TO MASTER`
 STOP boundary: Do not change the frozen model, state pair, tasks, learning rate, horizon, response metrics, or success criteria; do not open nonlinear, historical-reachability, learned-representation, LoRA, power-grid, or manuscript work without new MASTER authorisation.
 
