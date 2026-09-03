@@ -13,12 +13,12 @@ The project adopts `research/master/PROJECT_GOVERNANCE_0_1.md` as the canonical 
 ### DEC-002 — Git as single source of truth
 Status: STABLE
 
-Repository `twkroll/causal_synergetics` is the canonical persistent project state. Chat context may guide work, but durable status, prompts, decisions, freezes, and results must be reflected in Git when they become canonical.
+Repository `twkroll/causal_synergetics` is the canonical persistent project state.
 
 ### DEC-003 — Lazy chat creation
 Status: STABLE
 
-Specialist chats are created only when MASTER authorises a concrete task. Uncreated chats are classified as `UNOPENED`, not as missing or failed.
+Specialist chats are created only when MASTER authorises a concrete task. Uncreated chats are `UNOPENED`, not failed.
 
 ### DEC-004 — MASTER Baseline Freeze 0.1
 Status: FROZEN
@@ -28,40 +28,33 @@ Rollback point: `RP-001 — MASTER Baseline Freeze 0.1`.
 ### DEC-005 — First scientific activity
 Status: SATISFIED / CLOSED
 
-`Prior-Art & Definitions Audit 0.1` was executed by `80 – LIT – Literatur & Neuheitspositionierung`.
-Result: `PASS — CLAIM-RESTRICTED`.
-Programme action: `RESTRICT / REINTERPRET`.
-Canonical result: `research/literature/prior_art_definitions_audit_0_1.md`.
+`Prior-Art & Definitions Audit 0.1` completed with `PASS — CLAIM-RESTRICTED`; programme action `RESTRICT / REINTERPRET`.
 
 ### DEC-006 — CORE dependency on first literature audit
 Status: SATISFIED / CLOSED
 
-CORE remained unopened until the first definitions/prior-art audit was frozen.
+CORE remained unopened until the literature audit was frozen.
 
 ### DEC-007 — Prior-Art & Definitions Audit Freeze 0.1
 Status: FROZEN
 
 Rollback point: `RP-002 — Prior-Art & Definitions Audit Freeze 0.1`.
-Audit deliverable commit: `e21f3086657b9eb89f5b9ffa5ffdbdc4ba8b5b0d`.
+Canonical commit: `e21f3086657b9eb89f5b9ffa5ffdbdc4ba8b5b0d`.
 
 ### DEC-008 — Generic controlled-state novelty claims demoted
 Status: FROZEN
 
-The programme must not claim generic novelty for intervention/action-conditioned future responses as state descriptors, equivalence by identical controlled/interventional behavior, low-dimensional intervention-sufficient representations, or dynamic closure / controlled lumpability as a generic requirement.
-
-`Causal order parameter`, `interventional slaving`, local causal atlases, and controlled state preparation remain restricted project terms / OPEN directions, not established novelty claims.
+No generic novelty claim is allowed for intervention-conditioned future responses, controlled/interventional behavioral equivalence, intervention-sufficient low-dimensional state representations, or controlled closure/lumpability. `Causal order parameter`, `interventional slaving`, local causal atlases, and controlled state preparation remain restricted project terms / OPEN directions.
 
 ### DEC-009 — Surviving CORE boundary
 Status: SATISFIED / CLOSED
 
-CORE was authorised to test only the theorem-level relationship between a pre-existing synergetic order-parameter/slaving reduction and a frozen intervention-relative response sufficiency / controlled-closure criterion.
-
-Canonical prompt: `research/master/prompts/core_synergetic_sufficiency_boundary_0_1.md`.
+CORE tested only the theorem-level relationship between pre-existing synergetic slaving/order-parameter structure and frozen intervention-relative sufficiency/closure.
 
 ### DEC-010 — Applications blocked pending CORE
 Status: SATISFIED / CLOSED
 
-No application branch opened before CORE returned and MASTER re-integrated the result.
+No application branch opened before CORE returned and MASTER integrated the result.
 
 ### DEC-011 — CORE Synergetic Sufficiency Boundary Freeze 0.1
 Status: FROZEN
@@ -70,60 +63,74 @@ Canonical result: `research/core/synergetic_sufficiency_boundary_0_1.md`.
 Canonical result commit: `0ebd50e5c8c072cf59ae86502a25b97e78c4722f`.
 Decision: `PASS — CLAIM-RESTRICTED / NO NOVELTY PROMOTION`.
 
-Frozen central conclusions:
-
-1. For the frozen full `q(·)` response, exact fibre response homogeneity is equivalent to controlled projectability / exact controlled closure; this is `SUBSUMED` prior-art structure.
-2. Classical unforced slaving alone does not imply controlled response sufficiency.
-3. The minimal scalar slow/fast counterexample `q̇=ur`, `ṙ=-λr+u` has exact passive slaving but controlled response failure.
-4. Exact model-specific finite-horizon bounds and a general comparison/ISS-style bridge bound connect fast relaxation, slaving defect, intervention leakage, and finite-horizon response error.
-5. The bridge result is useful as a quantitative compatibility diagnostic but is not promoted as publication-level novel control theory.
+Frozen conclusions include: exact full-trajectory fibre sufficiency iff controlled projectability/closure (`SUBSUMED`), classical unforced slaving alone does not imply controlled sufficiency, the minimal witness `q̇=ur`, `ṙ=-λr+u`, and exact/general finite-horizon bridge bounds without novelty promotion.
 
 Rollback point: `RP-003 — CORE Synergetic Sufficiency Boundary Freeze 0.1`.
 
-The CORE result may not be retrospectively strengthened by widening the literature claim boundary or changing its frozen response definition.
+### DEC-012 — Neural Minimal Benchmark 0.1
+Status: SATISFIED / CLOSED
 
-### DEC-012 — Neural Minimal Benchmark 0.1 authorised
+The pre-frozen factorised-linear benchmark was executed without retuning.
+
+Canonical result: `research/app_a/neural_minimal_benchmark_0_1.md`.
+Implementation/test commit: `649a187125c4ad410e0b16b77accbfacfb577371`.
+Result-freeze commit: `f5f02c871093129ef012780dbfcbcf55ef4de6f3`.
+Decision: `PASS — RESULT FROZEN / NO NOVELTY PROMOTION`.
+
+Frozen observations:
+
+- identical current function `w_A=w_B=(0,0)`;
+- matched simple norms;
+- Task C gives A the lower one-step loss (`0.32` vs `0.405`);
+- Task D gives B the lower one-step loss (`0.32` vs `0.405`);
+- symmetric advantage magnitude `0.085`;
+- analytic/autograd maximum observed component difference `0.0` in float64;
+- frozen local tests: `4 passed`;
+- no alternative configuration was tried.
+
+### DEC-013 — Historical reachability and nonlinear scaling were blocked pending minimal benchmark
+Status: SATISFIED / CLOSED
+
+The minimal benchmark has now returned. This decision does not automatically open nonlinear scaling or learned coordinates.
+
+### DEC-014 — Neural Minimal Benchmark Result Freeze 0.1
+Status: FROZEN
+
+The APP-A benchmark result is accepted as canonical and may not be retrospectively improved by changing states, tasks, learning rate, optimizer, horizon, or response metric.
+
+Rollback point: `RP-004 — Neural Minimal Benchmark Result Freeze 0.1`.
+
+The allowed interpretation remains limited to the exact frozen factorised-linear benchmark; no novelty or nonlinear/general neural claim is promoted.
+
+### DEC-015 — Neural Historical Reachability 0.1 authorised
 Status: ACTIVE / FROZEN SPECIFICATION
 
-The next scientific activity is assigned to:
+The next scientific activity remains in:
 
 `50 – APP-A – Neuronaler Minimalbenchmark`.
 
 Canonical prompt:
-`research/master/prompts/app_a_neural_minimal_benchmark_0_1.md`.
+`research/master/prompts/app_a_neural_historical_reachability_0_1.md`.
 
-Purpose: create the smallest exact analytical + numerical neural benchmark showing that two parameter states with the same current function and matched simple norms can respond differently to the same frozen one-step learning intervention.
+One and only one historical construction is frozen before execution:
 
-This benchmark is a feasibility scaffold only and carries `NO NOVELTY PROMOTION`.
+- common hidden initialization `U_0=0`;
+- frozen main readout `v=e1`;
+- temporary auxiliary readout `a=e2`;
+- symmetric history targets `c_A=e1`, `c_B=e2`;
+- exactly one gradient step on `U` only;
+- `eta_hist=1`;
+- no momentum, noise, weight decay, stochasticity, optimizer state, or extra steps;
+- expected exact endpoints are the previously frozen `U_A` and `U_B`;
+- the main function must remain `w=0` before and after preparation;
+- the previously frozen C/D benchmark must then reproduce without modification.
 
-The following are frozen before execution:
+No second historical candidate is allowed if this construction fails.
 
-- factorised linear network `f_{U,v}(x)=v^T Ux`, `d=h=2`;
-- exact state pair A/B;
-- symmetric tasks `c_C=e1`, `c_D=e2`;
-- one simultaneous full-batch GD step;
-- `eta=0.1`;
-- one-step horizon;
-- primary response `w^+` and secondary response post-step task loss;
-- analytical expected values and numerical tolerances;
-- PASS/FAIL criteria.
-
-No parameter, task, optimizer, model, horizon, or response search is allowed after execution begins.
-
-### DEC-013 — Historical reachability and nonlinear scaling remain blocked
+### DEC-016 — Nonlinear scaling remains blocked
 Status: ACTIVE
 
-Even if Neural Minimal Benchmark 0.1 passes, it does not authorise:
-
-- historical training construction of the state pair;
-- nonlinear networks;
-- learned response/plasticity coordinates;
-- NTK/LoRA/adapter comparisons;
-- multi-step or real-dataset experiments;
-- power-grid work;
-- manuscript drafting.
-
-Each requires a new MASTER gate after the frozen minimal benchmark returns.
+Even if Neural Historical Reachability 0.1 passes, it does not automatically authorise nonlinear networks, learned response/plasticity coordinates, NTK/LoRA/adapter comparisons, power-grid work, controlled state preparation, or manuscript drafting. MASTER must perform a new `Status?` integration first.
 
 ## Rollback points
 
@@ -135,26 +142,31 @@ Governance-only pre-scientific baseline.
 ### RP-002 — Prior-Art & Definitions Audit Freeze 0.1
 Status: STABLE
 
-Contains the frozen claim restriction and surviving synergetic boundary.
+Frozen claim restriction and surviving synergetic boundary.
 
 ### RP-003 — CORE Synergetic Sufficiency Boundary Freeze 0.1
 Status: STABLE
 
-Contains the theorem-level boundary, minimal slow/fast counterexample, quantitative bridge diagnostic, and explicit `NO NOVELTY PROMOTION` ceiling.
+Frozen theorem-level boundary and quantitative diagnostic.
 
-If the neural benchmark fails, the project returns here without retuning the benchmark or altering the prior CORE/LIT freezes.
+### RP-004 — Neural Minimal Benchmark Result Freeze 0.1
+Status: STABLE
+
+Frozen exact linear neural benchmark with symmetric one-step adaptation reversal and no retuning.
+
+If the historical-reachability gate fails, return here. Do not repair it by changing the historical protocol.
 
 ## Branch registry
 
 | Chat / branch | Status | Current gate | Dependency |
 |---|---|---|---|
-| 00 – MASTER | ACTIVE / WAIT | Post-CORE integration complete | APP-A return |
-| 10 – CORE | COMPLETE / FROZEN / WAIT | CORE Synergetic Sufficiency Boundary 0.1 | RETURN TO MASTER satisfied |
+| 00 – MASTER | ACTIVE / WAIT | Post-APP-A integration complete | historical APP-A return |
+| 10 – CORE | COMPLETE / FROZEN / WAIT | CORE Synergetic Sufficiency Boundary 0.1 | satisfied |
 | 20 – THEORY-A | UNOPENED | none | MASTER authorisation |
 | 30 – THEORY-B | UNOPENED | none | MASTER authorisation |
 | 40 – THEORY-C | UNOPENED | none | MASTER authorisation |
-| 50 – APP-A | READY / CHAT UNOPENED | Neural Minimal Benchmark 0.1 | CORE result satisfied |
+| 50 – APP-A | READY / AWAIT GO | Neural Historical Reachability 0.1 | minimal benchmark PASS/FROZEN |
 | 60 – APP-B | UNOPENED | none | MASTER authorisation |
 | 70 – APP-C | UNOPENED | none | MASTER authorisation |
-| 80 – LIT | COMPLETE / FROZEN / WAIT | Prior-Art & Definitions Audit 0.1 | RETURN TO MASTER satisfied |
-| 90 – MANUSCRIPT | UNOPENED | none | frozen scientific results + MASTER authorisation |
+| 80 – LIT | COMPLETE / FROZEN / WAIT | Prior-Art & Definitions Audit 0.1 | satisfied |
+| 90 – MANUSCRIPT | UNOPENED | none | frozen results + MASTER authorisation |
