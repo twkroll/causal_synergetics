@@ -1,6 +1,6 @@
 # Decision & Branch Log — causal_synergetics
 
-Last updated: 2026-09-03
+Last updated: 2026-09-04
 Governance: `PROJECT_GOVERNANCE_0_1.md`
 
 ## Decisions
@@ -70,67 +70,99 @@ Rollback point: `RP-003 — CORE Synergetic Sufficiency Boundary Freeze 0.1`.
 ### DEC-012 — Neural Minimal Benchmark 0.1
 Status: SATISFIED / CLOSED
 
-The pre-frozen factorised-linear benchmark was executed without retuning.
-
 Canonical result: `research/app_a/neural_minimal_benchmark_0_1.md`.
 Implementation/test commit: `649a187125c4ad410e0b16b77accbfacfb577371`.
 Result-freeze commit: `f5f02c871093129ef012780dbfcbcf55ef4de6f3`.
 Decision: `PASS — RESULT FROZEN / NO NOVELTY PROMOTION`.
 
-Frozen observations:
-
-- identical current function `w_A=w_B=(0,0)`;
-- matched simple norms;
-- Task C gives A the lower one-step loss (`0.32` vs `0.405`);
-- Task D gives B the lower one-step loss (`0.32` vs `0.405`);
-- symmetric advantage magnitude `0.085`;
-- analytic/autograd maximum observed component difference `0.0` in float64;
-- frozen local tests: `4 passed`;
-- no alternative configuration was tried.
+Frozen observations include identical current function, matched simple norms, symmetric reversal of one-step adaptation preference, exact analytic/autograd agreement, local `4 passed`, and no retuning.
 
 ### DEC-013 — Historical reachability and nonlinear scaling were blocked pending minimal benchmark
 Status: SATISFIED / CLOSED
 
-The minimal benchmark has now returned. This decision does not automatically open nonlinear scaling or learned coordinates.
+The minimal benchmark returned before either extension was opened.
 
 ### DEC-014 — Neural Minimal Benchmark Result Freeze 0.1
 Status: FROZEN
 
-The APP-A benchmark result is accepted as canonical and may not be retrospectively improved by changing states, tasks, learning rate, optimizer, horizon, or response metric.
-
 Rollback point: `RP-004 — Neural Minimal Benchmark Result Freeze 0.1`.
 
-The allowed interpretation remains limited to the exact frozen factorised-linear benchmark; no novelty or nonlinear/general neural claim is promoted.
+The exact linear benchmark may not be retrospectively improved by changing states, tasks, learning rate, optimizer, horizon, or response metric.
 
-### DEC-015 — Neural Historical Reachability 0.1 authorised
+### DEC-015 — Neural Historical Reachability 0.1
+Status: SATISFIED / CLOSED
+
+The single pre-frozen historical construction was executed without retuning.
+
+Canonical result: `research/app_a/neural_historical_reachability_0_1.md`.
+Historical test-addition commit: `ad9cc18a0519ffcfc4e6bc2e919e82f40bf54208`.
+Historical implementation commit: `e342ef5c5cefae30df45e23bc667f149e818238c`.
+Canonical result-freeze commit: `0e345fbb7b5a8ccc3c3f8bd4c958132c1b130d7c`.
+Decision: `PASS — RESULT FROZEN / NO NOVELTY PROMOTION`.
+
+Frozen conclusions:
+
+1. Both histories start from the same `U_0=0` and fixed main readout `v=e1`.
+2. A fixed auxiliary readout `a=e2` with symmetric targets `e1/e2` and exactly one `U`-only gradient step at `eta_hist=1` reaches the previously frozen A/B states exactly.
+3. The main function remains exactly `w=0` before and after preparation.
+4. Historical analytical/autograd discrepancy is `0.0` in float64.
+5. The previously frozen C/D evaluation reproduces unchanged.
+6. Combined frozen local tests report `8 passed`.
+7. No alternative history was tried.
+
+### DEC-016 — Nonlinear scaling remained blocked pending historical return
+Status: SATISFIED / CLOSED
+
+The historical gate returned before nonlinear work was authorised.
+
+### DEC-017 — Neural Historical Reachability Result Freeze 0.1
+Status: FROZEN
+
+The historical result is accepted as canonical and may not be retrospectively naturalised by changing the auxiliary readout, targets, learning rate, initialization, number of steps, or optimizer semantics.
+
+Rollback point: `RP-005 — Neural Historical Reachability Result Freeze 0.1`.
+
+Claim ceiling: reachability is established only for the explicit symmetric auxiliary-gradient preparation mechanism. Ordinary single-head SGD reachability, generic SGD reachability, necessity/uniqueness, and realistic training-history claims remain OPEN / unestablished.
+
+### DEC-018 — Neural Nonlinear ReLU Pilot 0.1 authorised
 Status: ACTIVE / FROZEN SPECIFICATION
 
-The next scientific activity remains in:
+The next scientific activity remains in the existing chat:
 
 `50 – APP-A – Neuronaler Minimalbenchmark`.
 
 Canonical prompt:
-`research/master/prompts/app_a_neural_historical_reachability_0_1.md`.
+`research/master/prompts/app_a_neural_nonlinear_relu_pilot_0_1.md`.
 
-One and only one historical construction is frozen before execution:
+Purpose: test a single pre-specified nonlinear extension using a bias-free two-unit ReLU network, without searching for a favourable nonlinear example.
 
-- common hidden initialization `U_0=0`;
-- frozen main readout `v=e1`;
-- temporary auxiliary readout `a=e2`;
-- symmetric history targets `c_A=e1`, `c_B=e2`;
-- exactly one gradient step on `U` only;
-- `eta_hist=1`;
-- no momentum, noise, weight decay, stochasticity, optimizer state, or extra steps;
-- expected exact endpoints are the previously frozen `U_A` and `U_B`;
-- the main function must remain `w=0` before and after preparation;
-- the previously frozen C/D benchmark must then reproduce without modification.
+Frozen before execution:
 
-No second historical candidate is allowed if this construction fails.
+- model `f_{U,v}(x)=v^T ReLU(Ux)`, `d=h=2`, no bias;
+- State A: `U_A=[[2,0],[0,1]]`, `v_A=(1/2,1)`;
+- State B: `U_B=[[1,0],[0,2]]`, `v_B=(1,1/2)`;
+- global current-function equality by positive homogeneity;
+- matched simple norms;
+- Task C: `x=(1,-1)`, target `2`;
+- Task D: `x=(-1,1)`, target `2`;
+- exactly one simultaneous full-batch GD step on `(U,v)` at `eta=0.1`;
+- ordered probe set `[(1,-1),(-1,1),(1,1),(-1,-1)]`;
+- frozen response vectors and post-step losses;
+- absolute tolerance `1e-12`;
+- no alternative ReLU scaling/state pair if the pilot fails.
 
-### DEC-016 — Nonlinear scaling remains blocked
+Frozen expected losses:
+
+- Task C: A `0.14045`, B `0.2312`;
+- Task D: A `0.2312`, B `0.14045`;
+- symmetric directed advantage `0.09075`.
+
+This gate carries `NO NOVELTY PROMOTION`.
+
+### DEC-019 — Learned coordinates and broader scaling remain blocked
 Status: ACTIVE
 
-Even if Neural Historical Reachability 0.1 passes, it does not automatically authorise nonlinear networks, learned response/plasticity coordinates, NTK/LoRA/adapter comparisons, power-grid work, controlled state preparation, or manuscript drafting. MASTER must perform a new `Status?` integration first.
+Even if the nonlinear ReLU pilot passes, it does not automatically authorise learned response/plasticity coordinates, multi-step or real-data scaling, realistic nonlinear histories, NTK/LoRA/adapter comparisons, power-grid work, controlled state preparation, or manuscript drafting. MASTER must perform a new `Status?` integration first.
 
 ## Rollback points
 
@@ -154,18 +186,23 @@ Status: STABLE
 
 Frozen exact linear neural benchmark with symmetric one-step adaptation reversal and no retuning.
 
-If the historical-reachability gate fails, return here. Do not repair it by changing the historical protocol.
+### RP-005 — Neural Historical Reachability Result Freeze 0.1
+Status: STABLE
+
+Frozen exact auxiliary-gradient history from common initialization to the benchmark pair while preserving the main function.
+
+If the nonlinear ReLU pilot fails, return here. Do not repair it by changing the nonlinear state pair, tasks, learning rate, probes, horizon, or response definition.
 
 ## Branch registry
 
 | Chat / branch | Status | Current gate | Dependency |
 |---|---|---|---|
-| 00 – MASTER | ACTIVE / WAIT | Post-APP-A integration complete | historical APP-A return |
+| 00 – MASTER | ACTIVE / WAIT | Post-history integration complete | nonlinear APP-A return |
 | 10 – CORE | COMPLETE / FROZEN / WAIT | CORE Synergetic Sufficiency Boundary 0.1 | satisfied |
 | 20 – THEORY-A | UNOPENED | none | MASTER authorisation |
 | 30 – THEORY-B | UNOPENED | none | MASTER authorisation |
 | 40 – THEORY-C | UNOPENED | none | MASTER authorisation |
-| 50 – APP-A | READY / AWAIT GO | Neural Historical Reachability 0.1 | minimal benchmark PASS/FROZEN |
+| 50 – APP-A | READY / AWAIT GO | Neural Nonlinear ReLU Pilot 0.1 | history PASS/FROZEN |
 | 60 – APP-B | UNOPENED | none | MASTER authorisation |
 | 70 – APP-C | UNOPENED | none | MASTER authorisation |
 | 80 – LIT | COMPLETE / FROZEN / WAIT | Prior-Art & Definitions Audit 0.1 | satisfied |
