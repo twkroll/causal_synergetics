@@ -1,11 +1,11 @@
 # STATUS — 00 – MASTER – Projektplan & Status
 
-Current Gate: `Neural Response Coordinate Nuisance-Invariance Specification Gate 0.1`
-Status: READY / AWAIT NAMED GATE
+Current Gate: `Post-Nuisance-Specification Integration / Neural Response Coordinate Nuisance-Invariance Pilot 0.1`
+Status: COMPLETE / WAIT FOR APP-A
 Latest canonical file: `research/master/project_status.md`
-Dependencies: `Neural Response Coordinate WEAK Integration Gate 0.1` COMPLETE / REVISE / FROZEN
-Next instruction: User remains in `00 – MASTER – Projektplan & Status` and enters exactly `Neural Response Coordinate Nuisance-Invariance Specification Gate 0.1`.
-STOP boundary: MASTER must not execute a new response-coordinate benchmark, inspect a new state family, reopen APP-A, or open nonlinear/multi-step/real-data/realistic-history/LoRA/power-grid/state-preparation/literature/manuscript work before the nuisance-invariance specification gate is completed. No prior WEAK result may be repaired or reinterpreted as PASS.
+Dependencies: `Neural Response Coordinate Nuisance-Invariance Specification Gate 0.1` COMPLETE / SPECIFICATION FROZEN
+Next instruction: User returns to existing `50 – APP-A – Neuronaler Minimalbenchmark` and enters exactly `GO`; that chat must execute only `research/master/prompts/app_a_neural_response_coordinate_nuisance_invariance_pilot_0_1.md`.
+STOP boundary: MASTER must not execute the nuisance pilot itself, change any frozen gauge/state/split/coordinate/baseline/invariance-metric/threshold, or open nonlinear/multi-step/real-data/realistic-history/LoRA/power-grid/state-preparation/literature/manuscript work before APP-A returns.
 
 ## Freeze state
 
@@ -20,40 +20,45 @@ STOP boundary: MASTER must not execute a new response-coordinate benchmark, insp
 - Neural Response Coordinate Specification 0.1: FROZEN
 - Neural Response Coordinate Pilot 0.1: FROZEN / WEAK — RESULT FROZEN
 - Neural Response Coordinate WEAK Integration 0.1: FROZEN / REVISE — CLAIM-RESTRICTED
-- Latest rollback point: `RP-010 — Neural Response Coordinate WEAK Integration Freeze 0.1`
+- Neural Response Coordinate Nuisance-Invariance Specification 0.1: FROZEN / APP-A READY
+- Latest rollback point: `RP-011 — Neural Response Coordinate Nuisance-Invariance Specification Freeze 0.1`
 
 ## Current scientific state
 
-The frozen response-aware 2D coordinate predicts the held-out one-step interventions essentially exactly in the specified synthetic family, but an equal-dimensional raw-parameter PCA baseline is also essentially exact. The result therefore establishes compact predictability but not material response-aware advantage over equally compact raw-state geometry.
+The prior response coordinate remains a frozen WEAK result: exact held-out prediction in the original synthetic family but essentially no advantage over equal-dimensional raw-parameter PCA.
 
-The WEAK integration decision is `REVISE`, not `STOP`: predictive success justifies one further discriminator, but the unresolved comparator failure must be isolated before broader neural claims.
+The new nuisance-control benchmark is now fully pre-specified around an independently justified hidden-basis gauge symmetry. For orthogonal hidden rotations `(U,v)->(QU,Qv)`, current function and exact one-step response operator `P=U^T U+||v||^2 I` are invariant while raw parameters change nontrivially.
+
+The frozen pilot uses one canonical `SO(2)` subgroup, eight equally spaced gauge angles, deterministic latent/nuisance parity partitions, the same 2D response-PCA coordinate, naive 2D raw PCA, and a symmetry-aware 2D Gram-PCA strong control.
+
+No nuisance-pilot result exists yet.
 
 ## Claim ceiling
 
 No novelty promotion is authorised.
 
-The project may state the exact frozen predictive success and exact near-tie with raw PCA. It may not claim a generally useful causal/plasticity coordinate, special response-aware value beyond raw-state geometry, generic nonlinear scaling, realistic SGD-history relevance, LoRA/transformer or real-data usefulness, controlled state preparation, or established causal synergetics.
+The project may state the exact prior WEAK result and that a model-justified gauge-invariance discriminator has been pre-specified. It may not claim response-aware superiority, useful gauge invariance, generic nonlinear scaling, realistic SGD-history relevance, LoRA/transformer or real-data usefulness, controlled state preparation, or established causal synergetics before execution.
+
+Even a future PASS may claim only gauge-invariant predictive advantage over naive equal-dimensional raw-parameter PCA in this frozen synthetic control. It may not claim superiority over explicitly symmetry-aware raw-state quotients because B3 Gram-PCA is a mandatory strong control.
 
 ## Branch state
 
-- 00 – MASTER: READY — Neural Response Coordinate Nuisance-Invariance Specification Gate 0.1
+- 00 – MASTER: COMPLETE / WAIT FOR APP-A
 - 10 – CORE: COMPLETE / FROZEN / WAIT
 - 20/30/40 – THEORY-*`: UNOPENED
-- 50 – APP-A: COMPLETE / FROZEN / WAIT
+- 50 – APP-A: READY / AWAIT GO — Neural Response Coordinate Nuisance-Invariance Pilot 0.1
 - 60/70 – APP-*`: UNOPENED
 - 80 – LIT: COMPLETE / FROZEN / WAIT
 - 90 – MANUSCRIPT: UNOPENED
 
 ## Active blocker
 
-Governance/scientific-design only: MASTER must determine whether exactly one independently justified nuisance/reparameterisation-invariance benchmark can be frozen without effect-guided family selection.
-
-If no scientifically neutral construction can be specified, the response-coordinate direction must be parked rather than repaired by search.
+Operational only: APP-A has not yet executed the frozen nuisance-invariance pilot.
 
 ## Return protocol
 
-Execute the named gate in this chat:
+After APP-A reaches `STOP — RETURN TO MASTER`, the next MASTER command is:
 
-`Neural Response Coordinate Nuisance-Invariance Specification Gate 0.1`
+`Status?`
 
-STOP — AWAIT NAMED GATE
+STOP — WAIT
