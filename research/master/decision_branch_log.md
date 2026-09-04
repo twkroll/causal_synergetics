@@ -72,7 +72,7 @@ Status: SATISFIED / CLOSED
 Canonical result: `research/app_a/neural_minimal_benchmark_0_1.md`.
 Implementation/test commit: `649a187125c4ad410e0b16b77accbfacfb577371`.
 Result-freeze commit: `f5f02c871093129ef012780dbfcbcf55ef4de6f3`.
-Decision: `PASS — RESULT FROZEN / NO NOVELTY PROMOTION`.
+Decision: **PASS — RESULT FROZEN / NO NOVELTY PROMOTION**.
 
 ### DEC-013 — Historical reachability and nonlinear scaling blocked pending minimal benchmark
 Status: SATISFIED / CLOSED
@@ -91,7 +91,7 @@ Status: SATISFIED / CLOSED
 Canonical result: `research/app_a/neural_historical_reachability_0_1.md`.
 Implementation commit: `e342ef5c5cefae30df45e23bc667f149e818238c`.
 Result-freeze commit: `0e345fbb7b5a8ccc3c3f8bd4c958132c1b130d7c`.
-Decision: `PASS — RESULT FROZEN / NO NOVELTY PROMOTION`.
+Decision: **PASS — RESULT FROZEN / NO NOVELTY PROMOTION**.
 
 ### DEC-016 — Nonlinear scaling blocked pending historical return
 Status: SATISFIED / CLOSED
@@ -111,7 +111,7 @@ Canonical result: `research/app_a/neural_nonlinear_relu_pilot_0_1.md`.
 Implementation commit: `b5ba5da30d869d160eab0a7801bcfa324860b19a`.
 Test commit: `3b42bf8c9a3e1a56a031654576b9c9f25b70bdbc`.
 Result-freeze commit: `ff9f575839848e80705cd73062d431b20ca4eb10`.
-Decision: `PASS — RESULT FROZEN / NO NOVELTY PROMOTION`.
+Decision: **PASS — RESULT FROZEN / NO NOVELTY PROMOTION**.
 
 ### DEC-019 — Learned coordinates and broader scaling blocked pending ReLU return
 Status: SATISFIED / CLOSED
@@ -286,6 +286,37 @@ Rollback point: `RP-013 — Neural Response Coordinate Nuisance FAIL Integration
 
 The next programme gate is not selected inside this integration. MASTER must reconstruct the full frozen project via `Status?` and authorize exactly one next global step outside the parked response-coordinate direction.
 
+### DEC-038 — Post-coordinate programme reselection
+Status: STABLE / SELECTED
+
+After full MASTER reconstruction from `RP-013`, the programme selects cross-domain transfer before further neural depth.
+
+Rationale:
+
+- the neural response-coordinate direction is parked and may not be repaired;
+- the strongest branch-independent result is the CORE controlled-ODE boundary;
+- all empirical application evidence so far is neural/synthetic;
+- a physically distinct controlled ODE domain has higher programme-level information value than another neural scale-up;
+- controlled state preparation and manuscript work remain downstream.
+
+The selected second-domain direction is a minimal power-grid / swing-dynamics feasibility test. This selection does not itself assert any power-grid result.
+
+### DEC-039 — Power-Grid Minimal Benchmark Feasibility & Specification Gate 0.1 authorised
+Status: ACTIVE / MASTER-SPECIFICATION ONLY
+
+The single next gate is:
+
+`Power-Grid Minimal Benchmark Feasibility & Specification Gate 0.1`.
+
+Canonical prompt:
+`research/master/prompts/master_power_grid_minimal_benchmark_feasibility_specification_gate_0_1.md`.
+
+The gate must freeze exactly one physically justified model/topology/parameter set, passive macro map, intervention family, horizon, state construction, baselines, numerical method, exhaustive PASS/WEAK/NULL/FAIL criteria and claim ceiling before any execution.
+
+`60 – APP-B` remains `UNOPENED` until and unless this MASTER gate returns `SPECIFICATION FROZEN / APP-B READY`.
+
+No power-grid simulation, alternative-topology search, APP-A reopening, controlled state preparation, literature or manuscript work is authorised in parallel.
+
 ## Rollback points
 
 - `RP-001 — MASTER Baseline Freeze 0.1` — STABLE.
@@ -308,13 +339,13 @@ No prior freeze may be weakened. The parked coordinate direction may not be reop
 
 | Chat / branch | Status | Current gate | Dependency |
 |---|---|---|---|
-| 00 – MASTER | COMPLETE / AWAIT `Status?` | response-coordinate STOP integration complete | full programme reselection |
+| 00 – MASTER | READY | Power-Grid Minimal Benchmark Feasibility & Specification Gate 0.1 | `RP-013` stable |
 | 10 – CORE | COMPLETE / FROZEN / WAIT | CORE Synergetic Sufficiency Boundary 0.1 | satisfied |
 | 20 – THEORY-A | UNOPENED | none | MASTER authorisation |
 | 30 – THEORY-B | UNOPENED | none | MASTER authorisation |
 | 40 – THEORY-C | UNOPENED | none | MASTER authorisation |
 | 50 – APP-A | PARKED / FROZEN / WAIT | response-coordinate direction parked | new independent MASTER question required |
-| 60 – APP-B | UNOPENED | none | MASTER authorisation |
+| 60 – APP-B | UNOPENED | none | successful power-grid specification freeze required |
 | 70 – APP-C | UNOPENED | none | MASTER authorisation |
 | 80 – LIT | COMPLETE / FROZEN / WAIT | Prior-Art & Definitions Audit 0.1 | satisfied |
 | 90 – MANUSCRIPT | UNOPENED | none | frozen results + MASTER authorisation |
