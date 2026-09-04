@@ -1,8 +1,8 @@
 # Project Status — causal_synergetics
 
-Version: 1.3
+Version: 1.4
 Date: 2026-09-04
-Overall status: RESPONSE-COORDINATE DIRECTION PARKED / MASTER STATUS SELECTION REQUIRED
+Overall status: POWER-GRID FEASIBILITY SPECIFICATION READY / RESPONSE-COORDINATE DIRECTION PARKED
 Governance status: FROZEN v0.1
 Latest rollback point: `RP-013 — Neural Response Coordinate Nuisance FAIL Integration Freeze 0.1`
 
@@ -21,68 +21,105 @@ The programme treats causal synergetics as a proposed research field to be teste
 - `Neural Nonlinear ReLU Pilot 0.1`: PASS — RESULT FROZEN.
 - `Neural Vertical Slice Go/Revise/Stop Gate 0.1`: GO — CLAIM-RESTRICTED.
 - `Neural Response Coordinate Pilot 0.1`: WEAK — RESULT FROZEN.
-- `Neural Response Coordinate WEAK Integration Gate 0.1`: REVISE — CLAIM-RESTRICTED.
 - `Neural Response Coordinate Nuisance-Invariance Pilot 0.1`: FAIL — RESULT FROZEN / SPECIFICATION CLASSIFICATION GAP.
-- `Neural Response Coordinate Nuisance-Invariance FAIL Integration Gate 0.1`: **STOP / PARK RESPONSE-COORDINATE DIRECTION — CLAIM-RESTRICTED / NO NOVELTY PROMOTION**.
+- `Neural Response Coordinate Nuisance-Invariance FAIL Integration Gate 0.1`: STOP / PARK RESPONSE-COORDINATE DIRECTION.
 
-## Frozen coordinate-direction conclusion
+All prior claim ceilings remain controlling.
 
-Canonical integration memo:
-`research/master/neural_response_coordinate_nuisance_fail_integration_0_1.md`.
+## Frozen neural conclusion
 
-Direct frozen observations remain:
+The neural response-coordinate direction is parked under `RP-013`.
 
-- response-aware 2D coordinate predicts the frozen held-out gauge-control responses exactly and is numerically gauge invariant;
-- naive equal-dimensional raw-parameter PCA collapses under held-out gauge orientations;
-- an explicitly gauge-invariant equal-dimensional Gram-PCA representation remains exactly predictive and invariant;
-- the frozen N0/classifier is non-total on the realised metric vector, so the nuisance pilot cannot be retroactively labelled PASS/WEAK/NULL;
-- the earlier non-nuisance response-coordinate pilot remains independently WEAK because equal-dimensional raw PCA was already nearly exact there.
+Direct frozen observations remain valid, including exact gauge-invariant held-out prediction by the response coordinate, failure of naive raw PCA under held-out gauge orientation, exact performance of the symmetry-aware Gram-PCA control, and the non-total frozen N0/classifier.
 
-MASTER therefore parks further response-coordinate/null/nuisance benchmark construction. A prospective orbit-level null repair was rejected because it would have low incremental scientific value and would not alter the strongest comparator ceiling set by the successful symmetry-aware Gram-PCA control.
+The parked direction may not be reopened to repair or relabel the failed nuisance gate.
 
-This does not stop the overall programme and does not invalidate the frozen CORE, linear, history or ReLU results.
+## Branch-independent scientific base
 
-## Current claim ceiling
+The strongest branch-independent result remains the CORE controlled-ODE boundary:
 
-The project may state only the exact frozen LIT/CORE/neural results and the parked status of the response-coordinate direction.
+- passive/unforced slaving alone does not imply intervention-relative response sufficiency;
+- exact full-trajectory fibre response homogeneity is controlled projectability/closure under the frozen response definition;
+- the CORE includes a minimal analytical counterexample and finite-horizon mismatch bounds;
+- these results remain claim-restricted and do not establish novelty of controlled equivalence or intervention-sufficient state concepts.
 
-It may not claim:
+## New programme selection
 
-- a generally useful low-dimensional causal/plasticity coordinate;
-- unique response-specific information beyond symmetry-aware raw-state quotients;
-- generic nonlinear or multi-step scaling;
-- ordinary/realistic SGD-history reachability;
-- LoRA/transformer or real-data usefulness;
-- controlled state preparation as an established capability;
-- field-level causal-synergetics novelty.
+After full MASTER reconstruction from `RP-013`, the next global direction is a second-domain transfer test rather than further neural repair.
+
+Selected gate:
+
+`Power-Grid Minimal Benchmark Feasibility & Specification Gate 0.1`.
+
+Canonical prompt:
+`research/master/prompts/master_power_grid_minimal_benchmark_feasibility_specification_gate_0_1.md`.
+
+This is MASTER-only and specification-first. It must determine whether exactly one minimal, physically justified power-system benchmark can be frozen before any result inspection.
+
+The intended scientific question is whether a pre-declared passive/macroscopic description can be adequate for nominal/unforced behaviour yet fail to predict a frozen class of load/control interventions, or exhibit a bounded finite-horizon mismatch, in a physically distinct controlled ODE system.
+
+No power-grid simulation or result exists yet.
+
+## Why power grid is selected now
+
+- It is physically distinct from the completed synthetic neural branch.
+- Standard swing/network dynamics fit the controlled-ODE structure of the frozen CORE without relying on learned response coordinates.
+- A second-domain result has higher value for programme coherence than another neural scale-up after the coordinate direction was parked.
+- Controlled state preparation remains downstream and would be premature before a second-domain intervention-sufficiency test.
+- Manuscript work remains premature because no cross-domain result is yet frozen.
+
+## Active gate
+
+`00 – MASTER – Projektplan & Status`
+
+Current gate: `Power-Grid Minimal Benchmark Feasibility & Specification Gate 0.1`.
+Status: READY / AWAIT NAMED GATE.
+
+The gate must select and freeze exactly one candidate or stop/park the direction. It may not compare multiple topologies by effect size.
 
 ## Branch state
 
-- `00 – MASTER`: COMPLETE / AWAIT `Status?`.
+- `00 – MASTER`: READY — power-grid feasibility/specification.
 - `10 – CORE`: COMPLETE / FROZEN / WAIT.
 - `50 – APP-A`: PARKED / FROZEN / WAIT.
+- `60 – APP-B`: UNOPENED; may open only after successful specification freeze.
 - `80 – LIT`: COMPLETE / FROZEN / WAIT.
 - `20/30/40 – THEORY-*`: UNOPENED.
-- `60/70 – APP-*`: UNOPENED.
+- `70 – APP-C`: UNOPENED.
 - `90 – MANUSCRIPT`: UNOPENED.
 
 ## Freeze check
 
 OK.
 
-`RP-013` freezes the STOP/PARK integration decision. All prior results remain independently frozen; no failed or weak result is repaired or overwritten.
+All result freezes through `RP-013` remain intact. The new power-grid gate is not yet a scientific freeze and creates no new rollback point until a specification is actually frozen.
 
 ## Branching check
 
 OK.
 
-No new specialist branch is opened by the FAIL integration gate. The next global programme activity must be selected explicitly by MASTER after a full `Status?` reconstruction.
+No specialist branch is opened by this status selection. Exactly one MASTER gate is authorised.
 
 ## Rollback
 
 Latest stable savepoint:
 
 `RP-013 — Neural Response Coordinate Nuisance FAIL Integration Freeze 0.1`.
+
+## Current claim ceiling
+
+The project may state only the exact frozen LIT/CORE/neural findings and the fact that a power-grid feasibility/specification gate is now selected.
+
+It may not claim:
+
+- any power-grid effect or cross-domain replication;
+- a new state equivalence or causal-state formalism;
+- a generally useful low-dimensional causal/plasticity coordinate;
+- generic nonlinear/multi-step scaling;
+- realistic SGD-history relevance;
+- LoRA/transformer or real-data usefulness;
+- controlled state preparation as established capability;
+- field-level causal-synergetics novelty.
 
 ## Manuscript
 
@@ -92,12 +129,10 @@ No manuscript claim freeze is justified.
 
 ## CI
 
-Repository CI remains not configured. The latest nuisance-pilot execution had no GitHub status checks; the frozen local combined result remains `36 passed`.
+Repository CI remains not configured. The last executed APP-A suite remains frozen at `36 passed`; current MASTER changes are governance/specification-selection commits only.
 
 ## Next global step
 
 Remain in `00 – MASTER – Projektplan & Status` and enter exactly:
 
-`Status?`
-
-MASTER must then reconstruct the complete project and authorize exactly one next global gate outside the parked response-coordinate direction.
+`Power-Grid Minimal Benchmark Feasibility & Specification Gate 0.1`
