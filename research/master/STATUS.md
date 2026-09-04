@@ -1,11 +1,11 @@
 # STATUS — 00 – MASTER – Projektplan & Status
 
-Current Gate: `Post-History Integration / Neural Nonlinear ReLU Pilot Authorisation 0.1`
-Status: COMPLETE / WAIT FOR APP-A NONLINEAR PILOT
+Current Gate: `Neural Vertical Slice Go/Revise/Stop Gate 0.1`
+Status: READY / AWAIT NAMED GATE
 Latest canonical file: `research/master/project_status.md`
-Dependencies: Neural Historical Reachability 0.1 COMPLETE / PASS / RESULT FROZEN
-Next instruction: User returns to existing `50 – APP-A – Neuronaler Minimalbenchmark` and enters `GO`; that chat must execute only `research/master/prompts/app_a_neural_nonlinear_relu_pilot_0_1.md`.
-STOP boundary: MASTER must not execute the nonlinear pilot itself, open learned-coordinate/multi-step/real-data/LoRA/power-grid/state-preparation branches, retune any frozen specification, or begin manuscript work before APP-A returns, unless a new named MASTER gate explicitly overrides this freeze.
+Dependencies: Neural Nonlinear ReLU Pilot 0.1 COMPLETE / PASS / RESULT FROZEN
+Next instruction: User remains in `00 – MASTER – Projektplan & Status` and enters exactly `Neural Vertical Slice Go/Revise/Stop Gate 0.1`.
+STOP boundary: MASTER must not open learned-coordinate, multi-step/real-data, realistic nonlinear-history, LoRA, power-grid, state-preparation, or manuscript work before the vertical-slice decision gate is executed and committed. No prior frozen result may be retuned or reinterpreted to widen claims.
 
 ## Freeze state
 
@@ -15,31 +15,29 @@ STOP boundary: MASTER must not execute the nonlinear pilot itself, open learned-
 - CORE boundary: FROZEN / PASS — CLAIM-RESTRICTED / NO NOVELTY PROMOTION
 - Neural Minimal Benchmark 0.1: FROZEN / PASS — RESULT FROZEN
 - Neural Historical Reachability 0.1: FROZEN / PASS — RESULT FROZEN
-- Neural Nonlinear ReLU Pilot 0.1 specification: FROZEN / AWAIT EXECUTION
-- Latest rollback point: `RP-005 — Neural Historical Reachability Result Freeze 0.1`
+- Neural Nonlinear ReLU Pilot 0.1: FROZEN / PASS — RESULT FROZEN
+- Latest rollback point: `RP-006 — Neural Nonlinear ReLU Pilot Result Freeze 0.1`
 
 ## Current scientific state
 
-The exact linear neural benchmark and its one pre-specified historical construction both passed without retuning. The historical construction reaches the frozen A/B state pair exactly from a common hidden initialization while preserving the main current function.
+The first neural vertical slice has completed five frozen stages without retuning: prior-art restriction, CORE boundary, exact linear benchmark, one explicit historical-reachability construction, and one nonlinear ReLU persistence pilot.
 
-This remains a feasibility chain with no novelty promotion.
+The ReLU pilot shows that one globally function-equivalent and norm-matched two-unit symmetry pair retains opposite symmetric one-step adaptation preferences under the frozen task pair. This remains a feasibility result with no novelty promotion.
 
 ## Claim ceiling
 
-The project may state only the exact frozen linear benchmark result and exact reachability under the explicit symmetric auxiliary-gradient history.
+The project may state only the exact frozen results and their explicit limitations.
 
-The nonlinear gate, if successful, may add only that one frozen two-unit ReLU symmetry pair exhibits the same qualitative one-step response crossing under the fixed symmetric tasks.
-
-No generic nonlinear scaling, realistic training-history, learned-coordinate, LoRA/transformer, causal-synergetics, or novelty claim is authorised.
+No generic nonlinear scaling, ordinary/realistic SGD-history, learned response/plasticity coordinate, LoRA/transformer, field-level causal-synergetics, or novelty claim is authorised.
 
 ## Branch state
 
-- 00 – MASTER: COMPLETE post-history integration / WAIT
+- 00 – MASTER: READY — Neural Vertical Slice Go/Revise/Stop Gate 0.1
 - 10 – CORE: COMPLETE / FROZEN / WAIT
 - 20 – THEORY-A: UNOPENED
 - 30 – THEORY-B: UNOPENED
 - 40 – THEORY-C: UNOPENED
-- 50 – APP-A: READY / AWAIT GO — Neural Nonlinear ReLU Pilot 0.1
+- 50 – APP-A: COMPLETE / FROZEN / WAIT
 - 60 – APP-B: UNOPENED
 - 70 – APP-C: UNOPENED
 - 80 – LIT: COMPLETE / FROZEN / WAIT
@@ -47,7 +45,7 @@ No generic nonlinear scaling, realistic training-history, learned-coordinate, Lo
 
 ## Blocked future work
 
-Without a new MASTER gate, do not open:
+Without completion of the vertical-slice decision gate, do not open:
 
 - learned response/plasticity coordinates;
 - multi-step or real-data scaling;
@@ -59,12 +57,12 @@ Without a new MASTER gate, do not open:
 
 ## Active blocker
 
-Operational only: the existing APP-A chat has not yet executed the newly frozen nonlinear ReLU task.
+Governance only: MASTER must integrate the frozen vertical slice and choose `GO`, `REVISE`, or `STOP` before authorising the next scientific branch.
 
 ## Return protocol
 
-After APP-A completes and ends `STOP — RETURN TO MASTER`, the next MASTER command is:
+Execute the named gate in this chat:
 
-`Status?`
+`Neural Vertical Slice Go/Revise/Stop Gate 0.1`
 
-STOP — WAIT
+STOP — AWAIT NAMED GATE
