@@ -193,11 +193,7 @@ The MASTER-only specification gate completed without benchmark execution or held
 ### DEC-030 — Orthogonal hidden-basis gauge selected as neutral nuisance
 Status: FROZEN
 
-The nuisance is the exact factorised-linear hidden-basis gauge
-
-`(U,v) -> (QU,Qv)`
-
-for orthogonal hidden-space `Q`.
+The nuisance is the exact factorised-linear hidden-basis gauge `(U,v) -> (QU,Qv)` for orthogonal hidden-space `Q`.
 
 This preserves exactly `w=U^T v`, `U^T U`, `||v||`, the one-step response operator `P=U^T U+||v||^2 I`, and therefore the frozen response semantics `Gamma=eta P c`, while changing raw parameter coordinates nontrivially.
 
@@ -210,33 +206,62 @@ Canonical memo: `research/master/neural_response_coordinate_nuisance_invariance_
 Decision: **SPECIFICATION FROZEN / APP-A READY / NO NOVELTY PROMOTION**.
 Rollback point: `RP-011 — Neural Response Coordinate Nuisance-Invariance Specification Freeze 0.1`.
 
-Frozen design includes:
+Frozen design includes 81 response-latent base states, eight gauge orientations each, four deterministic latent/nuisance partitions, fixed calibration/held-out interventions, a 2D response-PCA candidate, B0/B1/B2, mandatory symmetry-aware 2D Gram-PCA B3, full-fingerprint/oracle/null controls, fixed `J_nuis`, fixed scientific thresholds and an anti-retuning rule.
 
-- same 81 response-latent base states and `rho=0.5`;
-- eight gauge orientations each, total 648 states;
-- four deterministic latent/nuisance parity partitions `164/164/160/160`;
-- same calibration and held-out interventions and one-step response semantics;
-- exactly 2D response-PCA candidate;
-- B0/B1 and naive 2D raw-PCA B2;
-- mandatory symmetry-aware 2D Gram-PCA B3 from `[vech(U^TU),||v||^2]`;
-- full-fingerprint/oracle/null controls;
-- fixed nuisance fraction `J_nuis=W/(W+B)`;
-- fixed predictive/invariance PASS/WEAK/NULL/FAIL thresholds;
-- no post-hoc alignment, second nuisance, second coordinate, second family or threshold repair.
-
-A future PASS can support only gauge-invariant predictive advantage over naive equal-dimensional raw-parameter PCA in this synthetic control. It cannot establish unique superiority over symmetry-aware raw-state quotients because B3 is a mandatory strong control.
+A future PASS could support only gauge-invariant predictive advantage over naive equal-dimensional raw-parameter PCA in this synthetic control, not unique superiority over symmetry-aware raw-state quotients.
 
 ### DEC-032 — Neural Response Coordinate Nuisance-Invariance Pilot 0.1 authorised
-Status: ACTIVE / FROZEN EXECUTION
+Status: SATISFIED / CLOSED
 
-The single next scientific activity is assigned to existing `50 – APP-A – Neuronaler Minimalbenchmark`.
+Canonical execution prompt: `research/master/prompts/app_a_neural_response_coordinate_nuisance_invariance_pilot_0_1.md`.
 
-Canonical execution prompt:
-`research/master/prompts/app_a_neural_response_coordinate_nuisance_invariance_pilot_0_1.md`.
+APP-A executed only the frozen specification and returned to MASTER without repair.
 
-APP-A may execute only the frozen specification and must mechanically return `PASS`, `WEAK`, `NULL`, or `FAIL` without repair.
+### DEC-033 — Neural Response Coordinate Nuisance-Invariance Pilot 0.1 result
+Status: FROZEN / COMPLETE
 
-No nonlinear/multi-step/real-data/realistic-history/LoRA/power-grid/state-preparation/literature/manuscript work is authorised in parallel.
+Canonical result: `research/app_a/neural_response_coordinate_nuisance_invariance_pilot_0_1.md`.
+Implementation commit: `988db41bad5d46615b00defe2da8964c15a5203f`.
+Test commit: `2d7ac6171323607bfeeec12f3657b56b162e0406`.
+Result-freeze commit: `8f2be1871605b39d9e851d1b47ed9c30ec7bf21f`.
+Decision: **FAIL — RESULT FROZEN / SPECIFICATION CLASSIFICATION GAP / NO NOVELTY PROMOTION**.
+
+Frozen observations:
+
+- all mandatory numerical, analytical, gauge-invariance, oracle, leakage, B3-control and regression sanity conditions pass;
+- candidate `R2_state=1.0` on nuisance-only, latent-only and joint held-out partitions;
+- candidate minimum joint per-intervention `R2=1.0`;
+- candidate `J_nuis=5.596227006606825e-32`;
+- naive B2 raw PCA joint `R2_state=2.220446049250313e-16`, `J_nuis=1.0`;
+- gauge-aware B3 Gram-PCA joint `R2_state=1.0`, `J_nuis=2.692209973425601e-32`;
+- N0 joint `R2_state=0.6999999999999995`;
+- combined APP-A regression suite `36 passed`;
+- no retuning, replacement null, alternate nuisance, coordinate or family was tried.
+
+PASS and WEAK fail because the frozen N0 thresholds are violated, while none of the explicitly enumerated NULL conditions applies. The frozen classifier is therefore non-total on the observed metric vector. This is a specification/classification FAIL, not a numerical FAIL and not a scientific NULL.
+
+### DEC-034 — Neural Response Coordinate Nuisance-Invariance Result Freeze 0.1
+Status: FROZEN
+
+Rollback point: `RP-012 — Neural Response Coordinate Nuisance-Invariance Result Freeze 0.1`.
+
+The failed gate may not be repaired or relabelled by changing N0, adding a post-hoc classifier clause, deduplicating gauge copies, changing thresholds, altering the state family, nuisance, coordinate, baselines, metrics or horizon.
+
+The structural diagnosis that the one-state cyclic shift often maps to another gauge-equivalent copy is retained as an interpretation only, not as permission to repair the result.
+
+### DEC-035 — Neural Response Coordinate Nuisance-Invariance FAIL Integration Gate 0.1 authorised
+Status: ACTIVE / MASTER-INTEGRATION ONLY
+
+The single next gate is:
+
+`Neural Response Coordinate Nuisance-Invariance FAIL Integration Gate 0.1`.
+
+Canonical prompt:
+`research/master/prompts/master_neural_response_coordinate_nuisance_fail_integration_gate_0_1.md`.
+
+Purpose: integrate the frozen specification/classification FAIL and choose exactly one of `GO`, `REVISE`, or `STOP` without rerunning or repairing the failed pilot.
+
+No APP-A execution, replacement null/classifier, broader neural scaling, other domain, literature or manuscript work is authorised until this gate completes.
 
 ## Rollback points
 
@@ -251,19 +276,20 @@ No nonlinear/multi-step/real-data/realistic-history/LoRA/power-grid/state-prepar
 - `RP-009 — Neural Response Coordinate Result Freeze 0.1` — STABLE.
 - `RP-010 — Neural Response Coordinate WEAK Integration Freeze 0.1` — STABLE.
 - `RP-011 — Neural Response Coordinate Nuisance-Invariance Specification Freeze 0.1` — STABLE.
+- `RP-012 — Neural Response Coordinate Nuisance-Invariance Result Freeze 0.1` — STABLE.
 
-Any WEAK/NULL/FAIL nuisance-pilot result returns to MASTER and remains frozen. No prior freeze may be weakened.
+No prior freeze may be weakened. Any future validation must branch prospectively from `RP-012`; the failed nuisance gate remains canonical.
 
 ## Branch registry
 
 | Chat / branch | Status | Current gate | Dependency |
 |---|---|---|---|
-| 00 – MASTER | COMPLETE / WAIT | nuisance-invariance specification complete | APP-A pilot return |
+| 00 – MASTER | READY | Neural Response Coordinate Nuisance-Invariance FAIL Integration Gate 0.1 | nuisance pilot FAIL frozen |
 | 10 – CORE | COMPLETE / FROZEN / WAIT | CORE Synergetic Sufficiency Boundary 0.1 | satisfied |
 | 20 – THEORY-A | UNOPENED | none | MASTER authorisation |
 | 30 – THEORY-B | UNOPENED | none | MASTER authorisation |
 | 40 – THEORY-C | UNOPENED | none | MASTER authorisation |
-| 50 – APP-A | READY / AWAIT GO | Neural Response Coordinate Nuisance-Invariance Pilot 0.1 | specification frozen |
+| 50 – APP-A | COMPLETE / FROZEN / WAIT | Neural Response Coordinate Nuisance-Invariance Pilot 0.1 | RETURN TO MASTER satisfied |
 | 60 – APP-B | UNOPENED | none | MASTER authorisation |
 | 70 – APP-C | UNOPENED | none | MASTER authorisation |
 | 80 – LIT | COMPLETE / FROZEN / WAIT | Prior-Art & Definitions Audit 0.1 | satisfied |
