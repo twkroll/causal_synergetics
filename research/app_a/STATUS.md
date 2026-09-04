@@ -1,22 +1,17 @@
 # STATUS — 50 – APP-A – Neuronaler Minimalbenchmark
 
 Current Gate: `Neural Response Coordinate Nuisance-Invariance Pilot 0.1`
-Status: COMPLETE / FAIL — RESULT FROZEN / WAIT
+Status: PARKED / FROZEN / WAIT
 Latest canonical result: `research/app_a/neural_response_coordinate_nuisance_invariance_pilot_0_1.md`
 Latest frozen result decision: `FAIL — RESULT FROZEN / SPECIFICATION CLASSIFICATION GAP / NO NOVELTY PROMOTION`
-Dependencies:
-- Neural Minimal Benchmark 0.1 COMPLETE / FROZEN
-- Neural Historical Reachability 0.1 COMPLETE / FROZEN
-- Neural Nonlinear ReLU Pilot 0.1 COMPLETE / FROZEN
-- Neural Vertical Slice Go/Revise/Stop Gate 0.1 COMPLETE / GO / FROZEN
-- Neural Response Coordinate Pilot 0.1 COMPLETE / WEAK / FROZEN
-- Neural Response Coordinate WEAK Integration Gate 0.1 COMPLETE / REVISE / FROZEN
-- Neural Response Coordinate Nuisance-Invariance Specification Gate 0.1 COMPLETE / SPECIFICATION FROZEN
+MASTER integration: `research/master/neural_response_coordinate_nuisance_fail_integration_0_1.md`
+MASTER decision: `STOP / PARK RESPONSE-COORDINATE DIRECTION — CLAIM-RESTRICTED / NO NOVELTY PROMOTION`
+Latest rollback point: `RP-013 — Neural Response Coordinate Nuisance FAIL Integration Freeze 0.1`
 Implementation commit: `988db41bad5d46615b00defe2da8964c15a5203f`
 Test commit: `2d7ac6171323607bfeeec12f3657b56b162e0406`
 Canonical result-freeze commit: `8f2be1871605b39d9e851d1b47ed9c30ec7bf21f`
 Next instruction: `WAIT FOR MASTER`
-STOP boundary: Do not alter the frozen nuisance result, N0 construction, classification rules, base family, gauge subgroup, partitions, coordinate, baselines, metrics, thresholds or tolerances; do not try another nuisance/null/coordinate/family or open nonlinear/multi-step/real-data/realistic-history/LoRA/power-grid/state-preparation/literature/manuscript work without new MASTER authorisation.
+STOP boundary: Do not alter or rerun the frozen nuisance result, repair N0/classifier, open a replacement response coordinate/nuisance/state family, or start nonlinear/multi-step/real-data/realistic-history/LoRA/power-grid/state-preparation/literature/manuscript work without new MASTER authorisation.
 
 ## Frozen result
 
@@ -34,20 +29,24 @@ All mandatory scientific/numerical sanity conditions pass. Direct frozen observa
 - leakage separation passed;
 - combined unchanged APP-A regression suite `36 passed`.
 
-PASS and WEAK fail because the frozen N0 thresholds are violated. None of the explicitly enumerated NULL conditions applies. The pre-specified classifier is therefore non-total for the realised metric vector. APP-A did not add a post-hoc clause or alter N0.
+PASS and WEAK fail because the frozen N0 thresholds are violated. None of the explicitly enumerated NULL conditions applies. The pre-specified classifier is non-total for the realised metric vector. The result remains a specification/classification FAIL, not a numerical FAIL and not a scientific NULL.
 
-The result is a specification/classification FAIL, not a numerical FAIL and not a scientific NULL.
+## MASTER integration
+
+The response-coordinate direction is parked. A prospective orbit-level/null repair was rejected because it would have low incremental scientific value and would not change the strongest comparator ceiling: the explicitly symmetry-aware 2D Gram-PCA control already matches the response coordinate exactly on predictive and gauge-invariance metrics.
+
+The failed nuisance gate remains canonical and may not be reclassified. The earlier response-coordinate pilot remains independently `WEAK`.
 
 ## Claim ceiling
 
 Allowed statement only:
 
-> In the frozen synthetic gauge-control family, the 2D response-aware coordinate is numerically gauge invariant and predicts nuisance-only, latent-only and joint held-out one-step responses essentially exactly; naive 2D raw-parameter PCA fails under held-out gauge orientations; a gauge-invariant 2D Gram-PCA control remains equally predictive; and the frozen N0/classifier combination fails to assign a scientific class to the realised metric vector. The gate is therefore frozen as a specification-classification FAIL.
+> In the frozen synthetic gauge-control family, the 2D response-aware coordinate is numerically gauge invariant and exactly predictive; naive equal-dimensional raw-parameter PCA fails under held-out gauge orientations; a gauge-invariant equal-dimensional Gram-PCA control remains equally predictive; and the frozen N0/classifier does not assign a scientific class to the realised metric vector. The gate remains a specification-classification FAIL, and the response-coordinate direction is parked under the current synthetic programme framing.
 
-No PASS/WEAK/NULL relabelling, unique response-specific information claim, generic useful coordinate claim, nonlinear/real-data/LoRA/state-preparation claim, novelty promotion, or established causal-synergetics claim is authorised.
+No PASS/WEAK/NULL relabelling, unique response-specific information claim, generally useful coordinate claim, nonlinear/real-data/LoRA/state-preparation claim, novelty promotion, or established causal-synergetics claim is authorised.
 
 ## CI status
 
-For test commit `2d7ac6171323607bfeeec12f3657b56b162e0406`, GitHub reports no commit status checks. Repository CI is not configured / not applicable for this execution commit.
+For test commit `2d7ac6171323607bfeeec12f3657b56b162e0406`, GitHub reports no commit status checks. Repository CI is not configured; frozen local combined tests report `36 passed`.
 
-STOP — WAIT
+STOP — WAIT FOR MASTER
