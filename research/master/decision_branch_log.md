@@ -250,18 +250,41 @@ The failed gate may not be repaired or relabelled by changing N0, adding a post-
 The structural diagnosis that the one-state cyclic shift often maps to another gauge-equivalent copy is retained as an interpretation only, not as permission to repair the result.
 
 ### DEC-035 — Neural Response Coordinate Nuisance-Invariance FAIL Integration Gate 0.1 authorised
-Status: ACTIVE / MASTER-INTEGRATION ONLY
-
-The single next gate is:
-
-`Neural Response Coordinate Nuisance-Invariance FAIL Integration Gate 0.1`.
+Status: SATISFIED / CLOSED
 
 Canonical prompt:
 `research/master/prompts/master_neural_response_coordinate_nuisance_fail_integration_gate_0_1.md`.
 
-Purpose: integrate the frozen specification/classification FAIL and choose exactly one of `GO`, `REVISE`, or `STOP` without rerunning or repairing the failed pilot.
+Canonical integration memo:
+`research/master/neural_response_coordinate_nuisance_fail_integration_0_1.md`.
 
-No APP-A execution, replacement null/classifier, broader neural scaling, other domain, literature or manuscript work is authorised until this gate completes.
+Decision: **STOP / PARK RESPONSE-COORDINATE DIRECTION — CLAIM-RESTRICTED / NO NOVELTY PROMOTION**.
+
+The integration preserves the failed nuisance pilot exactly and rejects rerun, repaired N0/classifier, alternate nuisance/family/coordinate, and direct broader coordinate scaling.
+
+### DEC-036 — Response-coordinate direction parked
+Status: FROZEN
+
+MASTER parks further neural response-coordinate/null/nuisance benchmark construction under the current synthetic programme framing.
+
+Rationale:
+
+- the candidate response coordinate is exactly predictive and gauge invariant in the frozen control;
+- naive raw PCA fails under held-out gauge orientations;
+- an explicitly symmetry-aware equal-dimensional Gram-PCA raw-state control is equally predictive and invariant;
+- a repaired orbit-level/null validation would not change this strongest comparator ceiling;
+- after a prior WEAK result and the current specification-classification FAIL, another synthetic repair iteration has low incremental information value and increased post-hoc/cherry-picking risk.
+
+This decision does not stop the overall causal-synergetics programme and does not invalidate prior frozen CORE or neural feasibility results.
+
+### DEC-037 — Neural Response Coordinate Nuisance FAIL Integration Freeze 0.1
+Status: FROZEN
+
+Rollback point: `RP-013 — Neural Response Coordinate Nuisance FAIL Integration Freeze 0.1`.
+
+`50 – APP-A` is `PARKED / FROZEN / WAIT` for response-coordinate work. Reopening requires a future MASTER decision based on an independently motivated scientific question, not repair of the frozen FAIL.
+
+The next programme gate is not selected inside this integration. MASTER must reconstruct the full frozen project via `Status?` and authorize exactly one next global step outside the parked response-coordinate direction.
 
 ## Rollback points
 
@@ -277,19 +300,20 @@ No APP-A execution, replacement null/classifier, broader neural scaling, other d
 - `RP-010 — Neural Response Coordinate WEAK Integration Freeze 0.1` — STABLE.
 - `RP-011 — Neural Response Coordinate Nuisance-Invariance Specification Freeze 0.1` — STABLE.
 - `RP-012 — Neural Response Coordinate Nuisance-Invariance Result Freeze 0.1` — STABLE.
+- `RP-013 — Neural Response Coordinate Nuisance FAIL Integration Freeze 0.1` — STABLE.
 
-No prior freeze may be weakened. Any future validation must branch prospectively from `RP-012`; the failed nuisance gate remains canonical.
+No prior freeze may be weakened. The parked coordinate direction may not be reopened to repair or relabel the failed nuisance gate.
 
 ## Branch registry
 
 | Chat / branch | Status | Current gate | Dependency |
 |---|---|---|---|
-| 00 – MASTER | READY | Neural Response Coordinate Nuisance-Invariance FAIL Integration Gate 0.1 | nuisance pilot FAIL frozen |
+| 00 – MASTER | COMPLETE / AWAIT `Status?` | response-coordinate STOP integration complete | full programme reselection |
 | 10 – CORE | COMPLETE / FROZEN / WAIT | CORE Synergetic Sufficiency Boundary 0.1 | satisfied |
 | 20 – THEORY-A | UNOPENED | none | MASTER authorisation |
 | 30 – THEORY-B | UNOPENED | none | MASTER authorisation |
 | 40 – THEORY-C | UNOPENED | none | MASTER authorisation |
-| 50 – APP-A | COMPLETE / FROZEN / WAIT | Neural Response Coordinate Nuisance-Invariance Pilot 0.1 | RETURN TO MASTER satisfied |
+| 50 – APP-A | PARKED / FROZEN / WAIT | response-coordinate direction parked | new independent MASTER question required |
 | 60 – APP-B | UNOPENED | none | MASTER authorisation |
 | 70 – APP-C | UNOPENED | none | MASTER authorisation |
 | 80 – LIT | COMPLETE / FROZEN / WAIT | Prior-Art & Definitions Audit 0.1 | satisfied |
