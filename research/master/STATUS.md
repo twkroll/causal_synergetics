@@ -1,11 +1,11 @@
 # STATUS — 00 – MASTER – Projektplan & Status
 
-Current Gate: `Neural Response Coordinate WEAK Integration Gate 0.1`
+Current Gate: `Neural Response Coordinate Nuisance-Invariance Specification Gate 0.1`
 Status: READY / AWAIT NAMED GATE
 Latest canonical file: `research/master/project_status.md`
-Dependencies: `Neural Response Coordinate Pilot 0.1` COMPLETE / WEAK / RESULT FROZEN
-Next instruction: User remains in `00 – MASTER – Projektplan & Status` and enters exactly `Neural Response Coordinate WEAK Integration Gate 0.1`.
-STOP boundary: MASTER must not rerun or repair the frozen response-coordinate pilot, open a second coordinate/family, or open nonlinear/multi-step/real-data/realistic-history/LoRA/power-grid/state-preparation/literature/manuscript work before the WEAK integration gate is completed.
+Dependencies: `Neural Response Coordinate WEAK Integration Gate 0.1` COMPLETE / REVISE / FROZEN
+Next instruction: User remains in `00 – MASTER – Projektplan & Status` and enters exactly `Neural Response Coordinate Nuisance-Invariance Specification Gate 0.1`.
+STOP boundary: MASTER must not execute a new response-coordinate benchmark, inspect a new state family, reopen APP-A, or open nonlinear/multi-step/real-data/realistic-history/LoRA/power-grid/state-preparation/literature/manuscript work before the nuisance-invariance specification gate is completed. No prior WEAK result may be repaired or reinterpreted as PASS.
 
 ## Freeze state
 
@@ -19,25 +19,24 @@ STOP boundary: MASTER must not rerun or repair the frozen response-coordinate pi
 - Neural Vertical Slice Decision 0.1: FROZEN / GO — CLAIM-RESTRICTED
 - Neural Response Coordinate Specification 0.1: FROZEN
 - Neural Response Coordinate Pilot 0.1: FROZEN / WEAK — RESULT FROZEN
-- Latest rollback point: `RP-009 — Neural Response Coordinate Result Freeze 0.1`
+- Neural Response Coordinate WEAK Integration 0.1: FROZEN / REVISE — CLAIM-RESTRICTED
+- Latest rollback point: `RP-010 — Neural Response Coordinate WEAK Integration Freeze 0.1`
 
 ## Current scientific state
 
-The frozen 2D response coordinate predicts all eight held-out interventions essentially exactly on held-out states (`R2_state=1.0`), but an equal-dimensional raw-parameter PCA baseline also predicts essentially exactly (`R2_state=0.999883026432542`). The frozen required advantage over B2 was `>=0.05`; observed margin was only `0.000116973567458323`.
+The frozen response-aware 2D coordinate predicts the held-out one-step interventions essentially exactly in the specified synthetic family, but an equal-dimensional raw-parameter PCA baseline is also essentially exact. The result therefore establishes compact predictability but not material response-aware advantage over equally compact raw-state geometry.
 
-All numerical, oracle, leakage, ceiling and regression checks passed, so the mechanical result is `WEAK`, not `FAIL` or `NULL`.
-
-No retuning or alternate coordinate/family was tried.
+The WEAK integration decision is `REVISE`, not `STOP`: predictive success justifies one further discriminator, but the unresolved comparator failure must be isolated before broader neural claims.
 
 ## Claim ceiling
 
 No novelty promotion is authorised.
 
-The project may state that compact held-out prediction works in this frozen synthetic family, but it may not claim special response-aware value beyond equally compact raw-state geometry in general or a generally useful causal/plasticity coordinate.
+The project may state the exact frozen predictive success and exact near-tie with raw PCA. It may not claim a generally useful causal/plasticity coordinate, special response-aware value beyond raw-state geometry, generic nonlinear scaling, realistic SGD-history relevance, LoRA/transformer or real-data usefulness, controlled state preparation, or established causal synergetics.
 
 ## Branch state
 
-- 00 – MASTER: READY — Neural Response Coordinate WEAK Integration Gate 0.1
+- 00 – MASTER: READY — Neural Response Coordinate Nuisance-Invariance Specification Gate 0.1
 - 10 – CORE: COMPLETE / FROZEN / WAIT
 - 20/30/40 – THEORY-*`: UNOPENED
 - 50 – APP-A: COMPLETE / FROZEN / WAIT
@@ -47,12 +46,14 @@ The project may state that compact held-out prediction works in this frozen synt
 
 ## Active blocker
 
-Governance only: MASTER must integrate the WEAK result and choose exactly one of `GO`, `REVISE`, or `STOP` before any further response-coordinate or broader neural execution.
+Governance/scientific-design only: MASTER must determine whether exactly one independently justified nuisance/reparameterisation-invariance benchmark can be frozen without effect-guided family selection.
+
+If no scientifically neutral construction can be specified, the response-coordinate direction must be parked rather than repaired by search.
 
 ## Return protocol
 
 Execute the named gate in this chat:
 
-`Neural Response Coordinate WEAK Integration Gate 0.1`
+`Neural Response Coordinate Nuisance-Invariance Specification Gate 0.1`
 
 STOP — AWAIT NAMED GATE
