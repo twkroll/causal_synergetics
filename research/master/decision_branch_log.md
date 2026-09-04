@@ -146,15 +146,33 @@ Rollback point: `RP-006 — Neural Nonlinear ReLU Pilot Result Freeze 0.1`.
 
 Allowed interpretation remains restricted to one exact frozen two-unit ReLU symmetry pair with opposite symmetric one-step adaptation preferences. No generic nonlinear, realistic-history, learned-coordinate, or novelty claim is promoted.
 
-### DEC-021 — Neural Vertical Slice Go/Revise/Stop Gate 0.1 authorised
-Status: ACTIVE / FROZEN SCOPE
+### DEC-021 — Neural Vertical Slice Go/Revise/Stop Gate 0.1
+Status: FROZEN / COMPLETE
 
-Before opening learned response/plasticity coordinates or broader scaling, MASTER must integrate the complete frozen vertical slice and choose exactly one of `GO`, `REVISE`, or `STOP`.
+Canonical integration memo:
+`research/master/neural_vertical_slice_go_revise_stop_0_1.md`.
+
+Decision: **GO — CLAIM-RESTRICTED / NO NOVELTY PROMOTION**.
+
+The five-stage vertical slice is accepted as a coherent feasibility chain because all pre-specified stages completed without post-hoc repair. The decision does not promote novelty. The strongest remaining limitations are prior-art subsumption, artificial historical reachability, tiny scale, one-step horizon, and symmetry-engineered nonlinear evidence.
+
+The next unresolved capability is held-out intervention prediction from a compact response/plasticity representation, not another showcase crossing.
+
+Rollback point: `RP-007 — Neural Vertical Slice Decision Freeze 0.1`.
+
+### DEC-022 — Neural Response Coordinate Specification Gate 0.1 authorised
+Status: ACTIVE / MASTER-SPECIFICATION ONLY
+
+The single next gate is:
+
+`Neural Response Coordinate Specification Gate 0.1`.
 
 Canonical prompt:
-`research/master/prompts/master_neural_vertical_slice_go_revise_stop_0_1.md`.
+`research/master/prompts/master_neural_response_coordinate_specification_gate_0_1.md`.
 
-The gate is integration-only: no new experiments, theory, literature branches, retuning, or manuscript claims are permitted. It must select exactly one next scientific gate if the decision is GO or REVISE.
+Purpose: define and freeze exactly one falsifiable benchmark testing whether a compact response/plasticity representation predicts held-out learning interventions materially better than pre-declared non-response-aware baselines.
+
+No benchmark execution, representation search, LoRA, real-data, power-grid, state-preparation, or manuscript work is authorised until this specification gate completes.
 
 ## Rollback points
 
@@ -164,19 +182,20 @@ The gate is integration-only: no new experiments, theory, literature branches, r
 - `RP-004 — Neural Minimal Benchmark Result Freeze 0.1` — STABLE.
 - `RP-005 — Neural Historical Reachability Result Freeze 0.1` — STABLE.
 - `RP-006 — Neural Nonlinear ReLU Pilot Result Freeze 0.1` — STABLE.
+- `RP-007 — Neural Vertical Slice Decision Freeze 0.1` — STABLE.
 
-If the vertical-slice decision is STOP, preserve all prior results. If it is REVISE or GO, no prior freeze may be weakened.
+If the response-coordinate specification gate cannot produce a sufficiently falsifiable benchmark, return to `RP-007` rather than opening an under-specified learned-coordinate execution. No prior freeze may be weakened.
 
 ## Branch registry
 
 | Chat / branch | Status | Current gate | Dependency |
 |---|---|---|---|
-| 00 – MASTER | ACTIVE / READY | Neural Vertical Slice Go/Revise/Stop Gate 0.1 | ReLU result frozen |
+| 00 – MASTER | READY | Neural Response Coordinate Specification Gate 0.1 | vertical-slice GO satisfied |
 | 10 – CORE | COMPLETE / FROZEN / WAIT | CORE Synergetic Sufficiency Boundary 0.1 | satisfied |
 | 20 – THEORY-A | UNOPENED | none | MASTER authorisation |
 | 30 – THEORY-B | UNOPENED | none | MASTER authorisation |
 | 40 – THEORY-C | UNOPENED | none | MASTER authorisation |
-| 50 – APP-A | COMPLETE / FROZEN / WAIT | Neural Nonlinear ReLU Pilot 0.1 | RETURN TO MASTER satisfied |
+| 50 – APP-A | COMPLETE / FROZEN / WAIT | none active | response-coordinate specification not yet frozen |
 | 60 – APP-B | UNOPENED | none | MASTER authorisation |
 | 70 – APP-C | UNOPENED | none | MASTER authorisation |
 | 80 – LIT | COMPLETE / FROZEN / WAIT | Prior-Art & Definitions Audit 0.1 | satisfied |
