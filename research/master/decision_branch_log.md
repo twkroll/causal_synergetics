@@ -161,18 +161,49 @@ The next unresolved capability is held-out intervention prediction from a compac
 Rollback point: `RP-007 — Neural Vertical Slice Decision Freeze 0.1`.
 
 ### DEC-022 — Neural Response Coordinate Specification Gate 0.1 authorised
-Status: ACTIVE / MASTER-SPECIFICATION ONLY
+Status: SATISFIED / CLOSED
 
-The single next gate is:
+The specification gate was executed in MASTER before any held-out coordinate benchmark result was inspected.
 
-`Neural Response Coordinate Specification Gate 0.1`.
+Canonical gate memo:
+`research/master/neural_response_coordinate_specification_gate_0_1.md`.
 
-Canonical prompt:
-`research/master/prompts/master_neural_response_coordinate_specification_gate_0_1.md`.
+### DEC-023 — Neural Response Coordinate Specification Freeze 0.1
+Status: FROZEN
 
-Purpose: define and freeze exactly one falsifiable benchmark testing whether a compact response/plasticity representation predicts held-out learning interventions materially better than pre-declared non-response-aware baselines.
+Decision: **SPECIFICATION FROZEN / APP-A READY / NO NOVELTY PROMOTION**.
 
-No benchmark execution, representation search, LoRA, real-data, power-grid, state-preparation, or manuscript work is authorised until this specification gate completes.
+The frozen benchmark contains:
+
+- one deterministic factorised-linear `d=4,h=5` family with 81 exactly function-equivalent states;
+- a fixed two-dimensional latent response geometry with constant total layer/readout norms;
+- deterministic 41/40 train/test state split;
+- four fixed Hadamard calibration interventions and eight fixed held-out interventions;
+- exact one-step full-batch GD response with `eta=0.1`;
+- exactly 2D response-PCA coordinate from 16D calibration fingerprints;
+- fixed bilinear OLS decoder;
+- B0 current-function, B1 simple norm summaries, and B2 equal-dimensional raw-parameter PCA baselines;
+- full-fingerprint and analytical-operator ceilings plus deterministic cyclic state-association null;
+- fixed aggregate/per-intervention `R2_state`, NRMSE, leakage rules, and disjoint PASS/WEAK/NULL/FAIL thresholds;
+- no dimension sweep, second coordinate, second state family, or threshold repair after held-out inspection.
+
+Rollback point: `RP-008 — Neural Response Coordinate Specification Freeze 0.1`.
+
+No scientific result is implied by this specification freeze.
+
+### DEC-024 — Neural Response Coordinate Pilot 0.1 authorised
+Status: ACTIVE / FROZEN EXECUTION
+
+The single next scientific activity is assigned to the existing chat:
+
+`50 – APP-A – Neuronaler Minimalbenchmark`.
+
+Canonical execution prompt:
+`research/master/prompts/app_a_neural_response_coordinate_pilot_0_1.md`.
+
+APP-A may execute only the frozen specification and must classify the result mechanically as `PASS`, `WEAK`, `NULL`, or `FAIL`.
+
+No multi-step/real-data, realistic-history, nonlinear scaling, LoRA/adapter, power-grid, state-preparation, literature, or manuscript branch is authorised in parallel.
 
 ## Rollback points
 
@@ -183,19 +214,20 @@ No benchmark execution, representation search, LoRA, real-data, power-grid, stat
 - `RP-005 — Neural Historical Reachability Result Freeze 0.1` — STABLE.
 - `RP-006 — Neural Nonlinear ReLU Pilot Result Freeze 0.1` — STABLE.
 - `RP-007 — Neural Vertical Slice Decision Freeze 0.1` — STABLE.
+- `RP-008 — Neural Response Coordinate Specification Freeze 0.1` — STABLE.
 
-If the response-coordinate specification gate cannot produce a sufficiently falsifiable benchmark, return to `RP-007` rather than opening an under-specified learned-coordinate execution. No prior freeze may be weakened.
+If the pilot returns WEAK/NULL/FAIL, preserve the result and return to MASTER. Do not repair the frozen benchmark by changing its coordinate, baselines, family, split, metrics, or thresholds.
 
 ## Branch registry
 
 | Chat / branch | Status | Current gate | Dependency |
 |---|---|---|---|
-| 00 – MASTER | READY | Neural Response Coordinate Specification Gate 0.1 | vertical-slice GO satisfied |
+| 00 – MASTER | COMPLETE / WAIT | Response Coordinate Specification complete | APP-A pilot return |
 | 10 – CORE | COMPLETE / FROZEN / WAIT | CORE Synergetic Sufficiency Boundary 0.1 | satisfied |
 | 20 – THEORY-A | UNOPENED | none | MASTER authorisation |
 | 30 – THEORY-B | UNOPENED | none | MASTER authorisation |
 | 40 – THEORY-C | UNOPENED | none | MASTER authorisation |
-| 50 – APP-A | COMPLETE / FROZEN / WAIT | none active | response-coordinate specification not yet frozen |
+| 50 – APP-A | READY / AWAIT GO | Neural Response Coordinate Pilot 0.1 | specification frozen |
 | 60 – APP-B | UNOPENED | none | MASTER authorisation |
 | 70 – APP-C | UNOPENED | none | MASTER authorisation |
 | 80 – LIT | COMPLETE / FROZEN / WAIT | Prior-Art & Definitions Audit 0.1 | satisfied |
