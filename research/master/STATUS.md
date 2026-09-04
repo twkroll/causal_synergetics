@@ -1,11 +1,11 @@
 # STATUS — 00 – MASTER – Projektplan & Status
 
-Current Gate: `Neural Vertical Slice Go/Revise/Stop Gate 0.1`
+Current Gate: `Neural Response Coordinate Specification Gate 0.1`
 Status: READY / AWAIT NAMED GATE
 Latest canonical file: `research/master/project_status.md`
-Dependencies: Neural Nonlinear ReLU Pilot 0.1 COMPLETE / PASS / RESULT FROZEN
-Next instruction: User remains in `00 – MASTER – Projektplan & Status` and enters exactly `Neural Vertical Slice Go/Revise/Stop Gate 0.1`.
-STOP boundary: MASTER must not open learned-coordinate, multi-step/real-data, realistic nonlinear-history, LoRA, power-grid, state-preparation, or manuscript work before the vertical-slice decision gate is executed and committed. No prior frozen result may be retuned or reinterpreted to widen claims.
+Dependencies: `Neural Vertical Slice Go/Revise/Stop Gate 0.1` COMPLETE / GO / FROZEN
+Next instruction: User remains in `00 – MASTER – Projektplan & Status` and enters exactly `Neural Response Coordinate Specification Gate 0.1`.
+STOP boundary: MASTER must not execute a learned-coordinate benchmark, open multi-step/real-data/realistic-history/LoRA/power-grid/state-preparation/manuscript branches, or weaken prior freezes before the response-coordinate specification gate is completed and frozen.
 
 ## Freeze state
 
@@ -16,23 +16,26 @@ STOP boundary: MASTER must not open learned-coordinate, multi-step/real-data, re
 - Neural Minimal Benchmark 0.1: FROZEN / PASS — RESULT FROZEN
 - Neural Historical Reachability 0.1: FROZEN / PASS — RESULT FROZEN
 - Neural Nonlinear ReLU Pilot 0.1: FROZEN / PASS — RESULT FROZEN
-- Latest rollback point: `RP-006 — Neural Nonlinear ReLU Pilot Result Freeze 0.1`
+- Neural Vertical Slice Decision 0.1: FROZEN / GO — CLAIM-RESTRICTED
+- Latest rollback point: `RP-007 — Neural Vertical Slice Decision Freeze 0.1`
 
 ## Current scientific state
 
-The first neural vertical slice has completed five frozen stages without retuning: prior-art restriction, CORE boundary, exact linear benchmark, one explicit historical-reachability construction, and one nonlinear ReLU persistence pilot.
+The first neural vertical slice is accepted as a coherent feasibility chain. All pre-specified stages passed without retuning, but the programme remains claim-restricted and has not yet shown a useful low-dimensional predictive state representation.
 
-The ReLU pilot shows that one globally function-equivalent and norm-matched two-unit symmetry pair retains opposite symmetric one-step adaptation preferences under the frozen task pair. This remains a feasibility result with no novelty promotion.
+The strongest positive evidence is exact function-level equivalence with directed intervention-response differences in both linear and one frozen nonlinear ReLU setting, plus exact reachability of the linear pair under one explicit frozen history.
+
+The strongest limitations remain prior-art subsumption of generic concepts, unresolved publication novelty of the CORE bridge, artificial historical reachability, tiny-scale one-step neural evidence, and lack of held-out intervention prediction.
 
 ## Claim ceiling
 
-The project may state only the exact frozen results and their explicit limitations.
+No novelty promotion is authorised.
 
-No generic nonlinear scaling, ordinary/realistic SGD-history, learned response/plasticity coordinate, LoRA/transformer, field-level causal-synergetics, or novelty claim is authorised.
+The project may state only the previously frozen exact linear/history/ReLU results and CORE restrictions. It may not claim generic nonlinear scaling, ordinary/realistic SGD-history reachability, existence of a low-dimensional causal/plasticity coordinate, held-out intervention prediction, LoRA/transformer relevance, real-data scaling, controlled state preparation, or established causal synergetics.
 
 ## Branch state
 
-- 00 – MASTER: READY — Neural Vertical Slice Go/Revise/Stop Gate 0.1
+- 00 – MASTER: READY — Neural Response Coordinate Specification Gate 0.1
 - 10 – CORE: COMPLETE / FROZEN / WAIT
 - 20 – THEORY-A: UNOPENED
 - 30 – THEORY-B: UNOPENED
@@ -45,9 +48,9 @@ No generic nonlinear scaling, ordinary/realistic SGD-history, learned response/p
 
 ## Blocked future work
 
-Without completion of the vertical-slice decision gate, do not open:
+Without completion of the specification gate, do not open:
 
-- learned response/plasticity coordinates;
+- learned response/plasticity coordinate execution;
 - multi-step or real-data scaling;
 - realistic nonlinear history/reachability;
 - NTK/LoRA/adapter comparisons;
@@ -57,12 +60,12 @@ Without completion of the vertical-slice decision gate, do not open:
 
 ## Active blocker
 
-Governance only: MASTER must integrate the frozen vertical slice and choose `GO`, `REVISE`, or `STOP` before authorising the next scientific branch.
+Governance only: MASTER must freeze exactly one falsifiable held-out response-coordinate benchmark before APP-A can resume execution.
 
 ## Return protocol
 
 Execute the named gate in this chat:
 
-`Neural Vertical Slice Go/Revise/Stop Gate 0.1`
+`Neural Response Coordinate Specification Gate 0.1`
 
 STOP — AWAIT NAMED GATE
