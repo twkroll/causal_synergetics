@@ -235,17 +235,43 @@ Rollback point: `RP-009 — Neural Response Coordinate Result Freeze 0.1`.
 
 Claim ceiling: no generally useful causal/plasticity coordinate, no special response-aware value beyond raw-state geometry in general, and no novelty promotion.
 
-### DEC-027 — Neural Response Coordinate WEAK Integration Gate 0.1 authorised
-Status: ACTIVE / MASTER-INTEGRATION ONLY
-
-The single next gate is:
-
-`Neural Response Coordinate WEAK Integration Gate 0.1`.
+### DEC-027 — Neural Response Coordinate WEAK Integration Gate 0.1
+Status: SATISFIED / CLOSED
 
 Canonical prompt:
 `research/master/prompts/master_neural_response_coordinate_weak_integration_gate_0_1.md`.
 
-Purpose: integrate the frozen WEAK result and choose exactly one of `GO`, `REVISE`, or `STOP` for the neural response-coordinate direction before any second coordinate/family, nonlinear/multi-step extension, real-data, LoRA, power-grid, state-preparation, literature, or manuscript work is opened.
+Canonical integration memo:
+`research/master/neural_response_coordinate_weak_integration_0_1.md`.
+
+Decision: **REVISE — CLAIM-RESTRICTED / NO NOVELTY PROMOTION**.
+
+The direction is not stopped because the response-aware coordinate achieved essentially exact held-out prediction with all validity controls passing. Direct GO to broader neural scaling is rejected because the equal-dimensional raw-state PCA comparator also achieved essentially exact prediction. The single unresolved prerequisite is a neutral nuisance-/reparameterisation-invariance discriminator.
+
+Rollback point: `RP-010 — Neural Response Coordinate WEAK Integration Freeze 0.1`.
+
+### DEC-028 — Nuisance-invariance discriminator selected as sole revision prerequisite
+Status: FROZEN
+
+Before any broader response-coordinate claim, MASTER must determine whether a scientifically neutral benchmark can separate response-relevant geometry from response-irrelevant parameterisation nuisance.
+
+The next construction must derive from explicit model reparameterisation/gauge/symmetry structure or another independently justified redundancy. It may not be chosen because it is expected to make raw PCA fail.
+
+If no such construction can be specified cleanly, the coordinate direction must be parked rather than repaired by effect-guided family search.
+
+### DEC-029 — Neural Response Coordinate Nuisance-Invariance Specification Gate 0.1 authorised
+Status: ACTIVE / MASTER-SPECIFICATION ONLY
+
+The single next gate is:
+
+`Neural Response Coordinate Nuisance-Invariance Specification Gate 0.1`.
+
+Canonical prompt:
+`research/master/prompts/master_neural_response_coordinate_nuisance_invariance_specification_gate_0_1.md`.
+
+This gate is specification-only. It must define exactly one independently justified nuisance-control benchmark and pre-freeze state family, invariants, nuisance variables/levels, intervention split, coordinate, raw-state baselines, predictors, metrics, invariance measures, nulls, numerical tolerances, and PASS/WEAK/NULL/FAIL criteria before any execution.
+
+No APP-A execution or broader neural/domain work is authorised until this gate completes.
 
 ## Rollback points
 
@@ -258,19 +284,20 @@ Purpose: integrate the frozen WEAK result and choose exactly one of `GO`, `REVIS
 - `RP-007 — Neural Vertical Slice Decision Freeze 0.1` — STABLE.
 - `RP-008 — Neural Response Coordinate Specification Freeze 0.1` — STABLE.
 - `RP-009 — Neural Response Coordinate Result Freeze 0.1` — STABLE.
+- `RP-010 — Neural Response Coordinate WEAK Integration Freeze 0.1` — STABLE.
 
-No prior freeze may be weakened. Any further response-coordinate work requires completion of the authorised MASTER integration gate.
+No prior freeze may be weakened. If the nuisance-invariance specification cannot be made scientifically neutral and falsifiable, return to `RP-010` and park the response-coordinate direction.
 
 ## Branch registry
 
 | Chat / branch | Status | Current gate | Dependency |
 |---|---|---|---|
-| 00 – MASTER | READY | Neural Response Coordinate WEAK Integration Gate 0.1 | response-coordinate WEAK result frozen |
+| 00 – MASTER | READY | Neural Response Coordinate Nuisance-Invariance Specification Gate 0.1 | WEAK integration REVISE frozen |
 | 10 – CORE | COMPLETE / FROZEN / WAIT | CORE Synergetic Sufficiency Boundary 0.1 | satisfied |
 | 20 – THEORY-A | UNOPENED | none | MASTER authorisation |
 | 30 – THEORY-B | UNOPENED | none | MASTER authorisation |
 | 40 – THEORY-C | UNOPENED | none | MASTER authorisation |
-| 50 – APP-A | COMPLETE / FROZEN / WAIT | Neural Response Coordinate Pilot 0.1 | RETURN TO MASTER satisfied |
+| 50 – APP-A | COMPLETE / FROZEN / WAIT | Neural Response Coordinate Pilot 0.1 | no active execution |
 | 60 – APP-B | UNOPENED | none | MASTER authorisation |
 | 70 – APP-C | UNOPENED | none | MASTER authorisation |
 | 80 – LIT | COMPLETE / FROZEN / WAIT | Prior-Art & Definitions Audit 0.1 | satisfied |
