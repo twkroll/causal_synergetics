@@ -192,18 +192,60 @@ Rollback point: `RP-008 — Neural Response Coordinate Specification Freeze 0.1`
 No scientific result is implied by this specification freeze.
 
 ### DEC-024 — Neural Response Coordinate Pilot 0.1 authorised
-Status: ACTIVE / FROZEN EXECUTION
+Status: SATISFIED / CLOSED
 
-The single next scientific activity is assigned to the existing chat:
-
-`50 – APP-A – Neuronaler Minimalbenchmark`.
+The frozen response-coordinate pilot was executed by `50 – APP-A – Neuronaler Minimalbenchmark` without repair or retuning.
 
 Canonical execution prompt:
 `research/master/prompts/app_a_neural_response_coordinate_pilot_0_1.md`.
 
-APP-A may execute only the frozen specification and must classify the result mechanically as `PASS`, `WEAK`, `NULL`, or `FAIL`.
+### DEC-025 — Neural Response Coordinate Pilot 0.1 result
+Status: FROZEN / COMPLETE
 
-No multi-step/real-data, realistic-history, nonlinear scaling, LoRA/adapter, power-grid, state-preparation, literature, or manuscript branch is authorised in parallel.
+Canonical result:
+`research/app_a/neural_response_coordinate_pilot_0_1.md`.
+Implementation commit: `86715dfb9de78220964e137759c66785373f6de8`.
+Test commit: `48d850c22ca156af892db11cbbdb95b20693bb08`.
+Canonical result-freeze commit: `18618368991d818b3bfe883975b3ab2573bed0c6`.
+Decision: **WEAK — RESULT FROZEN / NO NOVELTY PROMOTION**.
+
+Frozen observations:
+
+- candidate 2D response coordinate: aggregate held-out `R2_state=1.0`;
+- minimum per-held-out intervention `R2_state(c)=1.0`;
+- B0 current-function baseline approximately `0.0`;
+- B1 simple-summary baseline `0.070803629370716`;
+- B2 equal-dimensional raw-parameter PCA baseline `0.999883026432542`;
+- response-coordinate margin over B2 `0.000116973567458323`, below the frozen PASS requirement `>=0.05`;
+- full-fingerprint ceiling `R2_state=1.0`;
+- cyclic association null `R2_state=-0.200000000000001`;
+- analytical/autograd maximum discrepancy `2.7755575615628914e-17` over all 972 audited state/intervention pairs;
+- leakage controls and all sanity checks passed;
+- new coordinate tests `12 passed`; combined APP-A regression suite `24 passed`;
+- no retuning or alternate coordinate/family was tried.
+
+The result establishes excellent held-out prediction in this synthetic family but not material predictive value beyond an equally compact raw-parameter PCA representation.
+
+### DEC-026 — Neural Response Coordinate Result Freeze 0.1
+Status: FROZEN
+
+The WEAK result is accepted as canonical and may not be repaired by changing the family, coordinate, dimensionality, baselines, split, metrics, thresholds, interventions, learning rate, horizon, or null controls.
+
+Rollback point: `RP-009 — Neural Response Coordinate Result Freeze 0.1`.
+
+Claim ceiling: no generally useful causal/plasticity coordinate, no special response-aware value beyond raw-state geometry in general, and no novelty promotion.
+
+### DEC-027 — Neural Response Coordinate WEAK Integration Gate 0.1 authorised
+Status: ACTIVE / MASTER-INTEGRATION ONLY
+
+The single next gate is:
+
+`Neural Response Coordinate WEAK Integration Gate 0.1`.
+
+Canonical prompt:
+`research/master/prompts/master_neural_response_coordinate_weak_integration_gate_0_1.md`.
+
+Purpose: integrate the frozen WEAK result and choose exactly one of `GO`, `REVISE`, or `STOP` for the neural response-coordinate direction before any second coordinate/family, nonlinear/multi-step extension, real-data, LoRA, power-grid, state-preparation, literature, or manuscript work is opened.
 
 ## Rollback points
 
@@ -215,19 +257,20 @@ No multi-step/real-data, realistic-history, nonlinear scaling, LoRA/adapter, pow
 - `RP-006 — Neural Nonlinear ReLU Pilot Result Freeze 0.1` — STABLE.
 - `RP-007 — Neural Vertical Slice Decision Freeze 0.1` — STABLE.
 - `RP-008 — Neural Response Coordinate Specification Freeze 0.1` — STABLE.
+- `RP-009 — Neural Response Coordinate Result Freeze 0.1` — STABLE.
 
-If the pilot returns WEAK/NULL/FAIL, preserve the result and return to MASTER. Do not repair the frozen benchmark by changing its coordinate, baselines, family, split, metrics, or thresholds.
+No prior freeze may be weakened. Any further response-coordinate work requires completion of the authorised MASTER integration gate.
 
 ## Branch registry
 
 | Chat / branch | Status | Current gate | Dependency |
 |---|---|---|---|
-| 00 – MASTER | COMPLETE / WAIT | Response Coordinate Specification complete | APP-A pilot return |
+| 00 – MASTER | READY | Neural Response Coordinate WEAK Integration Gate 0.1 | response-coordinate WEAK result frozen |
 | 10 – CORE | COMPLETE / FROZEN / WAIT | CORE Synergetic Sufficiency Boundary 0.1 | satisfied |
 | 20 – THEORY-A | UNOPENED | none | MASTER authorisation |
 | 30 – THEORY-B | UNOPENED | none | MASTER authorisation |
 | 40 – THEORY-C | UNOPENED | none | MASTER authorisation |
-| 50 – APP-A | READY / AWAIT GO | Neural Response Coordinate Pilot 0.1 | specification frozen |
+| 50 – APP-A | COMPLETE / FROZEN / WAIT | Neural Response Coordinate Pilot 0.1 | RETURN TO MASTER satisfied |
 | 60 – APP-B | UNOPENED | none | MASTER authorisation |
 | 70 – APP-C | UNOPENED | none | MASTER authorisation |
 | 80 – LIT | COMPLETE / FROZEN / WAIT | Prior-Art & Definitions Audit 0.1 | satisfied |
