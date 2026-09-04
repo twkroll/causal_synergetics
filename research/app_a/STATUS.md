@@ -1,80 +1,66 @@
 # STATUS — 50 – APP-A – Neuronaler Minimalbenchmark
 
-Current Gate: `Neural Nonlinear ReLU Pilot 0.1`
-Status: COMPLETE / PASS — RESULT FROZEN
-Latest canonical result: `research/app_a/neural_nonlinear_relu_pilot_0_1.md`
-Latest frozen result decision: `PASS — RESULT FROZEN / NO NOVELTY PROMOTION`
+Current Gate: `Neural Response Coordinate Pilot 0.1`
+Status: READY / AWAIT GO
+Latest frozen prior result: `research/app_a/neural_nonlinear_relu_pilot_0_1.md`
 Dependencies:
-- Neural Minimal Benchmark 0.1 COMPLETE / FROZEN
-- Neural Historical Reachability 0.1 COMPLETE / FROZEN
-ReLU implementation commit: `b5ba5da30d869d160eab0a7801bcfa324860b19a`
-ReLU test commit: `3b42bf8c9a3e1a56a031654576b9c9f25b70bdbc`
-Canonical result-freeze commit: `ff9f575839848e80705cd73062d431b20ca4eb10`
-Next instruction: `RETURN TO MASTER`
-STOP boundary: Do not alter the frozen ReLU result or open learned-representation, multi-step/real-data, LoRA, power-grid, state-preparation, realistic nonlinear-history, or manuscript work without new MASTER authorisation.
+- `Neural Minimal Benchmark 0.1` COMPLETE / FROZEN
+- `Neural Historical Reachability 0.1` COMPLETE / FROZEN
+- `Neural Nonlinear ReLU Pilot 0.1` COMPLETE / FROZEN
+- `Neural Vertical Slice Go/Revise/Stop Gate 0.1` COMPLETE / GO / FROZEN
+- `Neural Response Coordinate Specification Gate 0.1` COMPLETE / SPECIFICATION FROZEN
+Next instruction: execute only `research/master/prompts/app_a_neural_response_coordinate_pilot_0_1.md` when the user enters `GO`.
+STOP boundary: Do not alter any frozen model/state/split/intervention/coordinate/baseline/metric/threshold; do not open multi-step/real-data/realistic-history/nonlinear-scaling/LoRA/power-grid/state-preparation/literature/manuscript work; after result freeze return to MASTER.
 
-## Frozen prior results
+## Frozen prior chain
 
 ### Neural Minimal Benchmark 0.1
-
-Decision: `PASS — RESULT FROZEN / NO NOVELTY PROMOTION`.
-Canonical result: `research/app_a/neural_minimal_benchmark_0_1.md`.
-
-Frozen observations include identical current function `w_A=w_B=(0,0)`, matched simple norms, opposite symmetric one-step adaptation preferences, exact analytic/autograd agreement, and no retuning.
+`PASS — RESULT FROZEN / NO NOVELTY PROMOTION`.
 
 ### Neural Historical Reachability 0.1
-
-Decision: `PASS — RESULT FROZEN / NO NOVELTY PROMOTION`.
-Canonical result: `research/app_a/neural_historical_reachability_0_1.md`.
-
-Frozen observations include a common start `U_0=0`, fixed main readout `v=e1`, symmetric one-step auxiliary histories reaching the exact linear A/B states while preserving the main function, exact analytic/autograd agreement, reproduction of the frozen C/D responses, and no retuning.
-
-## Frozen nonlinear result
+`PASS — RESULT FROZEN / NO NOVELTY PROMOTION`.
 
 ### Neural Nonlinear ReLU Pilot 0.1
+`PASS — RESULT FROZEN / NO NOVELTY PROMOTION`.
+Canonical result-freeze commit: `ff9f575839848e80705cd73062d431b20ca4eb10`.
 
-Decision: **PASS — RESULT FROZEN / NO NOVELTY PROMOTION**
+## Current frozen execution specification
 
-Frozen model:
+Canonical specification:
+`research/master/neural_response_coordinate_specification_gate_0_1.md`.
 
-`f_{U,v}(x)=v^T ReLU(Ux)`, `d=h=2`, no bias.
+Canonical execution prompt:
+`research/master/prompts/app_a_neural_response_coordinate_pilot_0_1.md`.
 
-Frozen states:
+Latest rollback point:
+`RP-008 — Neural Response Coordinate Specification Freeze 0.1`.
 
-- A: `U_A=[[2,0],[0,1]]`, `v_A=(1/2,1)`;
-- B: `U_B=[[1,0],[0,2]]`, `v_B=(1,1/2)`.
+Frozen essentials:
 
-Frozen observations:
+- 81 exactly function-equivalent factorised-linear states (`d=4,h=5`);
+- deterministic 41/40 train/test state split;
+- four calibration and eight held-out learning interventions;
+- one full-batch GD step, `eta=0.1`;
+- 16D calibration fingerprint compressed to exactly 2D by train-only PCA;
+- fixed bilinear OLS decoder;
+- mandatory B0 current-function, B1 simple-norm/state-summary, B2 equal-dimensional raw-parameter PCA baselines;
+- full-fingerprint and analytical-operator ceilings;
+- deterministic cyclic state-association null;
+- fixed leakage rule, metrics, tolerances and disjoint PASS/WEAK/NULL/FAIL thresholds;
+- no second coordinate/family or threshold repair after held-out inspection.
 
-- Global current-function equivalence is proved analytically: `f_A(x)=f_B(x)=ReLU(x_1)+ReLU(x_2)` for all `x`.
-- Simple norms match: `||U_A||_F=||U_B||_F=sqrt(5)` and `||v_A||_2=||v_B||_2=sqrt(5/4)`.
-- Common pre-update probe vector: `[1,1,2,0]`.
-- Activation signs remain strict before and after every frozen task step.
-- Task C:
-  - A probe response `[1.47,1.0,2.4,0.0]`, loss `0.14045`;
-  - B probe response `[1.32,1.0,2.1,0.0]`, loss `0.2312`.
-- Task D:
-  - A probe response `[1.0,1.32,2.1,0.0]`, loss `0.2312`;
-  - B probe response `[1.0,1.47,2.4,0.0]`, loss `0.14045`.
-- Directed symmetric loss advantage: `0.09075` in both directions.
-- ReLU analytical/autograd maximum observed tested component difference: `0.0` in float64.
-- Combined unchanged linear/history plus ReLU regression run: `12 passed`.
-- No retuning, alternative scaling, task, probe, optimizer, tolerance, or horizon was tried.
-
-## CI status
-
-For ReLU test commit `3b42bf8c9a3e1a56a031654576b9c9f25b70bdbc`, GitHub reports no commit status checks and no workflow runs. Repository CI is therefore not configured / not applicable for this execution commit.
+The principal PASS discriminator is a material `>=0.05` aggregate `R2_state` advantage over B2, in addition to the other frozen conditions.
 
 ## Claim ceiling
 
-Allowed interpretation only:
+No response-coordinate result exists yet.
 
-> In this frozen two-unit ReLU pilot, two globally function-equivalent and simple-norm-matched parameterisations exhibit different one-step learning responses under symmetric tasks, with the preferred state reversing across the task pair.
+Do not claim a useful low-dimensional causal/plasticity coordinate, held-out intervention prediction, generic nonlinear scaling, realistic SGD reachability, LoRA/transformer relevance, real-data scaling, controlled state preparation, novelty, or established causal synergetics.
 
-This does not establish novelty, generic nonlinear behaviour, realistic nonlinear training-history reachability, learned causal/plasticity coordinates, multi-step or real-data scaling, LoRA/transformer behaviour, or causal synergetics.
+## Final protocol
 
-## Open issues
+After execution, commit implementation/tests/result, update this STATUS with exact PASS/WEAK/NULL/FAIL classification and commit hashes, set `Next instruction: RETURN TO MASTER`, report CI status if applicable, and end:
 
-Generic nonlinear scaling, realistic nonlinear history/reachability, learned representations, multi-step/real-data experiments, LoRA/adapters, power-grid work, controlled state preparation, and manuscript work remain blocked pending new MASTER authorisation.
+`STOP — RETURN TO MASTER`
 
-STOP — RETURN TO MASTER
+STOP — AWAIT GO
