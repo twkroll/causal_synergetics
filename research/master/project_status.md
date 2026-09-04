@@ -1,10 +1,10 @@
 # Project Status — causal_synergetics
 
-Version: 0.8
+Version: 0.9
 Date: 2026-09-04
-Overall status: RESPONSE COORDINATE SPECIFICATION FROZEN / APP-A PILOT READY
+Overall status: RESPONSE COORDINATE WEAK RESULT FROZEN / MASTER INTEGRATION READY
 Governance status: FROZEN v0.1
-Latest rollback point: `RP-008 — Neural Response Coordinate Specification Freeze 0.1`
+Latest rollback point: `RP-009 — Neural Response Coordinate Result Freeze 0.1`
 
 ## Central research question
 
@@ -19,99 +19,108 @@ The programme treats causal synergetics as a proposed research field to be teste
 - `Neural Minimal Benchmark 0.1`: PASS — RESULT FROZEN.
 - `Neural Historical Reachability 0.1`: PASS — RESULT FROZEN.
 - `Neural Nonlinear ReLU Pilot 0.1`: PASS — RESULT FROZEN.
-- `Neural Vertical Slice Go/Revise/Stop Gate 0.1`: GO — CLAIM-RESTRICTED / NO NOVELTY PROMOTION.
+- `Neural Vertical Slice Go/Revise/Stop Gate 0.1`: GO — CLAIM-RESTRICTED.
+- `Neural Response Coordinate Specification Gate 0.1`: SPECIFICATION FROZEN.
+- `Neural Response Coordinate Pilot 0.1`: **WEAK — RESULT FROZEN / NO NOVELTY PROMOTION**.
 
-All prior claim ceilings remain controlling.
+## New frozen result
 
-## Newly frozen specification
+Canonical result:
+`research/app_a/neural_response_coordinate_pilot_0_1.md`.
 
-Gate: `Neural Response Coordinate Specification Gate 0.1`.
-Decision: **SPECIFICATION FROZEN / APP-A READY / NO NOVELTY PROMOTION**.
-Canonical memo: `research/master/neural_response_coordinate_specification_gate_0_1.md`.
-Execution prompt: `research/master/prompts/app_a_neural_response_coordinate_pilot_0_1.md`.
+Canonical result-freeze commit:
+`18618368991d818b3bfe883975b3ab2573bed0c6`.
 
-The next pilot is frozen before held-out inspection with:
+Observed frozen result:
 
-- factorised-linear model `d=4,h=5`;
-- 81 exactly function-equivalent states on a fixed 9x9 latent grid;
-- constant current function and constant total `U`/`v` norms;
-- deterministic 41/40 train/test state split;
-- four fixed Hadamard calibration interventions;
-- eight fixed held-out interventions;
-- exactly one full-batch GD step at `eta=0.1`;
-- 16D calibration fingerprint compressed by train-only PCA to exactly 2 dimensions;
-- fixed bilinear OLS decoder;
-- B0 current-function baseline;
-- B1 fixed simple norm/state-summary baseline;
-- B2 equal-dimensional raw-parameter PCA baseline;
-- full calibration-fingerprint and exact operator ceilings;
-- deterministic cyclic state-association null;
-- fixed aggregate/per-intervention `R2_state`, NRMSE, leakage tests, numerical tolerances, and disjoint PASS/WEAK/NULL/FAIL thresholds.
+- 2D response-aware coordinate aggregate held-out `R2_state = 1.0`;
+- minimum held-out intervention `R2_state(c)=1.0`;
+- B0 current-function baseline approximately `0.0`;
+- B1 simple-summary baseline `0.070803629370716`;
+- B2 equal-dimensional raw-parameter PCA baseline `0.999883026432542`;
+- response-coordinate advantage over B2 only `0.000116973567458323`, below the pre-frozen PASS margin `0.05`;
+- cyclic association null `R2_state=-0.2`;
+- all analytical/autograd, oracle, leakage, ceiling and regression sanity conditions passed;
+- combined APP-A test run `24 passed`;
+- no retuning or alternate coordinate/family was tried.
 
-The critical PASS condition includes a material `>=0.05` aggregate `R2_state` advantage over the equal-dimensional raw-parameter PCA baseline. A near-tie is at most WEAK; a clear raw-state loss is NULL.
+Mechanical classification: **WEAK**.
 
-No held-out benchmark result has been executed or inspected in MASTER.
+## Scientific interpretation
 
-## Active branch
+The candidate response coordinate demonstrates essentially exact held-out intervention prediction inside the frozen synthetic family. However, it does not demonstrate material predictive value beyond an equally compact raw-parameter PCA representation.
 
-`50 – APP-A – Neuronaler Minimalbenchmark`
+The plausible diagnosis is that the frozen state family itself has a sufficiently low-dimensional raw-parameter geometry for 2D raw PCA to recover almost all predictive structure. That diagnosis is an inference from the frozen result, not a separately proved theorem.
 
-Current gate: `Neural Response Coordinate Pilot 0.1`.
-Status: READY / AWAIT GO.
+The result therefore weakens the specific programme claim that response-aware coordinates provide special compression beyond ordinary compact state representations, while preserving the narrower fact that held-out responses can be summarized compactly in this synthetic family.
 
-APP-A must execute only the frozen versioned prompt and return the result without repair.
+## Active gate
 
-## Waiting / blocked branches
+`00 – MASTER – Projektplan & Status`
 
+Current gate: `Neural Response Coordinate WEAK Integration Gate 0.1`.
+Status: READY / AWAIT NAMED GATE.
+Canonical prompt:
+`research/master/prompts/master_neural_response_coordinate_weak_integration_gate_0_1.md`.
+
+Purpose: integrate the WEAK result without repair and choose exactly one of `GO`, `REVISE`, or `STOP` for the response-coordinate direction.
+
+## Branch state
+
+- `00 – MASTER`: READY — WEAK integration gate.
 - `10 – CORE`: COMPLETE / FROZEN / WAIT.
+- `50 – APP-A`: COMPLETE / FROZEN / WAIT.
+- `80 – LIT`: COMPLETE / FROZEN / WAIT.
 - `20/30/40 – THEORY-*`: UNOPENED.
 - `60/70 – APP-*`: UNOPENED.
-- `80 – LIT`: COMPLETE / FROZEN / WAIT.
 - `90 – MANUSCRIPT`: UNOPENED.
-- multi-step/real-data scaling: BLOCKED.
-- realistic nonlinear history/reachability: BLOCKED.
-- broader nonlinear scaling: BLOCKED.
-- NTK/LoRA/adapter work: BLOCKED.
-- power-grid / ODE discovery: BLOCKED.
-- controlled state preparation: BLOCKED.
+
+## Blocked future work
+
+Until the WEAK integration gate completes, do not open:
+
+- a second response coordinate or alternate state family;
+- nonlinear/multi-step/real-data response-coordinate scaling;
+- realistic neural history/reachability;
+- NTK/LoRA/adapter work;
+- power-grid / ODE discovery;
+- controlled state preparation;
+- new literature positioning;
+- manuscript drafting.
 
 ## Freeze check
 
 OK.
 
-`RP-008` freezes state family, splits, interventions, coordinate dimension/construction, decoder, baselines, controls, metrics, thresholds, numerical tolerances, software stack, and anti-retuning rule before APP-A execution.
-
-No second coordinate or alternate family is authorised after a WEAK/NULL/FAIL result.
+`RP-009` preserves the WEAK result exactly. No coordinate, family, baseline, metric, split, threshold, intervention or horizon may be changed retroactively.
 
 ## Branching check
 
 OK.
 
-Exactly one scientific execution is authorised: `Neural Response Coordinate Pilot 0.1` in the existing APP-A chat.
+Exactly one next activity is authorised and it remains in MASTER: integration of the WEAK result. No new scientific execution is open.
 
 ## Rollback
 
 Latest stable savepoint:
 
-`RP-008 — Neural Response Coordinate Specification Freeze 0.1`.
+`RP-009 — Neural Response Coordinate Result Freeze 0.1`.
 
-A weak, null, or failed result is retained and returned to MASTER; the specification is not repaired post hoc.
+Any future revision must branch prospectively from this frozen result rather than repairing it.
 
 ## Current claim ceiling
 
-The project may state only the previously frozen LIT/CORE/linear/history/ReLU findings and the fact that this predictive benchmark has been pre-specified.
+The project may state the exact frozen LIT/CORE/linear/history/ReLU findings and the WEAK response-coordinate result.
 
-It may not yet claim:
+It may not claim:
 
-- a useful low-dimensional response/plasticity coordinate;
-- held-out intervention prediction;
+- a generally useful low-dimensional causal/plasticity coordinate;
+- special response-aware value beyond equally compact raw-state geometry in general;
 - generic nonlinear scaling;
 - realistic SGD history;
 - LoRA/transformer or real-data relevance;
 - controlled state preparation;
 - field-level causal-synergetics novelty.
-
-Even a future PASS would initially support only the frozen synthetic-family benchmark claim.
 
 ## Manuscript
 
@@ -121,18 +130,10 @@ No manuscript claim freeze is justified.
 
 ## CI
 
-Repository CI remains not configured. The current MASTER changes are specification/governance commits with no GitHub status checks.
+Repository CI remains not configured. For response-coordinate test commit `48d850c22ca156af892db11cbbdb95b20693bb08`, GitHub reports no commit status checks. The frozen local combined test result is `24 passed`.
 
 ## Next global step
 
-Return to the existing chat:
+Remain in `00 – MASTER – Projektplan & Status` and enter exactly:
 
-`50 – APP-A – Neuronaler Minimalbenchmark`
-
-Enter exactly:
-
-`GO`
-
-After APP-A reaches `STOP — RETURN TO MASTER`, return here and enter:
-
-`Status?`
+`Neural Response Coordinate WEAK Integration Gate 0.1`
