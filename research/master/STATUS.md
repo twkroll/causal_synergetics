@@ -1,11 +1,11 @@
 # STATUS — 00 – MASTER – Projektplan & Status
 
-Current Gate: `Neural Response Coordinate Specification Gate 0.1`
-Status: READY / AWAIT NAMED GATE
+Current Gate: `Post-Specification Integration / Neural Response Coordinate Pilot 0.1`
+Status: COMPLETE / WAIT FOR APP-A
 Latest canonical file: `research/master/project_status.md`
-Dependencies: `Neural Vertical Slice Go/Revise/Stop Gate 0.1` COMPLETE / GO / FROZEN
-Next instruction: User remains in `00 – MASTER – Projektplan & Status` and enters exactly `Neural Response Coordinate Specification Gate 0.1`.
-STOP boundary: MASTER must not execute a learned-coordinate benchmark, open multi-step/real-data/realistic-history/LoRA/power-grid/state-preparation/manuscript branches, or weaken prior freezes before the response-coordinate specification gate is completed and frozen.
+Dependencies: `Neural Response Coordinate Specification Gate 0.1` COMPLETE / SPECIFICATION FROZEN
+Next instruction: User returns to existing `50 – APP-A – Neuronaler Minimalbenchmark` and enters exactly `GO`; that chat must execute only `research/master/prompts/app_a_neural_response_coordinate_pilot_0_1.md`.
+STOP boundary: MASTER must not execute the pilot itself, change any frozen coordinate/baseline/split/metric/threshold, or open multi-step/real-data/realistic-history/nonlinear-scaling/LoRA/power-grid/state-preparation/literature/manuscript work before APP-A returns.
 
 ## Freeze state
 
@@ -13,59 +13,45 @@ STOP boundary: MASTER must not execute a learned-coordinate benchmark, open mult
 - MASTER baseline: FROZEN
 - Prior-art audit: FROZEN / PASS — CLAIM-RESTRICTED
 - CORE boundary: FROZEN / PASS — CLAIM-RESTRICTED / NO NOVELTY PROMOTION
-- Neural Minimal Benchmark 0.1: FROZEN / PASS — RESULT FROZEN
-- Neural Historical Reachability 0.1: FROZEN / PASS — RESULT FROZEN
-- Neural Nonlinear ReLU Pilot 0.1: FROZEN / PASS — RESULT FROZEN
+- Neural Minimal Benchmark 0.1: FROZEN / PASS
+- Neural Historical Reachability 0.1: FROZEN / PASS
+- Neural Nonlinear ReLU Pilot 0.1: FROZEN / PASS
 - Neural Vertical Slice Decision 0.1: FROZEN / GO — CLAIM-RESTRICTED
-- Latest rollback point: `RP-007 — Neural Vertical Slice Decision Freeze 0.1`
+- Neural Response Coordinate Specification 0.1: FROZEN / APP-A READY
+- Latest rollback point: `RP-008 — Neural Response Coordinate Specification Freeze 0.1`
 
 ## Current scientific state
 
-The first neural vertical slice is accepted as a coherent feasibility chain. All pre-specified stages passed without retuning, but the programme remains claim-restricted and has not yet shown a useful low-dimensional predictive state representation.
+No response-coordinate result exists yet.
 
-The strongest positive evidence is exact function-level equivalence with directed intervention-response differences in both linear and one frozen nonlinear ReLU setting, plus exact reachability of the linear pair under one explicit frozen history.
+The next benchmark is fully pre-specified: 81 exactly function-equivalent factorised-linear states, deterministic 41/40 state split, four calibration and eight held-out interventions, a fixed 2D response-PCA coordinate, fixed bilinear decoder, current-function/norm/raw-state-PCA baselines, ceilings/null controls, fixed metrics, and disjoint PASS/WEAK/NULL/FAIL thresholds.
 
-The strongest limitations remain prior-art subsumption of generic concepts, unresolved publication novelty of the CORE bridge, artificial historical reachability, tiny-scale one-step neural evidence, and lack of held-out intervention prediction.
+The principal falsification criterion is whether the 2D response-aware coordinate materially beats the equal-dimensional raw-parameter PCA baseline on held-out interventions.
 
 ## Claim ceiling
 
 No novelty promotion is authorised.
 
-The project may state only the previously frozen exact linear/history/ReLU results and CORE restrictions. It may not claim generic nonlinear scaling, ordinary/realistic SGD-history reachability, existence of a low-dimensional causal/plasticity coordinate, held-out intervention prediction, LoRA/transformer relevance, real-data scaling, controlled state preparation, or established causal synergetics.
+The project still may not claim existence/usefulness of a low-dimensional causal/plasticity coordinate, held-out intervention prediction, generic nonlinear scaling, realistic SGD histories, LoRA/transformer relevance, real-data usefulness, controlled state preparation, or established causal synergetics.
 
 ## Branch state
 
-- 00 – MASTER: READY — Neural Response Coordinate Specification Gate 0.1
+- 00 – MASTER: COMPLETE / WAIT FOR APP-A
 - 10 – CORE: COMPLETE / FROZEN / WAIT
-- 20 – THEORY-A: UNOPENED
-- 30 – THEORY-B: UNOPENED
-- 40 – THEORY-C: UNOPENED
-- 50 – APP-A: COMPLETE / FROZEN / WAIT
-- 60 – APP-B: UNOPENED
-- 70 – APP-C: UNOPENED
+- 20/30/40 – THEORY-*`: UNOPENED
+- 50 – APP-A: READY / AWAIT GO — Neural Response Coordinate Pilot 0.1
+- 60/70 – APP-*`: UNOPENED
 - 80 – LIT: COMPLETE / FROZEN / WAIT
 - 90 – MANUSCRIPT: UNOPENED
 
-## Blocked future work
-
-Without completion of the specification gate, do not open:
-
-- learned response/plasticity coordinate execution;
-- multi-step or real-data scaling;
-- realistic nonlinear history/reachability;
-- NTK/LoRA/adapter comparisons;
-- power-grid / ODE discovery;
-- controlled state preparation;
-- manuscript drafting.
-
 ## Active blocker
 
-Governance only: MASTER must freeze exactly one falsifiable held-out response-coordinate benchmark before APP-A can resume execution.
+Operational only: APP-A has not yet executed the frozen response-coordinate pilot.
 
 ## Return protocol
 
-Execute the named gate in this chat:
+After APP-A reaches `STOP — RETURN TO MASTER`, the next MASTER command is:
 
-`Neural Response Coordinate Specification Gate 0.1`
+`Status?`
 
-STOP — AWAIT NAMED GATE
+STOP — WAIT
