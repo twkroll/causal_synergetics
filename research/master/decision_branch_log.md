@@ -239,20 +239,30 @@ Canonical prompt `research/master/prompts/master_manuscript_claim_freeze_archite
 
 ### DEC-059 — Manuscript Claim Freeze & Architecture decision
 Status: FROZEN / COMPLETE
-Canonical memo `research/master/manuscript_claim_freeze_architecture_0_1.md`.
-Decision: **MANUSCRIPT CLAIM FREEZE / MANUSCRIPT READY / NO NOVELTY PROMOTION**.
-The sole contribution-bearing framing is Package P, the restricted synergetics-centered diagnostic organisation. C1–C4 remain restricted components; C5 is illustrative SAME-level prior art only. WEAK/FAIL neural coordinate evidence, symmetry-aware Gram control, PARK decision and exact power-grid mean/COI closure are mandatory visible claim-limit evidence. APP-C is framed as an established output-constrained/preview/feedforward benchmark instantiation.
+Canonical memo `research/master/manuscript_claim_freeze_architecture_0_1.md`; decision **MANUSCRIPT CLAIM FREEZE / MANUSCRIPT READY / NO NOVELTY PROMOTION**. Package P is the sole contribution-bearing framing; C1–C4 remain restricted; C5 is SAME-level illustration only. WEAK/FAIL neural evidence, exact Gram control, PARK decision and exact mean/COI closure are mandatory visible limitations. APP-C is established output-constrained/preview/feedforward benchmark instantiation.
 
 ### DEC-060 — Manuscript Claim & Architecture Freeze 0.1
 Status: FROZEN
-Rollback point: `RP-021 — Manuscript Claim & Architecture Freeze 0.1`.
-This rollback freezes the exact manuscript-safe contribution hierarchy, allowed/prohibited wording, title/abstract constraints, mandatory citation placement, negative-evidence policy, article section architecture, figure/table inventory and manuscript STOP boundaries. It does not promote novelty or change any scientific result or LIT classification.
+Rollback `RP-021 — Manuscript Claim & Architecture Freeze 0.1`; freezes claim hierarchy, allowed/prohibited wording, citation placement, negative-evidence policy, architecture, figure/table inventory and manuscript STOP boundaries.
 
 ### DEC-061 — Manuscript Initial Draft 0.1 authorised
-Status: ACTIVE / FROZEN WRITING
-Assigned branch: `90 – MANUSCRIPT – Manuskript & Figuren`.
-Canonical prompt: `research/master/prompts/manuscript_initial_draft_0_1.md`.
-MANUSCRIPT may draft only from frozen evidence and architecture, create permitted conceptual diagrams/tables, and format mandatory citations. No new science, simulations, literature search, result repair or claim promotion is authorised. Any scientific change requires return to MASTER.
+Status: SATISFIED / CLOSED
+Assigned branch `90 – MANUSCRIPT – Manuskript & Figuren`; canonical prompt `research/master/prompts/manuscript_initial_draft_0_1.md`. MANUSCRIPT drafted only from frozen evidence and architecture and returned without new science or claim promotion.
+
+### DEC-062 — Manuscript Initial Draft 0.1 returned
+Status: FROZEN / COMPLETE
+Canonical draft `research/manuscript/manuscript_initial_draft_0_1.md`; draft creation commit `143712a86258f55db3b1d2f58ec6e4a8b32e7579`; canonical draft blob `677d17f847ec54990d1b60df4a5fe685b39da721`.
+Preliminary MASTER inspection finds no obvious claim escalation. Required negative evidence and successful countercontrols are visible in the main text. One presentational TODO remains: incomplete bibliographic metadata for the canonical geometric-control/output-nulling source inherited from LIT.
+
+### DEC-063 — Manuscript Initial Draft Freeze 0.1
+Status: FROZEN
+Canonical freeze `research/master/manuscript_initial_draft_result_freeze_0_1.md`; rollback `RP-022 — Manuscript Initial Draft Freeze 0.1`.
+The draft may not be silently revised or treated as submission-ready before formal MASTER compliance integration.
+
+### DEC-064 — Manuscript Initial Draft Integration & Compliance Gate 0.1 authorised
+Status: ACTIVE / MASTER-COMPLIANCE ONLY
+Canonical prompt `research/master/prompts/master_manuscript_initial_draft_integration_compliance_gate_0_1.md`.
+Purpose: audit claim, numerical, citation, architecture, negative-evidence and figure/table compliance; distinguish scientific blockers from editorial/bibliographic issues; and choose exactly one next action. No rewrite, new science, broad literature research or claim promotion is authorised inside the gate.
 
 ## Rollback points
 
@@ -277,6 +287,7 @@ MANUSCRIPT may draft only from frozen evidence and architecture, create permitte
 - `RP-019 — Post-Preparation Programme Synthesis & Claim-Readiness Freeze 0.1` — STABLE.
 - `RP-020 — Claim-Level & Theorem-Level Prior-Art Revalidation Result Freeze 0.1` — STABLE.
 - `RP-021 — Manuscript Claim & Architecture Freeze 0.1` — STABLE.
+- `RP-022 — Manuscript Initial Draft Freeze 0.1` — STABLE.
 
 No prior freeze may be weakened. WEAK/NULL/FAIL/PASS outcomes and all claim demotions remain canonical and may not be retuned or relabelled.
 
@@ -284,7 +295,7 @@ No prior freeze may be weakened. WEAK/NULL/FAIL/PASS outcomes and all claim demo
 
 | Chat / branch | Status | Current gate | Dependency |
 |---|---|---|---|
-| 00 – MASTER | COMPLETE / WAIT | Manuscript claim/architecture frozen | MANUSCRIPT draft return |
+| 00 – MASTER | READY | Manuscript Initial Draft Integration & Compliance Gate 0.1 | `RP-022` stable |
 | 10 – CORE | COMPLETE / FROZEN / WAIT | CORE Synergetic Sufficiency Boundary 0.1 | satisfied |
 | 20 – THEORY-A | UNOPENED | none | MASTER authorisation |
 | 30 – THEORY-B | UNOPENED | none | MASTER authorisation |
@@ -293,4 +304,4 @@ No prior freeze may be weakened. WEAK/NULL/FAIL/PASS outcomes and all claim demo
 | 60 – APP-B | COMPLETE / PASS — RESULT FROZEN / WAIT | Power-Grid Minimal Benchmark 0.1 | returned to MASTER |
 | 70 – APP-C | COMPLETE / PASS — RESULT FROZEN / WAIT | Controlled State Preparation 0.1 | returned to MASTER |
 | 80 – LIT | COMPLETE / FROZEN / WAIT | Claim-Level & Theorem-Level Prior-Art Revalidation 0.1 | `RP-020` frozen |
-| 90 – MANUSCRIPT | READY / AWAIT GO | Manuscript Initial Draft 0.1 | `RP-021` frozen |
+| 90 – MANUSCRIPT | COMPLETE / DRAFT FROZEN / WAIT FOR MASTER | Manuscript Initial Draft 0.1 | `RP-022` frozen |
