@@ -1,13 +1,13 @@
 # STATUS — 00 – MASTER – Projektplan & Status
 
-Current Gate: `Manuscript Submission Readiness & Artifact Packaging Gate 0.1`
-Status: READY / AWAIT NAMED GATE
-Latest canonical manuscript: `research/manuscript/manuscript_editorial_completion_0_1.md`
-Editorial result freeze: `research/master/manuscript_editorial_completion_result_freeze_0_1.md`
-Latest rollback point: `RP-024 — Manuscript Editorial Completion Freeze 0.1`
-Canonical next prompt: `research/master/prompts/master_manuscript_submission_readiness_artifact_packaging_gate_0_1.md`
-Next instruction: User remains in `00 – MASTER – Projektplan & Status` and enters exactly `Manuscript Submission Readiness & Artifact Packaging Gate 0.1`.
-STOP boundary: Do not submit, revise scientific content, generate new scientific data, rerun APP-A/B/C, reopen parked response-coordinate work, broaden literature positioning, alter frozen claims, or start venue-dependent formatting before the named MASTER gate completes.
+Current Gate: `Post-Readiness / Manuscript Venue-Neutral Artifact Completion 0.1`
+Status: COMPLETE / WAIT FOR MANUSCRIPT
+Latest canonical readiness memo: `research/master/manuscript_submission_readiness_artifact_packaging_0_1.md`
+Decision: `GO — VENUE-NEUTRAL ARTIFACT COMPLETION ONLY / NO NOVELTY PROMOTION`
+Latest rollback point: `RP-025 — Manuscript Submission Readiness & Artifact Packaging Freeze 0.1`
+Authorised manuscript prompt: `research/master/prompts/manuscript_venue_neutral_artifact_completion_0_1.md`
+Next instruction: User opens/returns to `90 – MANUSCRIPT – Manuskript & Figuren` and enters exactly `GO`.
+STOP boundary: MASTER must not create the artifacts itself, select a venue, submit, revise scientific content, generate new scientific data, rerun APP-A/B/C, reopen parked response-coordinate work, broaden literature positioning, alter frozen claims, or promote novelty before MANUSCRIPT returns.
 
 ## Freeze state
 
@@ -25,76 +25,56 @@ STOP boundary: Do not submit, revise scientific content, generate new scientific
 - Manuscript Initial Draft 0.1: FROZEN / COMPLETE
 - Manuscript Initial Draft Integration & Compliance 0.1: FROZEN / GO — EDITORIAL COMPLETION ONLY
 - Manuscript Editorial Completion 0.1: FROZEN / COMPLETE
-- Latest rollback point: `RP-024 — Manuscript Editorial Completion Freeze 0.1`
+- Manuscript Submission Readiness & Artifact Packaging Gate 0.1: FROZEN / GO — VENUE-NEUTRAL ARTIFACT COMPLETION ONLY
+- Latest rollback point: `RP-025 — Manuscript Submission Readiness & Artifact Packaging Freeze 0.1`
 
-## Editorial return
+## Readiness result
 
-Canonical editorial version:
+The editorial manuscript remains scientifically, claim-wise and bibliographically ready.
 
-`research/manuscript/manuscript_editorial_completion_0_1.md`
+Venue selection is not yet required. The following work is safely venue-neutral and is the only authorised next work:
 
-Editorial version creation commit:
+- render Figure 1–4 only in their frozen conceptual/schematic roles;
+- Figure 3 must be schematic/non-trajectory because no stored frozen trajectory artifact exists;
+- complete Appendices A–F only from canonical frozen results;
+- create a reproducibility/artifact manifest from existing source/test/result paths and frozen commit/test records;
+- create a venue-neutral artifact index/package.
 
-`f1531222ceab86151d244ce31a2e921d980a1fa8`
-
-Accepted editorial changes are restricted to already cited bibliography metadata and formatting:
-
-- Ntogramatzidis & Padula (2017) metadata completed;
-- Tabuada & Pappas publication year 2005 added;
-- Li & Bose (1995) author metadata added;
-- corresponding author–year citations normalised;
-- obsolete bibliography TODO removed.
-
-No scientific result, metric, claim, literature family, figure datum or interpretation changed.
-
-## Current submission-readiness boundary
-
-Scientific/claim compliance is complete and the known bibliography TODOs are closed.
-
-However, submission is not yet authorised. The manuscript directory currently contains the frozen Markdown manuscript versions and STATUS only; no final rendered figure files, completed supplement artifact, venue-formatted source package or submission bundle is frozen there.
-
-The next MASTER gate must determine the minimum remaining venue-neutral versus venue-dependent artifact work before any submission action.
-
-## Active MASTER gate
-
-`Manuscript Submission Readiness & Artifact Packaging Gate 0.1`
-
-Required decision:
-
-- `GO — VENUE-NEUTRAL ARTIFACT COMPLETION ONLY`;
-- `GO — VENUE SELECTION / FORMAT SPECIFICATION REQUIRED`;
-- `REVISE — PRESENTATIONAL / ARTIFACT COMPLIANCE FIXES REQUIRED`;
-- `STOP — SCIENTIFIC OR CLAIM READINESS LOST`.
-
-The gate must not submit anything or create new science.
+No rerun, new scientific curve, new metric, new result, new literature or claim change is authorised.
 
 ## Branch state
 
-- 00 – MASTER: READY — Manuscript Submission Readiness & Artifact Packaging Gate 0.1
+- 00 – MASTER: COMPLETE / WAIT FOR MANUSCRIPT
 - 10 – CORE: COMPLETE / FROZEN / WAIT
 - 20/30/40 – THEORY-*`: UNOPENED
 - 50 – APP-A: PARKED / FROZEN / WAIT
 - 60 – APP-B: COMPLETE / PASS — RESULT FROZEN / WAIT
 - 70 – APP-C: COMPLETE / PASS — RESULT FROZEN / WAIT
 - 80 – LIT: COMPLETE / FROZEN / WAIT
-- 90 – MANUSCRIPT: COMPLETE / EDITORIAL VERSION FROZEN / WAIT FOR MASTER
+- 90 – MANUSCRIPT: READY / AWAIT GO — Manuscript Venue-Neutral Artifact Completion 0.1
 
 ## Active blocker
 
-Submission/artifact readiness only. No current scientific, claim or bibliography-content blocker is identified.
+Venue-neutral artifact completion only. No current scientific, claim or bibliography-content blocker is identified.
+
+Submission remains unauthorised. Venue selection becomes a downstream decision only after the venue-neutral package returns.
 
 ## Claim ceiling
 
-No novelty or priority promotion is authorised. Package P remains the sole contribution-bearing framing; C1–C4 remain restricted and C5 remains illustrative/SAME-level prior art.
+No novelty or priority promotion. Package P remains the sole contribution-bearing framing; C1–C4 remain restricted and C5 remains illustrative/SAME-level prior art.
 
 ## CI
 
-Repository CI remains not configured. Editorial completion and this handoff contain no scientific code execution.
+Repository CI remains not configured. This readiness gate contains no scientific code execution.
 
 ## Return protocol
 
-Remain in this chat and enter exactly:
+Open/return to `90 – MANUSCRIPT – Manuskript & Figuren` and enter exactly:
 
-`Manuscript Submission Readiness & Artifact Packaging Gate 0.1`
+`GO`
 
-STOP — AWAIT NAMED GATE
+After MANUSCRIPT reaches `STOP — RETURN TO MASTER`, return here and enter:
+
+`Status?`
+
+STOP — WAIT
