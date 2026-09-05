@@ -1,14 +1,14 @@
 # STATUS — 00 – MASTER – Projektplan & Status
 
-Current Gate: `Controlled State Preparation Feasibility & Specification Gate 0.1`
-Status: READY / AWAIT NAMED GATE
-Latest canonical file: `research/master/cross_domain_intervention_sufficiency_integration_0_1.md`
-Dependencies: complete frozen programme through `RP-015 — Power-Grid Minimal Benchmark Result Freeze 0.1`
-Cross-domain integration decision: `GO — CLAIM-RESTRICTED / NO NOVELTY PROMOTION`
-Latest rollback point: `RP-016 — Cross-Domain Intervention-Sufficiency Integration Freeze 0.1`
-Canonical prompt: `research/master/prompts/master_controlled_state_preparation_feasibility_specification_gate_0_1.md`
-Next instruction: User remains in `00 – MASTER – Projektplan & Status` and enters exactly `Controlled State Preparation Feasibility & Specification Gate 0.1`.
-STOP boundary: Do not execute state preparation, open APP-C, reopen parked APP-A response-coordinate work, retune APP-B, start new theory/literature/manuscript work, or open multiple preparation candidates before the specification gate completes.
+Current Gate: `Post-Controlled-State-Preparation-Specification / Controlled State Preparation 0.1`
+Status: COMPLETE / WAIT FOR APP-C
+Latest canonical file: `research/master/controlled_state_preparation_feasibility_specification_0_1.md`
+Dependencies: `Controlled State Preparation Feasibility & Specification Gate 0.1` COMPLETE / SPECIFICATION FROZEN
+Decision: `SPECIFICATION FROZEN / PREPARATION EXECUTION READY / NO NOVELTY PROMOTION`
+Latest rollback point: `RP-017 — Controlled State Preparation Specification Freeze 0.1`
+Execution prompt: `research/master/prompts/app_c_controlled_state_preparation_0_1.md`
+Next instruction: User opens/returns to `70 – APP-C – Controlled State Preparation` and enters exactly `GO`; APP-C must execute only the frozen prompt.
+STOP boundary: MASTER must not execute the preparation benchmark itself, alter the frozen preparation/system/interventions/comparators/budgets/horizons/numerics/metrics/thresholds, reopen parked APP-A response-coordinate work, retune APP-B, or open new theory/literature/manuscript work before APP-C returns.
 
 ## Freeze state
 
@@ -21,66 +21,59 @@ STOP boundary: Do not execute state preparation, open APP-C, reopen parked APP-A
 - Neural Response Coordinate Pilot 0.1: FROZEN / WEAK
 - Neural Response Coordinate Nuisance-Invariance Pilot 0.1: FROZEN / FAIL — SPECIFICATION CLASSIFICATION GAP
 - Neural response-coordinate direction: FROZEN / STOP — PARKED
-- Power-Grid Minimal Benchmark Specification 0.1: FROZEN
 - Power-Grid Minimal Benchmark 0.1: FROZEN / PASS
 - Cross-Domain Intervention-Sufficiency Integration 0.1: FROZEN / GO — CLAIM-RESTRICTED
-- Latest rollback point: `RP-016 — Cross-Domain Intervention-Sufficiency Integration Freeze 0.1`
+- Controlled State Preparation Specification 0.1: FROZEN / APP-C READY
+- Latest rollback point: `RP-017 — Controlled State Preparation Specification Freeze 0.1`
 
-## Current scientific state
+## Frozen preparation benchmark
 
-The programme has a coherent but claim-restricted cross-domain feasibility chain.
+Exactly one candidate is authorised:
 
-Branch-independent CORE: unforced/passive slaving does not imply controlled response sufficiency; exact full-trajectory fibre sufficiency is controlled projectability/closure under the frozen response definition. This structural criterion remains prior-art/subsumed.
+- same normalized two-machine nonlinear swing model with `M=D=K=1`;
+- fixed initial state `x=(0,0,0,0)`;
+- present representative macro `q=(delta1,omega1)` held fixed throughout preparation;
+- hidden coherency state `(e_delta,e_omega)`;
+- known future localized steps `a=±0.2` on machine 2;
+- target hidden forced equilibrium `e_delta*=asin(a/2)`, `e_omega*=0`;
+- deterministic quintic hidden path over `tau_prep=2`;
+- exact open-loop inverse-dynamics feedforward inputs;
+- preparation amplitude cap `0.35`, energy budget `0.25`;
+- P0 no preparation, PT matched preparation, PM equal-cost sign-mismatched preparation;
+- evaluation horizon `T_eval=5` with no feedback or compensating input beyond the frozen disturbance;
+- standard coherent aggregate B1 as the future target trajectory;
+- deterministic NumPy float64 RK4 at `dt=0.001` with `dt=0.0005` convergence audit;
+- exhaustive PASS/WEAK/NULL/FAIL classifier.
 
-Neural branch: exact same-current-function response differences are frozen in linear and ReLU settings, and an artificial function-preserving historical preparation exists. The learned response-coordinate direction remains parked after a WEAK result followed by a specification/classification FAIL; no repair is authorised.
-
-Power-grid branch: the frozen representative-machine reduction is exact passively (`E_pass=0`) and materially wrong under the localized hidden-machine steps (`E_B0_min=0.3549858420076152`, `E_B1_min=0.06534774384333092`) while the arithmetic mean/COI coordinate remains exactly closed within `3.885780586188048e-14`.
-
-The cross-domain integration therefore authorises one new capability-specification stage rather than another insufficiency witness.
-
-## Active gate
-
-`Controlled State Preparation Feasibility & Specification Gate 0.1`
-
-Purpose: determine whether exactly one narrow preparation benchmark can be prospectively frozen in which a declared current observable/macro/function is preserved, hidden/internal state is changed under a fixed admissible preparation budget, and a separately frozen later intervention response changes in a targeted measurable way.
-
-This gate is specification-only. No preparation result exists yet.
+No preparation outcome has been inspected yet.
 
 ## Claim ceiling
 
 No novelty promotion is authorised.
 
-The project may state the exact frozen LIT/CORE/neural/power-grid results and the cross-domain programme coherence. It may not claim generic cross-domain universality, a new controlled-state formalism, generic power-grid insufficiency, a generally useful learned causal/plasticity coordinate, general controlled state preparation, or established causal synergetics.
+The project may state only that a narrow bounded same-current-macro preparation benchmark has been prospectively frozen. It may not claim any state-preparation result, optimality, robustness to unknown interventions, generic power-grid benefit, generic controlled state preparation, a new controlled-state formalism, learned causal coordinates, or established causal synergetics.
 
-Controlled state preparation remains prior-art-restricted: the next gate must separate any proposed benchmark from ordinary function-preserving transformations, model editing, adaptation, feedback/preconditioning, or trivial initialization choice.
+The method is explicitly acknowledged as related to established anticipatory feedforward/equilibrium pre-positioning/preconditioning. The benchmark tests only the exact two-phase same-macro/different-hidden-state property.
 
 ## Branch state
 
-- 00 – MASTER: READY — Controlled State Preparation Feasibility & Specification Gate 0.1
+- 00 – MASTER: COMPLETE / WAIT FOR APP-C
 - 10 – CORE: COMPLETE / FROZEN / WAIT
 - 20/30/40 – THEORY-*`: UNOPENED
-- 50 – APP-A: PARKED / FROZEN / WAIT for response-coordinate work
+- 50 – APP-A: PARKED / FROZEN / WAIT
 - 60 – APP-B: COMPLETE / PASS — RESULT FROZEN / WAIT
-- 70 – APP-C: UNOPENED; may open only after a successful preparation specification freeze
+- 70 – APP-C: READY / AWAIT GO — Controlled State Preparation 0.1
 - 80 – LIT: COMPLETE / FROZEN / WAIT
 - 90 – MANUSCRIPT: UNOPENED
 
 ## Active blocker
 
-Governance/scientific design only: one preparation task must be selected and fully frozen before any execution branch opens.
-
-## Freeze / branching check
-
-OK. All prior rollback points through `RP-015` remain intact. `RP-016` freezes only this integration decision and does not reinterpret prior WEAK/FAIL/PASS results. No specialist preparation execution is open.
-
-## Manuscript
-
-UNOPENED. No manuscript claim freeze is authorised.
+Operational only: APP-C has not yet executed the frozen preparation benchmark.
 
 ## Return protocol
 
-Remain in this chat and enter exactly:
+After APP-C reaches `STOP — RETURN TO MASTER`, return here and enter:
 
-`Controlled State Preparation Feasibility & Specification Gate 0.1`
+`Status?`
 
-STOP — AWAIT NAMED GATE
+STOP — WAIT
