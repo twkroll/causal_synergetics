@@ -1,14 +1,13 @@
 # STATUS — 00 – MASTER – Projektplan & Status
 
-Current Gate: `Manuscript Claim Freeze & Architecture Gate 0.1`
-Status: READY / AWAIT NAMED GATE
-Latest canonical LIT result: `research/literature/claim_level_theorem_level_prior_art_revalidation_0_1.md`
-LIT result freeze: `research/master/claim_level_theorem_level_prior_art_revalidation_result_freeze_0_1.md`
-Decision: `MANUSCRIPT-READY — CLAIM-RESTRICTED / NO NOVELTY PROMOTION`
-Latest rollback point: `RP-020 — Claim-Level & Theorem-Level Prior-Art Revalidation Result Freeze 0.1`
-Canonical next prompt: `research/master/prompts/master_manuscript_claim_freeze_architecture_gate_0_1.md`
-Next instruction: User remains in `00 – MASTER – Projektplan & Status` and enters exactly `Manuscript Claim Freeze & Architecture Gate 0.1`.
-STOP boundary: Do not open `90 – MANUSCRIPT`, draft manuscript prose, start new theory/literature/experiments, rerun or extend APP-A/B/C, reopen parked response-coordinate work, or promote novelty before the named MASTER gate completes.
+Current Gate: `Post-Manuscript-Claim-Freeze / Manuscript Initial Draft 0.1`
+Status: COMPLETE / WAIT FOR MANUSCRIPT
+Latest canonical memo: `research/master/manuscript_claim_freeze_architecture_0_1.md`
+Decision: `MANUSCRIPT CLAIM FREEZE / MANUSCRIPT READY / NO NOVELTY PROMOTION`
+Latest rollback point: `RP-021 — Manuscript Claim & Architecture Freeze 0.1`
+Authorised manuscript prompt: `research/master/prompts/manuscript_initial_draft_0_1.md`
+Next instruction: User opens/returns to `90 – MANUSCRIPT – Manuskript & Figuren` and enters exactly `GO`.
+STOP boundary: MASTER must not draft manuscript prose itself, start new theory/literature/experiments, rerun or extend APP-A/B/C, reopen parked response-coordinate work, alter the frozen manuscript claim hierarchy/architecture, or promote novelty before MANUSCRIPT returns.
 
 ## Freeze state
 
@@ -22,72 +21,87 @@ STOP boundary: Do not open `90 – MANUSCRIPT`, draft manuscript prose, start ne
 - Neural Response Coordinate Nuisance-Invariance Pilot 0.1: FROZEN / FAIL — SPECIFICATION CLASSIFICATION GAP
 - Neural response-coordinate direction: FROZEN / STOP — PARKED
 - Power-Grid Minimal Benchmark 0.1: FROZEN / PASS
-- Cross-Domain Intervention-Sufficiency Integration 0.1: FROZEN / GO — CLAIM-RESTRICTED
 - Controlled State Preparation 0.1: FROZEN / PASS
-- Post-Preparation Programme Synthesis & Claim-Readiness 0.1: FROZEN / GO — CLAIM-READINESS PATH
-- Claim-Level & Theorem-Level Prior-Art Revalidation 0.1: FROZEN / `MANUSCRIPT-READY — CLAIM-RESTRICTED`
-- Latest rollback point: `RP-020 — Claim-Level & Theorem-Level Prior-Art Revalidation Result Freeze 0.1`
+- Claim-Level & Theorem-Level Prior-Art Revalidation 0.1: FROZEN / MANUSCRIPT-READY — CLAIM-RESTRICTED
+- Manuscript Claim Freeze & Architecture 0.1: FROZEN / MANUSCRIPT READY
+- Latest rollback point: `RP-021 — Manuscript Claim & Architecture Freeze 0.1`
 
-## Final literature classification
+## Frozen manuscript role
 
-The final frozen claim classifications are:
+The first manuscript is a restricted theory/diagnostic synthesis. The only contribution-bearing framing is the package-level synergetics-centered diagnostic organisation.
 
-- C1: `CLOSE / RETAIN-RESTRICTED`;
-- C2: `RELATED / REINTERPRET`;
-- C3: `CLOSE / RETAIN-RESTRICTED`;
-- C4: `CLOSE / REINTERPRET`;
-- C5: `SAME / DEMOTE`;
-- package-level synthesis: `DISTINCT-ENOUGH-FOR-RESTRICTED-CLAIM / RETAIN-RESTRICTED`.
+Claim hierarchy:
 
-The package is manuscript-usable only as a **restricted synergetics-centered diagnostic synthesis**. No individual theorem, neural phenomenon, power-grid reduction result, preparation/control mechanism, or `causal synergetics` field-level claim is novel-authorised.
+- C1: CLOSE / RETAIN-RESTRICTED;
+- C2: RELATED / REINTERPRET;
+- C3: CLOSE / RETAIN-RESTRICTED;
+- C4: CLOSE / REINTERPRET;
+- C5: SAME / DEMOTE — illustration only;
+- Package: DISTINCT-ENOUGH-FOR-RESTRICTED-CLAIM / RETAIN-RESTRICTED.
 
-C5 is illustrative only. The manuscript may not present function-equivalent/different-training-dynamics as a contribution.
+No novelty/priority promotion is authorised.
 
-## Active MASTER gate
+## Mandatory negative evidence
 
-`Manuscript Claim Freeze & Architecture Gate 0.1`
+The manuscript main text must retain the scientific role of:
 
-Purpose: freeze the exact manuscript-safe claim hierarchy, prohibited wording, citation placement, negative-evidence policy, article architecture and figure/table inventory before `90 – MANUSCRIPT` can open.
+- response-coordinate WEAK versus equal-dimensional raw PCA;
+- nuisance-invariance specification-classification FAIL;
+- exact symmetry-aware Gram control;
+- response-coordinate PARK decision;
+- exact power-grid mean/COI closure countercontrol.
 
-This gate is governance/synthesis only. It must not draft the paper or add science.
+These may be concise but may not be omitted or moved exclusively to supplement in a way that changes interpretation.
 
-Required gate decision:
+## Frozen manuscript architecture
 
-- `MANUSCRIPT CLAIM FREEZE / MANUSCRIPT READY`, or
-- `REVISE MANUSCRIPT CLAIM ARCHITECTURE`, or
-- `STOP — MANUSCRIPT NOT READY`.
+Canonical:
 
-## Claim ceiling
+`research/master/manuscript_claim_freeze_architecture_0_1.md`.
 
-No novelty promotion is authorised.
+It freezes:
 
-Allowed contribution-level framing only: the restricted package-level organization connecting a pre-declared synergetic slaving map to established controlled projectability, prospectively frozen minimal diagnostic witnesses with successful countercontrols, and one output-preserving hidden-state preparation benchmark in the same physical fibre.
-
-Prohibited remain all claims of a new generic controlled-state theory, new projectability theorem, new power-grid aggregation principle, new state-preparation method, first neural same-function/different-training result, new field, or generic/robust/optimal capability.
+- article type and title/abstract constraints;
+- exact allowed and prohibited wording;
+- citation groups and placement;
+- section architecture from Introduction through Conclusion plus appendices;
+- APP-C framing as established output-constrained/preview/feedforward benchmark instantiation;
+- figure/table inventory using only frozen results/analytic definitions;
+- manuscript STOP boundaries and return protocol.
 
 ## Branch state
 
-- 00 – MASTER: READY — Manuscript Claim Freeze & Architecture Gate 0.1
+- 00 – MASTER: COMPLETE / WAIT FOR MANUSCRIPT
 - 10 – CORE: COMPLETE / FROZEN / WAIT
 - 20/30/40 – THEORY-*`: UNOPENED
 - 50 – APP-A: PARKED / FROZEN / WAIT
 - 60 – APP-B: COMPLETE / PASS — RESULT FROZEN / WAIT
 - 70 – APP-C: COMPLETE / PASS — RESULT FROZEN / WAIT
 - 80 – LIT: COMPLETE / FROZEN / WAIT
-- 90 – MANUSCRIPT: UNOPENED
+- 90 – MANUSCRIPT: READY / AWAIT GO — Manuscript Initial Draft 0.1
 
 ## Active blocker
 
-Governance only: translate the final LIT ceiling into a manuscript claim/architecture freeze before writing starts.
+Operational only: the first manuscript draft has not yet been written under the frozen claim/architecture constraints.
 
 ## Manuscript
 
-UNOPENED. The LIT result makes manuscript planning admissible but does not itself authorise drafting.
+AUTHORISED FOR INITIAL DRAFT ONLY.
+
+The manuscript branch may write and format from frozen evidence, create permitted conceptual diagrams/tables, and organise mandatory citations. It may not add science, rerun experiments, repair results, search new literature, or strengthen claims.
+
+Any scientific inconsistency or requested scientific change requires:
+
+`STOP — RETURN TO MASTER: SCIENTIFIC CHANGE REQUIRED`
 
 ## Return protocol
 
-Remain in this chat and enter exactly:
+Open/return to `90 – MANUSCRIPT – Manuskript & Figuren` and enter exactly:
 
-`Manuscript Claim Freeze & Architecture Gate 0.1`
+`GO`
 
-STOP — AWAIT NAMED GATE
+After MANUSCRIPT reaches `STOP — RETURN TO MASTER`, return here and enter:
+
+`Status?`
+
+STOP — WAIT
