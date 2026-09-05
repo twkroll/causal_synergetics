@@ -1,10 +1,10 @@
 # Project Status — causal_synergetics
 
-Version: 1.5
+Version: 1.6
 Date: 2026-09-05
-Overall status: POWER-GRID SPECIFICATION FROZEN / APP-B READY / RESPONSE-COORDINATE DIRECTION PARKED
+Overall status: POWER-GRID PASS FROZEN / CROSS-DOMAIN INTEGRATION READY / RESPONSE-COORDINATE DIRECTION PARKED
 Governance status: FROZEN v0.1
-Latest rollback point: `RP-014 — Power-Grid Minimal Benchmark Specification Freeze 0.1`
+Latest rollback point: `RP-015 — Power-Grid Minimal Benchmark Result Freeze 0.1`
 
 ## Central research question
 
@@ -22,159 +22,115 @@ The programme treats causal synergetics as a proposed research field to be teste
 - `Neural Response Coordinate Pilot 0.1`: WEAK — RESULT FROZEN.
 - `Neural Response Coordinate Nuisance-Invariance Pilot 0.1`: FAIL — RESULT FROZEN / SPECIFICATION CLASSIFICATION GAP.
 - `Neural Response Coordinate Nuisance-Invariance FAIL Integration Gate 0.1`: STOP / PARK RESPONSE-COORDINATE DIRECTION.
-- `Power-Grid Minimal Benchmark Feasibility & Specification Gate 0.1`: **SPECIFICATION FROZEN / APP-B READY / NO NOVELTY PROMOTION**.
+- `Power-Grid Minimal Benchmark Feasibility & Specification Gate 0.1`: SPECIFICATION FROZEN.
+- `Power-Grid Minimal Benchmark 0.1`: **PASS — RESULT FROZEN / NO NOVELTY PROMOTION**.
 
 All prior claim ceilings remain controlling.
 
+## Frozen power-grid result
+
+Canonical result:
+`research/app_b/power_grid_minimal_benchmark_0_1.md`.
+
+Frozen metrics:
+
+- `E_pass=0`;
+- `E_B0_min=0.3549858420076152`;
+- `E_B1_min=0.06534774384333092`;
+- `H_delta=0.13069548768668177 < pi/2`;
+- max controlled `|e_omega|=0.08954202393695339`;
+- mean/COI closure error `3.885780586188048e-14`;
+- primary/half-step convergence error `8.1601392309949e-15`;
+- odd-sign symmetry error `3.83026943495679e-14`;
+- APP-B local tests `5 passed`.
+
+Interpretation ceiling:
+
+> In this frozen normalized two-machine swing benchmark, the representative-machine coherent reduction is exact for the declared unforced coherent initial set but becomes intervention-insufficient under a localized step applied to the hidden machine; the mismatch persists even against a standard coherent aggregate surrogate. The true mean/COI coordinate remains exactly closed, so the result is specific to the pre-declared representative macro and does not show that all low-dimensional power-grid reductions fail.
+
+No alternative topology, model, parameter, macro, intervention amplitude/location, horizon, baseline, threshold, or numerical method was tried after `GO`.
+
+## Cross-domain scientific state
+
+The programme now has two distinct application domains exhibiting the narrower intervention-sufficiency boundary:
+
+- neural parameter states can share the same current function yet differ in one-step learning response under frozen interventions;
+- in a physical controlled ODE, a pre-declared representative-machine macro can be exact for passive coherent dynamics yet fail under a localized intervention that excites hidden coherency modes.
+
+This supports programme coherence around the CORE diagnostic, not generic universality or novelty.
+
+The power-grid strong control is equally important: the arithmetic mean/COI coordinate is exactly closed under the same disturbance. Therefore the result is about insufficiency of a particular pre-declared passive macro, not failure of low-dimensional aggregation in general.
+
 ## Frozen neural conclusion
 
-The neural response-coordinate/null/nuisance direction remains parked under `RP-013`. It may not be reopened to repair or relabel the frozen WEAK/FAIL results.
+The neural response-coordinate/null/nuisance direction remains parked under `RP-013`. The earlier exact neural minimal/history/ReLU results remain independently frozen; WEAK/FAIL results are not repaired.
 
-The earlier exact neural minimal/history/ReLU results remain independently frozen and valid only within their respective claim ceilings.
+## Active gate
 
-## Branch-independent scientific base
+`00 – MASTER – Projektplan & Status`
 
-The strongest branch-independent result remains the CORE controlled-ODE boundary:
+Current gate: `Cross-Domain Intervention-Sufficiency Integration Gate 0.1`.
+Status: READY / AWAIT NAMED GATE.
+Canonical prompt:
+`research/master/prompts/master_cross_domain_intervention_sufficiency_integration_gate_0_1.md`.
 
-- passive/unforced slaving alone does not imply intervention-relative response sufficiency;
-- exact full-trajectory fibre response homogeneity is controlled projectability/closure under the frozen response definition;
-- the CORE includes an explicit control-leakage counterexample and finite-horizon mismatch bounds;
-- these results are structurally prior-art/subsumed and support no generic novelty claim.
+Purpose: integrate all frozen evidence through `RP-015` and choose exactly one programme action `GO`, `REVISE`, or `STOP` before a new capability stage is opened.
 
-## Frozen power-grid specification
+## Branch state
 
-Canonical memo:
-
-`research/master/power_grid_minimal_benchmark_feasibility_specification_0_1.md`.
-
-Execution prompt:
-
-`research/master/prompts/app_b_power_grid_minimal_benchmark_0_1.md`.
-
-Exactly one physically distinct candidate is frozen before execution:
-
-- two identical nonlinear classical swing machines coupled by one lossless tie line;
-- normalized `M=D=K=1`;
-- microstate `(delta1,omega1,delta2,omega2)`;
-- pre-declared representative-machine macro `q=(delta1,omega1)`;
-- hidden coherency errors `(e_delta,e_omega)`;
-- unforced synchronisation manifold `e_delta=e_omega=0`, locally exponentially attracting;
-- three coherent initial conditions with common speed `-0.1,0,+0.1`;
-- constant local interventions on machine 2 only: `u=0,+0.2,-0.2`;
-- one horizon `T=5`, fixed as five normalized damping time constants;
-- deterministic NumPy float64 RK4, primary `dt=0.001`, convergence audit `dt=0.0005`;
-- B0 passive-slaving representative model;
-- B1 standard coherent aggregate surrogate;
-- exact mean/COI closure as a mandatory fairness control;
-- frozen trajectory metrics, physical-admissibility constraint, and exhaustive PASS/WEAK/NULL/FAIL classifier.
-
-The choice `|u|=0.2` is frozen from model structure rather than inspected performance: the forced relative equilibrium satisfies `2 sin(e_delta*)=u`, so `|u|=0.2` is one tenth of the normalized existence limit `|u|<2` for the near-synchronous branch.
-
-## Exact structural witness already frozen
-
-In coherency coordinates,
-
-`e_delta_dot=e_omega`,
-
-`e_omega_dot=-e_omega-2 sin(e_delta)+u`.
-
-On the passive synchronisation manifold, a nonzero local input gives
-
-`(e_delta_dot,e_omega_dot)=(0,u)`.
-
-Thus the frozen intervention violates controlled invariance of the passive slaving/coherency manifold by construction. Starting from synchronous equilibrium, the representative-machine frequency has the exact local Taylor witness `omega1'''(0)=u`, whereas B0 has no controlled response term.
-
-This is not yet counted as an empirical power-grid result. APP-B must execute and mechanically classify the full frozen finite-horizon benchmark.
-
-## Fairness / claim control
-
-The arithmetic mean/COI coordinate is exactly closed for the identical-machine model:
-
-`delta_mean_dot=omega_mean`,
-
-`omega_mean_dot=-omega_mean+u/2`.
-
-Therefore a future PASS can only establish insufficiency of the pre-declared representative-machine coherent macro under a localized hidden-machine step. It cannot establish failure of all low-dimensional grid reductions.
-
-## Active branch
-
-`60 – APP-B – Power-Grid Minimalbenchmark`
-
-Current gate: `Power-Grid Minimal Benchmark 0.1`.
-Status: READY / AWAIT GO.
-
-APP-B must execute only the frozen prompt and return without retuning.
-
-## Waiting / parked branches
-
-- `00 – MASTER`: COMPLETE / WAIT FOR APP-B.
+- `00 – MASTER`: READY — cross-domain integration gate.
 - `10 – CORE`: COMPLETE / FROZEN / WAIT.
 - `50 – APP-A`: PARKED / FROZEN / WAIT.
+- `60 – APP-B`: COMPLETE / PASS — RESULT FROZEN / WAIT.
 - `80 – LIT`: COMPLETE / FROZEN / WAIT.
 - `20/30/40 – THEORY-*`: UNOPENED.
 - `70 – APP-C`: UNOPENED.
 - `90 – MANUSCRIPT`: UNOPENED.
-- controlled state preparation: BLOCKED.
-- new literature positioning: BLOCKED.
-- broader neural scaling / realistic histories / LoRA: BLOCKED.
 
 ## Freeze check
 
 OK.
 
-`RP-014` freezes the power-grid topology, model equations, normalized parameters, macro/hidden map, initial states, intervention location/amplitude/sign pair, horizon, numerical method/resolution, B0/B1/C1 controls, metrics, physical-admissibility condition, thresholds, claim ceiling, and no-retuning rule before execution.
-
-No second topology, fault, macro, amplitude, or horizon may be tried after a WEAK/NULL/FAIL result inside benchmark 0.1.
+`RP-015` freezes the complete APP-B result. `RP-014` remains the specification freeze and all earlier rollback points remain stable. No result is being retuned or promoted.
 
 ## Branching check
 
 OK.
 
-Exactly one scientific execution is authorised: the frozen APP-B minimal benchmark. APP-A remains parked.
+No new specialist execution is open. Exactly one MASTER integration gate is authorised.
 
 ## Rollback
 
 Latest stable savepoint:
 
-`RP-014 — Power-Grid Minimal Benchmark Specification Freeze 0.1`.
-
-Any APP-B PASS/WEAK/NULL/FAIL return is frozen and integrated by MASTER rather than repaired in-place.
+`RP-015 — Power-Grid Minimal Benchmark Result Freeze 0.1`.
 
 ## Current claim ceiling
 
-No empirical power-grid or cross-domain replication claim exists yet.
-
-The project may state the exact frozen LIT/CORE/neural findings plus the fact that one power-grid benchmark has been prospectively specified.
+The project may state the exact frozen LIT/CORE/neural/power-grid findings and that the CORE-style intervention-sufficiency boundary now has two-domain application support under tightly restricted benchmarks.
 
 It may not claim:
 
-- generic power-grid intervention insufficiency;
-- generic cross-domain transfer;
+- generic cross-domain universality;
 - a new state-equivalence or causal-state formalism;
+- generic power-grid insufficiency;
+- failure of all low-dimensional grid aggregates;
 - a generally useful learned causal/plasticity coordinate;
-- controlled state preparation as established capability;
+- controlled state preparation as an established capability;
 - field-level causal-synergetics novelty.
 
 ## Manuscript
 
 UNOPENED.
 
-No manuscript claim freeze is justified.
+No manuscript claim freeze is yet authorised.
 
 ## CI
 
-Repository CI remains not configured. The last executed APP-A suite remains frozen at `36 passed`; current power-grid changes are specification/governance only.
+Repository CI remains not configured. APP-B reports `5 passed` locally and no GitHub status contexts/workflow runs for the queried execution head.
 
 ## Next global step
 
-Open/return to:
+Remain in `00 – MASTER – Projektplan & Status` and enter exactly:
 
-`60 – APP-B – Power-Grid Minimalbenchmark`
-
-and enter exactly:
-
-`GO`
-
-After APP-B reaches `STOP — RETURN TO MASTER`, return to MASTER and enter:
-
-`Status?`
+`Cross-Domain Intervention-Sufficiency Integration Gate 0.1`
