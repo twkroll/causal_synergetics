@@ -1,13 +1,13 @@
 # STATUS — 00 – MASTER – Projektplan & Status
 
-Current Gate: `Manuscript Initial Draft Integration & Compliance Gate 0.1`
-Status: READY / AWAIT NAMED GATE
-Latest canonical manuscript: `research/manuscript/manuscript_initial_draft_0_1.md`
-Draft freeze: `research/master/manuscript_initial_draft_result_freeze_0_1.md`
-Latest rollback point: `RP-022 — Manuscript Initial Draft Freeze 0.1`
-Canonical next prompt: `research/master/prompts/master_manuscript_initial_draft_integration_compliance_gate_0_1.md`
-Next instruction: User remains in `00 – MASTER – Projektplan & Status` and enters exactly `Manuscript Initial Draft Integration & Compliance Gate 0.1`.
-STOP boundary: Do not revise the manuscript, produce additional figures, complete bibliography by new search, start theory/literature/experiments, rerun APP-A/B/C, reopen parked response-coordinate work, alter frozen claims, or promote novelty before the named MASTER gate completes.
+Current Gate: `Post-Compliance / Manuscript Editorial Completion 0.1`
+Status: COMPLETE / WAIT FOR MANUSCRIPT
+Latest canonical compliance memo: `research/master/manuscript_initial_draft_integration_compliance_0_1.md`
+Decision: `GO — EDITORIAL COMPLETION ONLY / NO NOVELTY PROMOTION`
+Latest rollback point: `RP-023 — Manuscript Initial Draft Compliance Freeze 0.1`
+Authorised manuscript prompt: `research/master/prompts/manuscript_editorial_completion_0_1.md`
+Next instruction: User opens/returns to `90 – MANUSCRIPT – Manuskript & Figuren` and enters exactly `GO`.
+STOP boundary: MASTER must not rewrite the manuscript, complete bibliography itself, start new theory/literature/experiments, rerun APP-A/B/C, reopen parked response-coordinate work, alter frozen claims, or promote novelty before MANUSCRIPT returns.
 
 ## Freeze state
 
@@ -23,75 +23,68 @@ STOP boundary: Do not revise the manuscript, produce additional figures, complet
 - Claim-Level & Theorem-Level Prior-Art Revalidation: FROZEN / MANUSCRIPT-READY — CLAIM-RESTRICTED
 - Manuscript Claim & Architecture: FROZEN / MANUSCRIPT READY
 - Manuscript Initial Draft 0.1: FROZEN / COMPLETE
-- Latest rollback point: `RP-022 — Manuscript Initial Draft Freeze 0.1`
+- Manuscript Initial Draft Integration & Compliance 0.1: FROZEN / GO — EDITORIAL COMPLETION ONLY
+- Latest rollback point: `RP-023 — Manuscript Initial Draft Compliance Freeze 0.1`
 
-## Draft return
+## Formal compliance result
 
-Canonical draft:
+The frozen draft has passed MASTER compliance review without a scientific or claim blocker.
 
-`research/manuscript/manuscript_initial_draft_0_1.md`
+Verified:
 
-Draft creation commit:
+- Package P remains the sole contribution-bearing framing;
+- projectability/closure and finite-horizon ingredients are positioned as established/standard;
+- C5 is illustrative/SAME-level prior art;
+- WEAK, FAIL, exact Gram control and PARK remain visible;
+- representative-machine mismatch and exact mean/COI closure appear together;
+- APP-C remains a known-disturbance, model-based output-constrained / preview-feedforward / preventive-control benchmark instantiation;
+- checked frozen CORE/APP-A/APP-B/APP-C values match canonical results;
+- required architecture and figure/table restrictions are respected.
 
-`143712a86258f55db3b1d2f58ec6e4a8b32e7579`
+No scientific compliance revision is required.
 
-Preliminary MASTER inspection finds the draft structurally aligned with the claim freeze:
+## Remaining editorial items
 
-- title/abstract use restricted diagnostic framing;
-- projectability/closure is described as established/standard;
-- C5 is treated as prior-art illustration;
-- WEAK, FAIL, Gram control and PARK decision are visible in the neural main text;
-- representative-machine mismatch and exact mean/COI closure are both visible;
-- APP-C is framed as output-constrained / preview-feedforward / preventive-control benchmark instantiation;
-- conclusion explicitly rejects generic state-equivalence, universal cross-domain and generic control claims.
+The only authorised next work is editorial/bibliographic completion of the already cited frozen manuscript.
 
-This is not yet a formal compliance certification.
+Concrete metadata issues identified by MASTER:
 
-## Known unresolved item
+1. Ntogramatzidis et al. (2017): incomplete author/volume/page/DOI metadata in the current draft.
+2. Tabuada & Pappas, `Quotients of Fully Nonlinear Control Systems`: publication year omitted in the current bibliography entry.
+3. `Preventive Control for Dynamic Security of Power Systems` (1995): current bibliography entry lacks author metadata.
+4. Ordinary formatting normalization for already cited frozen works.
 
-MANUSCRIPT explicitly flagged one bibliography-formatting TODO: the canonical geometric-control/output-nulling source inherited from LIT lacks complete bibliographic metadata in the manuscript source. No literature search was performed to repair it.
-
-The next MASTER gate must determine whether this is the only remaining issue or whether any claim/factual/citation compliance revision is required.
-
-## Active MASTER gate
-
-`Manuscript Initial Draft Integration & Compliance Gate 0.1`
-
-Required decision:
-
-- `GO — EDITORIAL COMPLETION ONLY`;
-- `REVISE — MANUSCRIPT COMPLIANCE FIXES REQUIRED`;
-- `STOP — MANUSCRIPT CLAIM/SCIENCE INCONSISTENT`.
-
-The gate is governance/compliance only and must not rewrite the manuscript.
+Targeted metadata verification is allowed only for works already cited. No literature expansion or new scientific positioning is authorised.
 
 ## Branch state
 
-- 00 – MASTER: READY — Manuscript Initial Draft Integration & Compliance Gate 0.1
+- 00 – MASTER: COMPLETE / WAIT FOR MANUSCRIPT
 - 10 – CORE: COMPLETE / FROZEN / WAIT
 - 20/30/40 – THEORY-*`: UNOPENED
 - 50 – APP-A: PARKED / FROZEN / WAIT
 - 60 – APP-B: COMPLETE / PASS — RESULT FROZEN / WAIT
 - 70 – APP-C: COMPLETE / PASS — RESULT FROZEN / WAIT
 - 80 – LIT: COMPLETE / FROZEN / WAIT
-- 90 – MANUSCRIPT: COMPLETE / DRAFT FROZEN / WAIT FOR MASTER
+- 90 – MANUSCRIPT: READY / AWAIT GO — Manuscript Editorial Completion 0.1
 
 ## Active blocker
 
-Manuscript compliance only: the frozen draft must be formally checked against `RP-021` before any editorial completion or revision pass.
+Editorial only. No scientific or claim-readiness blocker remains at this gate.
+
+This is not yet submission approval. After editorial completion returns, MASTER must perform the next status/integration decision before any submission action.
 
 ## Claim ceiling
 
-No novelty or priority promotion is authorised. Package P remains the sole contribution-bearing framing; C1–C4 remain restricted and C5 remains illustrative/SAME-level prior art.
-
-## CI
-
-Repository CI remains not configured. The draft and this integration handoff contain no new scientific execution.
+No novelty or priority promotion. Package P remains the sole contribution-bearing framing; C1–C4 remain restricted and C5 remains illustrative/SAME-level prior art.
 
 ## Return protocol
 
-Remain in this chat and enter exactly:
+Open/return to `90 – MANUSCRIPT – Manuskript & Figuren` and enter exactly:
 
-`Manuscript Initial Draft Integration & Compliance Gate 0.1`
+`GO`
 
-STOP — AWAIT NAMED GATE
+After MANUSCRIPT reaches `STOP — RETURN TO MASTER`, return here and enter:
+
+`Status?`
+
+STOP — WAIT
