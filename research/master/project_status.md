@@ -1,10 +1,10 @@
 # Project Status — causal_synergetics
 
-Version: 2.1
+Version: 2.2
 Date: 2026-09-05
-Overall status: MANUSCRIPT-READY CLAIM-RESTRICTED / MANUSCRIPT CLAIM FREEZE GATE READY / MANUSCRIPT UNOPENED
+Overall status: MANUSCRIPT CLAIM & ARCHITECTURE FROZEN / MANUSCRIPT INITIAL DRAFT READY / NO NOVELTY PROMOTION
 Governance status: FROZEN v0.1
-Latest rollback point: `RP-020 — Claim-Level & Theorem-Level Prior-Art Revalidation Result Freeze 0.1`
+Latest rollback point: `RP-021 — Manuscript Claim & Architecture Freeze 0.1`
 
 ## Central research question
 
@@ -23,109 +23,126 @@ The programme treats causal synergetics as a proposed research field to be teste
 - `Neural Response Coordinate Nuisance-Invariance Pilot 0.1`: FAIL — RESULT FROZEN / SPECIFICATION CLASSIFICATION GAP.
 - Neural response-coordinate direction: STOP / PARKED.
 - `Power-Grid Minimal Benchmark 0.1`: PASS — RESULT FROZEN / NO NOVELTY PROMOTION.
-- `Cross-Domain Intervention-Sufficiency Integration Gate 0.1`: GO — CLAIM-RESTRICTED / NO NOVELTY PROMOTION.
+- `Cross-Domain Intervention-Sufficiency Integration Gate 0.1`: GO — CLAIM-RESTRICTED.
 - `Controlled State Preparation 0.1`: PASS — RESULT FROZEN / NO NOVELTY PROMOTION.
 - `Post-Preparation Programme Synthesis & Claim-Readiness Gate 0.1`: GO — CLAIM-READINESS PATH.
-- `Claim-Level & Theorem-Level Prior-Art Revalidation 0.1`: **MANUSCRIPT-READY — CLAIM-RESTRICTED**.
+- `Claim-Level & Theorem-Level Prior-Art Revalidation 0.1`: MANUSCRIPT-READY — CLAIM-RESTRICTED.
+- `Manuscript Claim Freeze & Architecture Gate 0.1`: **MANUSCRIPT CLAIM FREEZE / MANUSCRIPT READY**.
 
 All prior claim ceilings remain controlling.
 
-## Final claim-level literature state
+## Manuscript claim freeze
 
-Canonical result:
+Canonical freeze:
 
-`research/literature/claim_level_theorem_level_prior_art_revalidation_0_1.md`.
+`research/master/manuscript_claim_freeze_architecture_0_1.md`.
 
-Result freeze:
+The only contribution-bearing framing is the package-level restricted synergetics-centered diagnostic synthesis:
 
-`research/master/claim_level_theorem_level_prior_art_revalidation_result_freeze_0_1.md`.
+1. start from a pre-declared classical synergetic slaving/order-parameter map;
+2. test that map against the established controlled-projectability criterion for a declared intervention family;
+3. instantiate the diagnostic in prospectively frozen minimal examples with explicit successful countercontrols;
+4. use the same physical hidden fibre in an output-preserving, known-disturbance preparation benchmark;
+5. preserve negative neural coordinate evidence and all claim limitations.
 
-Frozen classifications:
+Individual ingredient roles remain:
 
-- C1: CLOSE / RETAIN-RESTRICTED;
-- C2: RELATED / REINTERPRET;
-- C3: CLOSE / RETAIN-RESTRICTED;
-- C4: CLOSE / REINTERPRET;
-- C5: SAME / DEMOTE;
-- package-level synthesis: DISTINCT-ENOUGH-FOR-RESTRICTED-CLAIM / RETAIN-RESTRICTED.
+- C1 CLOSE / RETAIN-RESTRICTED;
+- C2 RELATED / REINTERPRET;
+- C3 CLOSE / RETAIN-RESTRICTED;
+- C4 CLOSE / REINTERPRET;
+- C5 SAME / DEMOTE — illustrative only;
+- Package DISTINCT-ENOUGH-FOR-RESTRICTED-CLAIM / RETAIN-RESTRICTED.
 
-The literature audit found strong prior art for every ingredient. The package-level organization is manuscript-usable only as a restricted synergetics-centered diagnostic synthesis. No absence-of-hit argument is treated as novelty proof.
+No novelty or priority claim follows.
 
-## Manuscript-safe scientific story
+## Frozen article architecture
 
-The retained story is:
+The first manuscript is a restricted theory/diagnostic synthesis with the following body architecture:
 
-1. take a pre-declared classical synergetic slaving/order-parameter map;
-2. evaluate it against the established controlled-projectability criterion for a declared intervention family;
-3. use prospectively frozen minimal examples to illustrate intervention insufficiency while retaining exact successful countercontrols;
-4. in the physical example, show that the identified hidden fibre can be pre-positioned under a bounded output-preserving known-disturbance preparation benchmark;
-5. report the neural same-function/different-training examples only as prior-art-consistent illustrations, not as contribution claims.
+1. Introduction;
+2. Related Work and Claim Positioning;
+3. Diagnostic Framework;
+4. Neural Illustration and Negative Coordinate Evidence;
+5. Power-Grid Minimal Witness;
+6. Output-Preserving Preparation Benchmark;
+7. Synthesis and Limitations;
+8. Conclusion;
+9. appendices preserving proof/numerical/governance detail.
 
-This is not a new state-equivalence theory, not a new power-grid reduction principle, not a new controller, and not a new-field claim.
+A preferred safe title is frozen in the architecture memo:
 
-## Negative evidence that remains mandatory
+`Testing Synergetic Macrostates for Intervention Sufficiency: Controlled Projectability, Frozen Minimal Witnesses, and Output-Preserving Preparation`.
 
-Any manuscript architecture must preserve the scientific role of:
+No title/abstract may use novelty/priority/new-field language.
 
-- the WEAK neural response-coordinate result versus equal-dimensional raw PCA;
+## Mandatory visible limitations and countercontrols
+
+The manuscript body must preserve:
+
+- the WEAK learned response-coordinate result versus equal-dimensional raw PCA;
 - the nuisance-invariance specification/classification FAIL;
-- the exact symmetry-aware Gram-PCA control;
-- the PARK decision for the response-coordinate direction;
-- the exact mean/COI closure control in the power-grid benchmark.
+- exact symmetry-aware Gram-PCA success;
+- the PARK decision;
+- exact power-grid mean/COI closure;
+- APP-C as established output-constrained/preview/feedforward-type benchmark instantiation;
+- C5 as SAME-level prior-art illustration.
 
-## Active gate
+## Figure/table rule
 
-`00 – MASTER – Projektplan & Status`
+Only the frozen inventory may be used. No new scientific simulation or metric generation is allowed for manuscript visuals.
 
-Current gate:
-
-`Manuscript Claim Freeze & Architecture Gate 0.1`.
-
-Status: READY / AWAIT NAMED GATE.
-
-Canonical prompt:
-
-`research/master/prompts/master_manuscript_claim_freeze_architecture_gate_0_1.md`.
-
-Purpose: freeze exact claim hierarchy, allowed/prohibited wording, mandatory citation placement, negative-evidence policy, article architecture and frozen figure/table inventory before `90 – MANUSCRIPT` opens.
+Permitted are conceptual diagrams from frozen definitions, tables from canonical reported metrics, visualisations of frozen analytic expressions, and already-stored frozen artifacts without scientific reruns.
 
 ## Branch state
 
-- `00 – MASTER`: READY — Manuscript Claim Freeze & Architecture Gate 0.1.
+- `00 – MASTER`: COMPLETE / WAIT FOR MANUSCRIPT.
 - `10 – CORE`: COMPLETE / FROZEN / WAIT.
 - `50 – APP-A`: PARKED / FROZEN / WAIT.
 - `60 – APP-B`: COMPLETE / PASS — RESULT FROZEN / WAIT.
 - `70 – APP-C`: COMPLETE / PASS — RESULT FROZEN / WAIT.
 - `80 – LIT`: COMPLETE / FROZEN / WAIT.
 - `20/30/40 – THEORY-*`: UNOPENED.
-- `90 – MANUSCRIPT`: UNOPENED.
+- `90 – MANUSCRIPT`: READY / AWAIT GO — Manuscript Initial Draft 0.1.
 
 ## Freeze / branching check
 
 OK.
 
-`RP-020` freezes the targeted LIT result and final claim classifications. All earlier rollback points remain stable. No scientific result is promoted, repaired or weakened.
+`RP-021` freezes manuscript-safe claims, prohibited wording, citation placement, article architecture, negative-evidence policy, figure/table inventory and manuscript STOP boundaries.
 
-No specialist scientific execution is active. MANUSCRIPT remains unopened until the MASTER claim/architecture gate succeeds.
+All rollback points through `RP-020` remain stable. No scientific result or literature classification is promoted, repaired or weakened.
+
+Exactly one active writing branch is authorised: `90 – MANUSCRIPT`.
 
 ## Current claim ceiling
 
-The project may state the exact frozen evidence and the final LIT result `MANUSCRIPT-READY — CLAIM-RESTRICTED`.
+The manuscript may state only the package-level restricted diagnostic synthesis and the exact frozen ingredient-level findings under their LIT classifications.
 
-It may not claim novelty/priority for C1–C5 or the package; generic cross-domain universality; new controlled-equivalence/projectability theory; new power-grid aggregation; new controlled-state-preparation method; robustness/optimality/genericity of APP-C; first same-function/different-training neural result; or establishment of a new field.
+It may not claim novelty/priority for C1–C5 or the package; generic cross-domain universality; a new controlled-equivalence/projectability theory; a new power-grid aggregation principle; a new state-preparation/control method; robustness/optimality/genericity of APP-C; a first same-function/different-training neural result; or establishment of a new field.
 
 ## Manuscript
 
-UNOPENED.
+READY FOR INITIAL DRAFT ONLY.
 
-The next MASTER gate must freeze the manuscript-safe claims and structure. Only then may `90 – MANUSCRIPT` be authorised.
+Canonical execution prompt:
+
+`research/master/prompts/manuscript_initial_draft_0_1.md`.
+
+Any required scientific change during drafting must return to MASTER before proceeding.
 
 ## CI
 
-Repository CI remains not configured. The LIT return and current MASTER actions are literature/governance only; no new scientific code execution occurred.
+Repository CI remains not configured. The manuscript claim/architecture gate is governance/synthesis only and contains no new scientific code execution.
 
 ## Next global step
 
-Remain in `00 – MASTER – Projektplan & Status` and enter exactly:
+Open/return to:
 
-`Manuscript Claim Freeze & Architecture Gate 0.1`
+`90 – MANUSCRIPT – Manuskript & Figuren`
+
+and enter exactly:
+
+`GO`
+
+After MANUSCRIPT returns, enter `Status?` in MASTER.
