@@ -296,9 +296,23 @@ Canonical freeze `research/master/manuscript_submission_readiness_artifact_packa
 This freezes the venue-neutral-first decision without altering `RP-024` or any scientific/claim freeze.
 
 ### DEC-073 — Manuscript Venue-Neutral Artifact Completion 0.1 authorised
-Status: ACTIVE / ARTIFACT PRODUCTION ONLY
+Status: SATISFIED / CLOSED
 Assigned branch `90 – MANUSCRIPT – Manuskript & Figuren`; canonical prompt `research/master/prompts/manuscript_venue_neutral_artifact_completion_0_1.md`.
-Allowed output is restricted to four frozen-role schematic/vector figures, complete Appendices A–F compiled from frozen sources, reproducibility/artifact manifest and venue-neutral package/index. No venue selection, submission, rerun, new data/metric/literature/claim or scientific rewrite is authorised.
+Allowed output was restricted to four frozen-role schematic/vector figures, complete Appendices A–F compiled from frozen sources, reproducibility/artifact manifest and venue-neutral package/index. No venue selection, submission, rerun, new data/metric/literature/claim or scientific rewrite was authorised.
+
+### DEC-074 — Manuscript Venue-Neutral Artifact Completion 0.1 returned
+Status: FROZEN / COMPLETE
+Canonical package `research/manuscript/venue_neutral_0_1/`; package content completion commit recorded by MANUSCRIPT `593dd2192eca8e378bffde09a6208420d8bbe9a4`. Returned package contains four SVG schematic figures, complete supplement A–F, reproducibility manifest, README/index and CHANGELOG. Canonical editorial manuscript blob remained `5116cb99a011416943bef908079ba7489eb597a3`. No scientific execution or new data were reported.
+
+### DEC-075 — Manuscript Venue-Neutral Artifact Completion Freeze 0.1
+Status: FROZEN
+Canonical freeze `research/master/manuscript_venue_neutral_artifact_result_freeze_0_1.md`; rollback `RP-026 — Manuscript Venue-Neutral Artifact Completion Freeze 0.1`.
+The package is frozen exactly as returned pending compliance. MASTER identified a reproducibility-manifest pointer discrepancy: manifest CORE SHA `1cad9c78c4f76484cb5e2197ce9c128c5f94f4ff` conflicts with canonical CORE result commit `0ebd50e5c8c072cf59ae86502a25b97e78c4722f`. This is currently an artifact metadata issue only; APP-B and APP-C commit pointers spot-checked against canonical STATUS files match.
+
+### DEC-076 — Manuscript Venue-Neutral Artifact Integration & Compliance Gate 0.1 authorised
+Status: ACTIVE / MASTER-COMPLIANCE ONLY
+Canonical prompt `research/master/prompts/master_manuscript_venue_neutral_artifact_integration_compliance_gate_0_1.md`.
+Purpose: audit every package pointer, numerical statement, figure constraint, supplement section and unchanged-manuscript condition before venue selection. The gate may not repair artifacts, rerun science, select a venue, change claims or submit.
 
 ## Rollback points
 
@@ -327,6 +341,7 @@ Allowed output is restricted to four frozen-role schematic/vector figures, compl
 - `RP-023 — Manuscript Initial Draft Compliance Freeze 0.1` — STABLE.
 - `RP-024 — Manuscript Editorial Completion Freeze 0.1` — STABLE.
 - `RP-025 — Manuscript Submission Readiness & Artifact Packaging Freeze 0.1` — STABLE.
+- `RP-026 — Manuscript Venue-Neutral Artifact Completion Freeze 0.1` — STABLE / PENDING COMPLIANCE.
 
 No prior freeze may be weakened. WEAK/NULL/FAIL/PASS outcomes and all claim demotions remain canonical and may not be retuned or relabelled.
 
@@ -334,7 +349,7 @@ No prior freeze may be weakened. WEAK/NULL/FAIL/PASS outcomes and all claim demo
 
 | Chat / branch | Status | Current gate | Dependency |
 |---|---|---|---|
-| 00 – MASTER | COMPLETE / WAIT | submission-readiness gate passed | venue-neutral artifact return |
+| 00 – MASTER | READY | Manuscript Venue-Neutral Artifact Integration & Compliance Gate 0.1 | `RP-026` stable |
 | 10 – CORE | COMPLETE / FROZEN / WAIT | CORE Synergetic Sufficiency Boundary 0.1 | satisfied |
 | 20 – THEORY-A | UNOPENED | none | MASTER authorisation |
 | 30 – THEORY-B | UNOPENED | none | MASTER authorisation |
@@ -343,4 +358,4 @@ No prior freeze may be weakened. WEAK/NULL/FAIL/PASS outcomes and all claim demo
 | 60 – APP-B | COMPLETE / PASS — RESULT FROZEN / WAIT | Power-Grid Minimal Benchmark 0.1 | returned to MASTER |
 | 70 – APP-C | COMPLETE / PASS — RESULT FROZEN / WAIT | Controlled State Preparation 0.1 | returned to MASTER |
 | 80 – LIT | COMPLETE / FROZEN / WAIT | Claim-Level & Theorem-Level Prior-Art Revalidation 0.1 | `RP-020` frozen |
-| 90 – MANUSCRIPT | READY / AWAIT GO | Manuscript Venue-Neutral Artifact Completion 0.1 | `RP-025` frozen |
+| 90 – MANUSCRIPT | COMPLETE / VENUE-NEUTRAL ARTIFACTS FROZEN / WAIT FOR MASTER | Manuscript Venue-Neutral Artifact Completion 0.1 | `RP-026` frozen |
