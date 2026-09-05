@@ -1,107 +1,97 @@
 # STATUS — 00 – MASTER – Projektplan & Status
 
-Current Gate: `Post-Manuscript-Claim-Freeze / Manuscript Initial Draft 0.1`
-Status: COMPLETE / WAIT FOR MANUSCRIPT
-Latest canonical memo: `research/master/manuscript_claim_freeze_architecture_0_1.md`
-Decision: `MANUSCRIPT CLAIM FREEZE / MANUSCRIPT READY / NO NOVELTY PROMOTION`
-Latest rollback point: `RP-021 — Manuscript Claim & Architecture Freeze 0.1`
-Authorised manuscript prompt: `research/master/prompts/manuscript_initial_draft_0_1.md`
-Next instruction: User opens/returns to `90 – MANUSCRIPT – Manuskript & Figuren` and enters exactly `GO`.
-STOP boundary: MASTER must not draft manuscript prose itself, start new theory/literature/experiments, rerun or extend APP-A/B/C, reopen parked response-coordinate work, alter the frozen manuscript claim hierarchy/architecture, or promote novelty before MANUSCRIPT returns.
+Current Gate: `Manuscript Initial Draft Integration & Compliance Gate 0.1`
+Status: READY / AWAIT NAMED GATE
+Latest canonical manuscript: `research/manuscript/manuscript_initial_draft_0_1.md`
+Draft freeze: `research/master/manuscript_initial_draft_result_freeze_0_1.md`
+Latest rollback point: `RP-022 — Manuscript Initial Draft Freeze 0.1`
+Canonical next prompt: `research/master/prompts/master_manuscript_initial_draft_integration_compliance_gate_0_1.md`
+Next instruction: User remains in `00 – MASTER – Projektplan & Status` and enters exactly `Manuscript Initial Draft Integration & Compliance Gate 0.1`.
+STOP boundary: Do not revise the manuscript, produce additional figures, complete bibliography by new search, start theory/literature/experiments, rerun APP-A/B/C, reopen parked response-coordinate work, alter frozen claims, or promote novelty before the named MASTER gate completes.
 
 ## Freeze state
 
 - Governance: FROZEN v0.1
-- Prior-Art & Definitions Audit 0.1: FROZEN / PASS — CLAIM-RESTRICTED
-- CORE boundary: FROZEN / PASS — CLAIM-RESTRICTED / NO NOVELTY PROMOTION
-- Neural Minimal Benchmark 0.1: FROZEN / PASS
-- Neural Historical Reachability 0.1: FROZEN / PASS
-- Neural Nonlinear ReLU Pilot 0.1: FROZEN / PASS
-- Neural Response Coordinate Pilot 0.1: FROZEN / WEAK
-- Neural Response Coordinate Nuisance-Invariance Pilot 0.1: FROZEN / FAIL — SPECIFICATION CLASSIFICATION GAP
+- Prior-Art & Definitions Audit: FROZEN / PASS — CLAIM-RESTRICTED
+- CORE: FROZEN / PASS — CLAIM-RESTRICTED
+- APP-A neural minimal/history/ReLU: FROZEN / PASS
+- Neural response-coordinate pilot: FROZEN / WEAK
+- Neural nuisance-invariance pilot: FROZEN / FAIL — SPECIFICATION CLASSIFICATION GAP
 - Neural response-coordinate direction: FROZEN / STOP — PARKED
-- Power-Grid Minimal Benchmark 0.1: FROZEN / PASS
-- Controlled State Preparation 0.1: FROZEN / PASS
-- Claim-Level & Theorem-Level Prior-Art Revalidation 0.1: FROZEN / MANUSCRIPT-READY — CLAIM-RESTRICTED
-- Manuscript Claim Freeze & Architecture 0.1: FROZEN / MANUSCRIPT READY
-- Latest rollback point: `RP-021 — Manuscript Claim & Architecture Freeze 0.1`
+- APP-B Power-Grid Minimal Benchmark: FROZEN / PASS
+- APP-C Controlled State Preparation: FROZEN / PASS
+- Claim-Level & Theorem-Level Prior-Art Revalidation: FROZEN / MANUSCRIPT-READY — CLAIM-RESTRICTED
+- Manuscript Claim & Architecture: FROZEN / MANUSCRIPT READY
+- Manuscript Initial Draft 0.1: FROZEN / COMPLETE
+- Latest rollback point: `RP-022 — Manuscript Initial Draft Freeze 0.1`
 
-## Frozen manuscript role
+## Draft return
 
-The first manuscript is a restricted theory/diagnostic synthesis. The only contribution-bearing framing is the package-level synergetics-centered diagnostic organisation.
+Canonical draft:
 
-Claim hierarchy:
+`research/manuscript/manuscript_initial_draft_0_1.md`
 
-- C1: CLOSE / RETAIN-RESTRICTED;
-- C2: RELATED / REINTERPRET;
-- C3: CLOSE / RETAIN-RESTRICTED;
-- C4: CLOSE / REINTERPRET;
-- C5: SAME / DEMOTE — illustration only;
-- Package: DISTINCT-ENOUGH-FOR-RESTRICTED-CLAIM / RETAIN-RESTRICTED.
+Draft creation commit:
 
-No novelty/priority promotion is authorised.
+`143712a86258f55db3b1d2f58ec6e4a8b32e7579`
 
-## Mandatory negative evidence
+Preliminary MASTER inspection finds the draft structurally aligned with the claim freeze:
 
-The manuscript main text must retain the scientific role of:
+- title/abstract use restricted diagnostic framing;
+- projectability/closure is described as established/standard;
+- C5 is treated as prior-art illustration;
+- WEAK, FAIL, Gram control and PARK decision are visible in the neural main text;
+- representative-machine mismatch and exact mean/COI closure are both visible;
+- APP-C is framed as output-constrained / preview-feedforward / preventive-control benchmark instantiation;
+- conclusion explicitly rejects generic state-equivalence, universal cross-domain and generic control claims.
 
-- response-coordinate WEAK versus equal-dimensional raw PCA;
-- nuisance-invariance specification-classification FAIL;
-- exact symmetry-aware Gram control;
-- response-coordinate PARK decision;
-- exact power-grid mean/COI closure countercontrol.
+This is not yet a formal compliance certification.
 
-These may be concise but may not be omitted or moved exclusively to supplement in a way that changes interpretation.
+## Known unresolved item
 
-## Frozen manuscript architecture
+MANUSCRIPT explicitly flagged one bibliography-formatting TODO: the canonical geometric-control/output-nulling source inherited from LIT lacks complete bibliographic metadata in the manuscript source. No literature search was performed to repair it.
 
-Canonical:
+The next MASTER gate must determine whether this is the only remaining issue or whether any claim/factual/citation compliance revision is required.
 
-`research/master/manuscript_claim_freeze_architecture_0_1.md`.
+## Active MASTER gate
 
-It freezes:
+`Manuscript Initial Draft Integration & Compliance Gate 0.1`
 
-- article type and title/abstract constraints;
-- exact allowed and prohibited wording;
-- citation groups and placement;
-- section architecture from Introduction through Conclusion plus appendices;
-- APP-C framing as established output-constrained/preview/feedforward benchmark instantiation;
-- figure/table inventory using only frozen results/analytic definitions;
-- manuscript STOP boundaries and return protocol.
+Required decision:
+
+- `GO — EDITORIAL COMPLETION ONLY`;
+- `REVISE — MANUSCRIPT COMPLIANCE FIXES REQUIRED`;
+- `STOP — MANUSCRIPT CLAIM/SCIENCE INCONSISTENT`.
+
+The gate is governance/compliance only and must not rewrite the manuscript.
 
 ## Branch state
 
-- 00 – MASTER: COMPLETE / WAIT FOR MANUSCRIPT
+- 00 – MASTER: READY — Manuscript Initial Draft Integration & Compliance Gate 0.1
 - 10 – CORE: COMPLETE / FROZEN / WAIT
 - 20/30/40 – THEORY-*`: UNOPENED
 - 50 – APP-A: PARKED / FROZEN / WAIT
 - 60 – APP-B: COMPLETE / PASS — RESULT FROZEN / WAIT
 - 70 – APP-C: COMPLETE / PASS — RESULT FROZEN / WAIT
 - 80 – LIT: COMPLETE / FROZEN / WAIT
-- 90 – MANUSCRIPT: READY / AWAIT GO — Manuscript Initial Draft 0.1
+- 90 – MANUSCRIPT: COMPLETE / DRAFT FROZEN / WAIT FOR MASTER
 
 ## Active blocker
 
-Operational only: the first manuscript draft has not yet been written under the frozen claim/architecture constraints.
+Manuscript compliance only: the frozen draft must be formally checked against `RP-021` before any editorial completion or revision pass.
 
-## Manuscript
+## Claim ceiling
 
-AUTHORISED FOR INITIAL DRAFT ONLY.
+No novelty or priority promotion is authorised. Package P remains the sole contribution-bearing framing; C1–C4 remain restricted and C5 remains illustrative/SAME-level prior art.
 
-The manuscript branch may write and format from frozen evidence, create permitted conceptual diagrams/tables, and organise mandatory citations. It may not add science, rerun experiments, repair results, search new literature, or strengthen claims.
+## CI
 
-Any scientific inconsistency or requested scientific change requires:
-
-`STOP — RETURN TO MASTER: SCIENTIFIC CHANGE REQUIRED`
+Repository CI remains not configured. The draft and this integration handoff contain no new scientific execution.
 
 ## Return protocol
 
-Open/return to `90 – MANUSCRIPT – Manuskript & Figuren` and enter exactly:
+Remain in this chat and enter exactly:
 
-`GO`
+`Manuscript Initial Draft Integration & Compliance Gate 0.1`
 
-After MANUSCRIPT reaches `STOP — RETURN TO MASTER`, return here and enter:
-
-`Status?`
-
-STOP — WAIT
+STOP — AWAIT NAMED GATE
