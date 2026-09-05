@@ -47,11 +47,11 @@ No application opened before CORE return.
 
 ### DEC-011 — CORE Synergetic Sufficiency Boundary Freeze 0.1
 Status: FROZEN
-Canonical `research/core/synergetic_sufficiency_boundary_0_1.md`; commit `0ebd50e5c8c072cf59ae86502a25b97e78c4722f`; decision PASS — CLAIM-RESTRICTED; rollback `RP-003`.
+Canonical `research/core/synergetic_sufficiency_boundary_0_1.md`; commit `0ebd50e5c8c072cf59ae86502a25b97e78c4722f`; PASS — CLAIM-RESTRICTED; rollback `RP-003`.
 
 ### DEC-012 — Neural Minimal Benchmark 0.1
 Status: SATISFIED / CLOSED
-Canonical `research/app_a/neural_minimal_benchmark_0_1.md`; implementation/test `649a187125c4ad410e0b16b77accbfacfb577371`; result freeze `f5f02c871093129ef012780dbfcbcf55ef4de6f3`; PASS.
+Canonical result `research/app_a/neural_minimal_benchmark_0_1.md`; implementation/test `649a187125c4ad410e0b16b77accbfacfb577371`; PASS.
 
 ### DEC-013 — Historical reachability / nonlinear scaling blocked pending minimal benchmark
 Status: SATISFIED / CLOSED
@@ -63,7 +63,7 @@ Rollback `RP-004`; no retrospective retuning.
 
 ### DEC-015 — Neural Historical Reachability 0.1
 Status: SATISFIED / CLOSED
-Canonical `research/app_a/neural_historical_reachability_0_1.md`; implementation `e342ef5c5cefae30df45e23bc667f149e818238c`; freeze `0e345fbb7b5a8ccc3c3f8bd4c958132c1b130d7c`; PASS.
+Canonical `research/app_a/neural_historical_reachability_0_1.md`; implementation `e342ef5c5cefae30df45e23bc667f149e818238c`; PASS.
 
 ### DEC-016 — Nonlinear scaling blocked pending historical return
 Status: SATISFIED / CLOSED
@@ -71,11 +71,11 @@ Historical reachability returned first.
 
 ### DEC-017 — Neural Historical Reachability Result Freeze 0.1
 Status: FROZEN
-Rollback `RP-005`; claim ceiling artificial auxiliary-gradient reachability only.
+Rollback `RP-005`; artificial auxiliary-gradient reachability only.
 
 ### DEC-018 — Neural Nonlinear ReLU Pilot 0.1
 Status: SATISFIED / CLOSED
-Canonical `research/app_a/neural_nonlinear_relu_pilot_0_1.md`; implementation `b5ba5da30d869d160eab0a7801bcfa324860b19a`; test `3b42bf8c9a3e1a56a031654576b9c9f25b70bdbc`; freeze `ff9f575839848e80705cd73062d431b20ca4eb10`; PASS.
+Canonical `research/app_a/neural_nonlinear_relu_pilot_0_1.md`; test `3b42bf8c9a3e1a56a031654576b9c9f25b70bdbc`; PASS.
 
 ### DEC-019 — Learned coordinates / broader scaling blocked pending ReLU
 Status: SATISFIED / CLOSED
@@ -83,7 +83,7 @@ ReLU returned first.
 
 ### DEC-020 — Neural Nonlinear ReLU Pilot Result Freeze 0.1
 Status: FROZEN
-Rollback `RP-006`; claim restricted to exact frozen symmetry pair.
+Rollback `RP-006`; exact frozen symmetry-pair claim only.
 
 ### DEC-021 — Neural Vertical Slice Go/Revise/Stop Gate 0.1
 Status: FROZEN / COMPLETE
@@ -95,7 +95,7 @@ Specification preceded held-out inspection.
 
 ### DEC-023 — Neural Response Coordinate Specification Freeze 0.1
 Status: FROZEN
-Decision `SPECIFICATION FROZEN / APP-A READY`; rollback `RP-008`.
+`SPECIFICATION FROZEN / APP-A READY`; rollback `RP-008`.
 
 ### DEC-024 — Neural Response Coordinate Pilot 0.1 authorised
 Status: SATISFIED / CLOSED
@@ -103,7 +103,7 @@ Frozen execution only.
 
 ### DEC-025 — Neural Response Coordinate Pilot 0.1 result
 Status: FROZEN / COMPLETE
-Canonical `research/app_a/neural_response_coordinate_pilot_0_1.md`; WEAK; candidate `R2=1.0`, equal-dimensional raw PCA `R2=0.999883026432542`; no retuning.
+Canonical result WEAK; candidate `R2=1.0`, equal-dimensional raw PCA `R2=0.999883026432542`; no retuning.
 
 ### DEC-026 — Neural Response Coordinate Result Freeze 0.1
 Status: FROZEN
@@ -115,7 +115,7 @@ Canonical `research/master/neural_response_coordinate_weak_integration_0_1.md`; 
 
 ### DEC-028 — Nuisance-invariance discriminator selected as sole revision prerequisite
 Status: FROZEN
-Nuisance must derive from explicit symmetry/redundancy, not expected baseline failure.
+Nuisance derived from explicit symmetry/redundancy, not expected baseline failure.
 
 ### DEC-029 — Neural Response Coordinate Nuisance-Invariance Specification Gate 0.1 authorised
 Status: SATISFIED / CLOSED
@@ -135,7 +135,7 @@ APP-A executed frozen specification.
 
 ### DEC-033 — Nuisance-Invariance Pilot 0.1 result
 Status: FROZEN / COMPLETE
-Canonical `research/app_a/neural_response_coordinate_nuisance_invariance_pilot_0_1.md`; FAIL — SPECIFICATION CLASSIFICATION GAP; candidate and symmetry-aware Gram-PCA both exact; high N0 unrepaired; combined tests `36 passed`.
+Canonical result FAIL — SPECIFICATION CLASSIFICATION GAP; candidate and symmetry-aware Gram-PCA both exact; high N0 unrepaired; combined tests `36 passed`.
 
 ### DEC-034 — Nuisance-Invariance Result Freeze 0.1
 Status: FROZEN
@@ -163,7 +163,7 @@ Specification preceded effect inspection.
 
 ### DEC-040 — Power-Grid Minimal Benchmark Specification Freeze 0.1
 Status: FROZEN
-Canonical `research/master/power_grid_minimal_benchmark_feasibility_specification_0_1.md`; rollback `RP-014`.
+Canonical specification; rollback `RP-014`.
 
 ### DEC-041 — Power-Grid Minimal Benchmark 0.1 authorised
 Status: SATISFIED / CLOSED
@@ -171,7 +171,7 @@ APP-B executed frozen benchmark.
 
 ### DEC-042 — Power-Grid Minimal Benchmark 0.1 result
 Status: FROZEN / COMPLETE
-Canonical `research/app_b/power_grid_minimal_benchmark_0_1.md`; PASS; frozen metrics include `E_pass=0`, `E_B0_min=0.3549858420076152`, `E_B1_min=0.06534774384333092`, `H_delta=0.13069548768668177`, mean/COI closure error `3.885780586188048e-14`; tests `5 passed`.
+PASS; `E_pass=0`, `E_B0_min=0.3549858420076152`, `E_B1_min=0.06534774384333092`, mean/COI closure error `3.885780586188048e-14`; tests `5 passed`.
 
 ### DEC-043 — Power-Grid Minimal Benchmark Result Freeze 0.1
 Status: FROZEN
@@ -183,7 +183,7 @@ Integrated through `RP-015`.
 
 ### DEC-045 — Cross-Domain Integration decision
 Status: FROZEN / COMPLETE
-Canonical `research/master/cross_domain_intervention_sufficiency_integration_0_1.md`; GO — CLAIM-RESTRICTED / NO NOVELTY PROMOTION.
+GO — CLAIM-RESTRICTED / NO NOVELTY PROMOTION.
 
 ### DEC-046 — Cross-Domain Integration Freeze 0.1
 Status: FROZEN
@@ -195,7 +195,7 @@ Specification only, before outcome inspection.
 
 ### DEC-048 — Controlled State Preparation Specification Freeze 0.1
 Status: FROZEN
-Canonical `research/master/controlled_state_preparation_feasibility_specification_0_1.md`; preparation execution ready; rollback `RP-017`.
+Canonical specification; rollback `RP-017`.
 
 ### DEC-049 — Controlled State Preparation 0.1 authorised
 Status: SATISFIED / CLOSED
@@ -203,11 +203,11 @@ APP-C executed frozen P0/PT/PM benchmark only.
 
 ### DEC-050 — Controlled State Preparation 0.1 result
 Status: FROZEN / COMPLETE
-Canonical `research/app_c/controlled_state_preparation_0_1.md`; implementation `3d4b06f417b4d81cbeaa93f27683a1c799d426b4`; test `04765a8dac61f4f657659d2bde03f5ef76c307d5`; result `14c82045ee187f825d8340d93cd1bde34216f7d4`; metadata `fd3326703a8d6652df5561584b47bf8dd20da8c6`; PASS. Frozen metrics include `E_target_max=2.076727044536923e-15`, `E_no_min=0.06534774384334105`, `E_mismatch_min=0.1307357122731585`, `B0_min=0.9999999999999682`, `BM_min=0.9999999999999841`, max input `0.20881049376163438`, energy `0.04006381839386479`, convergence `5.738465258531278e-15`; tests `5 passed`; no retuning.
+PASS; frozen metrics include `E_target_max=2.076727044536923e-15`, `E_no_min=0.06534774384334105`, `E_mismatch_min=0.1307357122731585`, max input `0.20881049376163438`, energy `0.04006381839386479`; tests `5 passed`.
 
 ### DEC-051 — Controlled State Preparation Result Freeze 0.1
 Status: FROZEN
-Canonical `research/master/controlled_state_preparation_result_freeze_0_1.md`; rollback `RP-018`; result restricted to known-disturbance, model-based, bounded open-loop two-machine preparation.
+Rollback `RP-018`; known-disturbance, model-based, bounded open-loop two-machine preparation only.
 
 ### DEC-052 — Post-Preparation Programme Synthesis & Claim-Readiness Gate 0.1 authorised
 Status: SATISFIED / CLOSED
@@ -215,11 +215,11 @@ Integrated through `RP-018` without new science.
 
 ### DEC-053 — Post-Preparation Synthesis decision
 Status: FROZEN / COMPLETE
-Canonical `research/master/post_preparation_programme_synthesis_claim_readiness_0_1.md`; GO — CLAIM-READINESS PATH / TARGETED PRIOR-ART REVALIDATION REQUIRED.
+GO — CLAIM-READINESS PATH / TARGETED PRIOR-ART REVALIDATION REQUIRED.
 
 ### DEC-054 — Post-Preparation Synthesis Freeze 0.1
 Status: FROZEN
-Rollback `RP-019`; freezes pre-literature claim inventory C1–C5 and targeted revalidation prerequisite.
+Rollback `RP-019`; pre-literature claim inventory C1–C5 frozen.
 
 ### DEC-055 — Claim-Level & Theorem-Level Prior-Art Revalidation 0.1 authorised
 Status: SATISFIED / CLOSED
@@ -227,74 +227,78 @@ LIT audit restricted to C1–C5 and package.
 
 ### DEC-056 — Claim-Level & Theorem-Level Prior-Art Revalidation result
 Status: FROZEN / COMPLETE
-Canonical `research/literature/claim_level_theorem_level_prior_art_revalidation_0_1.md`; result commit `a8bedb23848e841e50198db2824371ec75e80146`; **MANUSCRIPT-READY — CLAIM-RESTRICTED**. C1 CLOSE/RETAIN-RESTRICTED; C2 RELATED/REINTERPRET; C3 CLOSE/RETAIN-RESTRICTED; C4 CLOSE/REINTERPRET; C5 SAME/DEMOTE; package DISTINCT-ENOUGH-FOR-RESTRICTED-CLAIM/RETAIN-RESTRICTED.
+**MANUSCRIPT-READY — CLAIM-RESTRICTED**. C1 CLOSE/RETAIN-RESTRICTED; C2 RELATED/REINTERPRET; C3 CLOSE/RETAIN-RESTRICTED; C4 CLOSE/REINTERPRET; C5 SAME/DEMOTE; package DISTINCT-ENOUGH-FOR-RESTRICTED-CLAIM/RETAIN-RESTRICTED.
 
 ### DEC-057 — Claim-Level Revalidation Result Freeze 0.1
 Status: FROZEN
-Canonical `research/master/claim_level_theorem_level_prior_art_revalidation_result_freeze_0_1.md`; rollback `RP-020`. Exact allowed/prohibited wording and mandatory nearest-predecessor citations binding.
+Rollback `RP-020`; allowed/prohibited wording and mandatory nearest-predecessor citations binding.
 
 ### DEC-058 — Manuscript Claim Freeze & Architecture Gate 0.1 authorised
 Status: SATISFIED / CLOSED
-Canonical prompt `research/master/prompts/master_manuscript_claim_freeze_architecture_gate_0_1.md`; no manuscript drafting or new science occurred inside gate.
+No manuscript drafting or new science inside gate.
 
 ### DEC-059 — Manuscript Claim Freeze & Architecture decision
 Status: FROZEN / COMPLETE
-Canonical memo `research/master/manuscript_claim_freeze_architecture_0_1.md`; decision **MANUSCRIPT CLAIM FREEZE / MANUSCRIPT READY / NO NOVELTY PROMOTION**. Package P is the sole contribution-bearing framing; C1–C4 remain restricted; C5 is SAME-level illustration only. WEAK/FAIL neural evidence, exact Gram control, PARK decision and exact mean/COI closure are mandatory visible limitations. APP-C is established output-constrained/preview/feedforward benchmark instantiation.
+**MANUSCRIPT CLAIM FREEZE / MANUSCRIPT READY / NO NOVELTY PROMOTION**. Package P sole contribution-bearing framing; negative neural evidence, Gram/PARK and mean/COI controls mandatory.
 
 ### DEC-060 — Manuscript Claim & Architecture Freeze 0.1
 Status: FROZEN
-Rollback `RP-021 — Manuscript Claim & Architecture Freeze 0.1`; freezes claim hierarchy, allowed/prohibited wording, citation placement, negative-evidence policy, architecture, figure/table inventory and manuscript STOP boundaries.
+Rollback `RP-021`; claim hierarchy, wording, citation placement, negative-evidence policy, architecture and figure/table inventory frozen.
 
 ### DEC-061 — Manuscript Initial Draft 0.1 authorised
 Status: SATISFIED / CLOSED
-Assigned branch `90 – MANUSCRIPT – Manuskript & Figuren`; canonical prompt `research/master/prompts/manuscript_initial_draft_0_1.md`. MANUSCRIPT drafted only from frozen evidence and architecture and returned without new science or claim promotion.
+MANUSCRIPT drafted only from frozen evidence and architecture.
 
 ### DEC-062 — Manuscript Initial Draft 0.1 returned
 Status: FROZEN / COMPLETE
-Canonical draft `research/manuscript/manuscript_initial_draft_0_1.md`; draft creation commit `143712a86258f55db3b1d2f58ec6e4a8b32e7579`; canonical draft blob `677d17f847ec54990d1b60df4a5fe685b39da721`.
-Preliminary MASTER inspection found no obvious claim escalation. Required negative evidence and successful countercontrols are visible in the main text. One presentational TODO was explicitly returned: incomplete bibliographic metadata for the representative geometric-control/output-nulling source inherited from LIT.
+Canonical draft `research/manuscript/manuscript_initial_draft_0_1.md`; creation commit `143712a86258f55db3b1d2f58ec6e4a8b32e7579`; no obvious claim escalation; required limitations visible.
 
 ### DEC-063 — Manuscript Initial Draft Freeze 0.1
 Status: FROZEN
-Canonical freeze `research/master/manuscript_initial_draft_result_freeze_0_1.md`; rollback `RP-022 — Manuscript Initial Draft Freeze 0.1`.
-The draft may not be silently revised or treated as submission-ready before formal MASTER compliance integration.
+Rollback `RP-022`; no silent revision or submission treatment before compliance integration.
 
 ### DEC-064 — Manuscript Initial Draft Integration & Compliance Gate 0.1 authorised
 Status: SATISFIED / CLOSED
-Canonical prompt `research/master/prompts/master_manuscript_initial_draft_integration_compliance_gate_0_1.md`.
-The gate audited claim, numerical, citation, architecture, negative-evidence and figure/table compliance without rewriting the manuscript or adding science.
+Audited claim, numerical, citation, architecture, negative-evidence and figure/table compliance without rewriting manuscript or adding science.
 
 ### DEC-065 — Manuscript Initial Draft Integration & Compliance decision
 Status: FROZEN / COMPLETE
-Canonical memo `research/master/manuscript_initial_draft_integration_compliance_0_1.md`.
-Decision: **GO — EDITORIAL COMPLETION ONLY / NO NOVELTY PROMOTION**.
-MASTER found no scientific/claim blocker. Frozen CORE/APP-A/APP-B/APP-C numbers and classifications used in the draft were checked and found faithful at the reported precision. Required negative evidence and successful countercontrols remain visible. Remaining blockers are editorial/bibliographic only.
+**GO — EDITORIAL COMPLETION ONLY / NO NOVELTY PROMOTION**; no scientific/claim blocker; remaining blockers editorial/bibliographic only.
 
 ### DEC-066 — Manuscript Initial Draft Compliance Freeze 0.1
 Status: FROZEN
-Rollback point: `RP-023 — Manuscript Initial Draft Compliance Freeze 0.1`.
-This rollback freezes the finding that the initial draft is scientifically/claim compliant and that only the enumerated claim-preserving editorial/bibliographic work may follow. It does not modify `RP-022`, `RP-021`, any scientific result, or any literature classification.
+Rollback `RP-023`; initial draft scientifically/claim compliant; only enumerated claim-preserving editorial work allowed next.
 
 ### DEC-067 — Manuscript Editorial Completion 0.1 authorised
 Status: SATISFIED / CLOSED
-Assigned branch: `90 – MANUSCRIPT – Manuskript & Figuren`.
-Canonical prompt: `research/master/prompts/manuscript_editorial_completion_0_1.md`.
-Allowed work was restricted to bibliographic metadata completion for already cited frozen works, citation/reference normalization, and claim-preserving typographic/grammar/notation/cross-reference fixes. No new science, simulations, evidence, claims, literature families, submission action or novelty promotion was authorised.
+Only already cited bibliography metadata/formatting and claim-neutral editorial work allowed.
 
 ### DEC-068 — Manuscript Editorial Completion 0.1 returned
 Status: FROZEN / COMPLETE
-Canonical editorial version `research/manuscript/manuscript_editorial_completion_0_1.md`; creation commit `f1531222ceab86151d244ce31a2e921d980a1fa8`; canonical blob `5116cb99a011416943bef908079ba7489eb597a3`.
-The return completed only metadata/formatting for already cited Ntogramatzidis & Padula (2017), Tabuada & Pappas (2005), and Li & Bose (1995), normalised the corresponding citations, removed the obsolete TODO, and preserved all frozen scientific content and negative evidence.
+Canonical `research/manuscript/manuscript_editorial_completion_0_1.md`; commit `f1531222ceab86151d244ce31a2e921d980a1fa8`; Ntogramatzidis & Padula, Tabuada & Pappas, Li & Bose metadata completed; no scientific change.
 
 ### DEC-069 — Manuscript Editorial Completion Freeze 0.1
 Status: FROZEN
-Canonical freeze `research/master/manuscript_editorial_completion_result_freeze_0_1.md`; rollback `RP-024 — Manuscript Editorial Completion Freeze 0.1`.
-The editorial manuscript is accepted without scientific change. Submission is not authorised by this freeze.
+Rollback `RP-024`; editorial manuscript accepted; submission not authorised.
 
 ### DEC-070 — Manuscript Submission Readiness & Artifact Packaging Gate 0.1 authorised
-Status: ACTIVE / MASTER-READINESS ONLY
-Canonical prompt `research/master/prompts/master_manuscript_submission_readiness_artifact_packaging_gate_0_1.md`.
-Purpose: audit venue-neutral versus venue-dependent remaining manuscript artifacts, figures, tables, supplement, bibliography and reproducibility pointers, then select exactly one next action. No submission, new science, literature expansion, claim change or empirical figure generation is authorised inside the gate.
+Status: SATISFIED / CLOSED
+MASTER audited venue-neutral versus venue-dependent artifact readiness without submission or new science.
+
+### DEC-071 — Manuscript Submission Readiness & Artifact Packaging decision
+Status: FROZEN / COMPLETE
+Canonical `research/master/manuscript_submission_readiness_artifact_packaging_0_1.md`.
+Decision: **GO — VENUE-NEUTRAL ARTIFACT COMPLETION ONLY / NO NOVELTY PROMOTION**. No scientific, claim, numerical or bibliography-content blocker remains. Venue selection can safely be deferred until after venue-neutral figures, supplement and reproducibility package exist. Figure 3 must use the schematic/non-trajectory alternative because no stored frozen trajectory artifact exists.
+
+### DEC-072 — Manuscript Submission Readiness & Artifact Packaging Freeze 0.1
+Status: FROZEN
+Canonical freeze `research/master/manuscript_submission_readiness_artifact_packaging_result_freeze_0_1.md`; rollback `RP-025 — Manuscript Submission Readiness & Artifact Packaging Freeze 0.1`.
+This freezes the venue-neutral-first decision without altering `RP-024` or any scientific/claim freeze.
+
+### DEC-073 — Manuscript Venue-Neutral Artifact Completion 0.1 authorised
+Status: ACTIVE / ARTIFACT PRODUCTION ONLY
+Assigned branch `90 – MANUSCRIPT – Manuskript & Figuren`; canonical prompt `research/master/prompts/manuscript_venue_neutral_artifact_completion_0_1.md`.
+Allowed output is restricted to four frozen-role schematic/vector figures, complete Appendices A–F compiled from frozen sources, reproducibility/artifact manifest and venue-neutral package/index. No venue selection, submission, rerun, new data/metric/literature/claim or scientific rewrite is authorised.
 
 ## Rollback points
 
@@ -322,6 +326,7 @@ Purpose: audit venue-neutral versus venue-dependent remaining manuscript artifac
 - `RP-022 — Manuscript Initial Draft Freeze 0.1` — STABLE.
 - `RP-023 — Manuscript Initial Draft Compliance Freeze 0.1` — STABLE.
 - `RP-024 — Manuscript Editorial Completion Freeze 0.1` — STABLE.
+- `RP-025 — Manuscript Submission Readiness & Artifact Packaging Freeze 0.1` — STABLE.
 
 No prior freeze may be weakened. WEAK/NULL/FAIL/PASS outcomes and all claim demotions remain canonical and may not be retuned or relabelled.
 
@@ -329,7 +334,7 @@ No prior freeze may be weakened. WEAK/NULL/FAIL/PASS outcomes and all claim demo
 
 | Chat / branch | Status | Current gate | Dependency |
 |---|---|---|---|
-| 00 – MASTER | READY | Manuscript Submission Readiness & Artifact Packaging Gate 0.1 | `RP-024` stable |
+| 00 – MASTER | COMPLETE / WAIT | submission-readiness gate passed | venue-neutral artifact return |
 | 10 – CORE | COMPLETE / FROZEN / WAIT | CORE Synergetic Sufficiency Boundary 0.1 | satisfied |
 | 20 – THEORY-A | UNOPENED | none | MASTER authorisation |
 | 30 – THEORY-B | UNOPENED | none | MASTER authorisation |
@@ -338,4 +343,4 @@ No prior freeze may be weakened. WEAK/NULL/FAIL/PASS outcomes and all claim demo
 | 60 – APP-B | COMPLETE / PASS — RESULT FROZEN / WAIT | Power-Grid Minimal Benchmark 0.1 | returned to MASTER |
 | 70 – APP-C | COMPLETE / PASS — RESULT FROZEN / WAIT | Controlled State Preparation 0.1 | returned to MASTER |
 | 80 – LIT | COMPLETE / FROZEN / WAIT | Claim-Level & Theorem-Level Prior-Art Revalidation 0.1 | `RP-020` frozen |
-| 90 – MANUSCRIPT | COMPLETE / EDITORIAL VERSION FROZEN / WAIT FOR MASTER | Manuscript Editorial Completion 0.1 | `RP-024` frozen |
+| 90 – MANUSCRIPT | READY / AWAIT GO | Manuscript Venue-Neutral Artifact Completion 0.1 | `RP-025` frozen |
