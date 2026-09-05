@@ -1,10 +1,10 @@
 # Project Status — causal_synergetics
 
-Version: 2.3
+Version: 2.4
 Date: 2026-09-05
-Overall status: MANUSCRIPT INITIAL DRAFT FROZEN / MASTER COMPLIANCE GATE READY / NO NOVELTY PROMOTION
+Overall status: MANUSCRIPT INITIAL DRAFT COMPLIANCE PASSED / EDITORIAL COMPLETION READY / NO NOVELTY PROMOTION
 Governance status: FROZEN v0.1
-Latest rollback point: `RP-022 — Manuscript Initial Draft Freeze 0.1`
+Latest rollback point: `RP-023 — Manuscript Initial Draft Compliance Freeze 0.1`
 
 ## Central research question
 
@@ -29,60 +29,87 @@ The programme treats causal synergetics as a proposed research field to be teste
 - Claim-Level/Theorem-Level Prior-Art Revalidation: MANUSCRIPT-READY — CLAIM-RESTRICTED.
 - Manuscript Claim & Architecture Gate: MANUSCRIPT CLAIM FREEZE / MANUSCRIPT READY.
 - Manuscript Initial Draft 0.1: COMPLETE / FROZEN.
+- Manuscript Initial Draft Integration & Compliance 0.1: **GO — EDITORIAL COMPLETION ONLY**.
 
 All earlier claim ceilings and rollback points remain controlling.
 
-## Manuscript state
+## Manuscript compliance result
 
-Canonical initial draft:
+Canonical memo:
 
-`research/manuscript/manuscript_initial_draft_0_1.md`
+`research/master/manuscript_initial_draft_integration_compliance_0_1.md`
 
-Draft freeze:
+MASTER formally checked the initial draft against the frozen claim/architecture state and found no scientific or claim blocker.
 
-`research/master/manuscript_initial_draft_result_freeze_0_1.md`
+The draft preserves:
 
-The draft follows the frozen restricted theory/diagnostic-synthesis architecture and visibly retains the required negative evidence and successful countercontrols. Preliminary MASTER review does not identify an obvious scientific claim escalation.
+- Package P as the sole contribution-bearing framing;
+- C1–C4 as restricted building blocks;
+- C5 as SAME-level illustration only;
+- neural WEAK/FAIL evidence, exact Gram control and PARK decision;
+- exact APP-B mean/COI closure alongside representative-macro failure;
+- APP-C as established output-constrained / preview-feedforward / preventive-control benchmark instantiation;
+- canonical frozen numerical values and classifications;
+- required section and figure/table architecture.
 
-One presentational issue remains explicitly flagged by MANUSCRIPT: incomplete bibliographic metadata for the canonical geometric-control/output-nulling source inherited from the frozen literature record.
+## Remaining work
 
-Formal compliance has not yet been certified.
+Only claim-preserving editorial/bibliographic completion is authorised.
 
-## Active gate
+Concrete open metadata items:
 
-`Manuscript Initial Draft Integration & Compliance Gate 0.1`
+- Ntogramatzidis et al. (2017) geometric-control/output-nulling reference lacks complete metadata;
+- Tabuada & Pappas bibliography entry omits publication year;
+- the 1995 IFAC preventive-control entry lacks author metadata;
+- bibliography/reference formatting may be normalized for already cited works.
 
-Purpose: compare the entire draft against the frozen claim/architecture state, verify numerical and citation fidelity, distinguish scientific from editorial blockers, and select exactly one next manuscript action or STOP.
-
-No manuscript rewrite or new science is allowed inside this gate.
+No new literature family, scientific source selection, experiment, metric, theory or claim may be added in this pass.
 
 ## Branch state
 
-- `00 – MASTER`: READY — Manuscript Initial Draft Integration & Compliance Gate 0.1.
+- `00 – MASTER`: COMPLETE / WAIT FOR MANUSCRIPT.
 - `10 – CORE`: COMPLETE / FROZEN / WAIT.
 - `50 – APP-A`: PARKED / FROZEN / WAIT.
 - `60 – APP-B`: COMPLETE / PASS — RESULT FROZEN / WAIT.
 - `70 – APP-C`: COMPLETE / PASS — RESULT FROZEN / WAIT.
 - `80 – LIT`: COMPLETE / FROZEN / WAIT.
 - `20/30/40 – THEORY-*`: UNOPENED.
-- `90 – MANUSCRIPT`: COMPLETE / DRAFT FROZEN / WAIT FOR MASTER.
+- `90 – MANUSCRIPT`: READY / AWAIT GO — Manuscript Editorial Completion 0.1.
 
 ## Freeze / branching check
 
 OK.
 
-`RP-022` freezes the returned initial draft without changing `RP-021` or any scientific/literature result. No scientific execution branch is active. Exactly one MASTER compliance gate is authorised.
+`RP-023` freezes the formal compliance finding. `RP-022` remains the immutable initial-draft freeze and `RP-021` remains the controlling claim/architecture freeze.
+
+Exactly one active writing task is authorised: `Manuscript Editorial Completion 0.1`.
 
 ## Current claim ceiling
 
-Package P remains the sole contribution-bearing framing. C1–C4 remain restricted building blocks; C5 remains SAME-level illustration only. No novelty, priority, genericity, robustness, optimality, new-theory, new-field, generic causal-state, generic power-grid aggregation, or generic controlled-state-preparation claim is authorised.
+Package P remains the sole contribution-bearing framing. No novelty/priority, generic cross-domain universality, new controlled-equivalence/projectability theory, new power-grid aggregation, new controlled-state-preparation method, robustness/optimality/genericity of APP-C, first same-function/different-training neural result, or new-field claim is authorised.
+
+## Manuscript
+
+READY FOR EDITORIAL COMPLETION ONLY.
+
+Canonical execution prompt:
+
+`research/master/prompts/manuscript_editorial_completion_0_1.md`
+
+The editorial pass must create a new version and must not overwrite the frozen initial draft.
 
 ## CI
 
-Repository CI remains not configured. Manuscript drafting and current MASTER integration contain no scientific code execution.
+Repository CI remains not configured. The compliance gate contains no scientific execution.
 
 ## Next global step
 
-Remain in `00 – MASTER – Projektplan & Status` and enter exactly:
+Open/return to:
 
-`Manuscript Initial Draft Integration & Compliance Gate 0.1`
+`90 – MANUSCRIPT – Manuskript & Figuren`
+
+and enter exactly:
+
+`GO`
+
+After MANUSCRIPT returns, enter `Status?` in MASTER.
