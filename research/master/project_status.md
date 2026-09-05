@@ -1,10 +1,10 @@
 # Project Status — causal_synergetics
 
-Version: 1.7
+Version: 1.8
 Date: 2026-09-05
-Overall status: CROSS-DOMAIN GO FROZEN / CONTROLLED STATE PREPARATION SPECIFICATION READY / RESPONSE-COORDINATE DIRECTION PARKED
+Overall status: CONTROLLED STATE PREPARATION SPECIFICATION FROZEN / APP-C READY / RESPONSE-COORDINATE DIRECTION PARKED
 Governance status: FROZEN v0.1
-Latest rollback point: `RP-016 — Cross-Domain Intervention-Sufficiency Integration Freeze 0.1`
+Latest rollback point: `RP-017 — Controlled State Preparation Specification Freeze 0.1`
 
 ## Central research question
 
@@ -21,55 +21,63 @@ The programme treats causal synergetics as a proposed research field to be teste
 - `Neural Nonlinear ReLU Pilot 0.1`: PASS — RESULT FROZEN.
 - `Neural Response Coordinate Pilot 0.1`: WEAK — RESULT FROZEN.
 - `Neural Response Coordinate Nuisance-Invariance Pilot 0.1`: FAIL — RESULT FROZEN / SPECIFICATION CLASSIFICATION GAP.
-- `Neural Response Coordinate Nuisance-Invariance FAIL Integration Gate 0.1`: STOP / PARK RESPONSE-COORDINATE DIRECTION.
-- `Power-Grid Minimal Benchmark Feasibility & Specification Gate 0.1`: SPECIFICATION FROZEN.
+- Neural response-coordinate direction: STOP / PARKED.
 - `Power-Grid Minimal Benchmark 0.1`: PASS — RESULT FROZEN / NO NOVELTY PROMOTION.
-- `Cross-Domain Intervention-Sufficiency Integration Gate 0.1`: **GO — CLAIM-RESTRICTED / NO NOVELTY PROMOTION**.
+- `Cross-Domain Intervention-Sufficiency Integration Gate 0.1`: GO — CLAIM-RESTRICTED / NO NOVELTY PROMOTION.
+- `Controlled State Preparation Feasibility & Specification Gate 0.1`: **SPECIFICATION FROZEN / PREPARATION EXECUTION READY / NO NOVELTY PROMOTION**.
 
-## Cross-domain integration conclusion
+All prior claim ceilings remain controlling.
+
+## Frozen preparation specification
 
 Canonical memo:
-`research/master/cross_domain_intervention_sufficiency_integration_0_1.md`.
+`research/master/controlled_state_preparation_feasibility_specification_0_1.md`.
 
-The programme now has coherent support for the restricted intervention-sufficiency boundary in two distinct application families:
+Execution prompt:
+`research/master/prompts/app_c_controlled_state_preparation_0_1.md`.
 
-- neural states with the same current function can have different frozen learning-intervention responses;
-- a passive/coherent power-grid representative macro can be exact unforced yet become insufficient under a localized hidden-machine intervention.
+Exactly one preparation benchmark is frozen before execution:
 
-The power-grid mean/COI control remains exactly closed, showing that the result concerns the selected macro/intervention relation rather than universal failure of low-dimensional reduction.
+- normalized two-machine nonlinear swing system with `M=D=K=1`;
+- fixed common initial state `x=(0,0,0,0)`;
+- current representative-machine macro `q=(delta1,omega1)` preserved throughout preparation;
+- hidden coherency state `(e_delta,e_omega)`;
+- future local evaluation steps `a=±0.2` on machine 2;
+- analytically selected forced-relative-equilibrium target `e_delta*=asin(a/2)`, `e_omega*=0`;
+- quintic smoothstep hidden path over `tau_prep=2`;
+- exact open-loop inverse-dynamics feedforward preparation;
+- preparation amplitude cap `0.35` and energy budget `0.25`;
+- P0 no-preparation baseline;
+- PT matched targeted preparation;
+- PM sign-mismatched, exactly cost-symmetric preparation as the strong directional comparator;
+- evaluation horizon `T_eval=5` with no feedback during evaluation;
+- standard coherent aggregate B1, initialized at the preserved macro, as the target future response;
+- deterministic NumPy float64 RK4 with `dt=0.001` and `dt=0.0005` audit;
+- frozen preservation, target, cost, safety, response-benefit, symmetry, regression and convergence metrics;
+- exhaustive PASS/WEAK/NULL/FAIL hierarchy.
 
-The learned neural response-coordinate direction remains parked. Its WEAK and FAIL outcomes are preserved and are part of the evidence supporting the programme's anti-cherry-picking discipline.
+The target and preparation path are fixed analytically from the model and future disturbance before any new preparation outcome is inspected. No trajectory optimization, learned controller or policy search is authorised.
 
-This integration establishes programme coherence only. It does not establish novelty or generic cross-domain universality.
+## Scientific distinction
 
-## New programme selection
+The benchmark tests more than hidden-state reachability:
 
-The next highest-value stage is a new capability question rather than another insufficiency witness:
+1. one fixed physical initial state is used;
+2. the present representative macro must remain unchanged throughout preparation;
+3. hidden coherency state is changed under a bounded dynamical action with explicit cost;
+4. the preparation ends before the future disturbance;
+5. later representative response is evaluated against a frozen physical aggregate trajectory;
+6. no preparation and an equal-cost sign-reversed preparation are mandatory comparators.
 
-`Controlled State Preparation Feasibility & Specification Gate 0.1`.
-
-Canonical prompt:
-`research/master/prompts/master_controlled_state_preparation_feasibility_specification_gate_0_1.md`.
-
-This MASTER-only gate asks whether one narrow, reproducible preparation benchmark can be frozen in which a declared current observable/macro/function is preserved, hidden/internal state is deliberately changed under a bounded preparation action, and a separately specified later intervention response is shifted in a targeted measurable way.
-
-No preparation execution or result exists yet.
-
-## Why this stage is selected
-
-- Repeating intervention-insufficiency witnesses now has lower information value after the neural and power-grid results.
-- State preparation tests an active capability rather than another diagnostic failure.
-- `Neural Historical Reachability 0.1` provides only an artificial existence construction and therefore does not already establish the desired capability.
-- Prior art is strong, so the next step must be specification-first and claim-restricted.
-- Manuscript work is premature without a sharper capability result or later claim-level literature positioning.
+The method is still related to established anticipatory feedforward, equilibrium pre-positioning and preconditioning. No novelty or optimal-control claim is licensed.
 
 ## Branch state
 
-- `00 – MASTER`: READY — Controlled State Preparation Feasibility & Specification Gate 0.1.
+- `00 – MASTER`: COMPLETE / WAIT FOR APP-C.
 - `10 – CORE`: COMPLETE / FROZEN / WAIT.
-- `50 – APP-A`: PARKED / FROZEN / WAIT for response-coordinate work.
+- `50 – APP-A`: PARKED / FROZEN / WAIT.
 - `60 – APP-B`: COMPLETE / PASS — RESULT FROZEN / WAIT.
-- `70 – APP-C`: UNOPENED; may open only after successful preparation specification freeze.
+- `70 – APP-C`: READY / AWAIT GO — Controlled State Preparation 0.1.
 - `80 – LIT`: COMPLETE / FROZEN / WAIT.
 - `20/30/40 – THEORY-*`: UNOPENED.
 - `90 – MANUSCRIPT`: UNOPENED.
@@ -78,32 +86,38 @@ No preparation execution or result exists yet.
 
 OK.
 
-`RP-016` freezes the GO decision and the selection of exactly one next MASTER specification gate. It does not weaken any prior freeze or promote any WEAK/FAIL/PASS result.
+`RP-017` freezes the preparation domain/system, current macro, hidden state, initial state, future interventions, target hidden equilibrium, preparation path, control formula, duration, budgets, P0/PT/PM conditions, B1 target, horizon, numerical method/resolutions, metrics, classifier, anti-retuning rule and claim ceiling before execution.
+
+All rollback points through `RP-016` remain stable. No APP-A or APP-B result is reinterpreted or modified.
 
 ## Branching check
 
 OK.
 
-No specialist preparation branch is open. Exactly one MASTER feasibility/specification gate is authorised.
+Exactly one scientific execution is authorised: APP-C `Controlled State Preparation 0.1`.
 
 ## Rollback
 
 Latest stable savepoint:
 
-`RP-016 — Cross-Domain Intervention-Sufficiency Integration Freeze 0.1`.
+`RP-017 — Controlled State Preparation Specification Freeze 0.1`.
+
+Any APP-C PASS/WEAK/NULL/FAIL return must be frozen and integrated by MASTER rather than repaired in-place.
 
 ## Current claim ceiling
 
-The project may state the exact frozen LIT/CORE/neural/power-grid findings and that the restricted intervention-sufficiency boundary has coherent two-domain support under prospectively frozen benchmarks.
+No preparation result exists yet.
+
+The project may state the exact frozen LIT/CORE/neural/power-grid findings, the cross-domain GO decision, and that one narrow same-current-macro preparation benchmark has been prospectively specified.
 
 It may not claim:
 
-- generic cross-domain universality;
+- generic controlled state preparation;
+- novelty or optimality of the preparation method;
+- robustness to unknown/stochastic future disturbances;
+- generic power-grid preparation benefit;
 - a new state-equivalence or causal-state formalism;
-- novelty of controlled projectability/closure;
-- generic power-grid insufficiency or failure of all low-dimensional aggregates;
 - a generally useful learned causal/plasticity coordinate;
-- general, realistic or novel controlled state preparation;
 - field-level establishment or novelty of causal synergetics.
 
 ## Manuscript
@@ -114,10 +128,18 @@ No manuscript claim freeze is authorised.
 
 ## CI
 
-Repository CI remains not configured. The latest executed APP-B result reports local `5 passed` and no GitHub status contexts/workflow runs for the queried execution head. Current MASTER commits are governance/integration only.
+Repository CI remains not configured. Current MASTER changes are specification/governance commits only; no APP-C scientific execution has occurred.
 
 ## Next global step
 
-Remain in `00 – MASTER – Projektplan & Status` and enter exactly:
+Open/return to:
 
-`Controlled State Preparation Feasibility & Specification Gate 0.1`
+`70 – APP-C – Controlled State Preparation`
+
+and enter exactly:
+
+`GO`
+
+After APP-C reaches `STOP — RETURN TO MASTER`, return to MASTER and enter:
+
+`Status?`
