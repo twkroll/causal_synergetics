@@ -1,10 +1,10 @@
 # Project Status — causal_synergetics
 
-Version: 1.9
+Version: 2.0
 Date: 2026-09-05
-Overall status: CONTROLLED STATE PREPARATION PASS FROZEN / SYNTHESIS CLAIM-READINESS READY / RESPONSE-COORDINATE DIRECTION PARKED
+Overall status: CLAIM-READINESS PATH FROZEN / TARGETED PRIOR-ART REVALIDATION READY / MANUSCRIPT UNOPENED
 Governance status: FROZEN v0.1
-Latest rollback point: `RP-018 — Controlled State Preparation Result Freeze 0.1`
+Latest rollback point: `RP-019 — Post-Preparation Programme Synthesis & Claim-Readiness Freeze 0.1`
 
 ## Central research question
 
@@ -24,70 +24,73 @@ The programme treats causal synergetics as a proposed research field to be teste
 - Neural response-coordinate direction: STOP / PARKED.
 - `Power-Grid Minimal Benchmark 0.1`: PASS — RESULT FROZEN / NO NOVELTY PROMOTION.
 - `Cross-Domain Intervention-Sufficiency Integration Gate 0.1`: GO — CLAIM-RESTRICTED / NO NOVELTY PROMOTION.
-- `Controlled State Preparation 0.1`: **PASS — RESULT FROZEN / NO NOVELTY PROMOTION**.
+- `Controlled State Preparation 0.1`: PASS — RESULT FROZEN / NO NOVELTY PROMOTION.
+- `Post-Preparation Programme Synthesis & Claim-Readiness Gate 0.1`: **GO — CLAIM-READINESS PATH / TARGETED PRIOR-ART REVALIDATION REQUIRED / NO NOVELTY PROMOTION**.
 
 All prior claim ceilings remain controlling.
 
-## Frozen controlled-state-preparation result
+## Synthesis conclusion
 
-Canonical result:
-`research/app_c/controlled_state_preparation_0_1.md`.
+Canonical memo:
 
-Result freeze:
-`research/master/controlled_state_preparation_result_freeze_0_1.md`.
+`research/master/post_preparation_programme_synthesis_claim_readiness_0_1.md`.
 
-Direct frozen observations:
+The programme is now coherent enough for restricted paper-level synthesis planning. It contains:
 
-- `E_target_max=2.076727044536923e-15`;
-- `E_no_min=0.06534774384334105`;
-- `E_mismatch_min=0.1307357122731585`;
-- `B0_min=0.9999999999999682`;
-- `BM_min=0.9999999999999841`;
-- `H_target=4.6079385647875116e-15`;
-- max absolute relative angle `0.16130400338475567 < pi/2`;
-- max preparation input `0.20881049376163438 <= 0.35`;
-- preparation energy `0.04006381839386479 <= 0.25`;
-- PT/PM energy difference `0.0`;
-- convergence error `5.738465258531278e-15`;
-- APP-B regression absolute error `5.551115123125783e-17`;
-- APP-C tests `5 passed`.
+1. an explicit mathematical comparison between classical unforced slaving and controlled response sufficiency/projectability;
+2. exact neural same-current-function/different-learning-response witnesses, including preserved WEAK/FAIL coordinate evidence;
+3. a physically distinct two-machine swing benchmark with passive representative-macro exactness, controlled mismatch and exact mean/COI closure;
+4. a bounded same-current-macro hidden-state preparation result for a known later disturbance.
 
-Allowed interpretation only:
+This is scientific/programme coherence, not field-level novelty.
 
-> In this exact normalized two-machine swing model, the frozen bounded open-loop preparation holds the representative-machine macro fixed while steering the hidden coherency mode to the forced relative equilibrium for a known later local step; after preparation ends, the later representative response matches the standard coherent aggregate and outperforms both no preparation and the equal-cost sign-mismatched preparation under the frozen metrics.
+## Final frozen claim inventory before literature revalidation
 
-No robustness, optimality, generic controlled-state-preparation, generic power-grid or novelty claim follows.
+- **C1:** synergetic slaving / controlled-projectability boundary and finite-horizon diagnostic packaging;
+- **C2:** prospectively frozen cross-domain feasibility package;
+- **C3:** exact two-machine representative-macro intervention-insufficiency witness with exact mean/COI closure control;
+- **C4:** bounded same-current-macro hidden-state preparation for a known future disturbance;
+- **C5:** current/globally function-equivalent neural states with different one-step learning-intervention responses;
+- package-level synthesis linking the above.
 
-## Programme synthesis state
+Each is currently supported only under the frozen domain/theorem wording. None is yet novelty-promoted.
 
-The project now has a coherent but restricted sequence:
+## Why manuscript is still blocked
 
-- a mathematical intervention-sufficiency boundary tied to pre-existing slaving structure;
-- exact neural same-current-function/different-response witnesses, with visible negative learned-coordinate results;
-- a physically distinct power-grid witness with an exact successful aggregate control;
-- an active known-disturbance preparation capability that preserves the current macro while changing later response.
+The original broad prior-art audit preceded the final CORE theorem statements, power-grid witness and APP-C preparation result. It established a strong SAME/CLOSE/SUBSUMED ceiling but did not perform a final theorem-to-theorem/domain-to-domain comparison of C1–C5.
 
-The anti-cherry-picking record remains intact because WEAK/FAIL outcomes were frozen rather than repaired and later PASS results were prospectively specified.
+Therefore the dominant remaining prerequisite is **targeted claim-level/theorem-level prior-art revalidation**, not another experiment and not immediate manuscript drafting.
 
 ## Active gate
 
-`Post-Preparation Programme Synthesis & Claim-Readiness Gate 0.1`
+`80 – LIT – Literatur & Neuheitspositionierung`
+
+Current gate:
+
+`Claim-Level & Theorem-Level Prior-Art Revalidation 0.1`.
+
+Status: READY / AWAIT GO.
 
 Canonical prompt:
-`research/master/prompts/master_post_preparation_programme_synthesis_claim_readiness_gate_0_1.md`.
 
-Purpose: determine whether the complete frozen evidence is ready to advance on a claim-readiness path, and identify exactly one next prerequisite or STOP before manuscript work opens.
+`research/master/prompts/lit_claim_level_theorem_level_prior_art_revalidation_0_1.md`.
 
-No new experiments, literature search or manuscript drafting are authorised inside this gate.
+The audit must classify C1–C5 and the package-level synthesis against nearest predecessors and return exactly one of:
+
+- `MANUSCRIPT-READY — CLAIM-RESTRICTED`;
+- `REVISE CLAIM SET`;
+- `STOP — NO DEFENSIBLE CLAIM PACKAGE`.
+
+No new theory or experiments are authorised.
 
 ## Branch state
 
-- `00 – MASTER`: READY — Post-Preparation Programme Synthesis & Claim-Readiness Gate 0.1.
+- `00 – MASTER`: COMPLETE / WAIT FOR LIT.
 - `10 – CORE`: COMPLETE / FROZEN / WAIT.
 - `50 – APP-A`: PARKED / FROZEN / WAIT.
 - `60 – APP-B`: COMPLETE / PASS — RESULT FROZEN / WAIT.
 - `70 – APP-C`: COMPLETE / PASS — RESULT FROZEN / WAIT.
-- `80 – LIT`: COMPLETE / FROZEN / WAIT.
+- `80 – LIT`: READY / AWAIT GO — Claim-Level & Theorem-Level Prior-Art Revalidation 0.1.
 - `20/30/40 – THEORY-*`: UNOPENED.
 - `90 – MANUSCRIPT`: UNOPENED.
 
@@ -95,20 +98,22 @@ No new experiments, literature search or manuscript drafting are authorised insi
 
 OK.
 
-`RP-018` freezes the complete APP-C result without modifying `RP-017` or any earlier result. No scientific execution branch is active. Exactly one MASTER integration gate is authorised.
+`RP-019` freezes the synthesis decision and final pre-literature claim inventory. All earlier rollback points remain stable. No prior WEAK/FAIL/PASS result is reinterpreted or promoted.
+
+Exactly one specialist activity is authorised: the targeted LIT revalidation.
 
 ## Current claim ceiling
 
-The project may state the exact frozen LIT/CORE/neural/power-grid/preparation findings and that they form a coherent restricted programme chain.
+The project may state the exact frozen results and that the programme has reached a final claim-readiness audit.
 
 It may not claim:
 
 - generic cross-domain universality;
-- generic controlled state preparation;
-- robustness to unknown/stochastic future interventions;
-- novelty or optimality of the preparation method;
-- generic power-grid insufficiency/benefit;
-- a new controlled-equivalence or causal-state formalism;
+- a new generic controlled-state equivalence/causal-state theory;
+- novelty of projectability/closure;
+- generic power-grid insufficiency or benefit;
+- generic/robust controlled state preparation;
+- optimality of the APP-C construction;
 - generally useful learned causal/plasticity coordinates;
 - field-level establishment or novelty of causal synergetics.
 
@@ -116,14 +121,22 @@ It may not claim:
 
 UNOPENED.
 
-The next MASTER gate must decide whether a targeted claim-level/theorem-level prior-art revalidation is the final dominant blocker before manuscript authorisation.
+Manuscript planning may be considered only after LIT returns and MASTER integrates the revalidation result.
 
 ## CI
 
-Repository CI remains not configured. APP-C reports deterministic local `5 passed`; queried test commit has no GitHub status contexts or workflow runs.
+Repository CI remains not configured. No scientific code execution occurred in the synthesis gate.
 
 ## Next global step
 
-Remain in `00 – MASTER – Projektplan & Status` and enter exactly:
+Open/return to:
 
-`Post-Preparation Programme Synthesis & Claim-Readiness Gate 0.1`
+`80 – LIT – Literatur & Neuheitspositionierung`
+
+and enter exactly:
+
+`GO`
+
+After LIT reaches `STOP — RETURN TO MASTER`, return to MASTER and enter:
+
+`Status?`
