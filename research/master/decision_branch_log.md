@@ -1,6 +1,6 @@
 # Decision & Branch Log — causal_synergetics
 
-Last updated: 2026-09-04
+Last updated: 2026-09-05
 Governance: `PROJECT_GOVERNANCE_0_1.md`
 
 ## Decisions
@@ -302,20 +302,42 @@ Rationale:
 The selected second-domain direction is a minimal power-grid / swing-dynamics feasibility test. This selection does not itself assert any power-grid result.
 
 ### DEC-039 — Power-Grid Minimal Benchmark Feasibility & Specification Gate 0.1 authorised
-Status: ACTIVE / MASTER-SPECIFICATION ONLY
-
-The single next gate is:
-
-`Power-Grid Minimal Benchmark Feasibility & Specification Gate 0.1`.
+Status: SATISFIED / CLOSED
 
 Canonical prompt:
 `research/master/prompts/master_power_grid_minimal_benchmark_feasibility_specification_gate_0_1.md`.
 
-The gate must freeze exactly one physically justified model/topology/parameter set, passive macro map, intervention family, horizon, state construction, baselines, numerical method, exhaustive PASS/WEAK/NULL/FAIL criteria and claim ceiling before any execution.
+The gate completed before any power-grid trajectory/effect inspection and returned `SPECIFICATION FROZEN / APP-B READY`.
 
-`60 – APP-B` remains `UNOPENED` until and unless this MASTER gate returns `SPECIFICATION FROZEN / APP-B READY`.
+### DEC-040 — Power-Grid Minimal Benchmark Specification Freeze 0.1
+Status: FROZEN
 
-No power-grid simulation, alternative-topology search, APP-A reopening, controlled state preparation, literature or manuscript work is authorised in parallel.
+Canonical specification:
+`research/master/power_grid_minimal_benchmark_feasibility_specification_0_1.md`.
+
+Decision: **SPECIFICATION FROZEN / APP-B READY / NO NOVELTY PROMOTION**.
+
+The frozen design contains exactly one normalized two-machine nonlinear swing topology with `M=D=K=1`; a pre-declared representative-machine macro `q=(delta1,omega1)` and hidden coherency errors; the exact unforced synchronisation manifold; three coherent initial speeds `-0.1,0,+0.1`; constant local machine-2 steps `u=0,±0.2`; horizon `T=5`; deterministic NumPy float64 RK4 at `dt=0.001` with a `dt=0.0005` convergence audit; B0 passive-slaving and B1 coherent-aggregate comparators; exact mean/COI closure control; frozen trajectory/invariance/physical-admissibility metrics; and an exhaustive PASS/WEAK/NULL/FAIL classifier.
+
+The intervention magnitude and horizon are structurally pre-declared: `|u|=0.2` is one tenth of the normalized near-synchronous equilibrium existence limit `|u|<2`, and `T=5` is five damping time constants.
+
+No topology, parameter, amplitude, macro, horizon, baseline or threshold search is authorised.
+
+Rollback point: `RP-014 — Power-Grid Minimal Benchmark Specification Freeze 0.1`.
+
+### DEC-041 — Power-Grid Minimal Benchmark 0.1 authorised
+Status: ACTIVE / FROZEN EXECUTION
+
+The single next scientific activity is assigned to:
+
+`60 – APP-B – Power-Grid Minimalbenchmark`.
+
+Canonical execution prompt:
+`research/master/prompts/app_b_power_grid_minimal_benchmark_0_1.md`.
+
+APP-B may execute only the frozen specification and must mechanically return `PASS`, `WEAK`, `NULL`, or `FAIL` without repair or retuning.
+
+APP-A response-coordinate work remains parked. No second power-grid candidate, controlled-state-preparation branch, new literature positioning, other application, or manuscript work is authorised in parallel.
 
 ## Rollback points
 
@@ -332,20 +354,21 @@ No power-grid simulation, alternative-topology search, APP-A reopening, controll
 - `RP-011 — Neural Response Coordinate Nuisance-Invariance Specification Freeze 0.1` — STABLE.
 - `RP-012 — Neural Response Coordinate Nuisance-Invariance Result Freeze 0.1` — STABLE.
 - `RP-013 — Neural Response Coordinate Nuisance FAIL Integration Freeze 0.1` — STABLE.
+- `RP-014 — Power-Grid Minimal Benchmark Specification Freeze 0.1` — STABLE.
 
-No prior freeze may be weakened. The parked coordinate direction may not be reopened to repair or relabel the failed nuisance gate.
+No prior freeze may be weakened. APP-B must return any WEAK/NULL/FAIL result rather than trying another grid, amplitude, macro, horizon or baseline.
 
 ## Branch registry
 
 | Chat / branch | Status | Current gate | Dependency |
 |---|---|---|---|
-| 00 – MASTER | READY | Power-Grid Minimal Benchmark Feasibility & Specification Gate 0.1 | `RP-013` stable |
+| 00 – MASTER | COMPLETE / WAIT | Power-Grid Minimal Benchmark specification frozen | APP-B result return |
 | 10 – CORE | COMPLETE / FROZEN / WAIT | CORE Synergetic Sufficiency Boundary 0.1 | satisfied |
 | 20 – THEORY-A | UNOPENED | none | MASTER authorisation |
 | 30 – THEORY-B | UNOPENED | none | MASTER authorisation |
 | 40 – THEORY-C | UNOPENED | none | MASTER authorisation |
 | 50 – APP-A | PARKED / FROZEN / WAIT | response-coordinate direction parked | new independent MASTER question required |
-| 60 – APP-B | UNOPENED | none | successful power-grid specification freeze required |
+| 60 – APP-B | READY / AWAIT GO | Power-Grid Minimal Benchmark 0.1 | `RP-014` specification frozen |
 | 70 – APP-C | UNOPENED | none | MASTER authorisation |
 | 80 – LIT | COMPLETE / FROZEN / WAIT | Prior-Art & Definitions Audit 0.1 | satisfied |
 | 90 – MANUSCRIPT | UNOPENED | none | frozen results + MASTER authorisation |
