@@ -1,14 +1,14 @@
 # STATUS — 00 – MASTER – Projektplan & Status
 
-Current Gate: `Post-Preparation Programme Synthesis & Claim-Readiness Gate 0.1`
-Status: COMPLETE / WAIT FOR LIT
-Latest canonical memo: `research/master/post_preparation_programme_synthesis_claim_readiness_0_1.md`
-Dependency: complete frozen programme through `RP-018 — Controlled State Preparation Result Freeze 0.1`
-Decision: `GO — CLAIM-READINESS PATH / TARGETED PRIOR-ART REVALIDATION REQUIRED / NO NOVELTY PROMOTION`
-Latest rollback point: `RP-019 — Post-Preparation Programme Synthesis & Claim-Readiness Freeze 0.1`
-Authorised LIT prompt: `research/master/prompts/lit_claim_level_theorem_level_prior_art_revalidation_0_1.md`
-Next instruction: User opens/returns to `80 – LIT – Literatur & Neuheitspositionierung` and enters exactly `GO`.
-STOP boundary: MASTER must not open MANUSCRIPT, start new theory or experiments, rerun/extend APP-A/B/C, reopen parked response-coordinate work, or promote novelty before LIT returns and MASTER integrates the result.
+Current Gate: `Manuscript Claim Freeze & Architecture Gate 0.1`
+Status: READY / AWAIT NAMED GATE
+Latest canonical LIT result: `research/literature/claim_level_theorem_level_prior_art_revalidation_0_1.md`
+LIT result freeze: `research/master/claim_level_theorem_level_prior_art_revalidation_result_freeze_0_1.md`
+Decision: `MANUSCRIPT-READY — CLAIM-RESTRICTED / NO NOVELTY PROMOTION`
+Latest rollback point: `RP-020 — Claim-Level & Theorem-Level Prior-Art Revalidation Result Freeze 0.1`
+Canonical next prompt: `research/master/prompts/master_manuscript_claim_freeze_architecture_gate_0_1.md`
+Next instruction: User remains in `00 – MASTER – Projektplan & Status` and enters exactly `Manuscript Claim Freeze & Architecture Gate 0.1`.
+STOP boundary: Do not open `90 – MANUSCRIPT`, draft manuscript prose, start new theory/literature/experiments, rerun or extend APP-A/B/C, reopen parked response-coordinate work, or promote novelty before the named MASTER gate completes.
 
 ## Freeze state
 
@@ -25,71 +25,69 @@ STOP boundary: MASTER must not open MANUSCRIPT, start new theory or experiments,
 - Cross-Domain Intervention-Sufficiency Integration 0.1: FROZEN / GO — CLAIM-RESTRICTED
 - Controlled State Preparation 0.1: FROZEN / PASS
 - Post-Preparation Programme Synthesis & Claim-Readiness 0.1: FROZEN / GO — CLAIM-READINESS PATH
-- Latest rollback point: `RP-019 — Post-Preparation Programme Synthesis & Claim-Readiness Freeze 0.1`
+- Claim-Level & Theorem-Level Prior-Art Revalidation 0.1: FROZEN / `MANUSCRIPT-READY — CLAIM-RESTRICTED`
+- Latest rollback point: `RP-020 — Claim-Level & Theorem-Level Prior-Art Revalidation Result Freeze 0.1`
 
-## Claim-readiness decision
+## Final literature classification
 
-The programme is scientifically coherent enough for restricted paper-level synthesis planning but not yet novelty-ready or manuscript-authorised.
+The final frozen claim classifications are:
 
-Strongest currently supported claim families:
+- C1: `CLOSE / RETAIN-RESTRICTED`;
+- C2: `RELATED / REINTERPRET`;
+- C3: `CLOSE / RETAIN-RESTRICTED`;
+- C4: `CLOSE / REINTERPRET`;
+- C5: `SAME / DEMOTE`;
+- package-level synthesis: `DISTINCT-ENOUGH-FOR-RESTRICTED-CLAIM / RETAIN-RESTRICTED`.
 
-- C1: explicit synergetic-slaving to controlled-projectability boundary and finite-horizon diagnostic packaging;
-- C2: prospectively frozen cross-domain feasibility package;
-- C3: exact two-machine representative-macro intervention-insufficiency witness with exact mean/COI closure control;
-- C4: bounded same-current-macro hidden-state preparation for a known later disturbance;
-- C5: same/current-function-equivalent neural states with different frozen learning-intervention responses.
+The package is manuscript-usable only as a **restricted synergetics-centered diagnostic synthesis**. No individual theorem, neural phenomenon, power-grid reduction result, preparation/control mechanism, or `causal synergetics` field-level claim is novel-authorised.
 
-All remain claim-restricted. The original broad literature audit predates the final theorem/domain/preparation statements and is not sufficient as the final manuscript novelty basis.
+C5 is illustrative only. The manuscript may not present function-equivalent/different-training-dynamics as a contribution.
 
-## Active LIT gate
+## Active MASTER gate
 
-`Claim-Level & Theorem-Level Prior-Art Revalidation 0.1`
+`Manuscript Claim Freeze & Architecture Gate 0.1`
 
-Assigned to:
+Purpose: freeze the exact manuscript-safe claim hierarchy, prohibited wording, citation placement, negative-evidence policy, article architecture and figure/table inventory before `90 – MANUSCRIPT` can open.
 
-`80 – LIT – Literatur & Neuheitspositionierung`.
+This gate is governance/synthesis only. It must not draft the paper or add science.
 
-Purpose: audit only C1–C5 and the package-level synthesis against the nearest theorem/domain/control/neural predecessors, prescribe exact allowed/prohibited wording, and return exactly one of:
+Required gate decision:
 
-- `MANUSCRIPT-READY — CLAIM-RESTRICTED`;
-- `REVISE CLAIM SET`;
-- `STOP — NO DEFENSIBLE CLAIM PACKAGE`.
-
-No new theory or experiments are authorised in LIT.
+- `MANUSCRIPT CLAIM FREEZE / MANUSCRIPT READY`, or
+- `REVISE MANUSCRIPT CLAIM ARCHITECTURE`, or
+- `STOP — MANUSCRIPT NOT READY`.
 
 ## Claim ceiling
 
 No novelty promotion is authorised.
 
-The project may state the exact frozen results and that the programme has advanced to a targeted claim-readiness audit. It may not claim generic cross-domain universality, a new controlled-state formalism, generic controlled state preparation, generic power-grid insufficiency/benefit, generally useful learned causal/plasticity coordinates, or established/novel causal synergetics.
+Allowed contribution-level framing only: the restricted package-level organization connecting a pre-declared synergetic slaving map to established controlled projectability, prospectively frozen minimal diagnostic witnesses with successful countercontrols, and one output-preserving hidden-state preparation benchmark in the same physical fibre.
+
+Prohibited remain all claims of a new generic controlled-state theory, new projectability theorem, new power-grid aggregation principle, new state-preparation method, first neural same-function/different-training result, new field, or generic/robust/optimal capability.
 
 ## Branch state
 
-- 00 – MASTER: COMPLETE / WAIT FOR LIT
+- 00 – MASTER: READY — Manuscript Claim Freeze & Architecture Gate 0.1
 - 10 – CORE: COMPLETE / FROZEN / WAIT
 - 20/30/40 – THEORY-*`: UNOPENED
 - 50 – APP-A: PARKED / FROZEN / WAIT
 - 60 – APP-B: COMPLETE / PASS — RESULT FROZEN / WAIT
 - 70 – APP-C: COMPLETE / PASS — RESULT FROZEN / WAIT
-- 80 – LIT: READY / AWAIT GO — Claim-Level & Theorem-Level Prior-Art Revalidation 0.1
+- 80 – LIT: COMPLETE / FROZEN / WAIT
 - 90 – MANUSCRIPT: UNOPENED
 
 ## Active blocker
 
-Claim defensibility only: the final frozen claim inventory must be revalidated against its nearest prior art before MANUSCRIPT can be considered.
+Governance only: translate the final LIT ceiling into a manuscript claim/architecture freeze before writing starts.
 
 ## Manuscript
 
-UNOPENED. No manuscript claim freeze or drafting is authorised.
+UNOPENED. The LIT result makes manuscript planning admissible but does not itself authorise drafting.
 
 ## Return protocol
 
-Open/return to `80 – LIT – Literatur & Neuheitspositionierung` and enter exactly:
+Remain in this chat and enter exactly:
 
-`GO`
+`Manuscript Claim Freeze & Architecture Gate 0.1`
 
-After LIT reaches `STOP — RETURN TO MASTER`, return here and enter:
-
-`Status?`
-
-STOP — WAIT
+STOP — AWAIT NAMED GATE
