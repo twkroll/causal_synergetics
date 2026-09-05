@@ -1,76 +1,80 @@
 # STATUS — 00 – MASTER – Projektplan & Status
 
-Current Gate: `Power-Grid Minimal Benchmark Feasibility & Specification Gate 0.1`
-Status: READY / AWAIT NAMED GATE
+Current Gate: `Post-Power-Grid-Specification Integration / Power-Grid Minimal Benchmark 0.1`
+Status: COMPLETE / WAIT FOR APP-B
 Latest canonical file: `research/master/project_status.md`
-Dependencies: `RP-013 — Neural Response Coordinate Nuisance FAIL Integration Freeze 0.1`
-Canonical prompt: `research/master/prompts/master_power_grid_minimal_benchmark_feasibility_specification_gate_0_1.md`
-Next instruction: User remains in `00 – MASTER – Projektplan & Status` and enters exactly `Power-Grid Minimal Benchmark Feasibility & Specification Gate 0.1`.
-STOP boundary: MASTER must not execute a power-grid benchmark, open `60 – APP-B`, choose multiple grid candidates, reopen parked APP-A response-coordinate work, or open nonlinear/multi-step/real-data/realistic-history/LoRA/state-preparation/literature/manuscript work before the power-grid feasibility/specification gate completes.
+Dependencies: `Power-Grid Minimal Benchmark Feasibility & Specification Gate 0.1` COMPLETE / SPECIFICATION FROZEN
+Specification: `research/master/power_grid_minimal_benchmark_feasibility_specification_0_1.md`
+Execution prompt: `research/master/prompts/app_b_power_grid_minimal_benchmark_0_1.md`
+Decision: `SPECIFICATION FROZEN / APP-B READY / NO NOVELTY PROMOTION`
+Latest rollback point: `RP-014 — Power-Grid Minimal Benchmark Specification Freeze 0.1`
+Next instruction: User opens/returns to `60 – APP-B – Power-Grid Minimalbenchmark` and enters exactly `GO`; APP-B must execute only `research/master/prompts/app_b_power_grid_minimal_benchmark_0_1.md`.
+STOP boundary: MASTER must not execute the power-grid benchmark itself, alter the frozen topology/model/parameters/macro/interventions/horizon/numerics/baselines/metrics/thresholds, reopen parked APP-A response-coordinate work, or open state-preparation/literature/manuscript/other-domain work before APP-B returns.
 
 ## Freeze state
 
 - Governance: FROZEN v0.1
-- MASTER baseline: FROZEN
 - Prior-art audit: FROZEN / PASS — CLAIM-RESTRICTED
 - CORE boundary: FROZEN / PASS — CLAIM-RESTRICTED / NO NOVELTY PROMOTION
 - Neural Minimal Benchmark 0.1: FROZEN / PASS
 - Neural Historical Reachability 0.1: FROZEN / PASS
 - Neural Nonlinear ReLU Pilot 0.1: FROZEN / PASS
-- Neural Vertical Slice Decision 0.1: FROZEN / GO — CLAIM-RESTRICTED
 - Neural Response Coordinate Pilot 0.1: FROZEN / WEAK
 - Neural Response Coordinate Nuisance-Invariance Pilot 0.1: FROZEN / FAIL — SPECIFICATION CLASSIFICATION GAP
-- Neural Response Coordinate Nuisance FAIL Integration 0.1: FROZEN / STOP — DIRECTION PARKED
-- Latest rollback point: `RP-013 — Neural Response Coordinate Nuisance FAIL Integration Freeze 0.1`
+- Neural Response Coordinate direction: FROZEN / STOP — PARKED
+- Power-Grid Minimal Benchmark Specification 0.1: FROZEN / APP-B READY
+- Latest rollback point: `RP-014 — Power-Grid Minimal Benchmark Specification Freeze 0.1`
 
-## Current scientific state
+## Frozen power-grid specification
 
-The neural response-coordinate direction remains parked. No frozen neural result is repaired or reopened.
+Exactly one candidate is authorised:
 
-The strongest branch-independent scientific result remains the CORE boundary for controlled ODEs: passive/unforced slaving does not in general imply intervention-relative response sufficiency, while exact full-trajectory fibre sufficiency coincides with controlled projectability/closure under the frozen response definition.
+- two identical nonlinear classical swing machines coupled by one lossless tie line;
+- normalized `M=D=K=1`;
+- microstate `(delta1,omega1,delta2,omega2)`;
+- pre-declared representative macro `q=(delta1,omega1)`;
+- hidden coherency error `(e_delta,e_omega)`;
+- passive synchronisation manifold `e_delta=e_omega=0`, locally exponentially attracting for `u=0`;
+- local intervention applied only to machine 2 with frozen constant values `u=0,+0.2,-0.2`;
+- three coherent initial speeds `-0.1,0,+0.1`;
+- one horizon `T=5`, fixed from five damping time constants;
+- deterministic NumPy float64 RK4 with `dt=0.001` and convergence audit `dt=0.0005`;
+- B0 passive-slaving representative model;
+- B1 coherent aggregate surrogate;
+- exact mean/COI closure as mandatory strong control;
+- exhaustive PASS/WEAK/NULL/FAIL rules frozen before execution.
 
-All application evidence so far is neural/synthetic. The next highest-value question is therefore cross-domain transfer rather than another neural repair or scale-up.
+The exact structural witness is already model-level: a nonzero local intervention gives `(e_delta_dot,e_omega_dot)=(0,u)` on the passive synchronisation manifold and therefore destroys controlled invariance. Numerical execution is authorised only to validate and quantify the frozen finite-horizon benchmark under the frozen physical-admissibility and comparator criteria.
 
-MASTER selects one physically distinct candidate direction: a minimal power-grid / swing-dynamics benchmark. The next gate is specification-only and must determine whether exactly one canonical, physically justified model, macro map, intervention family, horizon, baselines and exhaustive success criteria can be frozen before any effect inspection.
-
-No power-grid result exists yet.
-
-## Selection rationale
-
-Power-grid dynamics are selected because they provide a controlled physical ODE setting that can be mapped cleanly onto the frozen CORE structure without relying on the parked learned-coordinate claim.
-
-This gate is preferred over:
-
-- further neural nonlinear/multi-step work, which would remain domain-specific;
-- repaired neural null/coordinate work, which is parked under `RP-013`;
-- controlled state preparation, which is downstream of demonstrating a transferable intervention-sufficiency problem in a second domain;
-- manuscript work, which remains premature under the current claim ceiling.
+No trajectory or effect magnitude was inspected during specification.
 
 ## Claim ceiling
 
 No novelty promotion is authorised.
 
-The project may state the exact frozen LIT/CORE/neural results and that a second-domain power-grid feasibility/specification gate has been selected. It may not claim any power-grid result, generic cross-domain transfer, a new controlled-state equivalence, a generally useful causal/plasticity coordinate, controlled state preparation, or established causal synergetics.
+No power-grid result exists yet. The project may state only that a two-machine cross-domain benchmark has been pre-specified. It may not claim cross-domain replication, generic power-grid insufficiency, new controlled equivalence, generally useful causal coordinates, controlled state preparation, or established causal synergetics.
+
+Even a future PASS is restricted to the representative-machine macro in this exact normalized two-machine system. The exact mean/COI control remains a successful low-dimensional closure and blocks any claim that all power-grid aggregates fail.
 
 ## Branch state
 
-- 00 – MASTER: READY — Power-Grid Minimal Benchmark Feasibility & Specification Gate 0.1
+- 00 – MASTER: COMPLETE / WAIT FOR APP-B
 - 10 – CORE: COMPLETE / FROZEN / WAIT
 - 20/30/40 – THEORY-*`: UNOPENED
 - 50 – APP-A: PARKED / FROZEN / WAIT
-- 60 – APP-B: UNOPENED — may open only after successful specification freeze
+- 60 – APP-B: READY / AWAIT GO — Power-Grid Minimal Benchmark 0.1
 - 70 – APP-C: UNOPENED
 - 80 – LIT: COMPLETE / FROZEN / WAIT
 - 90 – MANUSCRIPT: UNOPENED
 
 ## Active blocker
 
-Governance/scientific design only: MASTER must pre-specify one neutral minimal power-grid benchmark before APP-B can be opened or any simulation can run.
+Operational only: APP-B has not yet executed the frozen power-grid benchmark.
 
 ## Return protocol
 
-Execute the named gate in this chat:
+After APP-B reaches `STOP — RETURN TO MASTER`, return here and enter:
 
-`Power-Grid Minimal Benchmark Feasibility & Specification Gate 0.1`
+`Status?`
 
-STOP — AWAIT NAMED GATE
+STOP — WAIT
