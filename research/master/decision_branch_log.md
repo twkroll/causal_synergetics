@@ -218,9 +218,29 @@ Rollback point: `RP-018 — Controlled State Preparation Result Freeze 0.1`.
 The PASS is restricted to the exact known-disturbance, model-based, bounded open-loop preparation in the frozen normalized two-machine system. It does not establish optimality, robustness, generic power-grid benefit, generic state preparation, novelty or field-level causal synergetics.
 
 ### DEC-052 — Post-Preparation Programme Synthesis & Claim-Readiness Gate 0.1 authorised
-Status: ACTIVE / MASTER-INTEGRATION ONLY
+Status: SATISFIED / CLOSED
 Canonical prompt: `research/master/prompts/master_post_preparation_programme_synthesis_claim_readiness_gate_0_1.md`.
-Purpose: integrate the complete frozen evidence through `RP-018`, assess claim and manuscript readiness, and choose exactly one next programme action. No new experiments, literature search, theory branch, APP-A/B/C extension or manuscript drafting is authorised inside this gate.
+The gate integrated the complete frozen evidence through `RP-018` without new experiments, literature search, theory or manuscript drafting.
+
+### DEC-053 — Post-Preparation Programme Synthesis & Claim-Readiness decision
+Status: FROZEN / COMPLETE
+Canonical memo: `research/master/post_preparation_programme_synthesis_claim_readiness_0_1.md`.
+Decision: **GO — CLAIM-READINESS PATH / TARGETED PRIOR-ART REVALIDATION REQUIRED / NO NOVELTY PROMOTION**.
+
+The programme is coherent enough for restricted paper-level synthesis planning, but manuscript authorisation is blocked until the final frozen claim inventory C1–C5 and package-level synthesis are compared against their nearest theorem/domain/control/neural predecessors. Another experiment and immediate manuscript drafting were rejected as lower-value next steps.
+
+### DEC-054 — Post-Preparation Programme Synthesis & Claim-Readiness Freeze 0.1
+Status: FROZEN
+Rollback point: `RP-019 — Post-Preparation Programme Synthesis & Claim-Readiness Freeze 0.1`.
+
+`RP-019` freezes the final pre-literature claim inventory and the decision that targeted claim-level/theorem-level prior-art revalidation is the sole next prerequisite. It does not promote novelty or change any earlier result.
+
+### DEC-055 — Claim-Level & Theorem-Level Prior-Art Revalidation 0.1 authorised
+Status: ACTIVE / LIT ONLY
+Assigned branch: `80 – LIT – Literatur & Neuheitspositionierung`.
+Canonical prompt: `research/master/prompts/lit_claim_level_theorem_level_prior_art_revalidation_0_1.md`.
+
+The audit is restricted to C1–C5 and the package-level synthesis. It must return exactly one of `MANUSCRIPT-READY — CLAIM-RESTRICTED`, `REVISE CLAIM SET`, or `STOP — NO DEFENSIBLE CLAIM PACKAGE`. No theory generation, experiment proposal/execution, response-coordinate reopening, result promotion or manuscript drafting is authorised during the audit.
 
 ## Rollback points
 
@@ -242,6 +262,7 @@ Purpose: integrate the complete frozen evidence through `RP-018`, assess claim a
 - `RP-016 — Cross-Domain Intervention-Sufficiency Integration Freeze 0.1` — STABLE.
 - `RP-017 — Controlled State Preparation Specification Freeze 0.1` — STABLE.
 - `RP-018 — Controlled State Preparation Result Freeze 0.1` — STABLE.
+- `RP-019 — Post-Preparation Programme Synthesis & Claim-Readiness Freeze 0.1` — STABLE.
 
 No prior freeze may be weakened. WEAK/NULL/FAIL/PASS outcomes remain canonical and may not be retuned or relabelled.
 
@@ -249,7 +270,7 @@ No prior freeze may be weakened. WEAK/NULL/FAIL/PASS outcomes remain canonical a
 
 | Chat / branch | Status | Current gate | Dependency |
 |---|---|---|---|
-| 00 – MASTER | READY | Post-Preparation Programme Synthesis & Claim-Readiness Gate 0.1 | `RP-018` stable |
+| 00 – MASTER | COMPLETE / WAIT | Claim-readiness path frozen | LIT revalidation return |
 | 10 – CORE | COMPLETE / FROZEN / WAIT | CORE Synergetic Sufficiency Boundary 0.1 | satisfied |
 | 20 – THEORY-A | UNOPENED | none | MASTER authorisation |
 | 30 – THEORY-B | UNOPENED | none | MASTER authorisation |
@@ -257,5 +278,5 @@ No prior freeze may be weakened. WEAK/NULL/FAIL/PASS outcomes remain canonical a
 | 50 – APP-A | PARKED / FROZEN / WAIT | response-coordinate direction parked | new independent MASTER question required |
 | 60 – APP-B | COMPLETE / PASS — RESULT FROZEN / WAIT | Power-Grid Minimal Benchmark 0.1 | returned to MASTER |
 | 70 – APP-C | COMPLETE / PASS — RESULT FROZEN / WAIT | Controlled State Preparation 0.1 | returned to MASTER |
-| 80 – LIT | COMPLETE / FROZEN / WAIT | Prior-Art & Definitions Audit 0.1 | satisfied |
-| 90 – MANUSCRIPT | UNOPENED | none | MASTER authorisation after claim-readiness path |
+| 80 – LIT | READY / AWAIT GO | Claim-Level & Theorem-Level Prior-Art Revalidation 0.1 | `RP-019` stable |
+| 90 – MANUSCRIPT | UNOPENED | none | LIT result + MASTER integration required |
