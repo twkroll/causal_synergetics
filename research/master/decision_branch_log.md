@@ -252,7 +252,7 @@ Assigned branch `90 – MANUSCRIPT – Manuskript & Figuren`; canonical prompt `
 ### DEC-062 — Manuscript Initial Draft 0.1 returned
 Status: FROZEN / COMPLETE
 Canonical draft `research/manuscript/manuscript_initial_draft_0_1.md`; draft creation commit `143712a86258f55db3b1d2f58ec6e4a8b32e7579`; canonical draft blob `677d17f847ec54990d1b60df4a5fe685b39da721`.
-Preliminary MASTER inspection finds no obvious claim escalation. Required negative evidence and successful countercontrols are visible in the main text. One presentational TODO remains: incomplete bibliographic metadata for the canonical geometric-control/output-nulling source inherited from LIT.
+Preliminary MASTER inspection found no obvious claim escalation. Required negative evidence and successful countercontrols are visible in the main text. One presentational TODO was explicitly returned: incomplete bibliographic metadata for the representative geometric-control/output-nulling source inherited from LIT.
 
 ### DEC-063 — Manuscript Initial Draft Freeze 0.1
 Status: FROZEN
@@ -260,9 +260,26 @@ Canonical freeze `research/master/manuscript_initial_draft_result_freeze_0_1.md`
 The draft may not be silently revised or treated as submission-ready before formal MASTER compliance integration.
 
 ### DEC-064 — Manuscript Initial Draft Integration & Compliance Gate 0.1 authorised
-Status: ACTIVE / MASTER-COMPLIANCE ONLY
+Status: SATISFIED / CLOSED
 Canonical prompt `research/master/prompts/master_manuscript_initial_draft_integration_compliance_gate_0_1.md`.
-Purpose: audit claim, numerical, citation, architecture, negative-evidence and figure/table compliance; distinguish scientific blockers from editorial/bibliographic issues; and choose exactly one next action. No rewrite, new science, broad literature research or claim promotion is authorised inside the gate.
+The gate audited claim, numerical, citation, architecture, negative-evidence and figure/table compliance without rewriting the manuscript or adding science.
+
+### DEC-065 — Manuscript Initial Draft Integration & Compliance decision
+Status: FROZEN / COMPLETE
+Canonical memo `research/master/manuscript_initial_draft_integration_compliance_0_1.md`.
+Decision: **GO — EDITORIAL COMPLETION ONLY / NO NOVELTY PROMOTION**.
+MASTER found no scientific/claim blocker. Frozen CORE/APP-A/APP-B/APP-C numbers and classifications used in the draft were checked and found faithful at the reported precision. Required negative evidence and successful countercontrols remain visible. Remaining blockers are editorial/bibliographic only.
+
+### DEC-066 — Manuscript Initial Draft Compliance Freeze 0.1
+Status: FROZEN
+Rollback point: `RP-023 — Manuscript Initial Draft Compliance Freeze 0.1`.
+This rollback freezes the finding that the initial draft is scientifically/claim compliant and that only the enumerated claim-preserving editorial/bibliographic work may follow. It does not modify `RP-022`, `RP-021`, any scientific result, or any literature classification.
+
+### DEC-067 — Manuscript Editorial Completion 0.1 authorised
+Status: ACTIVE / EDITORIAL WRITING ONLY
+Assigned branch: `90 – MANUSCRIPT – Manuskript & Figuren`.
+Canonical prompt: `research/master/prompts/manuscript_editorial_completion_0_1.md`.
+Allowed work is restricted to bibliographic metadata completion for already cited frozen works, citation/reference normalization, and typographic/grammar/notation/cross-reference fixes that preserve scientific meaning. Targeted metadata verification may not expand the literature or scientific positioning. No new science, simulations, evidence, claims, literature families, submission action or novelty promotion is authorised.
 
 ## Rollback points
 
@@ -288,6 +305,7 @@ Purpose: audit claim, numerical, citation, architecture, negative-evidence and f
 - `RP-020 — Claim-Level & Theorem-Level Prior-Art Revalidation Result Freeze 0.1` — STABLE.
 - `RP-021 — Manuscript Claim & Architecture Freeze 0.1` — STABLE.
 - `RP-022 — Manuscript Initial Draft Freeze 0.1` — STABLE.
+- `RP-023 — Manuscript Initial Draft Compliance Freeze 0.1` — STABLE.
 
 No prior freeze may be weakened. WEAK/NULL/FAIL/PASS outcomes and all claim demotions remain canonical and may not be retuned or relabelled.
 
@@ -295,7 +313,7 @@ No prior freeze may be weakened. WEAK/NULL/FAIL/PASS outcomes and all claim demo
 
 | Chat / branch | Status | Current gate | Dependency |
 |---|---|---|---|
-| 00 – MASTER | READY | Manuscript Initial Draft Integration & Compliance Gate 0.1 | `RP-022` stable |
+| 00 – MASTER | COMPLETE / WAIT | Manuscript compliance passed | editorial completion return |
 | 10 – CORE | COMPLETE / FROZEN / WAIT | CORE Synergetic Sufficiency Boundary 0.1 | satisfied |
 | 20 – THEORY-A | UNOPENED | none | MASTER authorisation |
 | 30 – THEORY-B | UNOPENED | none | MASTER authorisation |
@@ -304,4 +322,4 @@ No prior freeze may be weakened. WEAK/NULL/FAIL/PASS outcomes and all claim demo
 | 60 – APP-B | COMPLETE / PASS — RESULT FROZEN / WAIT | Power-Grid Minimal Benchmark 0.1 | returned to MASTER |
 | 70 – APP-C | COMPLETE / PASS — RESULT FROZEN / WAIT | Controlled State Preparation 0.1 | returned to MASTER |
 | 80 – LIT | COMPLETE / FROZEN / WAIT | Claim-Level & Theorem-Level Prior-Art Revalidation 0.1 | `RP-020` frozen |
-| 90 – MANUSCRIPT | COMPLETE / DRAFT FROZEN / WAIT FOR MASTER | Manuscript Initial Draft 0.1 | `RP-022` frozen |
+| 90 – MANUSCRIPT | READY / AWAIT GO | Manuscript Editorial Completion 0.1 | `RP-023` frozen |
