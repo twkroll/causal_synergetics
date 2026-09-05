@@ -1,17 +1,16 @@
 # STATUS — 90 – MANUSCRIPT – Manuskript & Figuren
 
 Current Gate: `Manuscript Editorial Completion 0.1`
-Status: COMPLETE / EDITORIAL VERSION FROZEN / RETURN TO MASTER
+Status: COMPLETE / EDITORIAL VERSION FROZEN / WAIT FOR MASTER
 Latest claim/architecture freeze: `research/master/manuscript_claim_freeze_architecture_0_1.md`
 Initial draft: `research/manuscript/manuscript_initial_draft_0_1.md`
 Latest canonical file: `research/manuscript/manuscript_editorial_completion_0_1.md`
 Compliance memo: `research/master/manuscript_initial_draft_integration_compliance_0_1.md`
-Execution prompt: `research/master/prompts/manuscript_editorial_completion_0_1.md`
-Dependency: `RP-023 — Manuscript Initial Draft Compliance Freeze 0.1`
-MASTER decision: `GO — EDITORIAL COMPLETION ONLY`
+Editorial result freeze: `research/master/manuscript_editorial_completion_result_freeze_0_1.md`
+Dependency: `RP-024 — Manuscript Editorial Completion Freeze 0.1`
 Editorial version creation commit: `f1531222ceab86151d244ce31a2e921d980a1fa8`
-Next instruction: None in MANUSCRIPT. Return to `00 – MASTER – Projektplan & Status` for integration and any later submission/revision authorisation.
-STOP boundary: Do not independently revise the manuscript, add science, conduct broad/exploratory literature research, rerun simulations, repair WEAK/FAIL results, alter frozen metrics/claims, add evidence or literature families, strengthen novelty/priority/genericity, or overwrite either frozen manuscript version. Any scientific change requires `STOP — RETURN TO MASTER: SCIENTIFIC CHANGE REQUIRED`.
+Next instruction: WAIT FOR MASTER completion of `Manuscript Submission Readiness & Artifact Packaging Gate 0.1`.
+STOP boundary: Do not independently revise the manuscript, submit, select a venue, render scientific figures requiring new data, run/rerun simulations, add science or literature families, repair WEAK/FAIL results, alter frozen metrics/claims, strengthen novelty/priority/genericity, or overwrite either frozen manuscript version.
 
 ## Frozen manuscript role
 
@@ -26,19 +25,19 @@ Restricted theory/diagnostic synthesis. Package P remains the sole contribution-
 
 No novelty or priority promotion is authorised.
 
-## Editorial completion — executed scope
+## Editorial completion — frozen result
 
-Only already cited frozen works were checked for bibliographic metadata. No new literature family or scientific predecessor was added.
+The editorial version completed only already cited bibliographic metadata and formatting:
 
-Completed/normalized:
+1. Ntogramatzidis & Padula (2017) metadata completed;
+2. Tabuada & Pappas publication year 2005 added;
+3. Li & Bose (1995) author metadata added;
+4. corresponding in-text citations normalised;
+5. obsolete bibliography TODO removed.
 
-1. Ntogramatzidis & Padula (2017): complete author list, *Systems & Control Letters* 106, 58–67, DOI `10.1016/j.sysconle.2017.06.003`;
-2. Tabuada & Pappas, `Quotients of Fully Nonlinear Control Systems`: publication year `2005` added and in-text author–year citations normalized;
-3. Li & Bose (1995), `Preventive Control for Dynamic Security of Power Systems`: author metadata added; existing IFAC volume/issue/pages/DOI retained; title-led citations normalized to author–year form;
-4. obsolete bibliography-formatting TODO removed;
-5. an editorial change log was included in the new canonical editorial version.
+No scientific claim, numerical value, evidence item, literature family or interpretation changed.
 
-## Mandatory evidence preservation check
+## Mandatory evidence preservation
 
 The editorial version preserves without weakening:
 
@@ -49,14 +48,10 @@ The editorial version preserves without weakening:
 - exact APP-B mean/COI closure control;
 - all frozen APP-B/APP-C numerical values and limitations.
 
-## Completion target
+## Current state
 
-Created:
+The editorial version is frozen under `RP-024` and has returned to MASTER.
 
-`research/manuscript/manuscript_editorial_completion_0_1.md`
+No submission, venue selection, final artifact production or additional manuscript revision is authorised in this branch until MASTER completes the next readiness gate.
 
-The frozen initial draft remains unchanged.
-
-No scientific simulation, scientific figure generation, new metric, new claim, new application, new controller, new baseline, or new literature-positioning family was introduced.
-
-STOP — RETURN TO MASTER
+STOP — WAIT FOR MASTER
