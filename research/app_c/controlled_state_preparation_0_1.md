@@ -172,7 +172,8 @@ The literature freeze remains controlling: controlled state preparation has clos
 
 - Implementation commit: `3d4b06f417b4d81cbeaa93f27683a1c799d426b4`.
 - Test commit: `04765a8dac61f4f657659d2bde03f5ef76c307d5`.
-- Result creation commit: recorded by the subsequent metadata finalisation update after this file is created.
+- Result creation commit: `14c82045ee187f825d8340d93cd1bde34216f7d4`.
+- Result metadata finalisation: this update commit; its SHA is available from Git history after the write completes.
 - Local deterministic execution of the exact APP-C source/test contents: `5 passed`.
 - Existing prior scientific source/test files were not modified; APP-C added only its new benchmark module and new test file before this result file.
 - GitHub commit-status query on test commit `04765a8dac61f4f657659d2bde03f5ef76c307d5`: `statuses=[]`, `total_count=0`; aggregate state is `pending` only because no status contexts exist.
