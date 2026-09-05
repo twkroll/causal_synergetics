@@ -1,32 +1,44 @@
 # STATUS — 80 – LIT – Literatur & Neuheitspositionierung
 
-Current Gate: `Prior-Art & Definitions Audit 0.1`
-Status: COMPLETE / RETURN TO MASTER
-Latest canonical file: `research/literature/prior_art_definitions_audit_0_1.md`
-Dependencies: MASTER Initialization Gate 0.1 complete
-Next instruction: RETURN TO MASTER
-STOP boundary: Audit complete. Do not develop new theory, tune models/parameters/objectives, open another branch, or continue literature work without new MASTER authorisation. `STOP — RETURN TO MASTER`.
+Current Gate: `Claim-Level & Theorem-Level Prior-Art Revalidation 0.1`
+Status: READY / AWAIT GO
+Latest canonical prior audit: `research/literature/prior_art_definitions_audit_0_1.md`
+Dependency: `RP-019 — Post-Preparation Programme Synthesis & Claim-Readiness Freeze 0.1`
+Authorised prompt: `research/master/prompts/lit_claim_level_theorem_level_prior_art_revalidation_0_1.md`
+Next instruction: On exact user command `GO`, execute only the targeted claim-level/theorem-level prior-art revalidation defined in the authorised prompt.
+STOP boundary: Do not create new theory, alter frozen results, propose/run experiments, reopen response-coordinate work, draft the manuscript, or broaden the audit beyond the frozen claim inventory C1–C5 and the package-level synthesis.
 
-## Authorised deliverable
+## Frozen basis
 
-`research/literature/prior_art_definitions_audit_0_1.md`
+The original `Prior-Art & Definitions Audit 0.1` remains frozen as `PASS — CLAIM-RESTRICTED / RESTRICT / REINTERPRET` and is not replaced.
 
-## Result state
+The new gate exists because the final theorem/domain/preparation claims were frozen after that broad audit.
 
-EXECUTED
+## Required claim inventory
 
-## Result classification
+Audit exactly:
 
-PASS — CLAIM-RESTRICTED
+- C1: synergetic slaving / controlled-projectability boundary and finite-horizon diagnostic packaging;
+- C2: prospectively frozen cross-domain feasibility package;
+- C3: exact two-machine representative-macro controlled mismatch with exact mean/COI closure control;
+- C4: bounded same-current-macro hidden-state preparation for a known future disturbance;
+- C5: function-equivalent neural states with different one-step learning-intervention responses;
+- package-level synthesis of the above.
 
-## Programme claim action
+## Required deliverable
 
-RESTRICT / REINTERPRET
+`research/literature/claim_level_theorem_level_prior_art_revalidation_0_1.md`
 
-## Commit hash
+Final decision must be exactly one of:
 
-`e21f3086657b9eb89f5b9ffa5ffdbdc4ba8b5b0d`
+- `MANUSCRIPT-READY — CLAIM-RESTRICTED`
+- `REVISE CLAIM SET`
+- `STOP — NO DEFENSIBLE CLAIM PACKAGE`
 
-## Result summary
+No `NOVEL` output class is permitted. Absence of a SAME hit is not novelty proof.
 
-Constructs 1–4 are substantially subsumed by established predictive-state, input-output computational mechanics, bisimulation/lumpability/homomorphism, causal-abstraction, and control-reduction frameworks and may not be positioned as generic novelty. The surviving CORE-admissible candidate boundary is restricted to an explicit mathematical comparison between classical synergetic order-parameter/slaving fibres and frozen intervention-relative response equivalence plus controlled closure. Constructs 7–8 remain secondary OPEN directions and are not established as novel.
+## Claim ceiling
+
+No novelty promotion is authorised during this audit. The task is to determine defensible wording and nearest predecessors, not to manufacture novelty.
+
+STOP — AWAIT GO
