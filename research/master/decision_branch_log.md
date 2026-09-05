@@ -195,22 +195,32 @@ Canonical prompt `research/master/prompts/master_controlled_state_preparation_fe
 
 ### DEC-048 — Controlled State Preparation Specification Freeze 0.1
 Status: FROZEN
-Canonical specification: `research/master/controlled_state_preparation_feasibility_specification_0_1.md`.
-Decision: **SPECIFICATION FROZEN / PREPARATION EXECUTION READY / NO NOVELTY PROMOTION**.
-Rollback point: `RP-017 — Controlled State Preparation Specification Freeze 0.1`.
-
-Exactly one candidate is frozen: the normalized two-machine swing system, fixed synchronous initial state, representative-machine macro held at `(0,0)` throughout a two-time-unit preparation, hidden forced-relative-equilibrium target `e_delta*=asin(a/2), e_omega*=0` for future `a=±0.2`, deterministic quintic inverse-dynamics feedforward, amplitude cap `0.35`, energy budget `0.25`, P0/PT/PM conditions, B1 future-response target, `T_eval=5`, fixed RK4 resolutions, exhaustive classifier and strict anti-retuning rule.
-
-The sign-mismatched preparation is an exactly cost-symmetric strong comparator. The construction is explicitly treated as related to established anticipatory feedforward/equilibrium pre-positioning/preconditioning; no novelty is claimed.
+Canonical specification `research/master/controlled_state_preparation_feasibility_specification_0_1.md`; decision `SPECIFICATION FROZEN / PREPARATION EXECUTION READY / NO NOVELTY PROMOTION`; rollback `RP-017`.
 
 ### DEC-049 — Controlled State Preparation 0.1 authorised
-Status: ACTIVE / FROZEN EXECUTION
-Assigned branch: `70 – APP-C – Controlled State Preparation`.
-Canonical execution prompt: `research/master/prompts/app_c_controlled_state_preparation_0_1.md`.
+Status: SATISFIED / CLOSED
+Assigned branch `70 – APP-C – Controlled State Preparation`; canonical execution prompt `research/master/prompts/app_c_controlled_state_preparation_0_1.md`. APP-C executed only the frozen P0/PT/PM benchmark and returned without retuning.
 
-APP-C may execute only the frozen P0/PT/PM benchmark and must return `PASS`, `WEAK`, `NULL`, or `FAIL` without changing the preparation path, budget, intervention, comparator, target, horizon, metrics, thresholds or claims.
+### DEC-050 — Controlled State Preparation 0.1 result
+Status: FROZEN / COMPLETE
+Canonical result: `research/app_c/controlled_state_preparation_0_1.md`.
+Implementation commit: `3d4b06f417b4d81cbeaa93f27683a1c799d426b4`.
+Test commit: `04765a8dac61f4f657659d2bde03f5ef76c307d5`.
+Result creation commit: `14c82045ee187f825d8340d93cd1bde34216f7d4`.
+Result metadata finalisation commit: `fd3326703a8d6652df5561584b47bf8dd20da8c6`.
+Decision: **PASS — RESULT FROZEN / NO NOVELTY PROMOTION**.
+Frozen observations include `E_target_max=2.076727044536923e-15`, `E_no_min=0.06534774384334105`, `E_mismatch_min=0.1307357122731585`, `B0_min=0.9999999999999682`, `BM_min=0.9999999999999841`, max preparation input `0.20881049376163438 <= 0.35`, preparation energy `0.04006381839386479 <= 0.25`, convergence error `5.738465258531278e-15`, and APP-C tests `5 passed`. No scientific retuning or second preparation policy was attempted.
 
-APP-A remains parked; APP-B remains complete/frozen. No new theory, literature, second preparation candidate or manuscript work is authorised in parallel.
+### DEC-051 — Controlled State Preparation Result Freeze 0.1
+Status: FROZEN
+Canonical freeze memo: `research/master/controlled_state_preparation_result_freeze_0_1.md`.
+Rollback point: `RP-018 — Controlled State Preparation Result Freeze 0.1`.
+The PASS is restricted to the exact known-disturbance, model-based, bounded open-loop preparation in the frozen normalized two-machine system. It does not establish optimality, robustness, generic power-grid benefit, generic state preparation, novelty or field-level causal synergetics.
+
+### DEC-052 — Post-Preparation Programme Synthesis & Claim-Readiness Gate 0.1 authorised
+Status: ACTIVE / MASTER-INTEGRATION ONLY
+Canonical prompt: `research/master/prompts/master_post_preparation_programme_synthesis_claim_readiness_gate_0_1.md`.
+Purpose: integrate the complete frozen evidence through `RP-018`, assess claim and manuscript readiness, and choose exactly one next programme action. No new experiments, literature search, theory branch, APP-A/B/C extension or manuscript drafting is authorised inside this gate.
 
 ## Rollback points
 
@@ -231,6 +241,7 @@ APP-A remains parked; APP-B remains complete/frozen. No new theory, literature, 
 - `RP-015 — Power-Grid Minimal Benchmark Result Freeze 0.1` — STABLE.
 - `RP-016 — Cross-Domain Intervention-Sufficiency Integration Freeze 0.1` — STABLE.
 - `RP-017 — Controlled State Preparation Specification Freeze 0.1` — STABLE.
+- `RP-018 — Controlled State Preparation Result Freeze 0.1` — STABLE.
 
 No prior freeze may be weakened. WEAK/NULL/FAIL/PASS outcomes remain canonical and may not be retuned or relabelled.
 
@@ -238,13 +249,13 @@ No prior freeze may be weakened. WEAK/NULL/FAIL/PASS outcomes remain canonical a
 
 | Chat / branch | Status | Current gate | Dependency |
 |---|---|---|---|
-| 00 – MASTER | COMPLETE / WAIT | Controlled State Preparation specification frozen | APP-C result return |
+| 00 – MASTER | READY | Post-Preparation Programme Synthesis & Claim-Readiness Gate 0.1 | `RP-018` stable |
 | 10 – CORE | COMPLETE / FROZEN / WAIT | CORE Synergetic Sufficiency Boundary 0.1 | satisfied |
 | 20 – THEORY-A | UNOPENED | none | MASTER authorisation |
 | 30 – THEORY-B | UNOPENED | none | MASTER authorisation |
 | 40 – THEORY-C | UNOPENED | none | MASTER authorisation |
 | 50 – APP-A | PARKED / FROZEN / WAIT | response-coordinate direction parked | new independent MASTER question required |
 | 60 – APP-B | COMPLETE / PASS — RESULT FROZEN / WAIT | Power-Grid Minimal Benchmark 0.1 | returned to MASTER |
-| 70 – APP-C | READY / AWAIT GO | Controlled State Preparation 0.1 | `RP-017` specification frozen |
+| 70 – APP-C | COMPLETE / PASS — RESULT FROZEN / WAIT | Controlled State Preparation 0.1 | returned to MASTER |
 | 80 – LIT | COMPLETE / FROZEN / WAIT | Prior-Art & Definitions Audit 0.1 | satisfied |
-| 90 – MANUSCRIPT | UNOPENED | none | frozen results + MASTER authorisation |
+| 90 – MANUSCRIPT | UNOPENED | none | MASTER authorisation after claim-readiness path |
