@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 760" role="img" aria-labelledby="title desc">
+<title id="title">Figure 2 — Cross-domain witness schematic</title>
+<desc id="desc">Neural same-current-function different one-step response with WEAK FAIL Gram and PARK limitations, and power-grid passively exact representative macro under localized hidden-machine disturbance with exact mean/COI closure countercontrol.</desc>
+<defs><marker id="a" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#222"/></marker></defs>
+<text x="40" y="55" font-family="sans-serif" font-size="34" font-weight="700">Figure 2. Two frozen feasibility witnesses with explicit countercontrols</text>
+<text x="40" y="90" font-family="sans-serif" font-size="18">Conceptual comparison only; the panels do not imply universality or equal evidential strength.</text>
+<rect x="35" y="125" width="690" height="575" rx="22" fill="#fafafa" stroke="#222" stroke-width="2"/>
+<text x="70" y="175" font-family="sans-serif" font-size="29" font-weight="700">A. Neural illustration</text>
+<rect x="85" y="220" width="210" height="115" rx="15" fill="#fff" stroke="#222" stroke-width="2"/>
+<text x="190" y="260" text-anchor="middle" font-family="sans-serif" font-size="21" font-weight="700">Same current function</text>
+<text x="190" y="295" text-anchor="middle" font-family="sans-serif" font-size="18">A and B function-equivalent</text>
+<line x1="295" y1="278" x2="370" y2="278" stroke="#222" stroke-width="3" marker-end="url(#a)"/>
+<rect x="380" y="220" width="250" height="115" rx="15" fill="#fff" stroke="#222" stroke-width="2"/>
+<text x="505" y="260" text-anchor="middle" font-family="sans-serif" font-size="21" font-weight="700">Same frozen learning task</text>
+<text x="505" y="295" text-anchor="middle" font-family="sans-serif" font-size="18">one simultaneous GD step</text>
+<line x1="505" y1="335" x2="505" y2="390" stroke="#222" stroke-width="3" marker-end="url(#a)"/>
+<rect x="335" y="400" width="340" height="105" rx="15" fill="#fff" stroke="#222" stroke-width="2"/>
+<text x="505" y="440" text-anchor="middle" font-family="sans-serif" font-size="21" font-weight="700">Different one-step response</text>
+<text x="505" y="475" text-anchor="middle" font-family="sans-serif" font-size="18">preferred state reverses across C/D</text>
+<rect x="85" y="545" width="590" height="105" rx="15" fill="#f3f3f3" stroke="#555" stroke-width="2" stroke-dasharray="7 6"/>
+<text x="380" y="580" text-anchor="middle" font-family="sans-serif" font-size="19" font-weight="700">Mandatory limitation / countercontrol</text>
+<text x="380" y="612" text-anchor="middle" font-family="sans-serif" font-size="17">response coordinate: WEAK vs 2D raw PCA; nuisance gate: FAIL</text>
+<text x="380" y="637" text-anchor="middle" font-family="sans-serif" font-size="17">2D Gram-PCA equally predictive/invariant → response-coordinate direction PARKED</text>
+<rect x="775" y="125" width="690" height="575" rx="22" fill="#fafafa" stroke="#222" stroke-width="2"/>
+<text x="810" y="175" font-family="sans-serif" font-size="29" font-weight="700">B. Power-grid witness</text>
+<rect x="825" y="220" width="230" height="115" rx="15" fill="#fff" stroke="#222" stroke-width="2"/>
+<text x="940" y="258" text-anchor="middle" font-family="sans-serif" font-size="21" font-weight="700">Representative macro</text>
+<text x="940" y="291" text-anchor="middle" font-family="sans-serif" font-size="17">passively exact on coherent set</text>
+<line x1="1055" y1="278" x2="1135" y2="278" stroke="#222" stroke-width="3" marker-end="url(#a)"/>
+<rect x="1145" y="220" width="250" height="115" rx="15" fill="#fff" stroke="#222" stroke-width="2"/>
+<text x="1270" y="258" text-anchor="middle" font-family="sans-serif" font-size="21" font-weight="700">Localized machine-2 step</text>
+<text x="1270" y="291" text-anchor="middle" font-family="sans-serif" font-size="17">u = ±0.2</text>
+<line x1="1270" y1="335" x2="1270" y2="390" stroke="#222" stroke-width="3" marker-end="url(#a)"/>
+<rect x="1090" y="400" width="350" height="105" rx="15" fill="#fff" stroke="#222" stroke-width="2"/>
+<text x="1265" y="440" text-anchor="middle" font-family="sans-serif" font-size="21" font-weight="700">Representative mismatch</text>
+<text x="1265" y="475" text-anchor="middle" font-family="sans-serif" font-size="17">B0 min d∞ = 0.3549858420076152</text>
+<rect x="825" y="545" width="590" height="105" rx="15" fill="#f3f3f3" stroke="#555" stroke-width="2" stroke-dasharray="7 6"/>
+<text x="1120" y="580" text-anchor="middle" font-family="sans-serif" font-size="19" font-weight="700">Mandatory successful countercontrol</text>
+<text x="1120" y="612" text-anchor="middle" font-family="sans-serif" font-size="17">arithmetic mean / COI coordinate is exactly closed</text>
+<text x="1120" y="637" text-anchor="middle" font-family="sans-serif" font-size="17">closure error = 3.885780586188048e−14; not a failure of all low-dimensional aggregates</text>
+</svg>
