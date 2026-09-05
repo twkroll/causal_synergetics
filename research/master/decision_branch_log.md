@@ -276,10 +276,25 @@ Rollback point: `RP-023 — Manuscript Initial Draft Compliance Freeze 0.1`.
 This rollback freezes the finding that the initial draft is scientifically/claim compliant and that only the enumerated claim-preserving editorial/bibliographic work may follow. It does not modify `RP-022`, `RP-021`, any scientific result, or any literature classification.
 
 ### DEC-067 — Manuscript Editorial Completion 0.1 authorised
-Status: ACTIVE / EDITORIAL WRITING ONLY
+Status: SATISFIED / CLOSED
 Assigned branch: `90 – MANUSCRIPT – Manuskript & Figuren`.
 Canonical prompt: `research/master/prompts/manuscript_editorial_completion_0_1.md`.
-Allowed work is restricted to bibliographic metadata completion for already cited frozen works, citation/reference normalization, and typographic/grammar/notation/cross-reference fixes that preserve scientific meaning. Targeted metadata verification may not expand the literature or scientific positioning. No new science, simulations, evidence, claims, literature families, submission action or novelty promotion is authorised.
+Allowed work was restricted to bibliographic metadata completion for already cited frozen works, citation/reference normalization, and claim-preserving typographic/grammar/notation/cross-reference fixes. No new science, simulations, evidence, claims, literature families, submission action or novelty promotion was authorised.
+
+### DEC-068 — Manuscript Editorial Completion 0.1 returned
+Status: FROZEN / COMPLETE
+Canonical editorial version `research/manuscript/manuscript_editorial_completion_0_1.md`; creation commit `f1531222ceab86151d244ce31a2e921d980a1fa8`; canonical blob `5116cb99a011416943bef908079ba7489eb597a3`.
+The return completed only metadata/formatting for already cited Ntogramatzidis & Padula (2017), Tabuada & Pappas (2005), and Li & Bose (1995), normalised the corresponding citations, removed the obsolete TODO, and preserved all frozen scientific content and negative evidence.
+
+### DEC-069 — Manuscript Editorial Completion Freeze 0.1
+Status: FROZEN
+Canonical freeze `research/master/manuscript_editorial_completion_result_freeze_0_1.md`; rollback `RP-024 — Manuscript Editorial Completion Freeze 0.1`.
+The editorial manuscript is accepted without scientific change. Submission is not authorised by this freeze.
+
+### DEC-070 — Manuscript Submission Readiness & Artifact Packaging Gate 0.1 authorised
+Status: ACTIVE / MASTER-READINESS ONLY
+Canonical prompt `research/master/prompts/master_manuscript_submission_readiness_artifact_packaging_gate_0_1.md`.
+Purpose: audit venue-neutral versus venue-dependent remaining manuscript artifacts, figures, tables, supplement, bibliography and reproducibility pointers, then select exactly one next action. No submission, new science, literature expansion, claim change or empirical figure generation is authorised inside the gate.
 
 ## Rollback points
 
@@ -306,6 +321,7 @@ Allowed work is restricted to bibliographic metadata completion for already cite
 - `RP-021 — Manuscript Claim & Architecture Freeze 0.1` — STABLE.
 - `RP-022 — Manuscript Initial Draft Freeze 0.1` — STABLE.
 - `RP-023 — Manuscript Initial Draft Compliance Freeze 0.1` — STABLE.
+- `RP-024 — Manuscript Editorial Completion Freeze 0.1` — STABLE.
 
 No prior freeze may be weakened. WEAK/NULL/FAIL/PASS outcomes and all claim demotions remain canonical and may not be retuned or relabelled.
 
@@ -313,7 +329,7 @@ No prior freeze may be weakened. WEAK/NULL/FAIL/PASS outcomes and all claim demo
 
 | Chat / branch | Status | Current gate | Dependency |
 |---|---|---|---|
-| 00 – MASTER | COMPLETE / WAIT | Manuscript compliance passed | editorial completion return |
+| 00 – MASTER | READY | Manuscript Submission Readiness & Artifact Packaging Gate 0.1 | `RP-024` stable |
 | 10 – CORE | COMPLETE / FROZEN / WAIT | CORE Synergetic Sufficiency Boundary 0.1 | satisfied |
 | 20 – THEORY-A | UNOPENED | none | MASTER authorisation |
 | 30 – THEORY-B | UNOPENED | none | MASTER authorisation |
@@ -322,4 +338,4 @@ No prior freeze may be weakened. WEAK/NULL/FAIL/PASS outcomes and all claim demo
 | 60 – APP-B | COMPLETE / PASS — RESULT FROZEN / WAIT | Power-Grid Minimal Benchmark 0.1 | returned to MASTER |
 | 70 – APP-C | COMPLETE / PASS — RESULT FROZEN / WAIT | Controlled State Preparation 0.1 | returned to MASTER |
 | 80 – LIT | COMPLETE / FROZEN / WAIT | Claim-Level & Theorem-Level Prior-Art Revalidation 0.1 | `RP-020` frozen |
-| 90 – MANUSCRIPT | READY / AWAIT GO | Manuscript Editorial Completion 0.1 | `RP-023` frozen |
+| 90 – MANUSCRIPT | COMPLETE / EDITORIAL VERSION FROZEN / WAIT FOR MASTER | Manuscript Editorial Completion 0.1 | `RP-024` frozen |
