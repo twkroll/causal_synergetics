@@ -151,6 +151,8 @@ Each intervention is constant for the full horizon.
 
 The two nonzero signs are a symmetry pair, not an amplitude sweep.
 
+The amplitude is fixed structurally rather than by effect inspection. For the frozen relative equilibrium under a constant step, `2 sin(e_delta*)=u`; existence of the near-synchronous branch requires `|u|<2`. The choice `|u|=0.2` is exactly one tenth of that normalized existence limit and is therefore a pre-declared small coherent disturbance.
+
 No pulse duration, alternative amplitude, alternative intervention bus, topology change, fault, or control waveform may be added after execution begins.
 
 ## 7. Frozen horizon and initial states
@@ -158,6 +160,8 @@ No pulse duration, alternative amplitude, alternative intervention bus, topology
 Use exactly one horizon:
 
 `T=5.0` normalized time units.
+
+With `D/M=1`, this is exactly five nominal damping time constants. The horizon is fixed from the model scale, not from an inspected transient.
 
 Use exactly three coherent initial conditions, all on `M_sync`:
 
@@ -189,9 +193,7 @@ Also report componentwise maxima
 
 `E_delta=max_t |delta_a-delta_b|`,
 
-`E_omega=max_t |omega_a-delta_b*0-omega_b|`,
-
-where the second expression means simply `max_t |omega_a-omega_b|`.
+`E_omega=max_t |omega_a-omega_b|`.
 
 Report trajectory RMS error as a secondary descriptive metric. No scalar post-hoc observable may replace the frozen full `q(t)` response.
 
@@ -244,6 +246,14 @@ For the frozen identical-machine model, antisymmetric line power cancels exactly
 `omega_mean_dot=-omega_mean+u/2`.
 
 Thus B1 is an exact closed model for the mean coordinate even though it is only an approximation to the representative-machine macro `q` under localized intervention.
+
+Moreover,
+
+`delta1-delta_mean=-e_delta/2`,
+
+`omega1-omega_mean=-e_omega/2`.
+
+Therefore B1's representative-machine error is exactly one half of the hidden coherency error componentwise.
 
 This control is mandatory. It prevents any future claim that all two-dimensional grid aggregates fail or that response measurements are required to construct an adequate aggregate.
 
@@ -328,29 +338,28 @@ Interpretation ceiling:
 
 ### WEAK
 
-All mandatory sanity checks pass, `H_delta < pi/2`, `E_pass <=1e-8`, and
+All mandatory sanity checks pass, `H_delta < pi/2`, and
 
 `min(E_B0_min,E_B1_min) > 1e-10`,
 
 but the full PASS conditions are not all met.
 
-Interpretation ceiling: the control-induced mismatch is detectable but below the frozen materiality floor for at least one primary comparator or passive adequacy is only numerically approximate at the weaker tolerance.
+Interpretation ceiling: the control-induced mismatch is detectable but below the frozen materiality floor for at least one primary comparator.
 
 ### NULL
 
 All mandatory sanity checks pass but neither PASS nor WEAK applies.
 
-This includes any of:
+This includes either:
 
-- departure from the intended coherent regime (`H_delta >= pi/2`);
-- passive representative reduction not adequate at the frozen weak tolerance (`E_pass >1e-8`);
+- departure from the intended coherent regime (`H_delta >= pi/2`); or
 - no controlled mismatch above numerical scale against at least one required comparator.
 
 NULL is a valid scientific result and may not trigger candidate replacement.
 
 ### FAIL
 
-One or more mandatory numerical/sanity checks fail, including implementation, convergence, mean-closure, symmetry, or regression checks.
+One or more mandatory numerical/sanity checks fail, including implementation, convergence, mean-closure, symmetry, passive-coherency, or regression checks.
 
 These four classes are ordered, disjoint, and exhaustive.
 
