@@ -1,16 +1,18 @@
 # STATUS — 90 – MANUSCRIPT – Manuskript & Figuren
 
 Current Gate: `Manuscript Chaos Regular-Article Format Adaptation 0.1`
-Status: READY / AWAIT GO
+Status: COMPLETE / CHAOS REGULAR-ARTICLE FORMAT ADAPTATION COMPLETE / RETURN TO MASTER
 Latest claim/architecture freeze: `research/master/manuscript_claim_freeze_architecture_0_1.md`
 Canonical editorial manuscript: `research/manuscript/manuscript_editorial_completion_0_1.md`
 Canonical corrected venue-neutral package: `research/manuscript/venue_neutral_0_2/`
+Chaos-adapted package: `research/manuscript/chaos_regular_article_0_1/`
 Primary venue: `Chaos: An Interdisciplinary Journal of Nonlinear Science` (AIP Publishing)
 Article type: `Regular Article / Research Article — NOT Fast Track`
 Latest MASTER freeze: `RP-029 — Manuscript Venue Selection & Format Specification Freeze 0.1`
 Execution prompt: `research/master/prompts/manuscript_chaos_regular_article_format_adaptation_0_1.md`
-Next instruction: On exact user command `GO`, read governance, this STATUS, the venue-selection memo/freeze, claim freeze, canonical editorial manuscript, corrected venue-neutral package and execution prompt; then execute only `Manuscript Chaos Regular-Article Format Adaptation 0.1`.
-STOP boundary: Do not alter canonical editorial or venue-neutral files; do not remove mandatory WEAK/FAIL/Gram/PARK/mean-COI evidence, change scientific claims/results/equations/figure substance/supplement substance/cited-work set, rerun science, regenerate trajectories, switch venue/article type, choose OA/payment terms, contact the journal, populate a submission system, or submit.
+Chaos package creation/content commit: `344477bd0c0c07755536941d7fd6ad9408128c62`
+Next instruction: `RETURN TO MASTER` for the separate venue-adapted compliance/submission-readiness gate.
+STOP boundary: Do not alter canonical editorial or venue-neutral files; do not independently revise the Chaos package, remove mandatory WEAK/FAIL/Gram/PARK/mean-COI evidence, change scientific claims/results/equations/figure substance/supplement substance/cited-work set, rerun science, regenerate trajectories, switch venue/article type, choose OA/payment terms, contact the journal, populate a submission system, or submit without new MASTER authorisation.
 
 ## Frozen manuscript role
 
@@ -25,64 +27,77 @@ Restricted theory/diagnostic synthesis. Package P remains the sole contribution-
 
 No novelty or priority promotion is authorised.
 
-## Frozen venue specification
+## Completed Chaos Regular-Article package
 
-Primary venue:
+Created under `research/manuscript/chaos_regular_article_0_1/`:
 
-**Chaos: An Interdisciplinary Journal of Nonlinear Science**.
+1. `manuscript_chaos_0_1.tex` — AIP/Chaos REVTeX main source, modularized mechanically through the section files below;
+2. `section_1_introduction.tex`;
+3. `section_2_related_work.tex`;
+4. `section_3_diagnostic_framework.tex`;
+5. `section_4_neural.tex`;
+6. `section_5_power_grid.tex`;
+7. `section_6_preparation.tex`;
+8. `section_7_synthesis_limitations.tex`;
+9. `section_8_conclusion_admin.tex`;
+10. `supplement_chaos_0_1.tex` — venue-specific typesetting wrapper around the immutable frozen `venue_neutral_0_2/supplement_0_1.md`;
+11. `references_chaos_0_1.bib` — existing cited-work set normalized for AIP author-year BibTeX presentation only;
+12. `alt_text_0_1.md` — neutral accessibility text for Figures 1–4;
+13. `submission_metadata_checklist_0_1.md` — unresolved author/administrative items recorded as `AUTHOR INPUT REQUIRED`;
+14. `README.md`;
+15. `CHANGELOG.md`.
 
-Article type:
+The four scientific SVG figures remain the existing frozen files under `research/manuscript/venue_neutral_0_2/figures/`; no figure was scientifically redrawn and no trajectory was regenerated.
 
-**Regular Article / Research Article — NOT Fast Track**.
+## Chaos format compliance completed
 
-Canonical venue memo:
+- Article type retained as Regular Article / Research Article; Fast Track compression was not used.
+- One-paragraph abstract shortened to 226 words, within the frozen `<=250` word requirement, while preserving the frozen ordering and claim ceiling.
+- First Introduction paragraph is a Chaos Lead Paragraph made only from already frozen introductory material.
+- Main scientific architecture remains CORE/diagnostic → neural evidence/limitations → power-grid witness/countercontrol → preparation benchmark → synthesis/limitations/conclusion.
+- Four frozen SVG figures are referenced from the venue-neutral package rather than scientifically regenerated.
+- Neutral alt text is supplied separately for Figures 1–4.
+- Complete Supplement Appendices A–F remain bound directly to the frozen venue-neutral supplement through the venue-specific wrapper; no substantive supplement rewrite was performed.
+- Bibliography presentation was normalized only; the cited-work set and mandatory citation roles were not scientifically changed.
+- Unknown author, affiliation, corresponding-author, ORCID, COI, CRediT, acknowledgments, funding/grant, funder-OA-obligation, repository-archive/DOI, final Data Availability approval, reviewer-suggestion, and OA/payment fields remain explicit author inputs rather than invented facts.
 
-`research/master/manuscript_venue_selection_format_specification_0_1.md`.
+## Mandatory main-body evidence — completion check
 
-Authorised adaptation only:
+The Chaos-adapted main body visibly retains without reclassification or weakening:
 
-- create `research/manuscript/chaos_regular_article_0_1/`;
-- convert the frozen manuscript to AIP/Chaos LaTeX structure;
-- shorten the frozen abstract to `<=250` words without strengthening and while preserving all four frozen abstract elements;
-- make the first Introduction paragraph a Chaos Lead Paragraph using only existing frozen material;
-- add administrative/declaration sections or `AUTHOR INPUT REQUIRED` placeholders rather than inventing facts;
-- add neutral alt text to the four frozen SVG figures;
-- retain figures' scientific content unchanged;
-- convert the complete frozen supplement A–F to typeset form without substantive change;
-- normalize only reference style, not cited works or mandatory citation placement;
-- create compliance metadata/checklist, README and CHANGELOG.
-
-Fast Track compression is prohibited.
-
-## Mandatory main-body evidence
-
-The Chaos-adapted manuscript must retain visibly:
-
-- response-coordinate `WEAK` versus equal-dimensional raw PCA;
-- nuisance-invariance `FAIL — SPECIFICATION CLASSIFICATION GAP`;
-- exact symmetry-aware 2D Gram-PCA control;
+- response-coordinate `WEAK` versus equal-dimensional raw PCA, including candidate `R^2=1.0`, B2 `R^2=0.999883026432542`, and frozen margin `0.000116973567458323 < 0.05`;
+- nuisance-invariance `FAIL — SPECIFICATION CLASSIFICATION GAP`, not numerical FAIL or scientific NULL;
+- exact symmetry-aware 2D Gram-PCA control with joint `R^2=1.0` and `J_nuis=2.692209973425601e-32`;
 - `STOP / PARK RESPONSE-COORDINATE DIRECTION`;
-- exact APP-B arithmetic mean/COI closure control;
-- C5 as established/SAME-level neural illustration only;
-- APP-C as an instance of established output-constrained/preview/preventive-control ideas, not a new control method.
+- exact APP-B arithmetic mean/COI closure control with error `3.885780586188048e-14`;
+- C5 neural same-function/different-one-step-response material as established/SAME-level illustration only;
+- APP-C as a benchmark instantiation of established output-constrained steering, preview/feedforward and preventive-control ideas, not a new control method.
 
-## Required outputs
+## Source immutability verification
 
-At minimum under `research/manuscript/chaos_regular_article_0_1/`:
+After package creation:
 
-1. `manuscript_chaos_0_1.tex`;
-2. `supplement_chaos_0_1.tex`;
-3. `alt_text_0_1.md`;
-4. `submission_metadata_checklist_0_1.md`;
-5. `CHANGELOG.md`;
-6. `README.md`.
+- canonical editorial manuscript blob remains `5116cb99a011416943bef908079ba7489eb597a3`;
+- `venue_neutral_0_2` Figure 1 blob remains `98331d493f03c85469d8161cd03176088226885b`;
+- Figure 2 remains `d788620d2aa252c5dbaab7ab2e1f556c379ff340`;
+- Figure 3 remains `f46acc8caf2cec916e7f0b19eb0b95f4794fe2b0`;
+- Figure 4 remains `bdf907f9c124339d4ed8c93490cb590f099ef862`;
+- frozen venue-neutral supplement remains `b5e17e668b5ebde11cbf2f14828f8eb30209460e`.
 
-Compilation may be attempted only as a presentational check and may not trigger scientific/content repair.
+No canonical frozen source was overwritten.
+
+## Presentational compilation check
+
+A local presentation-only compilation of the modular `manuscript_chaos_0_1.tex` succeeded with `pdflatex`, `bibtex8`, and two further `pdflatex` passes, producing an 11-page PDF in the temporary build environment. The compilation check resolved bibliography references and did not execute or validate scientific benchmark code.
+
+The supplement wrapper was not independently compiled in the temporary build directory because it intentionally references the immutable repository-relative frozen Markdown supplement rather than duplicating it into the temporary build. No scientific or textual workaround was introduced.
+
+## Scientific / execution state
+
+No scientific code, benchmark, test, simulation, analysis or trajectory generation was rerun. No new metric, result, baseline, literature item, scientific classification, theorem, claim or novelty statement was added. No figure substance was changed.
 
 ## Submission state
 
-No submission is authorised. No account/journal/editor/reviewer/OA-payment action is authorised.
+No submission occurred. No AIP/Peer X-Press account or form was populated; no editor or reviewer was contacted or selected; no OA/Author Select/payment choice was made. Final author/administrative metadata remain unresolved and require author input plus a later MASTER-authorised compliance/submission-readiness gate.
 
-After this task completes, return to MASTER for a separate venue-adapted compliance/submission-readiness gate.
-
-STOP — AWAIT GO
+STOP — RETURN TO MASTER
