@@ -1,0 +1,117 @@
+\section{Diagnostic Framework}
+
+\subsection{Pre-declared macro/slaving map and intervention family}
+
+Let the microscopic state be
+\begin{equation}
+x=(q,r)\in D\subset\R^m\times\R^n,
+\end{equation}
+where $q$ is a pre-declared candidate synergetic order parameter and $r$ collects nominally slaved or fast degrees of freedom. The candidate macro map is
+\begin{equation}
+\pi(q,r)=q.
+\end{equation}
+The controlled dynamics are
+\begin{align}
+\dot q &= f(q,r,u),\\
+\dot r &= g(q,r,u),
+\end{align}
+with locally Lipschitz dynamics sufficient for unique trajectories over the fixed horizon. Controls belong to a compact instantaneous set $A$, and the admissible family is the piecewise-continuous set
+\begin{equation}
+\mathcal U=\{u:[0,T]\to A\},
+\end{equation}
+including constant controls. The intervention family and horizon are part of the diagnostic specification; changing them can change the resulting equivalence classes and therefore cannot be treated as an innocuous afterthought.
+
+The classical slaving structure is represented by a fixed graph
+\begin{equation}
+M=\{(q,r):r=h(q)\},
+\end{equation}
+with unforced invariance
+\begin{equation}
+g(q,h(q),0)=Dh(q)f(q,h(q),0)
+\end{equation}
+and, when required, normal attraction or a quantitative relaxation estimate for $e=r-h(q)$. This is the classical synergetic object.\cite{Haken1996} The diagnostic asks whether it is also sufficient for the declared interventions.
+
+\subsection{Full retained-trajectory fibre response}
+
+For initial state $x_0$ and admissible intervention $u$, define
+\begin{equation}
+\Gamma(x_0,u)=q^u_{x_0}(\cdot)\in C([0,T],\R^m)
+\end{equation}
+with metric
+\begin{equation}
+d_\Gamma(\Gamma_1,\Gamma_2)=\sup_{0\le t\le T}\lVert q_1(t)-q_2(t)\rVert.
+\end{equation}
+The macro is intervention-response sufficient for this frozen response if
+\begin{equation}
+\pi(x_1)=\pi(x_2)\Longrightarrow \Gamma(x_1,u)=\Gamma(x_2,u)\quad\forall u\in\mathcal U.
+\end{equation}
+This is not introduced as a generic state definition; action-conditioned predictive equivalence and controlled abstraction are established in the literatures reviewed above.
+
+\subsection{Standard controlled-projectability/closure criterion}
+
+\textbf{Proposition 1 (standard controlled-projectability equivalence; included for self-containment).} Assume unique solutions over $[0,T]$ and that the intervention family contains every constant control $u(t)=a$, $a\in A$. For the full retained-trajectory response above, the following are equivalent: (i) every pair of states on the same $q$-fibre has the same retained trajectory for every admissible intervention; (ii) for every instantaneous control $a$, the projected vector field is constant along each fibre, $f(q,r_1,a)=f(q,r_2,a)$; and (iii) there exists a closed projected vector field $\bar f(q,a)$ satisfying $f(q,r,a)=\bar f(q,a)$ on the relevant domain.
+
+The implication from (iii) to (i) is ordinary uniqueness of the closed $q$ initial-value problem. For (i) to (ii), apply any constant control to two same-$q$ states and differentiate their identical retained trajectories at $t=0$. The equivalence of (ii) and (iii) is the definition of projectability through the quotient map. This statement is structurally subsumed by controlled quotient/projectability and exact abstraction theory.\cite{TabuadaPappas2005,GirardPappas2007} Its role here is translational: it identifies the extra standard property a pre-declared synergetic macro must satisfy to be exact for the selected intervention response.
+
+A controlled-invariant slaving graph is weaker than global fibre closure. If
+\begin{equation}
+g(q,h(q),u)=Dh(q)f(q,h(q),u)
+\end{equation}
+for all admissible controls, trajectories initialized on the graph remain on it and obey $\dot q=f(q,h(q),u)$. But this does not imply that off-graph states with the same $q$ have the same projected vector field.
+
+\subsection{Why unforced slaving alone is insufficient}
+
+Unforced slaving constrains the vector field on or toward $M$ at $u=0$; Proposition~1 requires fibrewise constancy of the projected controlled vector field for all relevant hidden coordinates and all admissible controls. These statements are logically distinct. An intervention can expose two failure mechanisms: \emph{fibre memory}, in which different hidden initial coordinates on the same current macro fibre produce different retained responses; and \emph{control leakage}, in which an intervention pushes a state away from an unforced slaving graph, invalidating a naive reduced extension even when the initial state lies on the graph. The distinction between invariant-manifold reduction and controlled quotient closure is standard. The synergetic use is to make the distinction explicit for an order-parameter map selected before the controlled test.
+
+\subsection{Finite-horizon diagnostic from standard fast-slow/error ingredients}
+
+The frozen CORE analysis provides both exact model-specific expressions and a general comparison bound. The scalar witness
+\begin{align}
+\dot q &= ur,\\
+\dot r &= -\lambda r+u
+\end{align}
+has slaving graph $r=0$. For two same-$q$ states under the same admissible input, $\Delta r(t)=\Delta r_0 e^{-\lambda t}$. Consequently,
+\begin{equation}
+d_\Gamma\le U|\Delta r_0|\frac{1-e^{-\lambda T}}{\lambda},
+\end{equation}
+and the bound is sharp for a constant sign-aligned intervention. Starting exactly on the slaving graph, the naive graph-restricted model predicts constant $q$, whereas the true intervention-induced retained error obeys
+\begin{equation}
+d_\Gamma(q,q_{\mathrm{red}})\le U^2\left[\frac{T}{\lambda}-\frac{1-e^{-\lambda T}}{\lambda^2}\right],
+\end{equation}
+again attained by constant $|u|=U$ in the frozen scalar model.
+
+For a general pre-declared graph let $e=r-h(q)$ and $\bar f(q,u)=f(q,h(q),u)$. Assume the standard comparison conditions
+\begin{align}
+D^+\lVert e\rVert &\le -\lambda\lVert e\rVert+\delta+\beta\lVert u\rVert,\\
+\lVert f(q,r,u)-f(q,h(q),u)\rVert &\le L_e\lVert e\rVert,\\
+\lVert \bar f(q_1,u)-\bar f(q_2,u)\rVert &\le L_q\lVert q_1-q_2\rVert.
+\end{align}
+Here $\lambda$ is the fast relaxation rate, $\delta$ an unforced slaving defect, and $\beta$ intervention leakage into the fast deviation. For $\lVert u\rVert_\infty\le U$, define
+\begin{align}
+c&=(\delta+\beta U)/\lambda,\\
+\Phi(L_q,t)&=(e^{L_qt}-1)/L_q\quad (L_q>0),\qquad \Phi(0,t)=t,\\
+\Psi(L_q,\lambda,t)&=(e^{L_qt}-e^{-\lambda t})/(L_q+\lambda).
+\end{align}
+The frozen comparison/Gr\"onwall calculation yields
+\begin{equation}
+\lVert q(t)-\bar q(t)\rVert\le L_e\left[\lVert e_0\rVert\Psi+c(\Phi-\Psi)\right],
+\end{equation}
+and therefore the same expression at $T$ bounds $d_\Gamma$. For a tube $\lVert e_0\rVert\le\rho$, two states in the same fibre have the conservative response-diameter estimate
+\begin{equation}
+d_\Gamma(\Gamma(x_1,u),\Gamma(x_2,u))\le 2B_T(\rho),
+\end{equation}
+with
+\begin{equation}
+B_T(\rho)=L_e\left[\rho\Psi(L_q,\lambda,T)+\frac{\delta+\beta U}{\lambda}\bigl(\Phi(L_q,T)-\Psi(L_q,\lambda,T)\bigr)\right].
+\end{equation}
+These are standard singular-perturbation/ISS-style ingredients and comparison methods.\cite{Kokotovic1976,ChristofidesTeel1996} The retained value is diagnostic packaging: a pre-existing relaxation estimate can be translated into the same intervention-response metric used to test the candidate synergetic macro.
+
+\subsection{Minimal CORE witness}
+
+For $u=0$, the scalar system above gives $q(t)=q_0$ for every initial $r_0$, while $r(t)=r_0e^{-\lambda t}$ and $r=0$ is globally attracting in the fast direction. Under a constant nonzero intervention $u=a$,
+\begin{align}
+r(t)&=r_0e^{-\lambda t}+\frac{a}{\lambda}(1-e^{-\lambda t}),\\
+q(t)&=q_0+\frac{ar_0}{\lambda}(1-e^{-\lambda t})+a^2\left[\frac{t}{\lambda}-\frac{1-e^{-\lambda t}}{\lambda^2}\right].
+\end{align}
+Thus passive retained behavior can be exact across an entire fibre even though a declared intervention immediately reveals hidden-state dependence and drives the system off the unforced graph. This witness motivates the two application sections without being promoted as an original control phenomenon.
+

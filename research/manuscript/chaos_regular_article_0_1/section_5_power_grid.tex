@@ -1,0 +1,49 @@
+\section{Power-Grid Minimal Witness}
+
+\subsection{Symmetric two-machine swing model and coherent set}
+
+The frozen power-system benchmark uses two identical classical swing machines with normalized $M=D=K=1$ and a lossless tie line:
+\begin{align}
+\dot\delta_1&=\omega_1,\\
+\dot\omega_1&=-\omega_1+\sin(\delta_2-\delta_1),\\
+\dot\delta_2&=\omega_2,\\
+\dot\omega_2&=-\omega_2+\sin(\delta_1-\delta_2)+u(t).
+\end{align}
+The pre-declared representative macro is $q=(\delta_1,\omega_1)$ and hidden coherency coordinates are $e_\delta=\delta_2-\delta_1$, $e_\omega=\omega_2-\omega_1$. Their exact transverse dynamics are
+\begin{align}
+\dot e_\delta&=e_\omega,\\
+\dot e_\omega&=-e_\omega-2\sin(e_\delta)+u.
+\end{align}
+For $u=0$, $e_\delta=e_\omega=0$ is invariant. Its transverse Jacobian $\left(\begin{smallmatrix}0&1\\-2&-1\end{smallmatrix}\right)$ has eigenvalues $(-1\pm i\sqrt7)/2$, so the coherent set is locally exponentially attracting around synchrony. The benchmark does not infer a broader attraction statement.
+
+The frozen interventions are $u=0,+0.2,-0.2$, the horizon is $T=5$, and initial coherent speeds are $-0.1,0,+0.1$ with zero angles. Simulation used deterministic float64 RK4 at primary $dt=0.001$ with audit $dt=0.0005$; the maximum primary/half-step discrepancy was $8.1601392309949\times10^{-15}$.
+
+\subsection{Representative-machine passive exactness}
+
+On the coherent passive set, the representative macro obeys exactly $\dot\delta_1=\omega_1$, $\dot\omega_1=-\omega_1$. The frozen passive-slaving representative model B0 is therefore exact for all three declared passive coherent initial states: $E_{\rm pass}=0$. This is precisely the setting in which a passive/current description appears maximally favorable: the chosen representative reduction is not merely approximate on the declared passive set; it is exact.
+
+\subsection{Localized hidden-machine disturbance and representative mismatch}
+
+Under a nonzero local input, the coherent set is not controlled invariant. On $e_\delta=e_\omega=0$, $(\dot e_\delta,\dot e_\omega)=(0,u)$. The hidden-machine step immediately drives relative motion, while B0 continues to enforce the passive substitution and contains no direct $u$ term. Across frozen initial states and both step signs, the minimum controlled B0 full-trajectory max error is $E_{B0,\min}=0.3549858420076152$. For the zero-speed initial condition and either sign, the representative-machine error is $0.354985842007615$, while the full-model coherency maxima are approximately $\max|e_\delta|=0.130695487686682$ and $\max|e_\omega|=0.0895420239369532$. The physical-admissibility condition remains inside the frozen $|e_\delta|<\pi/2$ bound. A coherent aggregate surrogate B1 is much closer than B0, with minimum controlled representative mismatch $E_{B1,\min}=0.06534774384333092$, but B1 is not exact for the representative-machine coordinate under the localized disturbance.
+
+\subsection{Exact arithmetic mean/COI closure countercontrol}
+
+For
+\begin{equation}
+\delta_{\rm mean}=\frac{\delta_1+\delta_2}{2},\qquad \omega_{\rm mean}=\frac{\omega_1+\omega_2}{2},
+\end{equation}
+the antisymmetric line-power terms cancel exactly:
+\begin{align}
+\dot\delta_{\rm mean}&=\omega_{\rm mean},\\
+\dot\omega_{\rm mean}&=-\omega_{\rm mean}+u/2.
+\end{align}
+This is exactly the B1 aggregate dynamics. The frozen full-model versus mean/COI closure error is $3.885780586188048\times10^{-14}$ at numerical precision. The identities $\delta_1-\delta_{\rm mean}=-e_\delta/2$ and $\omega_1-\omega_{\rm mean}=-e_\omega/2$ explain why B1 is close to, but not exact for, the representative machine.
+
+The mean/COI control is scientifically essential. The benchmark demonstrates that the pre-declared representative-machine coherent surrogate is intervention-insufficient under this localized step; it does not show that low-dimensional power-grid aggregation generally fails. This interpretation is consistent with established coherency/dynamic-equivalent literature.\cite{BergGhafurian1983,Sankaranarayanan1983,Kai2022}
+
+\subsection{Interpretation within established coherency theory}
+
+The grid witness mirrors the CORE diagnostic in a physical ODE. Passive coherence supplies an invariant and attracting relation, and a localized intervention violates controlled invariance of that relation. The representative coordinate then loses the exactness it had on the passive coherent set. At the same time, another two-dimensional aggregate is exactly closed under the same disturbance. The result is therefore best read as an exact coordinate-specific witness inside established coherency theory, not as a general verdict on coherent reduction.
+
+\venuefigure{figure_3_power_grid_schematic}{Power-grid frozen result, schematic/non-trajectory version. The figure shows the two-machine representative and hidden coordinates, the localized machine-2 intervention, frozen representative mismatch scalars, and the exact arithmetic mean/COI closure countercontrol. No trajectories are regenerated.}{Power-grid schematic; existing frozen SVG is referenced from the venue-neutral package.}
+

@@ -1,0 +1,47 @@
+\documentclass[aip,cha,reprint,amsmath,amssymb]{revtex4-2}
+
+\usepackage{graphicx}
+\usepackage{svg}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{bm}
+\usepackage{xcolor}
+
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\dd}{\mathrm{d}}
+\newcommand{\e}{\mathrm{e}}
+\newcommand{\figpath}{../venue_neutral_0_2/figures}
+\newcommand{\venuefigure}[3]{%
+  \begin{figure*}[t]
+  \centering
+  \IfFileExists{\figpath/#1.svg}{\includesvg[width=0.95\textwidth]{\figpath/#1}}{\fbox{\parbox{0.9\textwidth}{\centering Frozen SVG figure referenced from the venue-neutral package.\\#3}}}
+  \caption{#2}
+  \label{fig:#1}
+  \end{figure*}%
+}
+
+\begin{document}
+
+\title{Testing Synergetic Macrostates for Intervention Sufficiency: Controlled Projectability, Frozen Minimal Witnesses, and Output-Preserving Preparation}
+
+\author{AUTHOR INPUT REQUIRED}
+\affiliation{AUTHOR INPUT REQUIRED}
+\email{AUTHOR INPUT REQUIRED}
+
+\begin{abstract}
+Classical synergetic reduction asks whether a small set of order parameters describes dynamics whose remaining degrees of freedom are slaved or rapidly relaxing. Such passive or present-state sufficiency need not determine response to a declared intervention family. For the full retained-trajectory response used here, exact fibre homogeneity is the standard controlled-projectability/closure condition; we do not claim that criterion as new, but use it diagnostically for a pre-declared slaving/order-parameter map and express finite-horizon deviations with standard fast-slow error ingredients. Prospectively frozen minimal witnesses then delimit the diagnostic. Function-equivalent linear and two-unit ReLU parameterisations exhibit different one-step learning responses, while learned-coordinate pilots supply negative evidence: the response coordinate is WEAK against equal-dimensional raw PCA, a nuisance-invariance gate ends in a specification-classification FAIL, and an exact symmetry-aware Gram representation matches it. In a symmetric two-machine swing benchmark, a representative coherent macro is passively exact but loses accuracy under a localized disturbance, whereas the arithmetic mean/center-of-inertia coordinate remains exactly closed. A bounded output-preserving preparation then moves the hidden coherency state to the known forced relative equilibrium; after preparation is removed, the matched condition follows the coherent aggregate and outperforms no preparation and an equal-cost sign-mismatched condition. We claim neither a new quotient criterion, a universal cross-domain law, nor a generic preparation/control method; the contribution is a restricted synergetics-centered diagnostic synthesis of established criteria, frozen witnesses, countercontrols, and one preparation benchmark.
+\end{abstract}
+
+\maketitle
+
+\input{section_1_introduction.tex}
+\input{section_2_related_work.tex}
+\input{section_3_diagnostic_framework.tex}
+\input{section_4_neural.tex}
+\input{section_5_power_grid.tex}
+\input{section_6_preparation.tex}
+\input{section_7_synthesis_limitations.tex}
+\input{section_8_conclusion_admin.tex}

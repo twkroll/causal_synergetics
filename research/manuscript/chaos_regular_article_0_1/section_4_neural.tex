@@ -1,0 +1,72 @@
+\section{Neural Illustration and Negative Coordinate Evidence}
+
+The neural branch serves two manuscript roles. The exact linear and ReLU constructions illustrate the distinction between current functional equivalence and response to a one-step learning intervention. The later coordinate pilots are negative/limiting evidence that prevents promotion of a learned response representation.
+
+\subsection{Linear same-function/different-response witness}
+
+Consider $f_{U,v}(x)=v^TUx$ with $d=h=2$ and $w=U^Tv$. The frozen states are
+\begin{equation}
+v_A=v_B=(1,0)^T,\quad U_A=\begin{pmatrix}0&0\\1&0\end{pmatrix},\quad U_B=\begin{pmatrix}0&0\\0&1\end{pmatrix}.
+\end{equation}
+Both have $w=(0,0)^T$, $\lVert U\rVert_F=1$, and $\lVert v\rVert_2=1$. For $L_c(w)=\tfrac12\lVert w-c\rVert_2^2$ and one simultaneous full-batch gradient step at $\eta=0.1$,
+\begin{equation}
+w^+=w-\eta(U^TU+\lVert v\rVert^2I)g+\eta^2g(v^TUg),
+\end{equation}
+where $g=w-c$. In the frozen states the second-order correction vanishes and $w^+=\eta Pc$, with $P_A=\mathrm{diag}(2,1)$ and $P_B=\mathrm{diag}(1,2)$. On task C, $c=e_1$, state A reaches $w^+=(0.2,0)$ with loss $0.32$, while B reaches $(0.1,0)$ with loss $0.405$. On task D, $c=e_2$, the preference reverses. The directed loss advantage is $0.085$ in both directions, and the frozen analytical/autograd implementations agree componentwise with maximum observed discrepancy $0.0$ in float64. These numbers are a feasibility illustration only; the qualitative phenomenon is already established by the neural optimization and rescaling literature.\cite{Neyshabur2015,Dinh2017,Lebeurrier2026}
+
+\subsection{Historical reachability as artificial provenance only}
+
+A separate frozen construction shows that the linear endpoints can be generated from the same hidden initialization under a deliberately artificial auxiliary-gradient protocol. Both histories begin at $U_0=0$ with fixed main readout $v=e_1$; a temporary auxiliary readout $a=e_2$ is used with $H_c(U)=\tfrac12\lVert U^Ta-c\rVert_2^2$. One gradient step with $\eta_{\rm hist}=1$ gives $U^+=ac^T$. Targets $c=e_1$ and $c=e_2$ therefore reach exactly $U_A$ and $U_B$, while the main function stays $w=U^Tv=0$ because $a^Tv=0$. The auxiliary head is discarded before the frozen C/D evaluation, which reproduces the linear benchmark values exactly. This establishes provenance only under the stated auxiliary mechanism. It is not evidence of natural reachability under ordinary single-head SGD, and it is not used to elevate the neural claim.
+
+\subsection{Two-unit ReLU illustration}
+
+The frozen nonlinear pilot uses $f_{U,v}(x)=v^T\operatorname{ReLU}(Ux)$ with
+\begin{equation}
+U_A=\begin{pmatrix}2&0\\0&1\end{pmatrix},\;v_A=(1/2,1)^T,\qquad U_B=\begin{pmatrix}1&0\\0&2\end{pmatrix},\;v_B=(1,1/2)^T.
+\end{equation}
+Positive homogeneity gives global current-function equivalence, $f_A(x)=f_B(x)=\operatorname{ReLU}(x_1)+\operatorname{ReLU}(x_2)$, and the simple norms match. The frozen tasks are C: $x=(1,-1)$, $y=2$, and D: $x=(-1,1)$, $y=2$, with one simultaneous gradient step at $\eta=0.1$. The activation margins remain away from zero. On task C, A reaches post-step loss $0.14045$ and B $0.2312$; on D the values reverse. The symmetric directed advantage is $0.09075$. Analytical and autograd updates agree componentwise with maximum observed discrepancy $0.0$. This is a nonlinear minimal witness of an established rescaling/training-dynamics phenomenon, with Lebeurrier et al. treated as SAME-level prior art for the qualitative claim.\cite{Lebeurrier2026}
+
+\subsection{Response-coordinate WEAK result}
+
+The subsequent frozen response-coordinate pilot asked whether a two-dimensional response-aware coordinate learned from four calibration interventions could predict eight held-out one-step interventions on held-out states in a frozen $d=4$, $h=5$ factorised-linear family. The candidate performs essentially exactly: aggregate held-out $R^2_{\rm state}=1.0$, minimum per-held-out-intervention $R^2_{\rm state}(c)=1.0$, and NRMSE $7.30513741157965\times10^{-16}$. It strongly exceeds current-function and simple-summary baselines. However, the equal-dimensional raw-parameter PCA baseline B2 reaches $R^2_{\rm state}=0.999883026432542$, so the candidate advantage is only $0.000116973567458323$, far below the prospectively frozen PASS margin $0.05$. Under the pre-specified discriminator, the result is therefore \textbf{WEAK}, not PASS. The near-tie was retained without changing the state family, coordinate, baseline, threshold, split, intervention set, or horizon.
+
+\subsection{Nuisance-invariance FAIL, Gram control, and PARK decision}
+
+A later frozen nuisance-invariance gate applied hidden-basis gauge rotations to 648 states. The two-dimensional response coordinate is numerically gauge invariant and exactly predictive on nuisance-only, latent-only, and joint held-out partitions; on the joint partition $R^2_{\rm state}=1.0$ and $J_{\rm nuis}=5.596227006606825\times10^{-32}$. Naive two-dimensional raw-parameter PCA collapses under unseen gauge orientations ($R^2_{\rm state}\approx2.220446049250313\times10^{-16}$, $J_{\rm nuis}=1.0$).
+
+The decisive successful countercontrol is an explicitly gauge-invariant two-dimensional Gram-PCA representation. It is equally predictive ($R^2_{\rm state}=1.0$) and equally invariant ($J_{\rm nuis}=2.692209973425601\times10^{-32}$). Response measurements are therefore not uniquely required to quotient this known symmetry.
+
+The frozen one-state cyclic null attains joint $R^2_{\rm state}=0.6999999999999995$, violating PASS and WEAK null thresholds while none of the prospectively enumerated NULL conditions applies. The classifier is non-total for the realized metric vector. The gate is frozen as \textbf{FAIL --- SPECIFICATION CLASSIFICATION GAP}, not as a numerical failure and not as a scientific NULL. No post-hoc null repair or classifier amendment was performed.
+
+Given the earlier WEAK result and the exact Gram comparator, the programme decision is \textbf{STOP / PARK RESPONSE-COORDINATE DIRECTION}. The manuscript therefore makes no claim that the learned coordinate is superior to symmetry-aware raw-state quotients.
+
+\begin{table*}[t]
+\caption{Frozen evidence and countercontrols. Only canonical frozen values are shown.}
+\label{tab:evidence}
+\scriptsize
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{@{}lll@{}}
+\toprule
+Evidence item & Frozen observation & Manuscript interpretation \\
+\midrule
+CORE exact criterion & fibre response homogeneity iff controlled projectability/closure & standard criterion used diagnostically \\
+CORE scalar witness & $d_\Gamma\le U|\Delta r_0|(1-e^{-\lambda T})/\lambda$; graph-start error $\le U^2[T/\lambda-(1-e^{-\lambda T})/\lambda^2]$ & exact minimal illustration; standard fast-slow mechanism \\
+Neural linear minimal & C: A 0.32, B 0.405; D reversed; advantage 0.085 & illustrative SAME-level phenomenon \\
+Historical reachability & exact A/B endpoints from common $U_0=0$; main $w=0$ preserved & artificial provenance only \\
+Two-unit ReLU & C: A 0.14045, B 0.2312; D reversed; advantage 0.09075 & nonlinear illustration only \\
+Response-coordinate pilot & candidate $R^2=1.0$, B2 $R^2=0.999883026432542$ & WEAK versus equal-dimensional raw PCA \\
+Nuisance pilot & candidate joint $R^2=1.0$; null 0.6999999999999995 & FAIL --- specification-classification gap \\
+Symmetry-aware neural control & Gram-PCA joint $R^2=1.0$, $J_{\rm nuis}=2.692209973425601\times10^{-32}$ & exact equal-dimensional gauge-aware countercontrol \\
+Response-coordinate integration & STOP / PARKED & no learned-coordinate promotion \\
+APP-B representative macro & minimum controlled B0 $d_\infty=0.3549858420076152$ & material mismatch for frozen representative macro \\
+APP-B coherent aggregate surrogate & minimum controlled B1 $d_\infty=0.06534774384333092$ & closer, but not exact for representative machine \\
+APP-B mean/COI control & closure error $3.885780586188048\times10^{-14}$ & exact low-dimensional successful countercontrol \\
+APP-C matched PT & $E_{B1}=2.076727044536923\times10^{-15}$ & matched preparation follows frozen aggregate target \\
+APP-C P0 / PM & P0 0.06534774384334105; PM 0.1307357122731585 & no-prep and equal-cost sign-mismatch remain separated \\
+\bottomrule
+\end{tabular}%
+}
+\end{table*}
+
+\venuefigure{figure_2_cross_domain_witness_schematic}{Cross-domain witness schematic. The neural panel shows same current function and different one-step response together with the WEAK/FAIL/Gram/PARK limitations; the power-grid panel shows the representative mismatch together with the exact mean/COI countercontrol. The panels are feasibility witnesses, not a universality claim.}{Cross-domain schematic; existing frozen SVG is referenced from the venue-neutral package.}
+

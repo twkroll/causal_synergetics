@@ -1,0 +1,68 @@
+\section{Output-Preserving Preparation Benchmark}
+
+\subsection{Same physical fibre and known later disturbance}
+
+The preparation benchmark uses the same normalized two-machine model and representative macro $q=(\delta_1,\omega_1)$. The initial state is $(0,0,0,0)$. The later evaluation disturbance is a known local machine-2 step $a=+0.2$ or $a=-0.2$. For a constant later step, the hidden relative equilibrium satisfies $2\sin(e_\delta^*)=a$, so $e_\delta^*=\arcsin(a/2)$ and $e_\omega^*=0$. For $|a|=0.2$, $|e_\delta^*|=\arcsin(0.1)=0.1001674211615598$.
+
+The benchmark asks whether the system can be moved within the same present representative-macro fibre so that, after preparation has ended, the subsequent localized disturbance produces the coherent-aggregate response. This is framed as output-constrained hidden-state steering with preview of the known later disturbance.\cite{Isidori2013,NtogramatzidisPadula2017,Goodwin2011,VermaNiazi2013,LiBose1995}
+
+\subsection{Frozen bounded quintic/inverse-dynamics preparation}
+
+For preparation sign $b$, the desired relative path is
+\begin{equation}
+e_d(t;b)=e_\star(b)\left(10\xi^3-15\xi^4+6\xi^5\right),\qquad \xi=t/2,
+\end{equation}
+over $\tau_{\rm prep}=2$, with $e_\star(b)=\arcsin(b/2)$. Exact inverse dynamics defines
+\begin{align}
+p_1(t;b)&=-\sin(e_d(t;b)),\\
+p_2(t;b)&=\ddot e_d(t;b)+\dot e_d(t;b)+\sin(e_d(t;b)).
+\end{align}
+The resulting trajectory holds the representative macro fixed to numerical precision while moving the hidden relative state to the target. The matched preparation has terminal hidden-target error $4.6079385647875116\times10^{-15}$ and macro-preservation error $P_q=3.580739551835791\times10^{-15}$. The frozen peak input is $0.20881049376163438\le0.35$ and preparation energy is $0.04006381839386479\le0.25$. Sign reversal produces identical cost and exact input sign symmetry in the frozen implementation. Preparation is switched off before evaluation; during evaluation the inputs are exactly $p_1=0$, $p_2=a$.
+
+\subsection{P0/PT/PM comparator design}
+
+Three conditions are frozen: P0 is no preparation; PT is matched preparation using the sign corresponding to the known later disturbance; PM is equal-cost sign-mismatched preparation. PM uses the same preparation magnitude and energy as PT but moves the hidden state toward the opposite forced relative equilibrium. This prevents the interpretation that any pre-motion of the hidden state would suffice. No additional policy, feedback controller, optimizer, or comparator was introduced.
+
+\subsection{Frozen PASS metrics}
+
+For both later disturbance signs, PT matches the coherent aggregate B1 to numerical precision: $E_{\rm target,max}=2.076727044536923\times10^{-15}$. By contrast, $E_{\rm no,min}=0.06534774384334105$ and $E_{\rm mismatch,min}=0.1307357122731585$. The corresponding improvement fractions are $B0_{\min}=0.9999999999999682$ and $BM_{\min}=0.9999999999999841$. The maximum absolute relative angle over all preparation/evaluation trajectories is $0.16130400338475567$, below the frozen coherent-regime safety threshold $\pi/2$. Primary/audit numerical discrepancy is $5.738465258531278\times10^{-15}$. P0 reproduces the APP-B $I_{\rm zero}$ coherent-aggregate mismatch within $5.551115123125783\times10^{-17}$, linking the preparation benchmark directly to the same physical witness rather than to a separately tuned system.
+
+\begin{table*}[t]
+\caption{Frozen power-grid and preparation metrics.}
+\label{tab:gridprep}
+\scriptsize
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{@{}lll@{}}
+\toprule
+Quantity & Frozen value & Role \\
+\midrule
+APP-B passive representative error $E_{\rm pass}$ & 0 & representative macro exact on declared passive coherent set \\
+APP-B controlled B0 minimum $d_\infty$ & 0.3549858420076152 & localized-disturbance representative mismatch \\
+APP-B controlled B1 minimum representative mismatch & 0.06534774384333092 & coherent aggregate closer but not exact for representative machine \\
+APP-B maximum $|e_\delta|$ & 0.13069548768668177 & hidden coherency excursion \\
+APP-B maximum controlled $|e_\omega|$ & 0.08954202393695339 & hidden coherency-speed excursion \\
+APP-B mean/COI closure error & $3.885780586188048\times10^{-14}$ & exact low-dimensional countercontrol \\
+APP-B primary/half-step discrepancy & $8.1601392309949\times10^{-15}$ & numerical convergence audit \\
+APP-C target $|e_\delta^*|$ & 0.1001674211615598 & forced hidden relative equilibrium \\
+APP-C macro preservation $P_q$ & $3.580739551835791\times10^{-15}$ & present representative macro preserved during preparation \\
+APP-C terminal hidden-target error & $4.6079385647875116\times10^{-15}$ & target reached \\
+APP-C peak preparation input & 0.20881049376163438 & below frozen 0.35 cap \\
+APP-C preparation energy & 0.04006381839386479 & below frozen 0.25 budget \\
+APP-C PT $E_{B1}$ & $2.076727044536923\times10^{-15}$ & matched preparation follows aggregate target \\
+APP-C P0 $E_{B1}$ & 0.06534774384334105 & no-preparation comparator \\
+APP-C PM $E_{B1}$ & 0.1307357122731585 & equal-cost sign-mismatched comparator \\
+APP-C maximum absolute relative angle & 0.16130400338475567 & coherent-regime safety audit \\
+APP-C primary/audit discrepancy & $5.738465258531278\times10^{-15}$ & numerical convergence audit \\
+\bottomrule
+\end{tabular}%
+}
+\end{table*}
+
+\subsection{Relation to output-nulling, preview/feedforward, and preventive control}
+
+The preparation result should be interpreted narrowly. Geometric control already formalizes internal-state motion under output constraints, and zero dynamics provide a standard language for internal behavior compatible with constrained output.\cite{Isidori2013,NtogramatzidisPadula2017} Preview/feedforward methods use known future disturbance information to shape the current trajectory, while preventive power-system control changes the pre-contingency state in anticipation of a future event.\cite{Goodwin2011,VermaNiazi2013,LiBose1995}
+
+The retained value here is alignment of those established ideas with the diagnostic fibre from Sec.~V: the output held fixed is exactly the representative macro that was insufficient; the hidden coordinate moved is exactly the coherency mode exposed by the localized disturbance; the target is the forced relative equilibrium; preparation is bounded and finite-duration; preparation is removed before evaluation; and the matched condition is compared with both no preparation and an equal-cost directionally wrong preparation.
+
+\venuefigure{figure_4_preparation_protocol}{Preparation protocol. During the frozen preparation phase the representative macro is held fixed while the hidden coherency state follows the analytic quintic path; preparation is then switched off, the known localized step is applied, and P0/PT/PM are compared against the coherent aggregate B1 using only frozen scalar outcomes.}{Preparation-protocol schematic; existing frozen SVG is referenced from the venue-neutral package.}
+

@@ -1,0 +1,52 @@
+\section{Related Work and Claim Positioning}
+
+\subsection{Synergetics, slaving, and controlled reduction}
+
+Haken's slaving principle provides the classical reference point.\cite{Haken1996} Near an organized regime, fast degrees of freedom may become functions of a smaller set of order parameters, yielding a reduced dynamics on an invariant or attracting relation. That structure is not, by itself, a statement about a controlled quotient over an entire fibre. Singular-perturbation and control theory have long treated fast-slow reduction in the presence of inputs, disturbances, and stability estimates.\cite{Kokotovic1976,ChristofidesTeel1996} Accordingly, neither fast relaxation nor the fact that forcing can expose fast modes is treated here as a contribution.
+
+The synergetic map is used as an externally given candidate: it is not learned or optimized from intervention responses. This ordering is central to the diagnostic interpretation. The question is whether an already chosen order-parameter/slaving description satisfies the stronger controlled condition required by the declared response.
+
+\subsection{Controlled quotients, bisimulation, predictive states, and abstraction}
+
+The closest exact control-theoretic predecessor is the quotient/projectability framework of Tabuada and Pappas, which develops nonlinear control-system quotients and relates projectability to controlled invariance.\cite{TabuadaPappas2005} Approximate bisimulation supplies established error and precision language for controlled reductions.\cite{GirardPappas2007} Related discrete and stochastic frameworks include MDP equivalence and minimization, SMDP homomorphisms, bisimulation metrics, predictive-state representations, and input-output computational mechanics through $\epsilon$-transducers.\cite{Givan2003,RavindranBarto2003,Ferns2004,Littman2001,BarnettCrutchfield2015}
+
+Causal feature learning and causal abstraction likewise group microvariables or states according to interventional behavior and study consistency across levels.\cite{Chalupka2015,Chalupka2016,Rubenstein2017,BeckersHalpern2019} Recent work on identifiability and lossy abstraction makes the relevance of intervention sets and non-homogeneous low-level fibres especially explicit.\cite{LiKabaRavanbakhsh2025,XiaBareinboim2025,Geiger2025} The present framework is therefore not a replacement for these notions. For the response functional used here, the exact criterion is intentionally recognized as part of this established controlled-abstraction family.
+
+\subsection{Neural parameter symmetries and training dynamics}
+
+Function-preserving neural parameter transformations are well established. Path-SGD targets optimization geometry invariant to output-preserving rescalings, while Dinh et al. use ReLU parameter symmetries to show that functionally equivalent networks can have strongly altered parameter-space geometry.\cite{Neyshabur2015,Dinh2017} Most directly for the qualitative neural witness, Lebeurrier, Vayer, and Gribonval show that properly rescaled ReLU parameterizations can represent the same function while displaying substantially different training dynamics.\cite{Lebeurrier2026} We therefore treat the qualitative same-function/different-learning-response phenomenon as SAME-level prior art. The linear and ReLU examples in Sec.~IV are frozen illustrations, not neural-method contribution claims.
+
+Function-preserving network morphisms, parameter-efficient adaptation, and editing further reinforce the need for restraint when interpreting internal-state manipulations.\cite{Chen2016,Wei2016,Jacot2018,Hu2022,Meng2022}
+
+\subsection{Power-system coherency and dynamic equivalents}
+
+Coherency-based equivalents and aggregate generators are longstanding tools for transient-stability analysis. Berg and Ghafurian construct coherency-based equivalents with representative/equivalent generators; Sankaranarayanan et al. study coherency identification and equivalents; and Kai et al. review dynamic equivalents for transient-stability studies.\cite{BergGhafurian1983,Sankaranarayanan1983,Kai2022} The two-machine example in Sec.~V is placed inside this established domain. Its role is an analytically transparent witness in which a pre-declared representative-machine macro is exact on a coherent passive set, loses accuracy under a specific localized disturbance, and is accompanied by an exact mean/COI closure control.
+
+\subsection{Output-nulling, preview/feedforward, and preventive control}
+
+Moving internal state while constraining an output belongs to established traditions of output-nulling controlled-invariant subspaces, output-nulling reachability, and zero dynamics.\cite{Isidori2013,NtogramatzidisPadula2017} Preview/feedforward control explicitly uses information about future references or disturbances to prepare system response.\cite{Goodwin2011} In power systems, preventive rescheduling and related pre-contingency control modify operating state to improve response to anticipated contingencies.\cite{VermaNiazi2013,LiBose1995} Section~VI is interpreted as a benchmark instantiation of those ideas in the same physical fibre exposed by Sec.~V, not as a generic control-method claim.
+
+\subsection{Exact claim hierarchy and what is not claimed}
+
+The claim-level literature revalidation assigns distinct manuscript roles to the programme components. Table~\ref{tab:claims} records those roles because they constrain the prose throughout the paper.
+
+\begin{table*}[t]
+\caption{Claim / prior-art / manuscript-role matrix.}
+\label{tab:claims}
+\scriptsize
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{@{}lllll@{}}
+\toprule
+Item & LIT class & Action & Manuscript role & Prohibited interpretation \\
+\midrule
+C1: slaving/projectability boundary + finite-horizon packaging & CLOSE & RETAIN-RESTRICTED & Diagnostic bridge for a pre-declared synergetic map; predecessors include Haken, Tabuada--Pappas, Girard--Pappas, singular perturbation/ISS, controlled abstraction & Ownership of projectability, lumpability, or standard fast-slow bounds \\
+C2: cross-domain feasibility package & RELATED & REINTERPRET & Evidential organization of two frozen minimal domains & Universal cross-domain law \\
+C3: two-machine representative mismatch + mean/COI control & CLOSE & RETAIN-RESTRICTED & Exact minimal power-grid witness with successful countercontrol & General failure of low-dimensional grid aggregation \\
+C4: same-current-macro hidden-state preparation & CLOSE & REINTERPRET & Benchmark instantiation of output-constrained steering, preview/feedforward, preventive control & Generic preparation method, optimality, robustness, or broad grid capability \\
+C5: same-function neural states with different one-step responses & SAME & DEMOTE & Illustration only & Neural-method contribution or uniquely response-specific state coordinate \\
+Package P & DISTINCT-ENOUGH-FOR-RESTRICTED-CLAIM & RETAIN-RESTRICTED & Sole contribution-bearing framing: synergetics-centered diagnostic synthesis & Field-establishment, generic state-equivalence ownership, or ingredient-level priority \\
+\bottomrule
+\end{tabular}%
+}
+\end{table*}
+
