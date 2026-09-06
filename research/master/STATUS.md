@@ -1,16 +1,13 @@
 # STATUS — 00 – MASTER – Projektplan & Status
 
-Current Gate: `Post-Venue-Selection / Manuscript Chaos Regular-Article Format Adaptation 0.1`
-Status: COMPLETE / WAIT FOR MANUSCRIPT
-Latest canonical venue memo: `research/master/manuscript_venue_selection_format_specification_0_1.md`
-Latest canonical venue freeze: `research/master/manuscript_venue_selection_format_specification_result_freeze_0_1.md`
-Decision: `GO — PRIMARY VENUE & FORMAT SPECIFICATION FROZEN / NO NOVELTY PROMOTION`
-Primary venue: `Chaos: An Interdisciplinary Journal of Nonlinear Science` (AIP Publishing)
-Article type: `Regular Article / Research Article — NOT Fast Track`
-Latest rollback point: `RP-029 — Manuscript Venue Selection & Format Specification Freeze 0.1`
-Authorised manuscript prompt: `research/master/prompts/manuscript_chaos_regular_article_format_adaptation_0_1.md`
-Next instruction: User opens/returns to `90 – MANUSCRIPT – Manuskript & Figuren` and enters exactly `GO`.
-STOP boundary: MASTER must not perform the venue adaptation itself, submit, alter frozen science/claims/results, remove mandatory negative evidence/countercontrols, choose OA/payment terms, switch venue/article type, or promote novelty before MANUSCRIPT returns.
+Current Gate: `Manuscript Chaos Adapted Compliance & Submission Readiness Gate 0.1`
+Status: READY / AWAIT NAMED GATE
+Latest venue-adapted package: `research/manuscript/chaos_regular_article_0_1/`
+Latest canonical return freeze: `research/master/manuscript_chaos_regular_article_format_adaptation_result_freeze_0_1.md`
+Latest rollback point: `RP-030 — Manuscript Chaos Regular-Article Format Adaptation Freeze 0.1`
+Canonical next prompt: `research/master/prompts/master_manuscript_chaos_adapted_compliance_submission_readiness_gate_0_1.md`
+Next instruction: User remains in `00 – MASTER – Projektplan & Status` and enters exactly `Manuscript Chaos Adapted Compliance & Submission Readiness Gate 0.1`.
+STOP boundary: Do not alter the Chaos package, populate unknown author/admin facts, choose OA/payment terms, contact the journal, use a submission system, submit, revise science/claims/results, remove mandatory negative evidence/countercontrols, switch venue/article type, rerun science, or promote novelty before the named MASTER gate completes.
 
 ## Freeze state
 
@@ -25,17 +22,17 @@ STOP boundary: MASTER must not perform the venue adaptation itself, submit, alte
 - APP-C Controlled State Preparation: FROZEN / PASS
 - Claim-Level & Theorem-Level Prior-Art Revalidation: FROZEN / MANUSCRIPT-READY — CLAIM-RESTRICTED
 - Manuscript Claim & Architecture: FROZEN / MANUSCRIPT READY
-- Manuscript Initial Draft 0.1: FROZEN / COMPLETE
-- Manuscript Initial Draft Integration & Compliance 0.1: FROZEN / GO — EDITORIAL COMPLETION ONLY
-- Manuscript Editorial Completion 0.1: FROZEN / COMPLETE
-- Manuscript Submission Readiness & Artifact Packaging Gate 0.1: FROZEN / GO — VENUE-NEUTRAL ARTIFACT COMPLETION ONLY
-- Manuscript Venue-Neutral Artifact Completion 0.1: FROZEN / COMPLETE under `RP-026`
-- Manuscript Venue-Neutral Artifact Integration & Compliance Gate 0.1: FROZEN / REVISE under `RP-027`
-- Manuscript Venue-Neutral Artifact Metadata Correction 0.1: COMPLETE / ACCEPTED / FROZEN under `RP-028`
-- Manuscript Venue Selection & Format Specification Gate 0.1: COMPLETE / GO / FROZEN
-- Latest rollback point: `RP-029 — Manuscript Venue Selection & Format Specification Freeze 0.1`
+- Manuscript Initial Draft: FROZEN / COMPLETE
+- Manuscript Initial Draft Compliance: FROZEN / GO — EDITORIAL COMPLETION ONLY
+- Manuscript Editorial Completion: FROZEN / COMPLETE
+- Venue-Neutral Artifact Completion: FROZEN / COMPLETE
+- Venue-Neutral Artifact Compliance: FROZEN / REVISE — metadata only
+- Venue-Neutral Metadata Correction: FROZEN / COMPLETE / ACCEPTED
+- Venue Selection & Format Specification: FROZEN / GO — PRIMARY VENUE & FORMAT SPECIFICATION FROZEN
+- Chaos Regular-Article Format Adaptation 0.1: COMPLETE / RETURNED / FROZEN PENDING MASTER READINESS AUDIT
+- Latest rollback point: `RP-030 — Manuscript Chaos Regular-Article Format Adaptation Freeze 0.1`
 
-## Frozen venue decision
+## Frozen venue
 
 Primary venue:
 
@@ -43,61 +40,72 @@ Primary venue:
 
 Article type:
 
-**Regular Article / Research Article — NOT Fast Track**
+**Regular Article / Research Article — NOT Fast Track**.
 
-Fallback only, not authorised for adaptation:
+Fallback `Physical Review E — Regular Article` remains contingency only and is not authorised for adaptation/submission.
 
-`Physical Review E — Regular Article`.
+## Returned Chaos package
 
-The venue was selected for scope and frozen-claim compatibility, not perceived acceptance ease. `Journal of Physics: Complexity` was audited but not selected.
-
-## Frozen Chaos format snapshot
-
-Current official publisher guidance accessed 2026-09-06 was frozen in `research/master/manuscript_venue_selection_format_specification_0_1.md`.
-
-Key adaptation requirements:
-
-- initial submission uses a compiled manuscript PDF; supplementary material is a separate PDF;
-- AIP LaTeX source selected for the adaptation pass;
-- abstract must be one paragraph and `<=250` words; current frozen abstract therefore requires claim-neutral shortening only;
-- first Introduction paragraph must serve as the Chaos Lead Paragraph;
-- Fast Track has a `5750`-word-equivalent cap and is expressly not selected;
-- existing SVG figures are acceptable; scientific content remains frozen and neutral alt text must be added;
-- supplement A–F remains scientifically unchanged;
-- COI, CRediT, Data Availability, funding/acknowledgment and author metadata must be supplied or explicitly marked `AUTHOR INPUT REQUIRED` when absent;
-- references remain the same cited-work set and mandatory placement, with style normalization only;
-- no OA/payment decision is authorised; AIP Author Select remains optional downstream.
-
-## Authorised next task
-
-Exactly one MANUSCRIPT task is authorised:
-
-`Manuscript Chaos Regular-Article Format Adaptation 0.1`
-
-It must create only:
+Canonical directory:
 
 `research/manuscript/chaos_regular_article_0_1/`
 
-The canonical editorial manuscript and both venue-neutral packages remain immutable.
+Package creation/content commit:
 
-Permitted changes are presentational only: AIP/Chaos LaTeX conversion, abstract shortening without strengthening, Lead Paragraph reordering/compression from existing material, administrative placeholders/declarations, author-year reference style normalization, figure placement/alt text, supplement typesetting, and a compliance checklist/change log.
+`344477bd0c0c07755536941d7fd6ad9408128c62`.
+
+Returned package includes modular REVTeX main source, full section files, separate supplementary wrapper, normalized BibTeX file, alt text, submission metadata checklist, README and CHANGELOG.
+
+Accepted at integration level:
+
+- abstract shortened claim-neutrally to 226 words;
+- Chaos Lead Paragraph built from frozen material only;
+- mandatory WEAK / specification-classification FAIL / exact Gram-PCA / PARK / exact mean-COI evidence remains visible;
+- C5 remains SAME-level illustration only;
+- APP-C remains established-control benchmark framing;
+- four scientific SVG figures remain the frozen venue-neutral files;
+- cited-work set unchanged;
+- canonical editorial manuscript and venue-neutral package unchanged;
+- no scientific execution, venue switch, OA/payment choice, journal contact or submission.
+
+## Presentational / administrative readiness state
+
+Main REVTeX source was presentation-compiled successfully to an 11-page PDF. This is not scientific validation.
+
+The supplementary wrapper was not independently compiled. It references the frozen Markdown supplement through the LaTeX `markdown` package and repository-relative path. Whether this requires a deterministic submission-artifact correction is reserved for the active MASTER gate.
+
+The package correctly leaves genuine unknowns as `AUTHOR INPUT REQUIRED`, including author/order, affiliations, corresponding-author details, ORCID, COI, CRediT, acknowledgments, funding/grants, funder OA obligations, final Data Availability approval, repository archive/DOI choice if desired, reviewer metadata if requested, and OA/Author Select choice where/when applicable.
+
+## Active MASTER gate
+
+`Manuscript Chaos Adapted Compliance & Submission Readiness Gate 0.1`
+
+Required decision:
+
+- `GO — SUBMISSION PREPARATION READY, AUTHOR INPUT BOUNDED`;
+- `REVISE — ARTIFACT AND/OR AUTHOR INPUT PREREQUISITES REQUIRED`;
+- `STOP — VENUE-ADAPTED PACKAGE SCIENTIFIC/CLAIM NONCOMPLIANT`.
+
+The gate must distinguish scientific/claim issues, deterministic artifact fixes, and genuine author/admin inputs. It must not submit or invent metadata.
 
 ## Branch state
 
-- 00 – MASTER: COMPLETE / WAIT FOR MANUSCRIPT
+- 00 – MASTER: READY — Manuscript Chaos Adapted Compliance & Submission Readiness Gate 0.1
 - 10 – CORE: COMPLETE / FROZEN / WAIT
 - 20/30/40 – THEORY-*`: UNOPENED
 - 50 – APP-A: PARKED / FROZEN / WAIT
 - 60 – APP-B: COMPLETE / PASS — RESULT FROZEN / WAIT
 - 70 – APP-C: COMPLETE / PASS — RESULT FROZEN / WAIT
 - 80 – LIT: COMPLETE / FROZEN / WAIT
-- 90 – MANUSCRIPT: READY / AWAIT GO — Manuscript Chaos Regular-Article Format Adaptation 0.1
+- 90 – MANUSCRIPT: COMPLETE / CHAOS FORMAT ADAPTATION FROZEN / WAIT FOR MASTER
 
 ## Active blocker
 
-Venue-specific presentational adaptation only. No scientific, claim, numerical, bibliography-content, figure-substance, supplement-substance or reproducibility blocker remains.
+Submission-readiness integration only. No scientific, claim, numerical, literature-positioning or figure-substance blocker is currently identified.
 
-Submission remains unauthorised. After MANUSCRIPT returns, MASTER must run a separate venue-adapted compliance/submission-readiness gate.
+Known prerequisites to classify: supplement packaging/compilation and genuine author/administrative inputs.
+
+Submission remains unauthorised.
 
 ## Claim ceiling
 
@@ -105,16 +113,12 @@ No novelty or priority promotion. Package P remains the sole contribution-bearin
 
 ## CI
 
-Repository CI remains not configured. No scientific code/test was executed in the venue-selection gate.
+Repository CI remains not configured. No scientific code/test was executed during the Chaos adaptation or this MASTER status integration.
 
 ## Return protocol
 
-Open/return to `90 – MANUSCRIPT – Manuskript & Figuren` and enter exactly:
+Remain in this chat and enter exactly:
 
-`GO`
+`Manuscript Chaos Adapted Compliance & Submission Readiness Gate 0.1`
 
-After MANUSCRIPT reaches `STOP — RETURN TO MASTER`, return here and enter:
-
-`Status?`
-
-STOP — WAIT
+STOP — AWAIT NAMED GATE
