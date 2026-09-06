@@ -1,15 +1,16 @@
 # STATUS — 90 – MANUSCRIPT – Manuskript & Figuren
 
-Current Gate: `Manuscript Venue-Neutral Artifact Completion 0.1`
-Status: COMPLETE / VENUE-NEUTRAL ARTIFACTS FROZEN / WAIT FOR MASTER COMPLIANCE
+Current Gate: `Manuscript Venue-Neutral Artifact Metadata Correction 0.1`
+Status: READY / AWAIT GO
 Latest claim/architecture freeze: `research/master/manuscript_claim_freeze_architecture_0_1.md`
 Canonical editorial manuscript: `research/manuscript/manuscript_editorial_completion_0_1.md`
-Latest package: `research/manuscript/venue_neutral_0_1/`
-Package index: `research/manuscript/venue_neutral_0_1/README.md`
-Package content completion commit: `593dd2192eca8e378bffde09a6208420d8bbe9a4`
-MASTER artifact freeze: `RP-026 — Manuscript Venue-Neutral Artifact Completion Freeze 0.1`
-Next instruction: WAIT FOR MASTER completion of `Manuscript Venue-Neutral Artifact Integration & Compliance Gate 0.1`.
-STOP boundary: Do not correct returned artifacts, select a venue, submit, adapt to page limits/templates, rerun scientific code, generate trajectory data, add metrics/results/literature, alter frozen claims or numerical values, repair WEAK/FAIL outcomes, weaken Gram/PARK/mean-COI limitations, or independently revise any frozen manuscript/artifact version.
+Frozen prior package: `research/manuscript/venue_neutral_0_1/`
+Latest compliance memo: `research/master/manuscript_venue_neutral_artifact_integration_compliance_0_1.md`
+Execution prompt: `research/master/prompts/manuscript_venue_neutral_artifact_metadata_correction_0_1.md`
+Dependency: `RP-027 — Manuscript Venue-Neutral Artifact Integration & Compliance Freeze 0.1`
+MASTER decision: `REVISE — ARTIFACT COMPLIANCE FIXES REQUIRED`
+Next instruction: On exact user command `GO`, execute only `Manuscript Venue-Neutral Artifact Metadata Correction 0.1`.
+STOP boundary: Do not alter `venue_neutral_0_1`, scientific content, figures, supplement text, frozen values/claims, bibliography positioning, WEAK/FAIL classifications, Gram/PARK/mean-COI limitations; do not rerun science, select a venue, apply templates/page limits, or submit.
 
 ## Frozen manuscript role
 
@@ -24,42 +25,48 @@ Restricted theory/diagnostic synthesis. Package P remains the sole contribution-
 
 No novelty or priority promotion is authorised.
 
-## Returned venue-neutral artifact package
+## MASTER compliance result
 
-Created under `research/manuscript/venue_neutral_0_1/`:
+The frozen `venue_neutral_0_1` package passed scientific, numerical, figure, supplement and claim compliance.
 
-1. `figures/figure_1_diagnostic_schematic.svg`;
-2. `figures/figure_2_cross_domain_witness_schematic.svg`;
-3. `figures/figure_3_power_grid_schematic.svg` — schematic/non-trajectory only;
-4. `figures/figure_4_preparation_protocol.svg`;
-5. `supplement_0_1.md` — Appendices A–F;
-6. `reproducibility_manifest_0_1.md`;
-7. `README.md`;
-8. `CHANGELOG.md`.
+The only required correction is claim-neutral CORE reproducibility commit-role metadata.
 
-The canonical editorial manuscript remains unchanged at blob `5116cb99a011416943bef908079ba7489eb597a3`.
+MASTER verified:
 
-## Mandatory evidence preservation check
+- canonical CORE result-creation/result commit: `0ebd50e5c8c072cf59ae86502a25b97e78c4722f`;
+- subsequent CORE STATUS/result-freeze bookkeeping commit: `1cad9c78c4f76484cb5e2197ce9c128c5f94f4ff`.
 
-The returned package preserves:
+The `0_1` manifest must not be edited because it is frozen under `RP-026`.
 
-- response-coordinate WEAK versus equal-dimensional raw PCA;
-- nuisance-invariance `FAIL — SPECIFICATION CLASSIFICATION GAP`;
-- exact symmetry-aware 2D Gram-PCA control;
-- `STOP / PARK RESPONSE-COORDINATE DIRECTION`;
-- exact APP-B arithmetic mean/COI closure control;
-- frozen APP-B/APP-C values and limitations.
+## Required output
 
-No scientific code/test was rerun.
+Create a new package:
 
-## MASTER compliance note
+`research/manuscript/venue_neutral_0_2/`
 
-During status reconstruction MASTER identified a reproducibility-manifest pointer discrepancy: the manifest lists CORE SHA `1cad9c78c4f76484cb5e2197ce9c128c5f94f4ff`, while canonical `research/core/STATUS.md` lists CORE result commit `0ebd50e5c8c072cf59ae86502a25b97e78c4722f`.
+with:
 
-This is not authorised for correction until MASTER completes the artifact integration/compliance gate.
+- byte-identical copies of Figures 1–4 from `venue_neutral_0_1`;
+- byte-identical copy of `supplement_0_1.md`;
+- corrected `reproducibility_manifest_0_2.md` distinguishing the two CORE commit roles;
+- new `README.md`;
+- new `CHANGELOG.md`.
 
-## Current state
+All non-CORE scientific pointers, values and classifications must remain unchanged.
 
-The package is frozen under `RP-026` exactly as returned. It is not yet venue-ready or submission-approved.
+## Completion verification
 
-STOP — WAIT FOR MASTER
+Before return:
+
+- verify identical figure/supplement blob SHAs between `0_1` and `0_2`;
+- verify editorial manuscript blob remains `5116cb99a011416943bef908079ba7489eb597a3`;
+- verify the corrected manifest contains both CORE SHAs with distinct roles;
+- verify no scientific rerun or venue/submission action occurred.
+
+Then update this STATUS to:
+
+`COMPLETE / VENUE-NEUTRAL ARTIFACT METADATA CORRECTED / RETURN TO MASTER`
+
+and return to MASTER.
+
+STOP — AWAIT GO
