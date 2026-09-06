@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 760" role="img" aria-labelledby="title desc">
+<title id="title">Figure 4 — Output-preserving preparation protocol</title>
+<desc id="desc">Preparation phase holding the representative macro fixed while moving the hidden coherency state along the frozen quintic path, preparation off, known localized step, and P0 PT PM comparison against the coherent aggregate.</desc>
+<defs><marker id="a" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#222"/></marker></defs>
+<text x="40" y="55" font-family="sans-serif" font-size="34" font-weight="700">Figure 4. Frozen output-preserving preparation protocol</text>
+<text x="40" y="90" font-family="sans-serif" font-size="18">Conceptual protocol using only the frozen analytic path description and scalar outcomes.</text>
+<rect x="55" y="145" width="360" height="255" rx="20" fill="#fafafa" stroke="#222" stroke-width="2"/>
+<text x="235" y="190" text-anchor="middle" font-family="sans-serif" font-size="25" font-weight="700">Preparation phase</text>
+<text x="85" y="235" font-family="sans-serif" font-size="19">Hold q=(δ₁,ω₁) fixed</text>
+<text x="85" y="270" font-family="sans-serif" font-size="19">Move hidden (eδ,eω)</text>
+<text x="85" y="305" font-family="sans-serif" font-size="17">e_d=e* [10ξ³−15ξ⁴+6ξ⁵], ξ=t/2</text>
+<text x="85" y="340" font-family="sans-serif" font-size="17">p₁=−sin(e_d)</text>
+<text x="85" y="370" font-family="sans-serif" font-size="17">p₂=ë_d+ė_d+sin(e_d)</text>
+<line x1="415" y1="272" x2="500" y2="272" stroke="#222" stroke-width="3" marker-end="url(#a)"/>
+<rect x="510" y="165" width="260" height="215" rx="20" fill="#fafafa" stroke="#222" stroke-width="2"/>
+<text x="640" y="210" text-anchor="middle" font-family="sans-serif" font-size="24" font-weight="700">Preparation off</text>
+<text x="640" y="250" text-anchor="middle" font-family="sans-serif" font-size="19">evaluation inputs only:</text>
+<text x="640" y="285" text-anchor="middle" font-family="sans-serif" font-size="20">p₁=0, p₂=a</text>
+<text x="640" y="325" text-anchor="middle" font-family="sans-serif" font-size="17">future local step known</text>
+<text x="640" y="350" text-anchor="middle" font-family="sans-serif" font-size="17">a=±0.2</text>
+<line x1="770" y1="272" x2="855" y2="272" stroke="#222" stroke-width="3" marker-end="url(#a)"/>
+<rect x="865" y="145" width="555" height="255" rx="20" fill="#fafafa" stroke="#222" stroke-width="2"/>
+<text x="1142" y="190" text-anchor="middle" font-family="sans-serif" font-size="25" font-weight="700">Frozen comparison against B1</text>
+<text x="905" y="240" font-family="sans-serif" font-size="20" font-weight="700">P0</text><text x="955" y="240" font-family="sans-serif" font-size="18">no preparation → E_B1=0.06534774384334105</text>
+<text x="905" y="285" font-family="sans-serif" font-size="20" font-weight="700">PT</text><text x="955" y="285" font-family="sans-serif" font-size="18">matched sign → E_B1=2.076727044536923e−15</text>
+<text x="905" y="330" font-family="sans-serif" font-size="20" font-weight="700">PM</text><text x="955" y="330" font-family="sans-serif" font-size="18">equal-cost wrong sign → E_B1=0.1307357122731585</text>
+<text x="905" y="370" font-family="sans-serif" font-size="17">Target hidden equilibrium: |eδ*|=asin(0.1)=0.1001674211615598</text>
+<rect x="95" y="485" width="570" height="190" rx="18" fill="#f4f4f4" stroke="#222" stroke-width="2"/>
+<text x="380" y="530" text-anchor="middle" font-family="sans-serif" font-size="23" font-weight="700">Frozen preparation audits</text>
+<text x="135" y="575" font-family="sans-serif" font-size="18">macro preservation P_q = 3.580739551835791e−15</text>
+<text x="135" y="610" font-family="sans-serif" font-size="18">terminal hidden-target error = 4.6079385647875116e−15</text>
+<text x="135" y="645" font-family="sans-serif" font-size="18">peak input = 0.20881049376163438 ≤ 0.35</text>
+<rect x="785" y="485" width="570" height="190" rx="18" fill="#f4f4f4" stroke="#222" stroke-width="2"/>
+<text x="1070" y="530" text-anchor="middle" font-family="sans-serif" font-size="23" font-weight="700">Scope limits</text>
+<text x="825" y="575" font-family="sans-serif" font-size="18">preparation energy = 0.04006381839386479 ≤ 0.25</text>
+<text x="825" y="610" font-family="sans-serif" font-size="18">exact model + known future disturbance + open-loop inverse dynamics</text>
+<text x="825" y="645" font-family="sans-serif" font-size="17">Benchmark instantiation only: no generic method, optimality, or robustness claim.</text>
+</svg>

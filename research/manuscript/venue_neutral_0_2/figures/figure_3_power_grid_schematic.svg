@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1480 760" role="img" aria-labelledby="title desc">
+<title id="title">Figure 3 — Power-grid frozen result, schematic non-trajectory version</title>
+<desc id="desc">Two-machine swing system with representative macro, localized machine-2 step, representative mismatch, coherent aggregate surrogate mismatch, and exact mean/COI closure countercontrol. No trajectory curves are shown.</desc>
+<defs><marker id="a" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#222"/></marker></defs>
+<text x="40" y="55" font-family="sans-serif" font-size="34" font-weight="700">Figure 3. Power-grid witness — schematic, no regenerated trajectories</text>
+<text x="40" y="90" font-family="sans-serif" font-size="18">All numbers are frozen APP-B scalar outcomes; no curve or trajectory data were regenerated.</text>
+<rect x="70" y="160" width="250" height="145" rx="18" fill="#fafafa" stroke="#222" stroke-width="2"/>
+<text x="195" y="205" text-anchor="middle" font-family="sans-serif" font-size="23" font-weight="700">Machine 1</text>
+<text x="195" y="240" text-anchor="middle" font-family="sans-serif" font-size="19">representative macro</text>
+<text x="195" y="272" text-anchor="middle" font-family="sans-serif" font-size="19">q = (δ₁, ω₁)</text>
+<rect x="435" y="160" width="250" height="145" rx="18" fill="#fafafa" stroke="#222" stroke-width="2"/>
+<text x="560" y="205" text-anchor="middle" font-family="sans-serif" font-size="23" font-weight="700">Machine 2</text>
+<text x="560" y="240" text-anchor="middle" font-family="sans-serif" font-size="19">hidden relative state</text>
+<text x="560" y="272" text-anchor="middle" font-family="sans-serif" font-size="19">eδ = δ₂−δ₁, eω = ω₂−ω₁</text>
+<line x1="320" y1="232" x2="435" y2="232" stroke="#222" stroke-width="5"/>
+<text x="378" y="215" text-anchor="middle" font-family="sans-serif" font-size="17">lossless tie line</text>
+<rect x="775" y="160" width="250" height="145" rx="18" fill="#fafafa" stroke="#222" stroke-width="2"/>
+<text x="900" y="205" text-anchor="middle" font-family="sans-serif" font-size="23" font-weight="700">Localized intervention</text>
+<text x="900" y="242" text-anchor="middle" font-family="sans-serif" font-size="20">machine 2 only</text>
+<text x="900" y="275" text-anchor="middle" font-family="sans-serif" font-size="20">u = ±0.2</text>
+<line x1="775" y1="232" x2="695" y2="232" stroke="#222" stroke-width="3" marker-end="url(#a)"/>
+<rect x="1110" y="145" width="300" height="175" rx="18" fill="#f4f4f4" stroke="#222" stroke-width="2"/>
+<text x="1260" y="190" text-anchor="middle" font-family="sans-serif" font-size="23" font-weight="700">Coherency relation</text>
+<text x="1260" y="228" text-anchor="middle" font-family="sans-serif" font-size="18">u=0: eδ=eω=0 invariant</text>
+<text x="1260" y="260" text-anchor="middle" font-family="sans-serif" font-size="18">u≠0: (ėδ, ėω)=(0,u) on set</text>
+<text x="1260" y="292" text-anchor="middle" font-family="sans-serif" font-size="18">controlled invariance immediately lost</text>
+<line x1="1025" y1="232" x2="1110" y2="232" stroke="#222" stroke-width="3" marker-end="url(#a)"/>
+<rect x="75" y="395" width="390" height="245" rx="18" fill="#fafafa" stroke="#222" stroke-width="2"/>
+<text x="270" y="440" text-anchor="middle" font-family="sans-serif" font-size="23" font-weight="700">Representative-machine comparison</text>
+<text x="110" y="485" font-family="sans-serif" font-size="18">Passive B0 error: E_pass = 0</text>
+<text x="110" y="520" font-family="sans-serif" font-size="18">Controlled B0 min d∞ = 0.3549858420076152</text>
+<text x="110" y="555" font-family="sans-serif" font-size="18">B1 min representative mismatch = 0.06534774384333092</text>
+<text x="110" y="590" font-family="sans-serif" font-size="18">max |eδ| = 0.13069548768668177</text>
+<text x="110" y="620" font-family="sans-serif" font-size="18">max |eω| = 0.08954202393695339</text>
+<rect x="545" y="395" width="390" height="245" rx="18" fill="#fafafa" stroke="#222" stroke-width="2"/>
+<text x="740" y="440" text-anchor="middle" font-family="sans-serif" font-size="23" font-weight="700">Exact mean / COI countercontrol</text>
+<text x="580" y="490" font-family="sans-serif" font-size="19">δ̄ = (δ₁+δ₂)/2</text>
+<text x="580" y="525" font-family="sans-serif" font-size="19">ω̄ = (ω₁+ω₂)/2</text>
+<text x="580" y="560" font-family="sans-serif" font-size="19">δ̄˙ = ω̄</text>
+<text x="580" y="595" font-family="sans-serif" font-size="19">ω̄˙ = −ω̄ + u/2</text>
+<text x="580" y="625" font-family="sans-serif" font-size="18">closure error = 3.885780586188048e−14</text>
+<rect x="1015" y="395" width="390" height="245" rx="18" fill="#f4f4f4" stroke="#222" stroke-width="2" stroke-dasharray="7 6"/>
+<text x="1210" y="440" text-anchor="middle" font-family="sans-serif" font-size="23" font-weight="700">Interpretation ceiling</text>
+<text x="1055" y="490" font-family="sans-serif" font-size="18">• coordinate-specific witness</text>
+<text x="1055" y="528" font-family="sans-serif" font-size="18">• exact passive representative reduction</text>
+<text x="1055" y="566" font-family="sans-serif" font-size="18">• localized disturbance exposes hidden mode</text>
+<text x="1055" y="604" font-family="sans-serif" font-size="18">• mean/COI remains exactly closed</text>
+<text x="1055" y="630" font-family="sans-serif" font-size="17">Not a claim that low-dimensional grid aggregation generally fails.</text>
+</svg>
