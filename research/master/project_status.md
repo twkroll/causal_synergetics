@@ -1,10 +1,10 @@
 # Project Status — causal_synergetics
 
-Version: 3.1
+Version: 3.2
 Date: 2026-09-06
-Overall status: CHAOS REGULAR-ARTICLE ADAPTATION RETURNED / MASTER SUBMISSION-READINESS GATE READY / NO NOVELTY PROMOTION
+Overall status: CHAOS ADAPTED COMPLIANCE REVISE / DETERMINISTIC SUBMISSION-ARTIFACT CORRECTION READY / NO NOVELTY PROMOTION
 Governance status: FROZEN v0.1
-Latest rollback point: `RP-030 — Manuscript Chaos Regular-Article Format Adaptation Freeze 0.1`
+Latest rollback point: `RP-031 — Manuscript Chaos Adapted Compliance & Submission Readiness Freeze 0.1`
 
 ## Central research question
 
@@ -23,21 +23,16 @@ The programme treats causal synergetics as a proposed research field to be teste
 - Neural Nuisance-Invariance Pilot: FAIL — SPECIFICATION CLASSIFICATION GAP.
 - Neural response-coordinate direction: STOP / PARKED.
 - Power-Grid Minimal Benchmark: PASS.
-- Cross-Domain Intervention-Sufficiency Integration: GO — CLAIM-RESTRICTED.
 - Controlled State Preparation: PASS.
-- Post-Preparation Synthesis: GO — CLAIM-READINESS PATH.
 - Claim-Level/Theorem-Level Prior-Art Revalidation: MANUSCRIPT-READY — CLAIM-RESTRICTED.
 - Manuscript Claim & Architecture: MANUSCRIPT READY / FROZEN.
-- Initial Draft: COMPLETE / FROZEN.
-- Initial Draft Compliance: GO — EDITORIAL COMPLETION ONLY / FROZEN.
-- Editorial Completion: COMPLETE / FROZEN.
-- Venue-Neutral Artifact Completion: COMPLETE / FROZEN.
-- Venue-Neutral Artifact Compliance: REVISE — metadata only / FROZEN.
-- Venue-Neutral Metadata Correction: COMPLETE / ACCEPTED / FROZEN.
-- Venue Selection & Format Specification: GO — PRIMARY VENUE & FORMAT SPECIFICATION FROZEN.
-- Chaos Regular-Article Format Adaptation: COMPLETE / RETURNED / FROZEN PENDING MASTER READINESS AUDIT.
+- Editorial manuscript: COMPLETE / FROZEN.
+- Corrected venue-neutral package: COMPLETE / ACCEPTED / FROZEN.
+- Primary venue: Chaos Regular Article / FROZEN.
+- Chaos Regular-Article Format Adaptation 0.1: COMPLETE / FROZEN.
+- Chaos Adapted Compliance & Submission Readiness Gate 0.1: **REVISE — ARTIFACT AND/OR AUTHOR INPUT PREREQUISITES REQUIRED**.
 
-All earlier claim ceilings and rollback points remain controlling.
+All earlier scientific, claim, negative-evidence, and rollback freezes remain controlling.
 
 ## Primary venue
 
@@ -47,85 +42,113 @@ Article type:
 
 **Regular Article / Research Article — NOT Fast Track**.
 
-Fallback only: `Physical Review E — Regular Article`.
+Fallback `Physical Review E — Regular Article` remains contingency only.
 
-## Returned Chaos package
+## Compliance result
 
-Canonical directory:
+Canonical gate memo:
 
-`research/manuscript/chaos_regular_article_0_1/`
+`research/master/manuscript_chaos_adapted_compliance_submission_readiness_0_1.md`
 
-Package creation/content commit:
+MASTER found no scientific, numerical, claim, cited-work-set, figure-substance, or main-format inconsistency in `research/manuscript/chaos_regular_article_0_1/`.
 
-`344477bd0c0c07755536941d7fd6ad9408128c62`.
+Passed:
 
-The package contains the AIP/Chaos REVTeX main source and modular sections, separate supplement wrapper, normalized BibTeX references, alt text, submission metadata checklist, README and CHANGELOG.
+- restricted Package-P-only contribution framing;
+- standard/subsumed projectability theorem interpretation;
+- 250-word abstract limit and Chaos Lead Paragraph;
+- mandatory WEAK / specification-classification FAIL / exact Gram-PCA / PARK / exact mean-COI evidence;
+- C5 SAME-level illustration only;
+- APP-C established-control benchmark framing;
+- frozen APP-B/APP-C values;
+- citation roles and cited-work-set preservation;
+- frozen SVG figure substance and neutral alt text;
+- main REVTeX presentation compilation.
 
-The adapted main source reports a 226-word one-paragraph abstract and a Chaos Lead Paragraph derived only from frozen material. Mandatory WEAK / FAIL / Gram / PARK / mean-COI evidence remains in the main body; C5 remains illustration-only and APP-C remains prior-art-restricted established-control framing.
+## Deterministic artifact prerequisite
 
-No scientific code/test/simulation/analysis was rerun. No new metric, result, literature item, claim, venue switch, OA/payment decision, journal contact, or submission occurred.
+Current AIP guidance requires a separate supplementary-material PDF at initial submission.
 
-## Presentational readiness
+The frozen `chaos_regular_article_0_1/supplement_chaos_0_1.tex` was not independently compiled and depends on the repository-relative frozen Markdown supplement through the LaTeX `markdown` package.
 
-Main REVTeX source was locally presentation-compiled to an 11-page PDF.
+This is the only deterministic artifact blocker identified by the gate.
 
-The supplement wrapper was not independently compiled and currently depends on the immutable repository-relative Markdown supplement through the LaTeX `markdown` package. MASTER must determine whether that packaging is sufficient or needs a deterministic claim-neutral artifact correction.
+## Author/admin classification
 
-## Author/admin readiness
+Hard pre-submission author/admin inputs, deferred until after artifact correction:
 
-The returned checklist correctly leaves genuine unknowns as `AUTHOR INPUT REQUIRED`, including author/order, affiliations, corresponding-author details, ORCID, COI, CRediT, acknowledgments, funding/grants, funder OA obligations, final Data Availability approval, optional repository DOI/archive choice, reviewer metadata if requested, and OA/Author Select choice where/when applicable.
+- author names/order;
+- affiliations;
+- corresponding author/email;
+- COI statement;
+- CRediT statement;
+- funding/grants or no-reportable-funding confirmation;
+- funder/institutional OA obligations;
+- final Data Availability statement approval.
 
-These are not scientific defects and were not invented by MANUSCRIPT.
+Optional/conditional/downstream:
 
-## Active gate
+- ORCID;
+- acknowledgments if any;
+- repository DOI/archive if desired;
+- reviewer suggestions/exclusions if requested;
+- OA/Author Select unless externally mandated.
 
-`Manuscript Chaos Adapted Compliance & Submission Readiness Gate 0.1`
+## Authorised next task
 
-Purpose: audit the venue-adapted package, classify any remaining issue as scientific/claim, deterministic artifact/presentational, or genuine author/admin input, and determine the exact next non-submitting step.
+`Manuscript Chaos Submission Artifact Correction 0.1`
 
-Required decision:
+Assigned to `90 – MANUSCRIPT – Manuskript & Figuren`.
 
-- `GO — SUBMISSION PREPARATION READY, AUTHOR INPUT BOUNDED`;
-- `REVISE — ARTIFACT AND/OR AUTHOR INPUT PREREQUISITES REQUIRED`;
-- `STOP — VENUE-ADAPTED PACKAGE SCIENTIFIC/CLAIM NONCOMPLIANT`.
+Canonical prompt:
 
-No submission occurs inside the gate.
+`research/master/prompts/manuscript_chaos_submission_artifact_correction_0_1.md`
+
+Required new package:
+
+`research/manuscript/chaos_regular_article_0_2/`
+
+The task is deterministic presentation/build work only. It must make the supplement self-contained for build purposes, independently verify the separate SI PDF build, reverify the main PDF build, and record build metadata/hashes without changing science or collecting author facts.
 
 ## Branch state
 
-- `00 – MASTER`: READY — Manuscript Chaos Adapted Compliance & Submission Readiness Gate 0.1.
+- `00 – MASTER`: COMPLETE / WAIT FOR MANUSCRIPT.
 - `10 – CORE`: COMPLETE / FROZEN / WAIT.
 - `50 – APP-A`: PARKED / FROZEN / WAIT.
 - `60 – APP-B`: COMPLETE / PASS — RESULT FROZEN / WAIT.
 - `70 – APP-C`: COMPLETE / PASS — RESULT FROZEN / WAIT.
 - `80 – LIT`: COMPLETE / FROZEN / WAIT.
 - `20/30/40 – THEORY-*`: UNOPENED.
-- `90 – MANUSCRIPT`: COMPLETE / CHAOS FORMAT ADAPTATION FROZEN / WAIT FOR MASTER.
+- `90 – MANUSCRIPT`: READY / AWAIT GO — Manuscript Chaos Submission Artifact Correction 0.1.
 
 ## Freeze / branching check
 
 OK.
 
-`RP-030` freezes the returned Chaos adaptation and its presentational/admin readiness state. `RP-029` preserves the venue decision; all scientific and claim freezes remain stable.
-
-No specialist branch is active. Exactly one MASTER gate is authorised.
+`RP-031` freezes the readiness audit, absence of scientific/claim defects, exact deterministic artifact prerequisite, bounded author-input classification, and artifact-first ordering. All prior freezes remain stable.
 
 ## Current claim ceiling
 
-Package P remains the sole contribution-bearing framing. No novelty/priority, generic cross-domain universality, new controlled-equivalence/projectability theory, new power-grid aggregation, new controlled-state-preparation method, robustness/optimality/genericity of APP-C, first same-function/different-training neural result, or new-field claim is authorised.
+Package P remains the sole contribution-bearing framing. No novelty/priority, generic cross-domain universality, new projectability/equivalence theory, new power-grid aggregation, new controlled-state-preparation method, robustness/optimality/genericity of APP-C, first neural same-function/different-training claim, or new-field claim is authorised.
 
-Mandatory main-body evidence remains WEAK / specification-classification FAIL / exact Gram-PCA / PARK / exact mean-COI closure.
+## Submission state
 
-## Manuscript
+NOT SUBMISSION-AUTHORISED.
 
-SCIENTIFICALLY/EDITORIALLY/ARTIFACT-COMPLIANT AT VENUE-ADAPTATION RETURN LEVEL; MASTER SUBMISSION-READINESS AUDIT REQUIRED; NOT SUBMISSION-AUTHORISED.
+No AIP account/form/editor/reviewer/OA-payment action is authorised.
 
 ## CI
 
-Repository CI remains not configured. No scientific execution occurred in the Chaos adaptation or current integration step.
+Repository CI remains not configured. No scientific execution occurred in the readiness gate.
 
 ## Next global step
 
-Remain in `00 – MASTER – Projektplan & Status` and enter exactly:
+Open/return to:
 
-`Manuscript Chaos Adapted Compliance & Submission Readiness Gate 0.1`
+`90 – MANUSCRIPT – Manuskript & Figuren`
+
+and enter exactly:
+
+`GO`
+
+After MANUSCRIPT returns, enter `Status?` in MASTER.
