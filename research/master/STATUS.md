@@ -1,13 +1,13 @@
 # STATUS — 00 – MASTER – Projektplan & Status
 
-Current Gate: `Manuscript Venue-Neutral Artifact Integration & Compliance Gate 0.1`
-Status: READY / AWAIT NAMED GATE
-Latest returned package: `research/manuscript/venue_neutral_0_1/`
-Artifact result freeze: `research/master/manuscript_venue_neutral_artifact_result_freeze_0_1.md`
-Latest rollback point: `RP-026 — Manuscript Venue-Neutral Artifact Completion Freeze 0.1`
-Canonical next prompt: `research/master/prompts/master_manuscript_venue_neutral_artifact_integration_compliance_gate_0_1.md`
-Next instruction: User remains in `00 – MASTER – Projektplan & Status` and enters exactly `Manuscript Venue-Neutral Artifact Integration & Compliance Gate 0.1`.
-STOP boundary: Do not correct returned artifacts, select a venue, submit, revise scientific content, rerun APP-A/B/C, broaden literature positioning, alter frozen claims, or promote novelty before the named MASTER compliance gate completes.
+Current Gate: `Post-Compliance / Manuscript Venue-Neutral Artifact Metadata Correction 0.1`
+Status: COMPLETE / WAIT FOR MANUSCRIPT
+Latest canonical compliance memo: `research/master/manuscript_venue_neutral_artifact_integration_compliance_0_1.md`
+Decision: `REVISE — ARTIFACT COMPLIANCE FIXES REQUIRED / NO NOVELTY PROMOTION`
+Latest rollback point: `RP-027 — Manuscript Venue-Neutral Artifact Integration & Compliance Freeze 0.1`
+Authorised manuscript prompt: `research/master/prompts/manuscript_venue_neutral_artifact_metadata_correction_0_1.md`
+Next instruction: User opens/returns to `90 – MANUSCRIPT – Manuskript & Figuren` and enters exactly `GO`.
+STOP boundary: MASTER must not correct the artifact package itself, select a venue, submit, revise scientific content, rerun APP-A/B/C, broaden literature positioning, alter frozen claims, or promote novelty before MANUSCRIPT returns.
 
 ## Freeze state
 
@@ -26,66 +26,71 @@ STOP boundary: Do not correct returned artifacts, select a venue, submit, revise
 - Manuscript Initial Draft Integration & Compliance 0.1: FROZEN / GO — EDITORIAL COMPLETION ONLY
 - Manuscript Editorial Completion 0.1: FROZEN / COMPLETE
 - Manuscript Submission Readiness & Artifact Packaging Gate 0.1: FROZEN / GO — VENUE-NEUTRAL ARTIFACT COMPLETION ONLY
-- Manuscript Venue-Neutral Artifact Completion 0.1: RETURNED / FROZEN PENDING COMPLIANCE
-- Latest rollback point: `RP-026 — Manuscript Venue-Neutral Artifact Completion Freeze 0.1`
+- Manuscript Venue-Neutral Artifact Completion 0.1: FROZEN / COMPLETE under `RP-026`
+- Manuscript Venue-Neutral Artifact Integration & Compliance Gate 0.1: FROZEN / REVISE — ARTIFACT COMPLIANCE FIXES REQUIRED
+- Latest rollback point: `RP-027 — Manuscript Venue-Neutral Artifact Integration & Compliance Freeze 0.1`
 
-## Venue-neutral artifact return
+## Formal artifact-compliance result
 
-MANUSCRIPT returned a complete package under:
+MASTER completed the full venue-neutral package audit.
 
-`research/manuscript/venue_neutral_0_1/`
+Passed without scientific or claim revision:
 
-Returned artifacts include four SVG schematic figures, complete supplement A–F, reproducibility manifest, package README and change log. The package records content completion commit `593dd2192eca8e378bffde09a6208420d8bbe9a4`.
+- canonical editorial manuscript remains unchanged at blob `5116cb99a011416943bef908079ba7489eb597a3`;
+- Figures 1–4 obey the frozen roles;
+- Figure 3 is schematic/non-trajectory and contains no regenerated curves;
+- all checked APP-B/APP-C values match canonical frozen results;
+- Supplement A–F contains only frozen derivations/results and preserves the claim ceiling;
+- neural WEAK, nuisance `FAIL — SPECIFICATION CLASSIFICATION GAP`, exact 2D Gram-PCA control, PARK and exact APP-B mean/COI closure remain visible and unreclassified;
+- README/CHANGELOG contain no submission approval or novelty promotion;
+- neural, APP-B and APP-C reproducibility commit pointers audited by MASTER match their stated semantic roles.
 
-The canonical editorial manuscript remained unchanged at blob `5116cb99a011416943bef908079ba7489eb597a3`.
+No scientific or claim inconsistency was found.
 
-High-level scope compliance is good:
+## Single artifact defect
 
-- Figures 1/2/4 are schematic/conceptual;
-- Figure 3 is explicitly schematic/non-trajectory and no trajectories were regenerated;
-- WEAK/FAIL/Gram/PARK and mean/COI controls remain visible;
-- no new scientific metric, result, literature family or claim is reported;
-- no scientific code/test rerun occurred.
+The only confirmed correction is the CORE commit-role labeling in `reproducibility_manifest_0_1.md`.
 
-## Artifact-compliance issue found during MASTER Status reconstruction
+MASTER verified both SHAs are real but have different roles:
 
-The reproducibility manifest contains a concrete canonical-pointer discrepancy:
+- canonical CORE result-creation/result commit: `0ebd50e5c8c072cf59ae86502a25b97e78c4722f`;
+- subsequent CORE STATUS/result-freeze bookkeeping commit: `1cad9c78c4f76484cb5e2197ce9c128c5f94f4ff`.
 
-- manifest CORE `Canonical result-freeze commit`: `1cad9c78c4f76484cb5e2197ce9c128c5f94f4ff`;
-- canonical `research/core/STATUS.md` CORE result commit: `0ebd50e5c8c072cf59ae86502a25b97e78c4722f`.
+The frozen `0_1` manifest labels the latter as the canonical result-freeze pointer without distinguishing the canonical result commit. This is a reproducibility-metadata defect only.
 
-A repository search did not identify the manifest SHA as the canonical CORE pointer. APP-B and APP-C commit pointers spot-checked by MASTER match their branch STATUS files.
+## Authorised correction
 
-This is currently classified as an artifact/reproducibility metadata defect only, not a scientific or claim inconsistency.
+Exactly one MANUSCRIPT task is authorised:
 
-## Active MASTER gate
+`Manuscript Venue-Neutral Artifact Metadata Correction 0.1`
 
-`Manuscript Venue-Neutral Artifact Integration & Compliance Gate 0.1`
+It must create:
 
-Required decision:
+`research/manuscript/venue_neutral_0_2/`
 
-- `GO — VENUE SELECTION / FORMAT SPECIFICATION READY`;
-- `REVISE — ARTIFACT COMPLIANCE FIXES REQUIRED`;
-- `STOP — SCIENTIFIC OR CLAIM INCONSISTENCY`.
+Rules:
 
-The gate must audit all package pointers/numbers/figures/supplement fidelity. It must not repair artifacts inside the gate.
+- `venue_neutral_0_1/` remains immutable under `RP-026`;
+- Figures 1–4 and `supplement_0_1.md` must be byte-identical copies;
+- only the reproducibility metadata may be corrected to distinguish the two CORE commit roles;
+- no science, claims, numbers, literature, reruns, venue selection or submission.
 
 ## Branch state
 
-- 00 – MASTER: READY — Manuscript Venue-Neutral Artifact Integration & Compliance Gate 0.1
+- 00 – MASTER: COMPLETE / WAIT FOR MANUSCRIPT
 - 10 – CORE: COMPLETE / FROZEN / WAIT
 - 20/30/40 – THEORY-*`: UNOPENED
 - 50 – APP-A: PARKED / FROZEN / WAIT
 - 60 – APP-B: COMPLETE / PASS — RESULT FROZEN / WAIT
 - 70 – APP-C: COMPLETE / PASS — RESULT FROZEN / WAIT
 - 80 – LIT: COMPLETE / FROZEN / WAIT
-- 90 – MANUSCRIPT: COMPLETE / VENUE-NEUTRAL ARTIFACTS FROZEN / WAIT FOR MASTER
+- 90 – MANUSCRIPT: READY / AWAIT GO — Manuscript Venue-Neutral Artifact Metadata Correction 0.1
 
 ## Active blocker
 
-Artifact/reproducibility compliance only. No current scientific, claim or bibliography-content blocker is identified.
+One claim-neutral reproducibility-metadata correction only. No scientific, claim, numerical, bibliography-content, figure or supplement blocker remains.
 
-Venue selection and submission remain unauthorised until the package passes this compliance gate.
+Venue selection and submission remain unauthorised until the corrected package returns and MASTER integrates it.
 
 ## Claim ceiling
 
@@ -93,12 +98,16 @@ No novelty or priority promotion. Package P remains the sole contribution-bearin
 
 ## CI
 
-Repository CI remains not configured. The artifact task reran no scientific code/tests; the current MASTER integration also performs no scientific execution.
+Repository CI remains not configured. No scientific code/test was run during this compliance gate.
 
 ## Return protocol
 
-Remain in this chat and enter exactly:
+Open/return to `90 – MANUSCRIPT – Manuskript & Figuren` and enter exactly:
 
-`Manuscript Venue-Neutral Artifact Integration & Compliance Gate 0.1`
+`GO`
 
-STOP — AWAIT NAMED GATE
+After MANUSCRIPT reaches `STOP — RETURN TO MASTER`, return here and enter:
+
+`Status?`
+
+STOP — WAIT
