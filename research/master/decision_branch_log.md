@@ -40,7 +40,7 @@ Status: SATISFIED / CLOSED. PASS; implementation `e342ef5c5cefae30df45e23bc667f1
 ### DEC-016 — Nonlinear scaling blocked pending historical return
 Status: SATISFIED / CLOSED.
 ### DEC-017 — Neural Historical Reachability Result Freeze 0.1
-Status: FROZEN. Rollback `RP-005`; artificial auxiliary-gradient reachability only.
+Status: FROZEN. Rollback `RP-005`; artificial auxiliary-gradient provenance only.
 ### DEC-018 — Neural Nonlinear ReLU Pilot 0.1
 Status: SATISFIED / CLOSED. PASS; implementation `b5ba5da30d869d160eab0a7801bcfa324860b19a`; tests `3b42bf8c9a3e1a56a031654576b9c9f25b70bdbc`.
 ### DEC-019 — Learned coordinates / broader scaling blocked pending ReLU
@@ -178,11 +178,17 @@ Status: FROZEN. Rollback `RP-029`; Chaos Regular Article and 2026-09-06 format s
 ### DEC-085 — Manuscript Chaos Regular-Article Format Adaptation 0.1 authorised
 Status: SATISFIED / CLOSED. MANUSCRIPT-only claim-neutral AIP/Chaos adaptation; no submission.
 ### DEC-086 — Manuscript Chaos Regular-Article Format Adaptation 0.1 returned
-Status: FROZEN / COMPLETE. Canonical package `research/manuscript/chaos_regular_article_0_1/`; creation/content commit `344477bd0c0c07755536941d7fd6ad9408128c62`. Main source presentation-compiled to 11 pages; supplement wrapper not independently compiled; genuine author/admin inputs remain unresolved. No scientific execution or submission.
+Status: FROZEN / COMPLETE. Package `research/manuscript/chaos_regular_article_0_1/`; creation/content commit `344477bd0c0c07755536941d7fd6ad9408128c62`. Main source presentation-compiled to 11 pages; supplement wrapper not independently compiled; author/admin inputs unresolved. No scientific execution or submission.
 ### DEC-087 — Manuscript Chaos Regular-Article Format Adaptation Freeze 0.1
-Status: FROZEN. Rollback `RP-030 — Manuscript Chaos Regular-Article Format Adaptation Freeze 0.1`. Freezes the returned package, passed claim/presentational adaptation, unresolved supplement packaging audit, and unresolved author/admin inputs.
+Status: FROZEN. Rollback `RP-030`; returned Chaos package and unresolved readiness items frozen.
 ### DEC-088 — Manuscript Chaos Adapted Compliance & Submission Readiness Gate 0.1 authorised
-Status: ACTIVE / MASTER-COMPLIANCE ONLY. Canonical prompt `research/master/prompts/master_manuscript_chaos_adapted_compliance_submission_readiness_gate_0_1.md`. Must classify remaining items as scientific/claim, deterministic artifact, or genuine author/admin input; no submission or invented metadata.
+Status: SATISFIED / CLOSED. MASTER audited science/claims/numerics/references/figures/main formatting, current AIP rules, supplement packaging, and author/admin prerequisites without submission.
+### DEC-089 — Manuscript Chaos Adapted Compliance & Submission Readiness decision
+Status: FROZEN / COMPLETE. Canonical memo `research/master/manuscript_chaos_adapted_compliance_submission_readiness_0_1.md`; decision **REVISE — ARTIFACT AND/OR AUTHOR INPUT PREREQUISITES REQUIRED**. No scientific/claim defect. Current AIP initial-submission rules require a compiled manuscript PDF and separate supplementary-material PDF; the current supplement wrapper is uncompiled and repository-relative. Hard author inputs are bounded separately and deferred until artifact correction returns.
+### DEC-090 — Manuscript Chaos Adapted Compliance & Submission Readiness Freeze 0.1
+Status: FROZEN. Rollback `RP-031 — Manuscript Chaos Adapted Compliance & Submission Readiness Freeze 0.1`. Freezes PASS of scientific/claim/main-format compliance, the deterministic supplement/PDF artifact prerequisite, the bounded hard/optional author-input classification, and artifact-first ordering.
+### DEC-091 — Manuscript Chaos Submission Artifact Correction 0.1 authorised
+Status: ACTIVE / MANUSCRIPT ARTIFACT ONLY. Canonical prompt `research/master/prompts/manuscript_chaos_submission_artifact_correction_0_1.md`. Must create `research/manuscript/chaos_regular_article_0_2/`, preserve science/claims/cited works, make the supplement self-contained for build purposes, independently verify SI PDF and main PDF builds, record build hashes/page counts, and perform no author metadata collection or submission.
 
 ## Rollback points
 
@@ -215,15 +221,16 @@ Status: ACTIVE / MASTER-COMPLIANCE ONLY. Canonical prompt `research/master/promp
 - `RP-027 — Manuscript Venue-Neutral Artifact Integration & Compliance Freeze 0.1` — STABLE.
 - `RP-028 — Manuscript Venue-Neutral Artifact Metadata Correction Freeze 0.1` — STABLE / ACCEPTED CORRECTED PACKAGE.
 - `RP-029 — Manuscript Venue Selection & Format Specification Freeze 0.1` — STABLE / CHAOS REGULAR ARTICLE FROZEN.
-- `RP-030 — Manuscript Chaos Regular-Article Format Adaptation Freeze 0.1` — STABLE / VENUE-ADAPTED RETURN FROZEN.
+- `RP-030 — Manuscript Chaos Regular-Article Format Adaptation Freeze 0.1` — STABLE / IMMUTABLE CHAOS 0.1 PACKAGE.
+- `RP-031 — Manuscript Chaos Adapted Compliance & Submission Readiness Freeze 0.1` — STABLE.
 
-No prior freeze may be weakened. WEAK/NULL/FAIL/PASS outcomes and all claim demotions remain canonical and may not be retuned or relabelled.
+No prior freeze may be weakened. WEAK/FAIL/PASS/PARK outcomes and all claim demotions remain canonical and may not be retuned or relabelled.
 
 ## Branch registry
 
 | Chat / branch | Status | Current gate | Dependency |
 |---|---|---|---|
-| 00 – MASTER | READY / AWAIT NAMED GATE | Manuscript Chaos Adapted Compliance & Submission Readiness Gate 0.1 | `RP-030` stable |
+| 00 – MASTER | COMPLETE / WAIT FOR MANUSCRIPT | post-readiness REVISE | `RP-031` stable; artifact-correction return |
 | 10 – CORE | COMPLETE / FROZEN / WAIT | CORE Synergetic Sufficiency Boundary 0.1 | satisfied |
 | 20 – THEORY-A | UNOPENED | none | MASTER authorisation |
 | 30 – THEORY-B | UNOPENED | none | MASTER authorisation |
@@ -232,4 +239,4 @@ No prior freeze may be weakened. WEAK/NULL/FAIL/PASS outcomes and all claim demo
 | 60 – APP-B | COMPLETE / PASS — RESULT FROZEN / WAIT | Power-Grid Minimal Benchmark 0.1 | returned to MASTER |
 | 70 – APP-C | COMPLETE / PASS — RESULT FROZEN / WAIT | Controlled State Preparation 0.1 | returned to MASTER |
 | 80 – LIT | COMPLETE / FROZEN / WAIT | Claim-Level & Theorem-Level Prior-Art Revalidation 0.1 | `RP-020` frozen |
-| 90 – MANUSCRIPT | COMPLETE / CHAOS FORMAT ADAPTATION FROZEN / WAIT FOR MASTER | post-Chaos-adaptation | `RP-030` frozen |
+| 90 – MANUSCRIPT | READY / AWAIT GO | Manuscript Chaos Submission Artifact Correction 0.1 | `RP-031` frozen |
