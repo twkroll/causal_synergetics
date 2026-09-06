@@ -1,10 +1,10 @@
 # Project Status — causal_synergetics
 
-Version: 2.7
-Date: 2026-09-05
-Overall status: VENUE-NEUTRAL ARTIFACT PACKAGE RETURNED / MASTER COMPLIANCE GATE READY / NO NOVELTY PROMOTION
+Version: 2.8
+Date: 2026-09-06
+Overall status: VENUE-NEUTRAL ARTIFACT COMPLIANCE REVISE / METADATA CORRECTION READY / NO NOVELTY PROMOTION
 Governance status: FROZEN v0.1
-Latest rollback point: `RP-026 — Manuscript Venue-Neutral Artifact Completion Freeze 0.1`
+Latest rollback point: `RP-027 — Manuscript Venue-Neutral Artifact Integration & Compliance Freeze 0.1`
 
 ## Central research question
 
@@ -32,70 +32,65 @@ The programme treats causal synergetics as a proposed research field to be teste
 - Manuscript Initial Draft Integration & Compliance 0.1: GO — EDITORIAL COMPLETION ONLY.
 - Manuscript Editorial Completion 0.1: COMPLETE / FROZEN.
 - Manuscript Submission Readiness & Artifact Packaging Gate 0.1: GO — VENUE-NEUTRAL ARTIFACT COMPLETION ONLY.
-- Manuscript Venue-Neutral Artifact Completion 0.1: COMPLETE / RETURNED / FROZEN PENDING COMPLIANCE.
+- Manuscript Venue-Neutral Artifact Completion 0.1: COMPLETE / FROZEN.
+- Manuscript Venue-Neutral Artifact Integration & Compliance Gate 0.1: **REVISE — ARTIFACT COMPLIANCE FIXES REQUIRED**.
 
 All earlier claim ceilings and rollback points remain controlling.
 
-## Returned venue-neutral package
+## Compliance result
 
-Canonical directory:
+Canonical memo:
 
-`research/manuscript/venue_neutral_0_1/`
+`research/master/manuscript_venue_neutral_artifact_integration_compliance_0_1.md`
 
-Package content completion commit recorded by MANUSCRIPT:
+MASTER found no scientific, claim, numerical, figure or supplement inconsistency.
 
-`593dd2192eca8e378bffde09a6208420d8bbe9a4`
+Passed:
 
-Package includes:
+- canonical editorial manuscript blob unchanged;
+- Figure 1 conceptual/standard-projectability only;
+- Figure 2 preserves WEAK/FAIL/Gram/PARK and mean/COI countercontrol;
+- Figure 3 schematic/non-trajectory only and frozen APP-B scalars;
+- Figure 4 frozen analytic APP-C protocol/scalars only;
+- Supplement A–F uses only canonical frozen results and explicitly limits governance to auditability rather than validation;
+- APP-B/APP-C numerical values match canonical results;
+- neural/APP-B/APP-C manifest commit pointers audited by MASTER match their intended semantic roles.
 
-- four frozen-role SVG schematic figures;
-- complete supplement A–F compiled from canonical frozen sources;
-- reproducibility manifest;
-- README/package index;
-- artifact production change log.
+## Single correction prerequisite
 
-The editorial manuscript itself remained unchanged.
+The frozen `venue_neutral_0_1/reproducibility_manifest_0_1.md` must distinguish two real CORE commits:
 
-The returned package preserves required neural WEAK/FAIL/Gram/PARK evidence, exact APP-B mean/COI closure, APP-B/APP-C frozen values and stated limitations. Figure 3 remains schematic/non-trajectory and no scientific code was rerun.
+- canonical result-creation/result commit `0ebd50e5c8c072cf59ae86502a25b97e78c4722f`;
+- subsequent STATUS/result-freeze bookkeeping commit `1cad9c78c4f76484cb5e2197ce9c128c5f94f4ff`.
 
-## Compliance issue found during MASTER status reconstruction
+The current manifest conflates their roles. This is an artifact/reproducibility metadata defect only.
 
-The reproducibility manifest records CORE commit `1cad9c78c4f76484cb5e2197ce9c128c5f94f4ff` as a canonical result-freeze pointer, whereas canonical `research/core/STATUS.md` records `0ebd50e5c8c072cf59ae86502a25b97e78c4722f` as the CORE canonical result commit.
+## Authorised next task
 
-The discrepancy is currently artifact/reproducibility metadata only. APP-B and APP-C commit pointers spot-checked by MASTER agree with their canonical branch STATUS files.
+`Manuscript Venue-Neutral Artifact Metadata Correction 0.1`
 
-## Active gate
+Assigned to `90 – MANUSCRIPT – Manuskript & Figuren`.
 
-`Manuscript Venue-Neutral Artifact Integration & Compliance Gate 0.1`
-
-Purpose: formally audit every package pointer, numerical statement, figure constraint, supplement section and unchanged-manuscript condition before venue selection.
-
-Required decision:
-
-- `GO — VENUE SELECTION / FORMAT SPECIFICATION READY`;
-- `REVISE — ARTIFACT COMPLIANCE FIXES REQUIRED`;
-- `STOP — SCIENTIFIC OR CLAIM INCONSISTENCY`.
-
-No repair is allowed inside the gate.
+The task must create a new `research/manuscript/venue_neutral_0_2/` package. The frozen `venue_neutral_0_1/` package remains immutable. Figures and supplement must be byte-identical; only deterministic metadata correction is authorised.
 
 ## Branch state
 
-- `00 – MASTER`: READY — Manuscript Venue-Neutral Artifact Integration & Compliance Gate 0.1.
+- `00 – MASTER`: COMPLETE / WAIT FOR MANUSCRIPT.
 - `10 – CORE`: COMPLETE / FROZEN / WAIT.
 - `50 – APP-A`: PARKED / FROZEN / WAIT.
 - `60 – APP-B`: COMPLETE / PASS — RESULT FROZEN / WAIT.
 - `70 – APP-C`: COMPLETE / PASS — RESULT FROZEN / WAIT.
 - `80 – LIT`: COMPLETE / FROZEN / WAIT.
 - `20/30/40 – THEORY-*`: UNOPENED.
-- `90 – MANUSCRIPT`: COMPLETE / VENUE-NEUTRAL ARTIFACTS FROZEN / WAIT FOR MASTER.
+- `90 – MANUSCRIPT`: READY / AWAIT GO — Manuscript Venue-Neutral Artifact Metadata Correction 0.1.
 
 ## Freeze / branching check
 
 OK.
 
-`RP-026` freezes the returned venue-neutral package exactly as produced, including the identified manifest discrepancy. `RP-025` and all prior scientific/manuscript freezes remain stable.
+`RP-027` freezes the compliance finding and exact correction scope. `RP-026` preserves the original returned package unchanged; all earlier scientific/manuscript freezes remain stable.
 
-No specialist branch is active. Exactly one MASTER compliance gate is authorised.
+Exactly one specialist correction task is authorised.
 
 ## Current claim ceiling
 
@@ -103,14 +98,20 @@ Package P remains the sole contribution-bearing framing. No novelty/priority, ge
 
 ## Manuscript
 
-SCIENTIFICALLY/EDITORIALLY COMPLETE; VENUE-NEUTRAL ARTIFACT PACKAGE RETURNED; NOT YET VENUE-SELECTION OR SUBMISSION-AUTHORISED.
+SCIENTIFICALLY/EDITORIALLY COMPLIANT; VENUE-NEUTRAL PACKAGE REQUIRES ONE METADATA CORRECTION; NOT YET VENUE-SELECTION OR SUBMISSION-AUTHORISED.
 
 ## CI
 
-Repository CI remains not configured. No scientific execution occurred in the artifact-production or current integration step.
+Repository CI remains not configured. No scientific execution occurred in the compliance gate.
 
 ## Next global step
 
-Remain in `00 – MASTER – Projektplan & Status` and enter exactly:
+Open/return to:
 
-`Manuscript Venue-Neutral Artifact Integration & Compliance Gate 0.1`
+`90 – MANUSCRIPT – Manuskript & Figuren`
+
+and enter exactly:
+
+`GO`
+
+After MANUSCRIPT returns, enter `Status?` in MASTER.
