@@ -251,7 +251,16 @@ Status: FROZEN / COMPLETE. Corrected package `research/manuscript/venue_neutral_
 Status: FROZEN. Rollback `RP-028 — Manuscript Venue-Neutral Artifact Metadata Correction Freeze 0.1`. Corrected package accepted; sole known artifact/reproducibility defect closed. `RP-026` and `RP-027` remain stable historical freezes.
 
 ### DEC-082 — Manuscript Venue Selection & Format Specification Gate 0.1 authorised
-Status: ACTIVE / MASTER-ONLY. Canonical prompt `research/master/prompts/master_manuscript_venue_selection_format_specification_gate_0_1.md`. Gate may use current official venue/publisher sources to select exactly one primary venue and freeze current format/submission requirements; it may not rewrite the manuscript, change science/claims, remove mandatory negative evidence, or submit.
+Status: SATISFIED / CLOSED. Current official venue/publisher sources were used to compare a short candidate set and freeze one primary venue/article type without manuscript rewriting, scientific change, or submission.
+
+### DEC-083 — Manuscript Venue Selection & Format Specification decision
+Status: FROZEN / COMPLETE. Canonical memo `research/master/manuscript_venue_selection_format_specification_0_1.md`; decision **GO — PRIMARY VENUE & FORMAT SPECIFICATION FROZEN / NO NOVELTY PROMOTION**. Primary venue: `Chaos: An Interdisciplinary Journal of Nonlinear Science` (AIP Publishing), `Regular Article / Research Article — NOT Fast Track`. Physical Review E is fallback only; Journal of Physics: Complexity audited but not selected. Selection is based on scope/claim compatibility, not perceived acceptance ease. No submission authorised.
+
+### DEC-084 — Manuscript Venue Selection & Format Specification Freeze 0.1
+Status: FROZEN. Rollback `RP-029 — Manuscript Venue Selection & Format Specification Freeze 0.1`. Freezes the Chaos primary venue, Regular Article type, official 2026-09-06 requirements snapshot, allowed claim-neutral venue transformations, and prohibition on submission/scientific change.
+
+### DEC-085 — Manuscript Chaos Regular-Article Format Adaptation 0.1 authorised
+Status: ACTIVE / MANUSCRIPT ONLY. Canonical prompt `research/master/prompts/manuscript_chaos_regular_article_format_adaptation_0_1.md`. Must create `research/manuscript/chaos_regular_article_0_1/` only, preserve all scientific/claim freezes and mandatory WEAK/FAIL/Gram/PARK/mean-COI evidence, perform only AIP/Chaos presentational adaptation, and make no submission/OA-payment/editor-contact action.
 
 ## Rollback points
 
@@ -283,6 +292,7 @@ Status: ACTIVE / MASTER-ONLY. Canonical prompt `research/master/prompts/master_m
 - `RP-026 — Manuscript Venue-Neutral Artifact Completion Freeze 0.1` — STABLE / IMMUTABLE ORIGINAL PACKAGE.
 - `RP-027 — Manuscript Venue-Neutral Artifact Integration & Compliance Freeze 0.1` — STABLE.
 - `RP-028 — Manuscript Venue-Neutral Artifact Metadata Correction Freeze 0.1` — STABLE / ACCEPTED CORRECTED PACKAGE.
+- `RP-029 — Manuscript Venue Selection & Format Specification Freeze 0.1` — STABLE / CHAOS REGULAR ARTICLE FROZEN.
 
 No prior freeze may be weakened. WEAK/NULL/FAIL/PASS outcomes and all claim demotions remain canonical and may not be retuned or relabelled.
 
@@ -290,7 +300,7 @@ No prior freeze may be weakened. WEAK/NULL/FAIL/PASS outcomes and all claim demo
 
 | Chat / branch | Status | Current gate | Dependency |
 |---|---|---|---|
-| 00 – MASTER | READY / AWAIT NAMED GATE | Manuscript Venue Selection & Format Specification Gate 0.1 | `RP-028` stable |
+| 00 – MASTER | COMPLETE / WAIT FOR MANUSCRIPT | post-venue-selection | `RP-029` stable; Chaos adaptation return |
 | 10 – CORE | COMPLETE / FROZEN / WAIT | CORE Synergetic Sufficiency Boundary 0.1 | satisfied |
 | 20 – THEORY-A | UNOPENED | none | MASTER authorisation |
 | 30 – THEORY-B | UNOPENED | none | MASTER authorisation |
@@ -299,4 +309,4 @@ No prior freeze may be weakened. WEAK/NULL/FAIL/PASS outcomes and all claim demo
 | 60 – APP-B | COMPLETE / PASS — RESULT FROZEN / WAIT | Power-Grid Minimal Benchmark 0.1 | returned to MASTER |
 | 70 – APP-C | COMPLETE / PASS — RESULT FROZEN / WAIT | Controlled State Preparation 0.1 | returned to MASTER |
 | 80 – LIT | COMPLETE / FROZEN / WAIT | Claim-Level & Theorem-Level Prior-Art Revalidation 0.1 | `RP-020` frozen |
-| 90 – MANUSCRIPT | COMPLETE / CORRECTED VENUE-NEUTRAL PACKAGE FROZEN / WAIT FOR MASTER | post-metadata-correction | `RP-028` frozen |
+| 90 – MANUSCRIPT | READY / AWAIT GO | Manuscript Chaos Regular-Article Format Adaptation 0.1 | `RP-029` frozen |
