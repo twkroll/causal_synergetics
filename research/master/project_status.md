@@ -1,10 +1,10 @@
 # Project Status — causal_synergetics
 
-Version: 2.8
+Version: 2.9
 Date: 2026-09-06
-Overall status: VENUE-NEUTRAL ARTIFACT COMPLIANCE REVISE / METADATA CORRECTION READY / NO NOVELTY PROMOTION
+Overall status: CORRECTED VENUE-NEUTRAL PACKAGE FROZEN / VENUE-SELECTION GATE READY / NO NOVELTY PROMOTION
 Governance status: FROZEN v0.1
-Latest rollback point: `RP-027 — Manuscript Venue-Neutral Artifact Integration & Compliance Freeze 0.1`
+Latest rollback point: `RP-028 — Manuscript Venue-Neutral Artifact Metadata Correction Freeze 0.1`
 
 ## Central research question
 
@@ -33,64 +33,55 @@ The programme treats causal synergetics as a proposed research field to be teste
 - Manuscript Editorial Completion 0.1: COMPLETE / FROZEN.
 - Manuscript Submission Readiness & Artifact Packaging Gate 0.1: GO — VENUE-NEUTRAL ARTIFACT COMPLETION ONLY.
 - Manuscript Venue-Neutral Artifact Completion 0.1: COMPLETE / FROZEN.
-- Manuscript Venue-Neutral Artifact Integration & Compliance Gate 0.1: **REVISE — ARTIFACT COMPLIANCE FIXES REQUIRED**.
+- Manuscript Venue-Neutral Artifact Integration & Compliance Gate 0.1: REVISE — ARTIFACT COMPLIANCE FIXES REQUIRED.
+- Manuscript Venue-Neutral Artifact Metadata Correction 0.1: COMPLETE / ACCEPTED / FROZEN.
 
 All earlier claim ceilings and rollback points remain controlling.
 
-## Compliance result
+## Corrected venue-neutral package
 
-Canonical memo:
+Canonical package:
 
-`research/master/manuscript_venue_neutral_artifact_integration_compliance_0_1.md`
+`research/manuscript/venue_neutral_0_2/`
 
-MASTER found no scientific, claim, numerical, figure or supplement inconsistency.
+The sole known reproducibility-metadata defect is closed. The corrected manifest distinguishes the canonical CORE result commit `0ebd50e5c8c072cf59ae86502a25b97e78c4722f` from the later CORE STATUS/result-freeze bookkeeping commit `1cad9c78c4f76484cb5e2197ce9c128c5f94f4ff`.
 
-Passed:
+Figures 1–4 and the Supplement are carried forward byte-identically from `venue_neutral_0_1`. The canonical editorial manuscript remains unchanged at blob `5116cb99a011416943bef908079ba7489eb597a3`.
 
-- canonical editorial manuscript blob unchanged;
-- Figure 1 conceptual/standard-projectability only;
-- Figure 2 preserves WEAK/FAIL/Gram/PARK and mean/COI countercontrol;
-- Figure 3 schematic/non-trajectory only and frozen APP-B scalars;
-- Figure 4 frozen analytic APP-C protocol/scalars only;
-- Supplement A–F uses only canonical frozen results and explicitly limits governance to auditability rather than validation;
-- APP-B/APP-C numerical values match canonical results;
-- neural/APP-B/APP-C manifest commit pointers audited by MASTER match their intended semantic roles.
+No scientific execution, new analysis, literature expansion, venue selection or submission occurred during the correction.
 
-## Single correction prerequisite
+## Active gate
 
-The frozen `venue_neutral_0_1/reproducibility_manifest_0_1.md` must distinguish two real CORE commits:
+`Manuscript Venue Selection & Format Specification Gate 0.1`
 
-- canonical result-creation/result commit `0ebd50e5c8c072cf59ae86502a25b97e78c4722f`;
-- subsequent STATUS/result-freeze bookkeeping commit `1cad9c78c4f76484cb5e2197ce9c128c5f94f4ff`.
+Purpose: use current official venue/publisher information to select exactly one defensible primary venue and freeze its current format/submission requirements without changing science or claims.
 
-The current manifest conflates their roles. This is an artifact/reproducibility metadata defect only.
+Required decision:
 
-## Authorised next task
+- `GO — PRIMARY VENUE & FORMAT SPECIFICATION FROZEN`;
+- `REVISE — VENUE/FIT PREREQUISITE REQUIRED`;
+- `STOP — NO DEFENSIBLE VENUE FIT UNDER FROZEN MANUSCRIPT`.
 
-`Manuscript Venue-Neutral Artifact Metadata Correction 0.1`
-
-Assigned to `90 – MANUSCRIPT – Manuskript & Figuren`.
-
-The task must create a new `research/manuscript/venue_neutral_0_2/` package. The frozen `venue_neutral_0_1/` package remains immutable. Figures and supplement must be byte-identical; only deterministic metadata correction is authorised.
+No manuscript adaptation or submission is authorised inside this gate.
 
 ## Branch state
 
-- `00 – MASTER`: COMPLETE / WAIT FOR MANUSCRIPT.
+- `00 – MASTER`: READY — Manuscript Venue Selection & Format Specification Gate 0.1.
 - `10 – CORE`: COMPLETE / FROZEN / WAIT.
 - `50 – APP-A`: PARKED / FROZEN / WAIT.
 - `60 – APP-B`: COMPLETE / PASS — RESULT FROZEN / WAIT.
 - `70 – APP-C`: COMPLETE / PASS — RESULT FROZEN / WAIT.
 - `80 – LIT`: COMPLETE / FROZEN / WAIT.
 - `20/30/40 – THEORY-*`: UNOPENED.
-- `90 – MANUSCRIPT`: READY / AWAIT GO — Manuscript Venue-Neutral Artifact Metadata Correction 0.1.
+- `90 – MANUSCRIPT`: COMPLETE / CORRECTED VENUE-NEUTRAL PACKAGE FROZEN / WAIT FOR MASTER.
 
 ## Freeze / branching check
 
 OK.
 
-`RP-027` freezes the compliance finding and exact correction scope. `RP-026` preserves the original returned package unchanged; all earlier scientific/manuscript freezes remain stable.
+`RP-028` freezes the accepted corrected package and closes the sole known artifact metadata defect. `RP-026` preserves the original package; `RP-027` preserves the prior compliance finding; all earlier scientific/manuscript freezes remain stable.
 
-Exactly one specialist correction task is authorised.
+No specialist branch is active. Exactly one MASTER gate is authorised.
 
 ## Current claim ceiling
 
@@ -98,20 +89,14 @@ Package P remains the sole contribution-bearing framing. No novelty/priority, ge
 
 ## Manuscript
 
-SCIENTIFICALLY/EDITORIALLY COMPLIANT; VENUE-NEUTRAL PACKAGE REQUIRES ONE METADATA CORRECTION; NOT YET VENUE-SELECTION OR SUBMISSION-AUTHORISED.
+SCIENTIFICALLY/EDITORIALLY/ARTIFACT-COMPLIANT; CORRECTED VENUE-NEUTRAL PACKAGE FROZEN; VENUE SELECTION READY; NOT SUBMISSION-AUTHORISED.
 
 ## CI
 
-Repository CI remains not configured. No scientific execution occurred in the compliance gate.
+Repository CI remains not configured. No scientific execution occurred in the metadata-correction or current integration step.
 
 ## Next global step
 
-Open/return to:
+Remain in `00 – MASTER – Projektplan & Status` and enter exactly:
 
-`90 – MANUSCRIPT – Manuskript & Figuren`
-
-and enter exactly:
-
-`GO`
-
-After MANUSCRIPT returns, enter `Status?` in MASTER.
+`Manuscript Venue Selection & Format Specification Gate 0.1`
